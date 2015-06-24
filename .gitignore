@@ -1,7 +1,11 @@
+#################################################
+# WordPress Ignore
+#################################################
 *.log
 .htaccess
 sitemap.xml
 sitemap.xml.gz
+.DS_Store
 wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
@@ -11,3 +15,45 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
+
+
+#################################################
+# Eclipse Ignore
+#################################################
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# Eclipse Core
+.project
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# PDT-specific
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# TeXlipse plugin
+.texlipse
+.com.apple.timemachine.supported
