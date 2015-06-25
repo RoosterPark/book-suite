@@ -28,49 +28,41 @@
 
 <body <?php body_class(); ?>>
 <?php do_action( 'before' ); ?>
-<header id="masthead" role="banner">
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container-fluid">
-			<div class="mp-row row">
-				<div class="col-md-12 col-lg-12">
-			        <div class="navbar-header">
-			        	<aside id="polylang-3" class="col-lg-4 center-block widget widget_polylang"></aside>
-			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				            <span class="icon-bar"></span>
-				            <span class="icon-bar"></span>
-				            <span class="icon-bar"></span>
-						</button>
-					<?php if( get_header_image() != '' ) : ?>
-					
-					<div id="logo">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
-					</div><!-- end of #logo -->
-					
-					<?php endif; // header image was removed ?>
-					
-					<?php if( !get_header_image() ) : ?>
-					
-					<div id="logo">
-						<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-					</div><!-- end of #logo -->
-					
-					<?php endif; // header image was removed (again) ?>
-					</div>
-					
-					<?php 
-					$args = array('theme_location' => 'primary', 
-								  'container_class' => 'navbar-collapse collapse', 
-								  'menu_class' => 'nav navbar-nav navbar-right',
-								  'fallback_cb' => '',
-		                          'menu_id' => 'main-menu',
-		                          'walker' => new Upbootwp_Walker_Nav_Menu()); 
-					wp_nav_menu($args);
-					?>
-				</div><!-- .col-md-12 -->
-			</div><!-- row -->
-		</div><!-- container -->
-	</nav>
-</header><!-- #masthead -->
-<div id="page" class="hfeed site">
-	
-<!-- 	<div id="content" class="site-content"> -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+			</button>
+		<?php if( get_header_image() != '' ) : ?>
+		
+		<div id="logo">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
+		</div><!-- end of #logo -->
+		
+		<?php endif; // header image was removed ?>
+		
+		<?php if( !get_header_image() ) : ?>
+		
+		<div id="logo">
+			<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+		</div><!-- end of #logo -->
+		
+		<?php endif; // header image was removed (again) ?>
+		</div>
+		
+		<?php 
+			$args = array('theme_location' => 'primary', 
+						  'container_class' => 'navbar-collapse collapse', 
+						  'menu_class' => 'nav navbar-nav navbar-right',
+						  'fallback_cb' => '',
+                          'menu_id' => 'main-menu',
+                          'walker' => new Upbootwp_Walker_Nav_Menu()); 
+			wp_nav_menu($args);
+			?>
+	</div><!-- container -->
+</nav>
+<!-- Start: main .content-area -->
+<main id="main" class="content-area site-main" role="main">

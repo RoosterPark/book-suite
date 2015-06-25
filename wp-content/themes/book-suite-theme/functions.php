@@ -45,9 +45,12 @@ function upbootwp_setup() {
 	add_image_size( 'homepage-thumb', 300, 200, array( 'left', 'top' )  ); // Hard crop left top
 	add_image_size( 'homepage-thumb-port', 350, 350,  array( 'left', 'top' ));
 	add_image_size( 'homepage-thumb-land', 350, 188,  array( 'left', 'top' ));
+	
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'Bootstrap WP Primary' ),
-	) );
+		'primary' => __( 'Primary Menu - Global', 'Bootstrap WP Primary' ),
+		'footer' => __( 'Footer Menu - Global', 'Bootstrap WP Footer' ),
+		'footer-aux' => __( 'Footer Auxiliary Menu - Global', 'Bootstrap WP Auxiliary Footer' )
+	));
 
 	/**
 	 * Enable support for Post Formats
@@ -165,7 +168,7 @@ add_action( 'widgets_init', 'upbootwp_widgets_init' );
 function upbootwp_scripts() {
     // Add Font Awesome stylesheet
    
-	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri().'/css/bootstrap.css', array(), '20150624');
+	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri().'/bootstrap/css/bootstrap.css', array(), '20150624');
 	wp_enqueue_style( 'font-awesome-icons', get_template_directory_uri().'/css/font-awesome.min.css' );
 	wp_enqueue_style( 'customized-bootstrap', get_template_directory_uri().'/css/book-suite-theme.css', array(), '20150624');
 	wp_enqueue_script( 'jQuery-js', get_template_directory_uri().'/js/jquery.js',array(),'2.0.3',true);
@@ -177,20 +180,6 @@ function upbootwp_scripts() {
 	
 }
 add_action( 'wp_enqueue_scripts', 'upbootwp_scripts' );
-
-
-/**
- * upbootwp_less function.
- * Load less for development or even on the running website. If you want to use less just enable this function
- * @access public
- * @return void
- */
-function upbootwp_less() {
-	printf('<link rel="stylesheet" type="text/less" href="%s" />', get_template_directory_uri().'/less/bootstrap.less?ver=0.1'); // raus machen :) 
-	printf('<script type="text/javascript" src="%s"></script>', get_template_directory_uri().'/js/less.js');
-}
-// Enable this when you want to work with less
-//add_action('wp_head', 'upbootwp_less');
 
 /**
  * Implement the Custom Header feature.

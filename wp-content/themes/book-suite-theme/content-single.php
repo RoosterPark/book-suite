@@ -7,21 +7,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-		<div class="col-md-12 col-lg-12">
+		<div class="">
 			<header class="entry-header  page-header">
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 				<?php if(function_exists('the_subtitle')) the_subtitle( '<h2 class="subtitle">', '</h2>');?>
 			</header><!-- .entry-header -->
 		</div>
-		<div class="col-md-7 col-lg-7">
-			<?php
-			// Advanced Custom Fieldset - Featurette
-			if(get_field('text_left'))
-			{
-				echo get_field('text_left');
-			}
-			?>
-			
+		<div class="">
 			<footer class="entry-meta ">
 			
 			<?php
@@ -54,24 +46,11 @@
 					the_title_attribute( 'echo=0' )
 				);
 				?>
-				<?php if(get_field('website_url')) { ?>
-				<p><a target="_blank" href="<?php echo get_field('website_url'); ?>" title="View <?php echo get_field('website_url'); ?>">View Website &raquo;</a></p>
-				<?php } ?>
 				<?php //upbootwp_posted_on(); ?>
 			
 				<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn-group" role="group" ><div class="btn btn-success">', '</div></div>' ); ?>
 			</footer><!-- .entry-meta -->	
 		</div>
-		<?php
-		// Advanced Custom Fieldset - Featurette
-		if(get_field('image_right'))
-		{
-			echo '<div class="col-md-4 col-lg-4 col-md-offset-1"><img class="img-thumbnail" src="'.get_field('image_right').'"/></div>';
-		}
-		 
-		?>
-
-
 	<div class="content-area row entry-content wp">
 		<?php the_content(); ?>
 		<?php
