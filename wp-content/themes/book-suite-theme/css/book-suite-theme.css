@@ -10,8 +10,19 @@
   top: 32px;
   z-index: 1030;
 }
+.admin-bar .site-header {
+  margin-top: 50px;
+}
 .site-header {
   overflow: auto;
+}
+/***************************************************
+ * 
+ *  Nav Bar
+ * 
+ **************************************************/
+.navbar .container-fluid {
+  max-width: 1366px;
 }
 /***************************************************
  * 

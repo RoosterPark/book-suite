@@ -14,7 +14,9 @@ while($my_query->have_posts()){
 	        <?php endif; ?>
 	    </div>
 	    <div class="col-md-8">
-	        <h1><?php the_title() ?></h1>
+	        <header class="page-header">
+	       		<h1><?php the_title() ?></h1>
+	        </header>
 	        <?php if(function_exists('the_subtitle')) { ?>
 	        <p class="subtitle"><strong><?php echo the_subtitle();?></strong></p>
 	        <?php } ?> 

@@ -28,7 +28,7 @@
 				?>
 				<?php 
 					$args = array(
-							'theme_location' => 'footer',
+							'theme_location' => 'footer-aux',
 							'container_class' => 'navbar-aux-footer', 
 							'menu_class' => 'nav nav-pills',
 							'fallback_cb' => '',

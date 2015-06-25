@@ -13,9 +13,7 @@
  */
 ?>                
 		<?php get_header(); ?>
-		<?php if( is_home() ) { ?> 
-			<?php get_template_part('index-featured-image'); ?>
-		<?php } ?>
+		
 
 		<?php if ( have_posts() ) : ?>
 		    

@@ -60,12 +60,16 @@ function upbootwp_setup() {
 	/**
 	 * Setup the WordPress core custom background feature.
 	 */
-	add_theme_support( 'custom-background', apply_filters( 'upbootwp_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	)));
-	
-	
+	add_theme_support(
+		'custom-background', 
+		apply_filters ( 
+			'upbootwp_custom_background_args', 
+			array(
+			'default-color' => 'ffffff',
+			'default-image' => ''
+			)
+		)
+	);
 }
 
 add_action( 'init', 'themes_taxonomy');
