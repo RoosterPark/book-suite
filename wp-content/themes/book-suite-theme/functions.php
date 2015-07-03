@@ -203,7 +203,7 @@ function add_my_post_types_to_query( $query ) {
 //     if($post_type)
 //         $post_type = $post_type;
 //     else
-//         $post_type = array('post','careers', 'nav_menu_item');
+//         $post_type = array('post','success_stories', 'nav_menu_item');
 //         $query->set('post_type',$post_type);
 //     return $query;
 //     }
