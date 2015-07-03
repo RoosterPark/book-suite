@@ -13,40 +13,43 @@
  */
 ?>                
 		<?php get_header(); ?>
-		
 
 		<?php if ( have_posts() ) : ?>
 		    
 		    <?php if( is_home() ) { ?>
-				<section id="welcome" class="sub-section white">
-					<?php get_template_part('index-welcome'); ?>
+				<section id="booking-solutions" class="sub-section white solutions">
+					<?php get_template_part('index-solutions'); ?>
 				</section>
-				<section id="intro-about" class="sub-section lt-blue">
-					<?php get_template_part('index-about-site'); ?>
+				<section class="img-divider">
+					<img src="/wp-content/uploads/2015/06/Laptop1920px.png" class="img-responsive bground-img"/>
 				</section>
-				<section id="intro-about-mp" class="sub-section white">
-					<?php get_template_part('index-about-mp'); ?>
+				<section id="booking-success" class="sub-section lt-grey success">
+					<?php get_template_part('index-success'); ?>
 				</section>
-				<section id="intro-about" class="sub-section lt-blue">
-					<?php get_template_part('index-about-site'); ?>
+				<section id="booking-mentions" class="sub-section white mentions">
+					<?php get_template_part('index-mentions'); ?>
 				</section>
-				<section id="intro-about-mp" class="sub-section md-grey">
-					<?php get_template_part('index-about-mp'); ?>
+				<section id="intro-commitment" class="sub-section lt-blue">
+					<?php get_template_part('index-commitment'); ?>
 				</section>
+				<section id="index-request-demo" class="sub-section md-grey request-demo">
+					<?php get_template_part('index-request-demo'); ?>	
+				</section>
+		
 			
 			<?php } else { ?>
-				
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part('content', get_post_format()); ?>
 					<section id="intro-about" class="content-area container-fluid white">
 		  				<?php get_sidebar('mp-footer'); ?>
 					</section>
 				<?php endwhile; ?>
-				<?php upbootwp_content_nav('nav-below'); ?>
-    
+				<?php //upbootwp_content_nav('nav-below'); ?>
 			<?php } ?>
 			
 		<?php else : ?>
 			<?php get_template_part( 'no-results', 'index' ); ?>
+			
 		<?php endif; ?>
+
 <?php get_footer(); ?>

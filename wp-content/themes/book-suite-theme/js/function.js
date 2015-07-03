@@ -1,6 +1,13 @@
 // JavaScript Document
 jQuery(document).ready(function() {
+	//Add Bootstrap button styling to Main Nav Links
+	
+	jQuery('.request-btn a').addClass('btn btn-primary');
+	jQuery('.login-btn a').addClass('btn btn-default clear');
+	
 	initCycle();
+	
+	
 	//Check to see if the window is top if not then display button
 	jQuery(window).scroll(function(){
 		if (jQuery(this).scrollTop() > 100) {

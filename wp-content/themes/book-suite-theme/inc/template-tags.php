@@ -198,7 +198,7 @@ function upbootwp_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	printf( __( '<span class="posted-on">Posted: %1$s</span><span class="byline"> By: %2$s</span>', 'upbootwp' ),
+	printf( __( '<p><span class="posted-on">Posted: %1$s</span></p><p><span class="byline">By: %2$s</span></p>', 'upbootwp' ),
 		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>',
 			esc_url( get_permalink() ),
 			esc_attr( get_the_time() ),

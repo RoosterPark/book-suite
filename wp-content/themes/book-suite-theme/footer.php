@@ -15,28 +15,31 @@
 	 		<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6">
+				<?
+				$wp_query = NULL;
+				$wp_query = new WP_Query(array('post_type' => 'post'));
+				?> 
 				<?php 
-					$args = array(
-							'theme_location' => 'footer',
-							'container_class' => 'navbar-footer', 
-							'menu_class' => 'nav nav-pills',
-							'fallback_cb' => '',
-							'menu_id' => 'footer-menu',
-							'walker' => new Upbootwp_Walker_Nav_Menu()
-					); 
-					wp_nav_menu($args);
+				$footer_argsx = array(
+					'theme_location'  => 'footer_navigation',
+					'container'       => 'nav',
+					'container_id'    => 'footerNav',
+					'depth' => '1',
+					'walker' => new Footernav_Walker
+				);
+				wp_nav_menu($footer_argsx);
+				
+				$footer_args = array(
+						'theme_location'  => 'footer_aux_navigation',
+						'container'       => 'nav',
+						'container_id'    => 'footerAuxNav',
+						'depth' => '1',
+						
+						'walker' => new Footernav_Walker
+				);
+				 wp_nav_menu($footer_args);
 				?>
-				<?php 
-					$args = array(
-							'theme_location' => 'footer-aux',
-							'container_class' => 'navbar-aux-footer', 
-							'menu_class' => 'nav nav-pills',
-							'fallback_cb' => '',
-							'menu_id' => 'footer-menu-aux',
-							'walker' => new Upbootwp_Walker_Nav_Menu()
-					); 
-					wp_nav_menu($args);
-				?>
+				
 					</div>
 		    		<div class="col-md-6">
 						<?php do_action( 'upbootwp_credits' ); ?>

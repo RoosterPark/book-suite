@@ -13,9 +13,25 @@ if (!isset($content_width)) $content_width = 770;
  * @access public
  * @return void
  */
+
+/** Add SVG Support to media library
+ */
+function cc_mime_types( $mimes ){
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter( 'upload_mimes', 'cc_mime_types' );
+// Add SVG Thumbnails to media library grid
+
+function custom_admin_head() {
+	$css = '';
+	$css = 'td.media-icon img[src$=".svg"] { width: 100% !important; height: auto !important; }';
+	echo '<style type="text/css">'.$css.'</style>';
+}
 function upbootwp_setup() {
 
 	require 'inc/general/class-Upbootwp_Walker_Nav_Menu.php';
+	require 'inc/general/class-Upbootwp_Walker_Nav_Footer_Menu.php';
 
 	load_theme_textdomain('upbootwp', get_template_directory().'/languages');
 
@@ -43,14 +59,19 @@ function upbootwp_setup() {
     add_image_size( 'careers-featured-narrow', 2500, 700, array( 'left', 'top' ) );
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'homepage-thumb', 300, 200, array( 'left', 'top' )  ); // Hard crop left top
-	add_image_size( 'homepage-thumb-port', 350, 350,  array( 'left', 'top' ));
-	add_image_size( 'homepage-thumb-land', 350, 188,  array( 'left', 'top' ));
+	add_image_size( 'success-stories-land-1024', 1024, 510,  array( 'left', 'center' ));
+	add_image_size( 'success-stories-land', 776, 381,  array( 'left', 'center' ));
+	add_image_size( 'success-stories-port', 574, 596,  array( 'left', 'top' ));
 	
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu - Global', 'Bootstrap WP Primary' ),
-		'footer' => __( 'Footer Menu - Global', 'Bootstrap WP Footer' ),
-		'footer-aux' => __( 'Footer Auxiliary Menu - Global', 'Bootstrap WP Auxiliary Footer' )
+		'primary' => __( 'Primary Menu - Global', 'Bootstrap WP Primary' )
+// 		'footer' => __( 'Footer Menu - Global', 'Footer Navigation' ),
+// 		'footer-aux' => __( 'Footer Aux - Global', 'Footer Aux Navigation' ),	
+	
 	));
+	
+	register_nav_menu('footer_navigation', 'Footer navigation');
+	register_nav_menu('footer_aux_navigation', 'Footer aux navigation');
 
 	/**
 	 * Enable support for Post Formats
@@ -75,7 +96,7 @@ function upbootwp_setup() {
 add_action( 'init', 'themes_taxonomy');
 function themes_taxonomy() {
 register_taxonomy(
-    'careers','careers',
+    'success_stories','success_stories',
     array(
         'hierarchical'      => true,
         'label'             => 'Categories',
@@ -86,59 +107,107 @@ register_taxonomy(
     ); 
 } 
 
-add_action( 'init', 'codex_career_init' );
+// add_action( 'init', 'codex_careers_init' );
 
-function codex_career_init() {
-    $labels = array(
-        'name'               => _x( 'Careers', 'post type general name'),
-        'singular_name'      => _x( 'Careers Item', 'post type singular name'),
-        'menu_name'          => _x( 'Careers', 'admin menu'),
-        'name_admin_bar'     => _x( 'Careers', 'add new on admin bar'),
-        'add_new'            => _x( 'New', 'Career News Item'),
-        'add_new_item'       => __( 'Add New Career News Item'),
-        'new_item'           => __( 'New Career Item'),
-        'edit_item'          => __( 'Edit Careers Item'),
-        'view_item'          => __( 'View Careers Item'),
-        'all_items'          => __( 'All Careers'),
-        'search_items'       => __( 'Search Careers'),
-        'parent_item_colon'  => __( 'Parent Careers:'),
-        'not_found'          => __( 'No Careers Found.'),
-        'not_found_in_trash' => __( 'No Careers Found in Trash.')
-    );
+// function codex_careers_init() {
+//     $labels = array(
+//         'name'               => _x( 'Careers', 'post type general name'),
+//         'singular_name'      => _x( 'Careers Item', 'post type singular name'),
+//         'menu_name'          => _x( 'Careers', 'admin menu'),
+//         'name_admin_bar'     => _x( 'Careers', 'add new on admin bar'),
+//         'add_new'            => _x( 'New', 'Careers Item'),
+//         'add_new_item'       => __( 'Add New Careers Item'),
+//         'new_item'           => __( 'New Careers Item'),
+//         'edit_item'          => __( 'Edit Careers Item'),
+//         'view_item'          => __( 'View Careers Item'),
+//         'all_items'          => __( 'All Careers'),
+//         'search_items'       => __( 'Search Careers'),
+//         'parent_item_colon'  => __( 'Parent Careers:'),
+//         'not_found'          => __( 'No Careers Found.'),
+//         'not_found_in_trash' => __( 'No Careers Found in Trash.')
+//     );
 
-    $args = array(
-        'labels'             => $labels,
-        'public'             => true,
-        'publicly_queryable' => true,
-        'show_ui'            => true,
-        'show_in_menu'       => true,
-        'query_var'          => true,
-        'rewrite' => array( 'slug' => 'careers','with_front' => true),
-        'capability_type'    => 'post',
-        'has_archive'        => true,
-        'hierarchical'       => true,
-        'menu_position'      => 5,
-        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
-        'taxonomies'        => array('post_tag') // this is IMPORTANT
-    );
-    register_post_type( 'careers', $args ); 
+//     $args = array(
+//         'labels'             => $labels,
+//         'public'             => true,
+//         'publicly_queryable' => true,
+//         'show_ui'            => true,
+//         'show_in_menu'       => true,
+//         'query_var'          => true,
+//         'rewrite' => array( 'slug' => 'careers','with_front' => true),
+//         'capability_type'    => 'post',
+//         'has_archive'        => true,
+//         'hierarchical'       => true,
+//         'menu_position'      => 5,
+//         'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+//         'taxonomies'        => array('post_tag') // this is IMPORTANT
+//     );
+//     register_post_type( 'careers', $args ); 
+// }
+
+add_action( 'init', 'create_posttype' );
+
+function create_posttype() {
+	$labels = array(
+			'name' => __( 'Success Stories' ),
+			'singular_name' => __( 'Success Story' ),
+	        'name'               => _x( 'Success Stories', 'post type general name'),
+	        'singular_name'      => _x( 'Success Story', 'post type singular name'),
+	        'menu_name'          => _x( 'Success Stories', 'admin menu'),
+	        'name_admin_bar'     => _x( 'Success Stories', 'add new on admin bar'),
+	        'add_new'            => _x( 'New', 'Success Story Item'),
+	        'add_new_item'       => __( 'Add New Success Story Item'),
+	        'new_item'           => __( 'New Success Stories Item'),
+	        'edit_item'          => __( 'Edit Success Stories Item'),
+	        'view_item'          => __( 'View Success Stories Item'),
+	        'all_items'          => __( 'All Success Stories'),
+	        'search_items'       => __( 'Search Success Stories'),
+	        'parent_item_colon'  => __( 'Parent Success Stories:'),
+	        'not_found'          => __( 'No Success Stories Found.'),
+	        'not_found_in_trash' => __( 'No Success Stories Found in Trash.')
+	);
+	$args = array(
+			'labels' 			 => $labels,
+			'public' 			 => true,
+			'has_archive' 		 => true,
+	        'publicly_queryable' => true,
+	        'show_ui'            => true,
+	        'show_in_menu'       => true,
+	        'query_var'          => true,
+			'rewrite' 			 => array('slug' => 'success_stories'),
+	        'capability_type'    => 'post',
+	        'has_archive'        => true,
+	        'hierarchical'       => true,
+	        'menu_position'      => 5,
+	        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+	        'taxonomies'        => array('post_tag') // this is IMPORTANT
+	);
+	register_post_type( 'success_stories', $args);
 }
 
 
+// Show posts of 'post', 'page' and 'movie' post types on home page
+add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 
-
-add_filter('pre_get_posts', 'query_post_type');
-function query_post_type($query) {
-  if(is_category() || is_tag()) {
-    $post_type = get_query_var('post_type');
-    if($post_type)
-        $post_type = $post_type;
-    else
-        $post_type = array('post','careers', 'nav_menu_item');
-        $query->set('post_type',$post_type);
-    return $query;
-    }
+function add_my_post_types_to_query( $query ) {
+	if ( is_home() && $query->is_main_query() )
+		$query->set( 'post_type', array( 'post', 'page', 'success_stories' ) );
+	return $query;
 }
+
+
+// add_filter('pre_get_posts', 'query_post_type');
+// function query_post_type($query) {
+//   if(is_category() || is_tag()) {
+//     $post_type = get_query_var('post_type');
+//     if($post_type)
+//         $post_type = $post_type;
+//     else
+//         $post_type = array('post','careers', 'nav_menu_item');
+//         $query->set('post_type',$post_type);
+//     return $query;
+//     }
+// }
 
 
 function new_excerpt_more( $more ) {

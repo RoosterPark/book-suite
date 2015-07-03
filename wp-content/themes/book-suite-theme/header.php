@@ -24,11 +24,23 @@
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo esc_url( get_template_directory_uri() ); ?>/ico/apple-touch-icon-57-precomposed.png">
 
 <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/ico/favicon.png">
+<style>
+	.nav > li > a:hover {
+	    background: url('<?php echo bloginfo('url'); ?>/wp-content/uploads/2015/06/nav-bg.png') repeat-x scroll 0 35px;
+	}
+</style>
 </head>
 
 <body <?php body_class(); ?>>
 <?php do_action( 'before' ); ?>
+
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="language-bar">
+	<div class="container-fluid">
+		<div class="language-menu navbar-right"><i class="fa fa-language"></i><span>Language Menu</span><i class="fa fa-angle-down"></i>
+		</div>
+	</div>
+</div>	
 	<div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -39,7 +51,7 @@
 		<?php if( get_header_image() != '' ) : ?>
 		
 		<div id="logo">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="img-responsive" src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
 		</div><!-- end of #logo -->
 		
 		<?php endif; // header image was removed ?>
@@ -59,13 +71,15 @@
 						  'menu_class' => 'nav navbar-nav navbar-right',
 						  'fallback_cb' => '',
                           'menu_id' => 'main-menu',
-                          'walker' => new Upbootwp_Walker_Nav_Menu()); 
+							'walker' => new Upbootwp_Walker_Nav_Menu()
+			); 
 			wp_nav_menu($args);
 			?>
+			
 	</div><!-- container -->
 </nav>
 <?php if( is_home() ) { ?> 
-			<?php get_template_part('index-featured-image'); ?>
-		<?php } ?>
+	<?php get_template_part('index-featured-image'); ?>
+<?php } ?>
 <!-- Start: main .content-area -->
 <main id="main" class="content-area site-main" role="main">
