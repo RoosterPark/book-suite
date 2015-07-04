@@ -1,5 +1,10 @@
 // JavaScript Document
 jQuery(document).ready(function() {
+	//test for touch events support and if not supported, attach .no-touch class to the HTML tag.
+	 
+	if (!("ontouchstart" in document.documentElement)) {
+	document.documentElement.className += " no-touch";
+	}
 	//Add Bootstrap button styling to Main Nav Links
 	
 	jQuery('.request-btn a').addClass('btn btn-primary');
