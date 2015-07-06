@@ -39,11 +39,11 @@ class Footernav_Walker extends Walker_Nav_Menu
 			// the following if... statement basically ignores the first menu item
 			// (so we don't start the list with a pipe):
 			if($item->menu_order>=2) {
-			$item_output .= ' | '; }
-					$item_output .= "<a $attributes>"
+			$item_output .= ' '; }
+					$item_output .= "<li><a $attributes>"
 					. $args->link_before
 					. $title
-					. '</a>'
+					. '</a></li>'
 					. $args->link_after
 					. $args->after;
 					// Since $output is called by reference we don't need to return anything.

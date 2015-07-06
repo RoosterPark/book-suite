@@ -62,8 +62,18 @@
 		</div>
 		
 		<?php 
+			$args = array('theme_location' => 'primary-desktop', 
+						  'container_class' => 'navbar-desktop', 
+						  'menu_class' => 'nav navbar-nav navbar-right',
+						  'fallback_cb' => '',
+                          'menu_id' => 'main-desktop-menu',
+							'walker' => new Upbootwp_Walker_Nav_Menu()
+			); 
+			wp_nav_menu($args);
+			?>
+		<?php 
 			$args = array('theme_location' => 'primary', 
-						  'container_class' => 'navbar-collapse collapse', 
+						  'container_class' => 'navbar-collapse collapse mobile', 
 						  'menu_class' => 'nav navbar-nav navbar-right',
 						  'fallback_cb' => '',
                           'menu_id' => 'main-menu',

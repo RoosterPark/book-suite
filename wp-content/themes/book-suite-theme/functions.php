@@ -64,8 +64,8 @@ function upbootwp_setup() {
 	add_image_size( 'success-stories-port', 574, 596,  array( 'left', 'top' ));
 	
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu - Global', 'Bootstrap WP Primary' )
-// 		'footer' => __( 'Footer Menu - Global', 'Footer Navigation' ),
+		'primary' => __( 'Primary - Mobile - Menu - Global', 'Bootstrap WP Primary' ),
+ 		'primary-desktop' => __( 'Primary - Desktop - Global', 'Desktop Navigation' ),
 // 		'footer-aux' => __( 'Footer Aux - Global', 'Footer Aux Navigation' ),	
 	
 	));
@@ -371,7 +371,7 @@ function upbootwp_breadcrumbs() {
 
 // Register custom footer and sidbar widget widgets
 register_sidebar( array(
-	'name' => __( 'Global Footer 1', 'tto' ),
+	'name' => __( 'Global Footer 1  - Left', 'tto' ),
 	'id' => 'sidebar-4',
 	'description' => __( 'Found at the bottom of every page (except 404s, optional homepage and full width) as the footer. Left Side.', 'tto' ),
 	'before_widget' => '<aside id="%1$s" class="col-md-4 col-lg-4 center-block widget %2$s"><div class="panel panel-default"><div class="panel-body">',
@@ -381,7 +381,7 @@ register_sidebar( array(
 ) );
 
 register_sidebar( array(
-	'name' => __( 'Global Footer 2', 'tto' ),
+	'name' => __( 'Global Footer 2  - Middle', 'tto' ),
 	'id' => 'sidebar-5',
 	'description' => __( 'Found at the bottom of every page (except 404s, optional homepage and full width) as the footer. Center.', 'tto' ),
 	'before_widget' => '<aside id="%1$s" class="col-md-4 col-lg-4 center-block widget %2$s"><div class="panel panel-default"><div class="panel-body">',
@@ -391,43 +391,13 @@ register_sidebar( array(
 ) );
 
 register_sidebar( array(
-	'name' => __( 'Global Footer 3', 'tto' ),
+	'name' => __( 'Global Footer 3 - Right', 'tto' ),
 	'id' => 'sidebar-6',
 	'description' => __( 'Found at the bottom of every page (except 404s, optional homepage and full width) as the footer. Right Side.', 'tto' ),
-	'before_widget' => '<aside id="%1$s" class="col-md-4 col-lg-4 center-block widget %2$s"><div class="panel panel-default"><div class="panel-body">',
-	'after_widget' => "</div></div></aside>",
-	'before_title' => '<div class="panel-heading"><h3 class="panel-title">',
-	'after_title' => '</div></h3>',
-) );
-
-register_sidebar( array(
-	'name' => __( 'Global Footer - Left', 'tto' ),
-	'id' => 'sidebar-7',
-	'description' => __( 'Found at the bottom of every page (except 404s, optional homepage and full width) as the footer. Left Side.', 'tto' ),
-	'before_widget' => '<aside id="%1$s" class="col-md-4 col-lg-4 center-block widget %2$s"><div class="panel panel-default">',
-	'after_widget' => "</div></div></aside>",
-	'before_title' => '<div class="panel-heading"><h3 class="panel-title">',
-	'after_title' => '</h3></div><div class="panel-body">',
-) );
-
-register_sidebar( array(
-	'name' => __( 'Global Footer - Middle', 'tto' ),
-	'id' => 'sidebar-8',
-	'description' => __( 'Found at the bottom of every page (except 404s, optional homepage and full width) as the footer. Center.', 'tto' ),
-	'before_widget' => '<aside id="%1$s" class="col-md-4 col-lg-4 center-block widget %2$s"><div class="panel panel-default">',
-	'after_widget' => "</div></div></aside>",
-	'before_title' => '<div class="panel-heading"><h3 class="panel-title">',
-	'after_title' => '</h3></div><div class="panel-body">',
-) );
-
-register_sidebar( array(
-	'name' => __( 'Global Footer - Right', 'tto' ),
-	'id' => 'sidebar-9',
-	'description' => __( 'Found at the bottom of every page (except 404s, optional homepage and full width) as the footer. Right Side.', 'tto' ),
-	'before_widget' => '<aside id="%1$s" class="col-md-4 col-lg-4 center-block widget %2$s"><div class="panel panel-default">',
-	'after_widget' => "</div></div></aside>",
-	'before_title' => '<div class="panel-heading"><h3 class="panel-title">',
-	'after_title' => '</h3></div><div class="panel-body">',
+	'before_widget' => '<aside id="%1$s" class="right widget %2$s">',
+	'after_widget' => "</aside>",
+	'before_title' => '<h3 class="panel-title">',
+	'after_title' => '</h3>',
 ) );
 
 // Post Attachment image function. Image URL for CSS Background.

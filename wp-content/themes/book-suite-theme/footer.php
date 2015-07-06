@@ -14,7 +14,7 @@
 	 	<section id="welcome" class="sub-section drk-grey">
 	 		<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-sm-7 col-md-6 col-lg-5">
 				<?
 				$wp_query = NULL;
 				$wp_query = new WP_Query(array('post_type' => 'post'));
@@ -24,6 +24,7 @@
 					'theme_location'  => 'footer_navigation',
 					'container'       => 'nav',
 					'container_id'    => 'footerNav',
+					'menu_class' => 'footer-nav-main',
 					'depth' => '1',
 					'walker' => new Footernav_Walker
 				);
@@ -33,6 +34,7 @@
 						'theme_location'  => 'footer_aux_navigation',
 						'container'       => 'nav',
 						'container_id'    => 'footerAuxNav',
+						'menu_class' => 'footer-nav-aux',
 						'depth' => '1',
 						
 						'walker' => new Footernav_Walker
@@ -41,11 +43,18 @@
 				?>
 				
 					</div>
-		    		<div class="col-md-6">
-						<?php do_action( 'upbootwp_credits' ); ?>
-						&copy; <?php bloginfo('name'); ?> <?php the_time('Y') ?>
-						<span class="sep"> | </span>
-						<?php printf(__('Theme: %1$s by %2$s.', 'IXXmpTheme 3.0' ), 'ImpTheme 3.0', '<a href="'.get_site_url().'" rel="designer">mPeternell.net</a>'); ?>
+		    		<div class="col-sm-5 col-md-6 col-lg-7">
+						<!-- #footer-widgets -->	
+						<?php
+						/* Global footer sidebar */
+						if ( ! is_404() ) : ?>
+						<div id="footer-widgets" class="footer-widgets four">
+							<?php if ( is_active_sidebar( 'sidebar-6') ) : ?>
+								<?php dynamic_sidebar( 'sidebar-6' ); ?>
+							<?php endif; ?>
+						</div>
+						
+						<?php endif; ?>
 					</div>
 				</div>
 			</div>

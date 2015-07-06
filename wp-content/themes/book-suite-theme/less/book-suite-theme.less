@@ -22,6 +22,9 @@
 @global-section-padding:  3.5555% 8%;
 @global-max-width: 1366px;
 
+@footer-link-color: #fff;
+@footer-link-color-hover: #a2a2a2;
+
 /***************************************************
  * 
  *  WP CSS Class Name styling
@@ -60,10 +63,6 @@ p { margin: 0 0 16px;}
  * 
  **************************************************/
 
-// .no-touch button.navbar-toggle:hover,.no-touch button.navbar-toggle:active {
-   // background-color:#001b46;
-// }
-
 .language-bar {
     background-color: @global-color-lang-bar;
     .language-menu {
@@ -81,20 +80,28 @@ p { margin: 0 0 16px;}
 }
 
 
-.navbar-collapse.collapse {
-  padding-bottom: 0;
-  padding-top:0;
+.navbar-desktop {
+	float: right;
+	margin: 0;
+	padding: 1.2% 0;
+	width: auto;
 }
 
 .navbar {
-	.collapse.collapse.in {
+	.mobile	 {
 		.navbar-nav {
 		  margin: 0 -15px;
+		  display: none;
 		}
-		background-color: @global-color-med-blue;
+		
 		li {
 	  		background-color: @global-color-med-blue;
 	  		border-bottom: 1px solid #486ea1;
+	  		a {
+				padding: 20px 40px;
+				font-weight: normal;
+				font-size: 18px;
+	  		}
 	  	}
 		.login-btn {
 			background-color: @global-color-lt-blue;
@@ -126,9 +133,9 @@ p { margin: 0 0 16px;}
 }
 
 .navbar-collapse {
-	&.collapse {
-	    padding-bottom: 1.2%;
-	    padding-top: 1.2%;
+	&.collapse.in {
+	    padding-bottom: 0;
+	    padding-top: 0;
 	}
 }
 
@@ -446,7 +453,11 @@ p { margin: 0 0 16px;}
 		}
 	}
 }
-
+/*********************************************************
+ * 
+ * Footer Nav Styling
+ * 
+ ********************************************************/
 footer {
 	.container-fluid {
 		max-width: @global-max-width;
@@ -461,6 +472,57 @@ footer {
 		    background-color: #ccc;
 		}
 	}
+}
+
+.footer-nav-main, .footer-nav-aux {
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    width: 100%;
+    > li {
+		display: table-cell;
+		float: left;
+		width: 33.333%;
+	}
+    a {
+	    color:  @footer-link-color;
+	    display: block;
+	    padding: 5px 0;
+	    text-align: left;
+    	&:hover {
+    		color: @footer-link-color-hover;
+    	}
+    }
+}
+
+.footer-nav-aux {
+	margin-top: 6%;
+	    a {
+	    color: @footer-link-color-hover;
+	    display: block;
+	    padding: 5px 0;
+	    text-align: left;
+    	&:hover {
+    		color: @footer-link-color;
+    	}
+    }
+}
+
+.footer-widgets {
+	.widget {
+		&.right {
+		    text-align: right;
+		}
+	}
+}
+
+.credits {
+    margin-top: 3%;
+    text-align: right;
+}
+
+.footer-logo {
+    margin: 1% 0;
 }
 
 
@@ -542,6 +604,92 @@ img.aligncenter {
 	margin-bottom: 1.2em;
 }
 
+
+.social-icons a {
+	color: @global-color-drk-grey;
+	font-size: 22px;
+	line-height: 40px;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	height: 40px;
+	width: 40px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border-radius: 20px;
+	background-color: #DADADA;
+	-webkit-transition: background-color  0.5s;
+     -moz-transition: background-color  0.5s;
+       -o-transition: background-color  0.5s;
+          transition: background-color  0.5s;
+}
+#footer-area .social-icons a {
+  margin-right: 7px;
+  background-color: @global-color-white;
+  
+}
+
+.social-icons {
+	a.facebook:hover {
+	  background-color: #4265b9 !important;
+	}
+	a.twitter:hover {
+	  background-color: #55ACEE !important;
+	}
+	a.dribbble:hover {
+	  background-color: #ea4c89 !important;
+	}
+	a.flickr:hover {
+	  background-color: #ff0084 !important;
+	}
+	a.googleplus:hover {
+	  background-color: #d62408 !important;
+	}
+	a.skype:hover {
+	  background-color: #0bbff2 !important;
+	}
+	a.pinterest:hover {
+	  background-color: #c31e26 !important;
+	}
+	a.linkedin:hover {
+	  background-color: #005987 !important;
+	}
+	a.vimeo:hover {
+	  background-color: #1bb6ec !important;
+	}
+	a.tumblr:hover {
+	  background-color: #35506b !important;
+	}
+	a.youtube:hover {
+	  background-color: #df3333 !important;
+	}
+	a.instagram:hover {
+	  background-color: #F95B60 !important;
+	}
+	a.rss:hover {
+	  background-color: #f39c12 !important;
+	}
+	a.foursquare:hover {
+	  background-color: #2398C9 !important;
+	}
+	a.soundcloud:hover {
+	  background-color: #F50 !important;
+	}
+	a.github:hover {
+	  background-color: #4183C4 !important;
+	}
+	.fa-googleplus:before {
+	  content: "\f0d5";
+	}
+	.fa-vimeo:before {
+	  content: "\f194";
+	}	
+}
+
+
+
+
+
 @media (min-width: 1401px) {
 	.success {
 		.success-content .wp-post-image {
@@ -550,7 +698,7 @@ img.aligncenter {
 	}
 }
 
-@media (min-width: 1281px) {
+@media (max-width: 1281px) and (min-width: 1025px) {
 	.success {
 		.success-content .wp-post-image {
 			height: 249px; //233px;
@@ -566,7 +714,13 @@ img.aligncenter {
 }
 
 @media (max-width: 980px) {
-
+	.navbar-desktop {
+		display: none;
+	}
+	.navbar .mobile .navbar-nav {
+	    display: block;
+	}
+	
 	div#logo {
 		margin-left: 15px;
 	}
@@ -583,8 +737,6 @@ img.aligncenter {
 		.success-content .wp-post-image {
 			height: auto;
 		}
-	}
-	.success {
 		.col-sm-12 {
 			margin-bottom: 4%;
 		}
@@ -594,7 +746,10 @@ img.aligncenter {
 		width: 33.3333%;
 		padding-bottom: 30px;
 	}
-	
+	.footer-nav-aux {
+	  margin-top: 3%;
+	  margin-bottom: 3%;
+	}
 }
 
 @media (max-width: 768px) {
@@ -655,6 +810,12 @@ img.aligncenter {
 		font-size: 16px;
 		line-height: 1.3333333;
 		border-radius: 2px;
+	}
+	.footer-nav-main > li {
+		width: 50%;
+	}
+	.footer-nav-aux > li {
+		width: 50%;
 	}
 }
 
