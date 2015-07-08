@@ -19,6 +19,7 @@
 @global-color-med-grey: #4A4A4A;
 @global-color-drk-grey: #3B3B3B;
 
+@global-row-margin-bottom: 6%;
 @global-section-padding:  3.5555% 8%;
 @global-max-width: 1366px;
 
@@ -149,6 +150,74 @@ p { margin: 0 0 16px;}
 	margin-top: 27px;
     max-width: 150px;
     width: 100%;
+}
+
+/***************************************************
+ * 
+ *  Images and SVG Styling
+ * 
+ **************************************************/
+
+.svg {
+    height: 40px;
+    width: 40px;
+}
+
+/***************************************************
+ * 
+ *  Breadcrumb Styling
+ * 
+ **************************************************/
+
+.breadcrumb {
+	margin-bottom: 0px;
+}
+
+/***************************************************
+ * 
+ *  Tab Styling
+ * 
+ **************************************************/
+
+.tab-wrapper {
+	background-color: @global-color-lt-grey;
+	.nav-tabs {
+	    margin: 0 auto;
+	    max-width: 400px;
+	    width: 100%;
+	     a {
+		    color: #3c3c3c;
+		    font-weight: 600;
+		    padding: 10px 60px;
+		    -webkit-transition: background 300ms ease-in;
+			-moz-transition: background 300ms ease-in;
+			-ms-transition: background 300ms ease-in;
+			-o-transition: background 300ms ease-in;
+			transition: background 300ms ease-in;
+		    &:hover {
+		    	border-bottom: 5px solid @global-color-white;
+		    }
+		}
+		li {
+		    display: inline-block;
+		    margin: 0;
+		    max-width: 185px;
+		    width: 100%;
+			&.active {
+				
+				a {
+					border-bottom: 5px solid @global-color-med-grey;
+					&:hover {
+						border-bottom: 5px solid @global-color-med-grey;
+					}
+				}
+			}
+			&:last-child {
+				margin-left: 20px;
+			}
+			
+		}
+	}	
 }
 
 /***************************************************
@@ -291,6 +360,23 @@ p { margin: 0 0 16px;}
  *  Main Content Area
  * 
  **************************************************/
+.prod-design {
+	.row {
+	    margin-bottom: @global-row-margin-bottom;
+	    &:last-child {
+	    	margin-bottom: 0;
+	    }
+	}
+	.icon {
+	    float: left;
+	    padding: 0 5% 0 0;
+	    width: 15%;
+	}
+	.content {
+	    float: left;
+	    width: 85%;
+	}
+}
 
 .solutions {
 	.col-md-4 {
@@ -309,10 +395,6 @@ p { margin: 0 0 16px;}
 	.cta-link {
 	    margin: 6% auto 0;
 	    text-align: center;
-	}
-	.svg {
-	    height: 40px;
-	    width: 40px;
 	}
 }
 
@@ -727,10 +809,10 @@ img.aligncenter {
 	.solutions {
 		margin-top: 6%;
 		.col-md-4 {
-			margin-bottom: 6%;
+			margin-bottom: @global-row-margin-bottom;
 		}
 		.cta-link {
-			margin: 6% auto 6%;
+			margin: 6% auto @global-row-margin-bottom;
 		}
 	}
 	.success {
@@ -772,6 +854,31 @@ img.aligncenter {
 }
 
 @media (max-width: 480px) {
+	
+	.tab-wrapper {
+		.nav-tabs {
+			li {
+				display: inline;
+				margin: 0;
+				max-width: inherit;
+				width: 100%;
+				&:last-child {
+				  margin-left: 0;
+				}
+				a {
+					padding: 15px 15px;
+					border-bottom: 5px solid #ffffff;
+				}
+				&.active {
+					a {
+					    background-color: #bbb;
+					    border-bottom: 5px solid #4a4a4a;
+					}
+				}
+			}			
+		}
+
+	}
 	.site-hero {
 		.jumbotron-img {
 			max-width: 225%;
@@ -800,7 +907,7 @@ img.aligncenter {
 	}
 	.solutions {
 		.col-md-4 {
-			margin-bottom: 6%;
+			margin-bottom: @global-row-margin-bottom;
 			width: 100%;
 		}		
 	}

@@ -109,6 +109,64 @@ p {
 }
 /***************************************************
  * 
+ *  Images and SVG Styling
+ * 
+ **************************************************/
+.svg {
+  height: 40px;
+  width: 40px;
+}
+/***************************************************
+ * 
+ *  Breadcrumb Styling
+ * 
+ **************************************************/
+.breadcrumb {
+  margin-bottom: 0px;
+}
+/***************************************************
+ * 
+ *  Tab Styling
+ * 
+ **************************************************/
+.tab-wrapper {
+  background-color: #f9f9f9;
+}
+.tab-wrapper .nav-tabs {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+.tab-wrapper .nav-tabs a {
+  color: #3c3c3c;
+  font-weight: 600;
+  padding: 10px 60px;
+  -webkit-transition: background 300ms ease-in;
+  -moz-transition: background 300ms ease-in;
+  -ms-transition: background 300ms ease-in;
+  -o-transition: background 300ms ease-in;
+  transition: background 300ms ease-in;
+}
+.tab-wrapper .nav-tabs a:hover {
+  border-bottom: 5px solid #ffffff;
+}
+.tab-wrapper .nav-tabs li {
+  display: inline-block;
+  margin: 0;
+  max-width: 185px;
+  width: 100%;
+}
+.tab-wrapper .nav-tabs li.active a {
+  border-bottom: 5px solid #4a4a4a;
+}
+.tab-wrapper .nav-tabs li.active a:hover {
+  border-bottom: 5px solid #4a4a4a;
+}
+.tab-wrapper .nav-tabs li:last-child {
+  margin-left: 20px;
+}
+/***************************************************
+ * 
  *  Button Styling
  * 
  **************************************************/
@@ -226,6 +284,21 @@ p {
  *  Main Content Area
  * 
  **************************************************/
+.prod-design .row {
+  margin-bottom: 6%;
+}
+.prod-design .row:last-child {
+  margin-bottom: 0;
+}
+.prod-design .icon {
+  float: left;
+  padding: 0 5% 0 0;
+  width: 15%;
+}
+.prod-design .content {
+  float: left;
+  width: 85%;
+}
 .solutions .col-md-4 {
   text-align: center;
 }
@@ -241,10 +314,6 @@ p {
 .solutions .cta-link {
   margin: 6% auto 0;
   text-align: center;
-}
-.solutions .svg {
-  height: 40px;
-  width: 40px;
 }
 .story .wp-post-image,
 .video .wp-post-image {
@@ -648,6 +717,23 @@ img.aligncenter {
   }
 }
 @media (max-width: 480px) {
+  .tab-wrapper .nav-tabs li {
+    display: inline;
+    margin: 0;
+    max-width: inherit;
+    width: 100%;
+  }
+  .tab-wrapper .nav-tabs li:last-child {
+    margin-left: 0;
+  }
+  .tab-wrapper .nav-tabs li a {
+    padding: 15px 15px;
+    border-bottom: 5px solid #ffffff;
+  }
+  .tab-wrapper .nav-tabs li.active a {
+    background-color: #bbb;
+    border-bottom: 5px solid #4a4a4a;
+  }
   .site-hero .jumbotron-img {
     max-width: 225%;
   }

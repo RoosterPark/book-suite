@@ -55,8 +55,8 @@ function upbootwp_setup() {
 	 */
 	add_theme_support( 'post-thumbnails', array( 'post' ) );          // Posts only
 	add_theme_support( 'post-thumbnails', array( 'page' ) );
-	add_image_size( 'careers-featured', 2500, 1400, true );
-    add_image_size( 'careers-featured-narrow', 2500, 700, array( 'left', 'top' ) );
+	add_image_size( 'featured-image-landscape', 1920, 600, true );
+    //add_image_size( 'careers-featured-narrow', 2500, 700, array( 'left', 'top' ) );
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'homepage-thumb', 300, 200, array( 'left', 'top' )  ); // Hard crop left top
 	add_image_size( 'success-stories-land-1024', 1024, 510,  array( 'left', 'center' ));
