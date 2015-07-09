@@ -307,12 +307,19 @@ p { margin: 0 0 16px;}
 	overflow: auto;
     position: relative;
     margin-top: @navbar-height;
+    background-color: black;
     h1 {
 		margin-bottom: 24px;
 	}
     p {
 		font-weight: normal;
 		max-width: 475px;
+	}
+	.jumbotron-img {
+	    height: auto;
+	    margin: 0 auto;
+	    max-width: 1920px;
+	    width: 100%;
 	}
 }
 
@@ -340,7 +347,7 @@ p { margin: 0 0 16px;}
 	background: -webkit-linear-gradient(top, rgba(16, 17, 19, 0.4), rgba(16, 17, 19, 0.4) 100%);
 	background: linear-gradient(to bottom, rgba(16, 17, 19, 0.4), rgba(16, 17, 19, 0.4) 100%);
 	.jumbo-btn-group {
-		margin: 5% 0 0 7%;
+		margin: 5% 0 0 0;
 		.btn {
 		    margin-right: 1.5%;
 		}		
@@ -367,14 +374,25 @@ p { margin: 0 0 16px;}
 	    	margin-bottom: 0;
 	    }
 	}
+	.row .text-center {
+		margin-bottom: @global-row-margin-bottom;
+	}
 	.icon {
-	    float: left;
-	    padding: 0 5% 0 0;
-	    width: 15%;
+		float: left;
+		margin: 0 10px 0 0;
+		width: 45px;
+		height: 45px;
 	}
 	.content {
 	    float: left;
 	    width: 85%;
+	}
+	.h5 {
+	    margin-top: 0;
+	}
+	.badge {
+	    font-weight: 600;
+	    margin: 0 3px;
 	}
 }
 
@@ -796,6 +814,19 @@ img.aligncenter {
 }
 
 @media (max-width: 980px) {
+
+	.prod-design {
+		.row {
+			 margin-bottom: 0;
+			.text-center {
+				margin-bottom: 15%;
+			}	
+		}
+		.features-box {
+		  overflow: auto;
+		  margin-bottom: 3%;
+		}	
+	}
 	.navbar-desktop {
 		display: none;
 	}
@@ -835,10 +866,30 @@ img.aligncenter {
 }
 
 @media (max-width: 768px) {
+	
+	.page-hero {
+		overflow-x: hidden;
+		img.jumbotron-img {
+			width: 125%;
+		}
+	}
+	.content-area {
+		.sub-section {
+		  	padding: 3.5555% 0%;
+		}	
+	}
 	.site-hero {
 		.jumbotron-img {
 			max-width: 145%;
 		}
+	}
+	.tab-wrapper {
+		border-bottom: 1px solid #ccc;
+	}
+	.prod-design {
+		h1, .h1 {
+			font-size: 20px;
+		}		
 	}
 	.site-hero .jumbotron .container-fluid {
 		margin-top: 4%;
@@ -854,7 +905,20 @@ img.aligncenter {
 }
 
 @media (max-width: 480px) {
+	.page-hero {
+		img.jumbotron-img {
+			width: 250%;
+		}
+	}
 	
+	h1, .h1 {
+	  font-size: 20px;
+	}
+	.prod-design {
+		.content {
+			width: 78%;
+		}
+	}
 	.tab-wrapper {
 		.nav-tabs {
 			li {

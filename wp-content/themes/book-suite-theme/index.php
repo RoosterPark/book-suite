@@ -18,7 +18,18 @@
 		    
 		    <?php if( is_home() ) { ?>
 				<section id="booking-solutions" class="sub-section white solutions">
-					<?php get_template_part('index-solutions'); ?>
+				
+					<div class="container-fluid">
+						<div class="row">
+							<?php get_template_part('index-solutions'); ?>
+						</div>
+						<div class="row">
+							<div class="col-md-12 cta-link">
+								<a class="btn btn-info btn-lg" role="button" href="#" title="#####">View Our Solutions</a>		
+							</div>
+						</div>
+					</div>
+					
 				</section>
 				<section class="img-divider">
 					<img src="/wp-content/uploads/2015/06/Laptop1920px.png" class="img-responsive bground-img"/>

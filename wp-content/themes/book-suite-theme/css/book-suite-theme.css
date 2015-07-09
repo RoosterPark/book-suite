@@ -238,6 +238,7 @@ p {
   overflow: auto;
   position: relative;
   margin-top: 72px;
+  background-color: black;
 }
 .page-hero h1 {
   margin-bottom: 24px;
@@ -245,6 +246,12 @@ p {
 .page-hero p {
   font-weight: normal;
   max-width: 475px;
+}
+.page-hero .jumbotron-img {
+  height: auto;
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
 }
 .section-hero {
   position: relative;
@@ -267,7 +274,7 @@ p {
   background: linear-gradient(to bottom, rgba(16, 17, 19, 0.4), rgba(16, 17, 19, 0.4) 100%);
 }
 .jumbotron .jumbo-btn-group {
-  margin: 5% 0 0 7%;
+  margin: 5% 0 0 0;
 }
 .jumbotron .jumbo-btn-group .btn {
   margin-right: 1.5%;
@@ -290,14 +297,25 @@ p {
 .prod-design .row:last-child {
   margin-bottom: 0;
 }
+.prod-design .row .text-center {
+  margin-bottom: 6%;
+}
 .prod-design .icon {
   float: left;
-  padding: 0 5% 0 0;
-  width: 15%;
+  margin: 0 10px 0 0;
+  width: 45px;
+  height: 45px;
 }
 .prod-design .content {
   float: left;
   width: 85%;
+}
+.prod-design .h5 {
+  margin-top: 0;
+}
+.prod-design .badge {
+  font-weight: 600;
+  margin: 0 3px;
 }
 .solutions .col-md-4 {
   text-align: center;
@@ -667,6 +685,16 @@ img.aligncenter {
   }
 }
 @media (max-width: 980px) {
+  .prod-design .row {
+    margin-bottom: 0;
+  }
+  .prod-design .row .text-center {
+    margin-bottom: 15%;
+  }
+  .prod-design .features-box {
+    overflow: auto;
+    margin-bottom: 3%;
+  }
   .navbar-desktop {
     display: none;
   }
@@ -702,8 +730,24 @@ img.aligncenter {
   }
 }
 @media (max-width: 768px) {
+  .page-hero {
+    overflow-x: hidden;
+  }
+  .page-hero img.jumbotron-img {
+    width: 125%;
+  }
+  .content-area .sub-section {
+    padding: 3.5555% 0%;
+  }
   .site-hero .jumbotron-img {
     max-width: 145%;
+  }
+  .tab-wrapper {
+    border-bottom: 1px solid #ccc;
+  }
+  .prod-design h1,
+  .prod-design .h1 {
+    font-size: 20px;
   }
   .site-hero .jumbotron .container-fluid {
     margin-top: 4%;
@@ -717,6 +761,16 @@ img.aligncenter {
   }
 }
 @media (max-width: 480px) {
+  .page-hero img.jumbotron-img {
+    width: 250%;
+  }
+  h1,
+  .h1 {
+    font-size: 20px;
+  }
+  .prod-design .content {
+    width: 78%;
+  }
   .tab-wrapper .nav-tabs li {
     display: inline;
     margin: 0;
