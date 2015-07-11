@@ -106,45 +106,6 @@ register_taxonomy(
         )
     ); 
 } 
-
-// add_action( 'init', 'codex_careers_init' );
-
-// function codex_careers_init() {
-//     $labels = array(
-//         'name'               => _x( 'Careers', 'post type general name'),
-//         'singular_name'      => _x( 'Careers Item', 'post type singular name'),
-//         'menu_name'          => _x( 'Careers', 'admin menu'),
-//         'name_admin_bar'     => _x( 'Careers', 'add new on admin bar'),
-//         'add_new'            => _x( 'New', 'Careers Item'),
-//         'add_new_item'       => __( 'Add New Careers Item'),
-//         'new_item'           => __( 'New Careers Item'),
-//         'edit_item'          => __( 'Edit Careers Item'),
-//         'view_item'          => __( 'View Careers Item'),
-//         'all_items'          => __( 'All Careers'),
-//         'search_items'       => __( 'Search Careers'),
-//         'parent_item_colon'  => __( 'Parent Careers:'),
-//         'not_found'          => __( 'No Careers Found.'),
-//         'not_found_in_trash' => __( 'No Careers Found in Trash.')
-//     );
-
-//     $args = array(
-//         'labels'             => $labels,
-//         'public'             => true,
-//         'publicly_queryable' => true,
-//         'show_ui'            => true,
-//         'show_in_menu'       => true,
-//         'query_var'          => true,
-//         'rewrite' => array( 'slug' => 'careers','with_front' => true),
-//         'capability_type'    => 'post',
-//         'has_archive'        => true,
-//         'hierarchical'       => true,
-//         'menu_position'      => 5,
-//         'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
-//         'taxonomies'        => array('post_tag') // this is IMPORTANT
-//     );
-//     register_post_type( 'careers', $args ); 
-// }
-
 add_action( 'init', 'create_posttype' );
 
 function create_posttype() {
@@ -195,7 +156,6 @@ function add_my_post_types_to_query( $query ) {
 	return $query;
 }
 
-
 // add_filter('pre_get_posts', 'query_post_type');
 // function query_post_type($query) {
 //   if(is_category() || is_tag()) {
@@ -209,6 +169,11 @@ function add_my_post_types_to_query( $query ) {
 //     }
 // }
 
+// Add Class to All Excerpts in WordPress 
+add_filter( "the_excerpt", "add_class_to_excerpt" );
+function add_class_to_excerpt( $excerpt ) {
+	return str_replace('<p', '<p class="excerpt"', $excerpt);
+}
 
 function new_excerpt_more( $more ) {
 	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';

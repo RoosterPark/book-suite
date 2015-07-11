@@ -260,6 +260,18 @@ p {
   margin-top: 12%;
   text-align: center;
 }
+.section-hero .jumbotron-img {
+  height: auto;
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+}
+.jumbotron.filter {
+  background: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 17, 19, 0.4)), color-stop(100%, rgba(16, 17, 19, 0.4)));
+  background: -webkit-linear-gradient(top, rgba(16, 17, 19, 0.4), rgba(16, 17, 19, 0.4) 100%);
+  background: linear-gradient(to bottom, rgba(16, 17, 19, 0.4), rgba(16, 17, 19, 0.4) 100%);
+}
 .jumbotron {
   bottom: 0;
   left: 0;
@@ -268,10 +280,7 @@ p {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: #000;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 17, 19, 0.4)), color-stop(100%, rgba(16, 17, 19, 0.4)));
-  background: -webkit-linear-gradient(top, rgba(16, 17, 19, 0.4), rgba(16, 17, 19, 0.4) 100%);
-  background: linear-gradient(to bottom, rgba(16, 17, 19, 0.4), rgba(16, 17, 19, 0.4) 100%);
+  background: none;
 }
 .jumbotron .jumbo-btn-group {
   margin: 5% 0 0 0;
@@ -279,12 +288,117 @@ p {
 .jumbotron .jumbo-btn-group .btn {
   margin-right: 1.5%;
 }
-.jumbotron .container-fluid {
-  margin-top: 35px;
-  max-width: 1366px;
+.jumbotron .jumbo-caption {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 .jumbotron p {
   font-weight: normal;
+}
+.section-hero .jumbotron .black > h1,
+.section-hero .jumbotron .black > p {
+  color: black;
+}
+.section-hero .jumbotron h1 {
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+}
+.section-hero .jumbotron p {
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+}
+.section-hero .jumbotron .jumbo-btn-group {
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+}
+.section-hero .jumbotron .opt-1 h1 {
+  text-align: center;
+  top: 50%;
+}
+.section-hero .jumbotron .opt-2 h1 {
+  text-align: center;
+  top: 35%;
+}
+.section-hero .jumbotron .opt-2 p {
+  text-align: center;
+  top: 45%;
+}
+.section-hero .jumbotron .opt-2 .jumbo-btn-group {
+  text-align: center;
+  top: 50%;
+}
+.section-hero .jumbotron .opt-2 .jumbo-btn-group .btn {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.section-hero .jumbotron .opt-3 h1 {
+  text-align: center;
+  top: 15%;
+}
+.section-hero .jumbotron .opt-3 p {
+  text-align: center;
+  top: 30%;
+}
+.section-hero .jumbotron .opt-3 .jumbo-btn-group {
+  text-align: center;
+  top: 70%;
+}
+.section-hero .jumbotron .opt-3 .jumbo-btn-group.edit {
+  top: 39%;
+}
+.section-hero .jumbotron .opt-3 .jumbo-btn-group .btn {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.product-section.lt-grey,
+.product-section.white {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.product-section.white-alt {
+  padding-top: 4%;
+}
+.product-section.lt-blue {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.product-section.lt-blue.alt {
+  padding-top: 0;
+}
+.product-section .center-block {
+  margin-bottom: 23%;
+  margin-top: 23%;
+  max-width: 450px;
+}
+.product-section .excerpt {
+  margin-top: 3%;
+  text-align: center;
+}
+.product-section .jumbo-btn-group {
+  text-align: center;
+}
+.product-section .jumbo-btn-group.edit {
+  margin-top: 3%;
+  top: 0%;
+}
+.product-section .img-responsive.wp-post-image {
+  margin: 0 auto;
+}
+.product-section p {
+  max-width: 800px;
+  width: 100%;
+  margin: 0px auto;
 }
 /***************************************************
  * 
@@ -322,16 +436,21 @@ p {
 }
 .solutions .section-title {
   color: #3c3c3c;
+  font-size: 18px;
   font-weight: 600;
-  margin: 3% auto;
+  margin: 3% auto 5%;
 }
 .solutions p {
-  max-width: 250px;
   margin: 0 auto;
+  max-width: 250px;
+  text-align: center;
 }
 .solutions .cta-link {
   margin: 6% auto 0;
   text-align: center;
+}
+.solutions.lt-blue .svg {
+  color: #fff;
 }
 .story .wp-post-image,
 .video .wp-post-image {

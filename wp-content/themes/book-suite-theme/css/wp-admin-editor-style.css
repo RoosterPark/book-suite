@@ -2,3 +2,7 @@
     background-color: #ccc;
     padding: 5px;
 }
+
+.acf-image-uploader .has-image {
+    max-width: 50%;
+}
