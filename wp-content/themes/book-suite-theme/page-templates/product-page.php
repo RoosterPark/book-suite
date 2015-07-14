@@ -55,10 +55,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="propertyWebsites" class="section-hero" role="banner">
-	<?php if( get_field('property_websites_header') ): ?>
-	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('property_websites_header'); ?>" />
-	<?php endif; ?>		
+<section id="propertyWebsites" class="section-hero" role="banner">	
 	<div id="hero" class="jumbotron filter">
 		<div class="jumbo-caption opt-2">
 			<h1>Property Websites</h1>
@@ -68,11 +65,14 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+	<?php if( get_field('property_websites_header') ): ?>
+	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('property_websites_header'); ?>" />
+	<?php endif; ?>	
 </section>
-<section id="mobileFriendly" class="product-section lt-grey" role="banner">
+<section id="mobileFriendly" class="section-hero lt-grey" role="banner">
 	<div class="container-fluid">
 		<div class="row">
-       		<div class="col-lg-6">
+       		<div class="col-sm-6 col-md-6 col-lg-6">
        			<div class="center-block">
        			<?php	
 	            $args = array( 
@@ -90,7 +90,7 @@ get_header(); ?>
        			</div>
 				
        		</div>	
-       		<div class="col-lg-6">
+       		<div class="col-sm-6 col-md-6 col-lg-6">
 			<?php if( get_field('mobile_friendly_header') ): ?>
 				<img class=" img-responsive wp-post-image mobile-img" src="<?php the_field('mobile_friendly_header'); ?>" />
 			<?php endif; ?>	
@@ -121,20 +121,20 @@ get_header(); ?>
 	</div>
 </section>
 <section id="contentManagement" class="section-hero" role="banner">
-	<?php if( get_field('content_management_header') ): ?>
-	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('content_management_header'); ?>" />
-	<?php endif; ?>		
 	<div id="hero" class="jumbotron">
-		<div class="jumbo-caption">
+		<div class="jumbo-caption opt-4 black">
 			<h1>Content Management</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo sem nunc, eu varius diam rhoncus sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
 		</div>
 	</div>
+	<?php if( get_field('content_management_header') ): ?>
+	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('content_management_header'); ?>" />
+	<?php endif; ?>		
 </section>
 <section id="ctaArea" class="sub-section white solutions">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-sm-4 col-md-4">
 				<?php	
 	            $args = array( 
 	                'name' => 'interactive-maps'
@@ -150,7 +150,7 @@ get_header(); ?>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>
-       		<div class="col-md-4">
+       		<div class="col-sm-4 col-md-4">
 				<?php	
 	            $args = array( 
 	                'name' => 'booking-engine'
@@ -166,7 +166,7 @@ get_header(); ?>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>	
-       		<div class="col-md-4">
+       		<div class="col-sm-4 col-md-4">
 				<?php	
 	            $args = array( 
 	                'name' => 'analytic-reporting'
@@ -199,7 +199,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="forcastFuture" class="product-section white">
+<section id="forcastFuture" class="section-hero  white-alt">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
@@ -218,16 +218,20 @@ get_header(); ?>
 				<?php  wp_reset_postdata(); ?>
        		</div>
 		</div>
-	</div>
-	<?php if( get_field('forcast_the_future_header') ): ?>
-		<img class="img-responsive wp-post-image" src="<?php the_field('forcast_the_future_header'); ?>" />
-	<?php endif; ?>
 	
+	<?php if( get_field('forcast_the_future_header') ): ?>
+	<div class="row">
+		<div class="col-lg-12">
+			<img class="img-responsive wp-post-image" src="<?php the_field('forcast_the_future_header'); ?>" />
+		</div>
+	</div>
+	<?php endif; ?>
+	</div>
 </section>
-<section id="dataDriven" class="product-section lt-grey" role="banner">
+<section id="dataDriven" class="section-hero lt-grey" role="banner">
 	<div class="container-fluid">
 		<div class="row">
-       		<div class="col-lg-6">
+       		<div class="col-sm-6 col-lg-6">
        			<div class="center-block">
        			<?php	
 	            $args = array( 
@@ -245,7 +249,7 @@ get_header(); ?>
        			</div>
 				
        		</div>	
-       		<div class="col-lg-6">
+       		<div class="col-sm-6 col-lg-6">
 			<?php if( get_field('data_driven_header') ): ?>
 				<img class="img-responsive wp-post-image mobile-img" src="<?php the_field('data_driven_header'); ?>" />
 			<?php endif; ?>
@@ -289,7 +293,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="clientServices" class="product-section white-alt" role="banner">
+<section id="clientServices" class="section-hero white-alt" role="banner">
 <div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
@@ -308,12 +312,16 @@ get_header(); ?>
 				<?php  wp_reset_postdata(); ?>
        		</div>
 		</div>
-	</div>
 	<?php if( get_field('client_services_header') ): ?>
-		<img class="img-responsive wp-post-image" src="<?php the_field('client_services_header'); ?>" />
+		<div class="row">
+			<div class="col-lg-12">
+				<img class="img-responsive wp-post-image" src="<?php the_field('client_services_header'); ?>" />
+			</div>
+		</div>
 	<?php endif; ?>
+	</div>
 </section>
-<section id="clientComm" class="product-section lt-blue" role="banner">
+<section id="clientComm" class="sub-section solutions lt-blue alt"" role="banner">
 <div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
@@ -332,12 +340,9 @@ get_header(); ?>
 				<?php  wp_reset_postdata(); ?>
        		</div>
 		</div>
-	</div>
-</section>
-<section id="clientComm2" class="product-section solutions lt-blue alt" role="banner">
-<div class="container-fluid">
+
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-sm-4 col-md-4">
 				<?php	
 	            $args = array( 
 	                'name' => 'consulting'
@@ -353,7 +358,7 @@ get_header(); ?>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>
-       		<div class="col-md-4">
+       		<div class="col-sm-4 col-md-4">
 				<?php	
 	            $args = array( 
 	                'name' => 'check-ins'
@@ -369,7 +374,7 @@ get_header(); ?>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>	
-       		<div class="col-md-4">
+       		<div class="col-sm-4 col-md-4">
 				<?php	
 	            $args = array( 
 	                'name' => 'reports'

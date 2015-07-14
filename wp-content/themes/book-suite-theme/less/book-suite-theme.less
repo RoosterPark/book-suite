@@ -306,7 +306,7 @@ p { margin: 0 0 16px;}
 .page-hero {
 	overflow: auto;
     position: relative;
-    margin-top: @navbar-height;
+    margin-top: 90px;
     background-color: black;
     h1 {
 		margin-bottom: 24px;
@@ -378,44 +378,84 @@ p { margin: 0 0 16px;}
 }
 
 .section-hero {
+	h1, .h1 {
+		font-size: 38px;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 200;
+	}
+	.excerpt {
+	    margin-top: 3%;
+	    text-align: center;
+	}
+	.container-fluid {
+		h1 {
+			margin-top: 6%;
+		}
+		img-responsive {
+			margin: 0px auto;
+		}
+	}	
+	.jumbo-btn-group {
+	    text-align: center;
+	    top: 50%;
+	}
+	.center-block {
+	    margin-bottom: 25%;
+	    margin-top: 40%;
+	    max-width: 450px;
+	    h1, .h1 {
+	    	  font-size: 38px;
+	    }
+	    p {
+			font-size: 18px;
+			font-weight: 200;
+		}
+		.jumbo-btn-group {
+		    text-align: center;
+		    top: 50%;
+		}
+	}
+
+}
+.section-hero {
+	.jumbo-caption {
+		max-width: 1366px;
+		margin: 0px auto;
+	}
+	img.mobile-img {
+		max-width: 90%;
+		margin: 10% auto 0;
+	}
 	.jumbotron {
 		.black > h1, .black > p {
 		    color: black;
 		}
-		h1 {
-			left: 0;
-		    margin: 0;
-		    position: absolute;
-		    right: 0;
-		}
-		p {
-			left: 0;
-		    margin: 0;
-		    position: absolute;
-		    right: 0;
-		}
 		.jumbo-btn-group {
-				left: 0;
+				//left: 0;
 			    margin: 0;
-			    position: absolute;
-			    right: 0;
+			    //position: absolute;
+			   // right: 0;
 		}
+
 		.opt-1 {
+			top: 50%;
+			bottom: 50%;	
 			h1 {
 			    text-align: center;
-			    top: 50%;	
-			}
-					
+			}		
 		}
 
 		.opt-2 {
+			top: 35%;
+			bottom: 35%;
 			h1 {
 			    text-align: center;
-			    top: 35%;	
+			    margin-bottom: 6%;
 			}
 			p {
 			    text-align: center;
-			    top: 45%;
 			}
 			.jumbo-btn-group {
 			    text-align: center;
@@ -427,19 +467,22 @@ p { margin: 0 0 16px;}
 			}			
 		}
 		.opt-3 {
+			top: 20%;
+			bottom: 20%;
 			h1 {
 			    text-align: center;
-			    top: 15%;	
+			    margin-bottom: 5%;
 			}
 			p {
 			    text-align: center;
-			    top: 30%;
+			   	margin-bottom: 3%;
 			}
 			.jumbo-btn-group {
 			    text-align: center;
-			    top: 70%;
+			    margin-top: 6%;
 			    &.edit {
-			    	  top: 39%;
+			    	 margin-bottom: 3%;
+			    	 margin-top: 3%;
 			    }	
 			    .btn {
 				    margin-left: 1%;
@@ -447,6 +490,22 @@ p { margin: 0 0 16px;}
 				}
 			    
 			}	
+		}
+		.opt-4 {
+			bottom: auto;
+		    left: 54%;
+		    max-width: 500px;
+		    right: auto;
+		    top: 35%;
+		    width: 100%;
+		    background-color: rgba(244, 244, 243, 0.75);
+			h1 {
+			    text-align: left;
+			    margin-bottom: 6%;
+			}
+			p {
+			    text-align: left;
+			}
 		}
 
 	}
@@ -463,11 +522,8 @@ p { margin: 0 0 16px;}
 		//padding-bottom: 4%;
 	}
 	&.lt-blue {
-		padding-top: 4%;
+		padding-top: 4%;  
 		padding-bottom: 4%;
-		&.alt {
-			padding-top: 0;
-		}
 	}
 	.center-block {
 	    margin-bottom: 23%;
@@ -551,6 +607,15 @@ p { margin: 0 0 16px;}
 	.cta-link {
 	    margin: 6% auto 0;
 	    text-align: center;
+	}
+	&.lt-blue {
+		margin-top: 0;
+		padding-top: 6%;
+		padding-bottom: 6%;
+		p.excerpt {
+			max-width: 600px;
+			margin-bottom: 6%;
+		}
 	}
 }
 
@@ -956,10 +1021,47 @@ img.aligncenter {
 			height: 196px;
 		}
 	}
+
+	.section-hero {
+		.center-block {
+			margin-bottom: 15%;
+			margin-top: 15%;
+		}
+		.jumbotron {
+			.opt-1 h1 {
+				top: 43%;
+				bottom: 43%;
+			}
+			.opt-2 {
+				p {
+					top: 54%;
+					padding: 0 6%;					
+				}
+				.jumbo-btn-group {
+					text-align: center;
+					top: 55%;
+				}
+			}
+			.opt-4 {
+				max-width: 450px;
+				padding: 1%;
+				left: auto;
+				right: 2%;
+			}
+		}
+	}
 }
 
 @media (max-width: 980px) {
-
+	.page-hero, .section-hero {
+		overflow-x: hidden;
+		img.jumbotron-img {
+			width: 150%;
+		}
+	}
+	.page-hero h1 {
+		margin-top: 8%;
+	}
 	.prod-design {
 		.row {
 			 margin-bottom: 0;
@@ -999,11 +1101,13 @@ img.aligncenter {
 			margin-bottom: 4%;
 		}
 	}
+
 	.mentions .col-md-2 {
 		float: left;
 		width: 33.3333%;
 		padding-bottom: 30px;
 	}
+	
 	.footer-nav-aux {
 	  margin-top: 3%;
 	  margin-bottom: 3%;
@@ -1012,12 +1116,17 @@ img.aligncenter {
 
 @media (max-width: 768px) {
 	
-	.page-hero {
+	.page-hero, .section-hero {
 		overflow-x: hidden;
 		img.jumbotron-img {
-			width: 125%;
+			width: 200%;
 		}
 	}
+	
+	.page-hero h1 {
+		margin-top: 8%;
+	}
+	
 	.content-area {
 		.sub-section {
 		  	padding: 3.5555% 0%;
@@ -1044,6 +1153,56 @@ img.aligncenter {
 			margin-bottom: 10%;
 		}	
 	}
+
+	.section-hero {
+		.jumbotron {
+			.opt-1 {
+				top: 44%;
+				bottom: 44%;
+				h1 {
+					margin: 0;
+				}
+			}
+			.opt-2 {
+				top: 22%;
+				bottom: 22%;
+				p {
+					top: 54%;
+					padding: 0 6%;					
+				}
+			}
+			.opt-3 {
+				top: 5%;
+				bottom: 5%;
+				h1 {
+					margin-bottom: 3%;
+				}
+				p {
+					margin-bottom: 0;	
+				}
+				.jumbo-btn-group {
+				  	margin-top: 3%;
+				}
+			}
+			.opt-4 {
+				position: relative;
+				left: auto;
+				right: auto;
+				max-width: 100%;
+				padding: 6%;
+				p, h1 {
+					text-align: center;
+				}
+			}
+		}
+	}
+	#contentManagement .jumbotron {
+		position: relative;
+	}
+	.product-section.lt-blue.alt {
+		padding-top: 3%;
+		margin-top: 0;
+	}
 	.story .wp-post-image, .video .wp-post-image {
 		min-height: inherit;
 	}
@@ -1052,7 +1211,7 @@ img.aligncenter {
 @media (max-width: 480px) {
 	.page-hero {
 		img.jumbotron-img {
-			width: 250%;
+			width: 275%;
 		}
 	}
 	
@@ -1114,6 +1273,28 @@ img.aligncenter {
 			margin-bottom: 10%;
 		}	
 	}
+	.section-hero {
+		overflow-x: hidden;
+		img.jumbotron-img {
+			width: 250%;
+		}
+	}
+	.section-hero {
+		.jumbotron {
+			.opt-2 {
+				top: 10%;
+				bottom: 10%;
+			}
+		}
+		.jumbo-caption {
+			padding: 0 4%;
+ 		 	a.btn {
+			  margin-bottom: 6%;
+			  padding: 9px 27px;;
+			}
+		}
+	
+	}
 	.solutions {
 		.col-md-4 {
 			margin-bottom: @global-row-margin-bottom;
@@ -1135,7 +1316,7 @@ img.aligncenter {
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
 	h1, .h1 {
 		font-size: 30px;
 	}
@@ -1144,7 +1325,12 @@ img.aligncenter {
 	}
 	.site-hero {
 		.jumbotron-img {
-			max-width: 275%;
+			max-width: 425%;
+		}
+	}
+	.page-hero {
+		img.jumbotron-img {
+			width: 425%;
 		}
 	}
 	.cta-link .btn.btn-info.btn-lg {
@@ -1152,5 +1338,9 @@ img.aligncenter {
 		font-size: 16px;
 		line-height: 1.3333333;
 		border-radius: 2px;
+	}
+	.jumbotron .jumbo-btn-group .btn {
+		margin: 0 auto 6%;
+		width: 100%;
 	}
 }
