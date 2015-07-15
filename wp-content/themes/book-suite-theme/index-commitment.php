@@ -11,7 +11,7 @@
         </header>
         <?php the_content(); ?>
 		<footer>
-			<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn btn-link"><i class="fa fa-pencil-square-o"></i>', '</div>' ); ?>
+			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 		</footer>
 	    <?php } ?>
 	   
@@ -26,7 +26,7 @@
 		</header>
 		<?php the_content(); ?>
 		<footer>
-			<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn btn-link"><i class="fa fa-pencil-square-o"></i>', '</div>' ); ?>
+			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 		</footer>
 	     <?php } ?>	    </div>
 	   

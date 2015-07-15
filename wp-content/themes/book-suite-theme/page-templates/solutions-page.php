@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Product Page
+ * Template Name: Solutions Page
  * The template used for displaying page content in page.php
  *
  * @author revised code: mPETERnell.com - original code:Matthias Thom | http://upplex.de
@@ -14,7 +14,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<h1 class="page-title"><?php the_title(); ?></h1>	
 				<?php the_content(); ?>
-				<<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 			<?php endwhile; // end of the loop. ?>
 			<div class="jumbo-btn-group">
 				<a class="btn btn-default btn-lg clear" href="#" role="button">View Our Plans</a>
@@ -44,7 +44,7 @@ get_header(); ?>
 		            ?>
 				
 		        <div class="col-xs-4 col-sm-4 col-md-4">
-		        	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?></a>
+		        	<?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<div class="h3"><?php the_title(); ?></div>
 				<?php //the_content(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
@@ -193,7 +193,7 @@ get_header(); ?>
 		<div class="jumbo-caption opt-2">
 			<h1>Predictive Analytics</h1>
 			<div class="jumbo-btn-group">
-				<a class="btn btn-info btn-lg" href="#" role="button">Leran More</a>
+				<a class="btn btn-info btn-lg" href="#" role="button">Learn More</a>
 				<a class="btn btn-default btn-lg clear" href="#" role="button">See Product Features</a>
 			</div>
 		</div>

@@ -49,7 +49,7 @@
 									echo "</p>";
 								endif; 
 							?>
-							<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn btn-link edit-btn"><i class="fa fa-pencil-square-o"></i>', '</div>' ); ?>
+							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 						</header>
 					</div>
 				</div>
@@ -117,7 +117,7 @@
 									echo "</p>";
 								endif; 
 							?>
-							<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn btn-link edit-btn"><i class="fa fa-pencil-square-o"></i>', '</div>' ); ?>
+							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 						</header>
 					</div>
 				</div>
@@ -185,7 +185,7 @@
 									echo "</p>";
 								endif; 
 							?>
-							<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn btn-link edit-btn"><i class="fa fa-pencil-square-o"></i>', '</div>' ); ?>
+							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 						</header>
 					</div>
 				</div>
@@ -254,7 +254,7 @@
 									echo "</p>";
 								endif; 
 							?>
-							<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn btn-link edit-btn"><i class="fa fa-pencil-square-o"></i>', '</div>' ); ?>
+							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 						</header>
 					</div>
 				</div>
@@ -322,7 +322,7 @@
 									echo "</p>";
 								endif; 
 							?>
-							<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn btn-link edit-btn"><i class="fa fa-pencil-square-o"></i>', '</div>' ); ?>
+							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 						</header>
 					</div>
 				</div>

@@ -28,11 +28,26 @@
 .admin-bar.single .site-main {
   margin-top: 82px;
 }
+.btn-group.edit-post {
+  text-align: center;
+  width: 100%;
+}
+.btn-group.edit-post .post-edit-link {
+  float: none;
+  text-align: center;
+}
 .revise {
   margin-left: 10px;
 }
 p {
   margin: 0 0 16px;
+}
+b,
+strong {
+  font-weight: 600;
+}
+.jumbo-btn-group.edit {
+  margin-bottom: 3%;
 }
 /***************************************************
  * 
@@ -113,8 +128,9 @@ p {
  * 
  **************************************************/
 .svg {
-  height: 40px;
-  width: 40px;
+  height: 75px;
+  width: 100%;
+  max-width: 100px;
 }
 /***************************************************
  * 
@@ -234,6 +250,9 @@ p {
 .site-hero .jumbotron .jumbo-btn-group {
   margin: 4% 0 0 0;
 }
+.site-hero .jumbotron .btn-group.edit-post {
+  text-align: left;
+}
 .page-hero {
   overflow: auto;
   position: relative;
@@ -242,6 +261,7 @@ p {
 }
 .page-hero h1 {
   margin-bottom: 24px;
+  margin-top: 6%;
 }
 .page-hero p {
   font-weight: normal;
@@ -252,6 +272,9 @@ p {
   margin: 0 auto;
   max-width: 1920px;
   width: 100%;
+}
+.page-hero .btn-group.edit-post {
+  text-align: left;
 }
 .section-hero {
   position: relative;
@@ -266,6 +289,9 @@ p {
   max-width: 1920px;
   width: 100%;
 }
+.section-hero .wp-post-image {
+  margin: 0px auto;
+}
 .jumbotron.filter {
   background: none;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 17, 19, 0.4)), color-stop(100%, rgba(16, 17, 19, 0.4)));
@@ -275,8 +301,6 @@ p {
 .jumbotron {
   bottom: 0;
   left: 0;
-  margin: 0;
-  padding: 0;
   position: absolute;
   right: 0;
   top: 0;
@@ -300,22 +324,19 @@ p {
 .jumbotron p {
   font-weight: normal;
 }
-.section-hero h1,
-.section-hero .h1 {
-  font-size: 38px;
-}
 .section-hero p {
   font-size: 18px;
   font-weight: 200;
 }
 .section-hero .excerpt {
-  margin-top: 3%;
+  margin: 5% auto;
+  max-width: 1024px;
   text-align: center;
 }
-.section-hero .container-fluid h1 {
-  margin-top: 6%;
+.section-hero h1 {
+  margin-top: 5%;
 }
-.section-hero .container-fluid img-responsive {
+.section-hero img-responsive {
   margin: 0px auto;
 }
 .section-hero .jumbo-btn-group {
@@ -338,6 +359,10 @@ p {
 .section-hero .center-block .jumbo-btn-group {
   text-align: center;
   top: 50%;
+}
+.section-hero .request-demo {
+  margin: 6% 0;
+  text-align: center;
 }
 .section-hero .jumbo-caption {
   max-width: 1366px;
@@ -462,13 +487,13 @@ p {
  * 
  **************************************************/
 .prod-design .row {
-  margin-bottom: 6%;
+  margin-bottom: 5%;
 }
 .prod-design .row:last-child {
   margin-bottom: 0;
 }
 .prod-design .row .text-center {
-  margin-bottom: 6%;
+  margin-bottom: 5%;
 }
 .prod-design .icon {
   float: left;
@@ -490,6 +515,15 @@ p {
 .solutions .col-md-4 {
   text-align: center;
 }
+.solutions .properties {
+  min-height: 350px;
+}
+.solutions .properties > footer {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
 .solutions .section-title {
   color: #3c3c3c;
   font-size: 18px;
@@ -497,8 +531,9 @@ p {
   margin: 3% auto 5%;
 }
 .solutions p {
-  margin: 0 auto;
-  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 350px;
   text-align: center;
 }
 .solutions .cta-link {
@@ -507,15 +542,21 @@ p {
 }
 .solutions.lt-blue {
   margin-top: 0;
-  padding-top: 6%;
-  padding-bottom: 6%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .solutions.lt-blue p.excerpt {
   max-width: 600px;
-  margin-bottom: 6%;
+  margin-bottom: 5%;
 }
-.solutions.lt-blue .svg {
-  color: #fff;
+.solutions.lt-blue .more-features {
+  margin-bottom: 5%;
+}
+.solutions.lt-blue .more-features p.excerpt {
+  margin-top: 25px;
+}
+.solutions.lt-blue .more-features:last-child {
+  margin-bottom: 0;
 }
 .story .wp-post-image,
 .video .wp-post-image {
@@ -573,7 +614,7 @@ p {
   margin: 6% auto 0;
   text-align: center;
 }
-.success .edit-btn {
+.success .edit-post {
   position: absolute;
   right: 10px;
   top: 5px;
@@ -603,7 +644,7 @@ p {
   font-weight: normal;
 }
 .content-area .sub-section {
-  padding: 3.5555% 8%;
+  padding: 5% 8%;
 }
 .content-area .container-fluid {
   max-width: 1366px;
@@ -620,16 +661,28 @@ p {
   color: #ffffff;
 }
 .content-area .lt-blue h1 {
-  font-size: 24px;
-  font-weight: normal;
-  margin-bottom: 3%;
+  margin: 0 0 5%;
 }
-.content-area .lt-blue .col-md-6:first-child {
+.content-area .lt-blue.two-cols .col-md-6:first-child {
+  border-right: 1px solid #d5effc;
   padding-right: 4%;
 }
-.content-area .lt-blue .col-md-6:last-child {
+.content-area .lt-blue.two-cols .col-md-6:last-child {
   border: none;
   padding-left: 4%;
+}
+.content-area .lt-blue.two-cols h1 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 25px;
+}
+.content-area .lt-blue.two-cols p {
+  margin-bottom: 32px;
+  max-width: inherit;
+  text-align: left;
+}
+.content-area .lt-blue.two-cols p:last-child {
+  margin-bottom: 0;
 }
 .content-area .lt-grey {
   background-color: #f9f9f9;
@@ -653,7 +706,7 @@ footer .container-fluid {
   max-width: 1366px;
 }
 footer .sub-section {
-  padding: 3.5555% 8%;
+  padding: 5% 8%;
 }
 footer .drk-grey {
   background-color: #3b3b3b;
@@ -925,10 +978,10 @@ img.aligncenter {
     margin-top: 6%;
   }
   .solutions .col-md-4 {
-    margin-bottom: 6%;
+    margin-bottom: 5%;
   }
   .solutions .cta-link {
-    margin: 6% auto 6%;
+    margin: 6% auto 5%;
   }
   .success .success-content .wp-post-image {
     height: auto;
@@ -957,9 +1010,6 @@ img.aligncenter {
   }
   .page-hero h1 {
     margin-top: 8%;
-  }
-  .content-area .sub-section {
-    padding: 3.5555% 0%;
   }
   .site-hero .jumbotron-img {
     max-width: 145%;
@@ -1026,6 +1076,17 @@ img.aligncenter {
   .story .wp-post-image,
   .video .wp-post-image {
     min-height: inherit;
+  }
+  .content-area .lt-blue.two-cols .col-md-6:first-child {
+    border-right: none;
+    border-bottom: 1px solid #d5effe;
+    padding-right: 15px;
+    padding-bottom: 15%;
+  }
+  .content-area .lt-blue.two-cols .col-md-6:last-child {
+    border: none;
+    padding-left: 15px;
+    padding-top: 15%;
   }
 }
 @media (max-width: 480px) {
@@ -1094,7 +1155,7 @@ img.aligncenter {
     padding: 9px 27px;
   }
   .solutions .col-md-4 {
-    margin-bottom: 6%;
+    margin-bottom: 5%;
     width: 100%;
   }
   .cta-link .btn.btn-info.btn-lg {
@@ -1134,5 +1195,17 @@ img.aligncenter {
   .jumbotron .jumbo-btn-group .btn {
     margin: 0 auto 6%;
     width: 100%;
+  }
+  .section-hero h1 {
+    margin-top: 8%;
+  }
+  .section-hero .excerpt {
+    margin: 8% auto;
+  }
+  .section-hero .request-demo {
+    margin: 16% 0;
+  }
+  .content-area .sub-section {
+    padding: 8% 8%;
   }
 }

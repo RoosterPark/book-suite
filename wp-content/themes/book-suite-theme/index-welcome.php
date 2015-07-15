@@ -24,7 +24,7 @@ while($my_query->have_posts()){
 	        <p>
 				<a class="btn btn-default" role="button" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">View details <i class="fa fa-angle-double-right"></i></a>
 			</p>
-			<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn-group" role="group" ><div class="btn btn-link"><i class="fa fa-pencil-square-o"></i>', '</div></div>' ); ?>
+			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 	    </div>
 	</div>
 </div>

@@ -48,7 +48,7 @@
 							<?php if ( has_post_thumbnail() ) {  ?>
 		                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('success-stories-land', array('class' => 'img-responsive')); ?></a>
 		                    <?php  } ?>
-		                    <?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn btn-link edit-btn"><i class="fa fa-pencil-square-o"></i>', '</div>' ); ?>
+		                    <?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 		                </div>
 					</div>
 					<?php
@@ -101,7 +101,7 @@
 					<?php if ( has_post_thumbnail() ) {  ?>
 	                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('success-stories-port', array('class' => 'img-responsive')); ?></a>
 	                    <?php  } ?>
-	                    <?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn btn-link edit-btn"><i class="fa fa-pencil-square-o"></i>', '</div>' ); ?>
+	                    <?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				</div>
 			</div>
 			<?php

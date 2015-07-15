@@ -14,7 +14,7 @@
 			<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta ">
 				<?php upbootwp_posted_on(); ?>
-				<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn btn-link edit-btn"><i class="fa fa-pencil-square-o"></i>', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
 		</header><!-- .entry-header -->

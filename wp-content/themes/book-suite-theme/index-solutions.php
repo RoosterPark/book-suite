@@ -18,9 +18,9 @@
 		
         <div class="col-xs-4 col-sm-4 col-md-4">
         	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?></a>
-		<div class="section-title"><?php the_title(); ?></div>
+		<div class="h3"><?php the_title(); ?></div>
 		<?php the_content(); ?>		
-		<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn-group" role="group" ><div class="btn btn-link"><i class="fa fa-pencil-square-o"></i>', '</div></div>' ); ?>
+		<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
         </div>
        
 			<?php endwhile; ?>			

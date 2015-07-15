@@ -9,17 +9,16 @@
 get_header(); ?>
 <section id="pageMasthead" class="page-hero" role="banner">
 	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive' ) ); ?>
-	<div id="hero" class="jumbotron">
+	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<h1 class="page-title"><?php the_title(); ?></h1>	
 				<?php the_content(); ?>
-				<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<div class="btn btn-link edit-btn"><i class="fa fa-pencil-square-o"></i>', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 			<?php endwhile; // end of the loop. ?>
 		</div>
 	</div>
 </section>
-<?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
 
 	<div id="featureLinks" class="tab-wrapper">
 	  <!-- Nav tabs -->

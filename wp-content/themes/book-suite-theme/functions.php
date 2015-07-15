@@ -28,6 +28,14 @@ function custom_admin_head() {
 	$css = 'td.media-icon img[src$=".svg"] { width: 100% !important; height: auto !important; }';
 	echo '<style type="text/css">'.$css.'</style>';
 }
+
+//Add class to edit button
+function custom_edit_post_link($output) {
+	$output = str_replace('class="post-edit-link"', 'class="post-edit-link btn btn-link"', $output);
+	return $output;
+}
+add_filter('edit_post_link', 'custom_edit_post_link');
+
 function upbootwp_setup() {
 
 	require 'inc/general/class-Upbootwp_Walker_Nav_Menu.php';
