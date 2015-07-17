@@ -27,8 +27,8 @@ function booking_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'booking_custom_header_args', array(
 		'default-image'          	=> '',
 		'default-text-color'     	=> 'dadada',
-		'width'                  	=> 155,
-		'height'                 	=> 30,
+		'width'                  	=> 375,
+		'height'                 	=> 50,
 		'flex-height'				=> true,
 		'flex-width'				=> true,
 		'wp-head-callback'       	=> 'booking_header_style',

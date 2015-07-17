@@ -8,7 +8,8 @@
  */
 get_header(); ?>
 <section id="pageMasthead" class="page-hero" role="banner">
-	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive' ) ); ?>
+	<img src="/wp-content/uploads/2015/07/tierrasolutionshero-480x680.jpg" class="jumbotron-img img-responsive visible-xs-block" />
+	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive small-screen' ) ); ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -199,7 +200,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="forcastFuture" class="section-hero  white-alt">
+<section id="forcastFuture" class="sub-section white-alt">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
@@ -293,7 +294,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="clientServices" class="section-hero white-alt" role="banner">
+<section id="clientServices" class="sub-section client-services white-alt" role="banner">
 <div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
@@ -333,7 +334,9 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
-				<h1 class="text-center"><?php the_title(); ?></h1>
+				<header>
+					<h1 class="text-center"><?php the_title(); ?></h1>
+				</header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<?php endwhile; ?>			
@@ -352,7 +355,9 @@ get_header(); ?>
 	            	$my_cs_query->the_post();
 	            ?>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
-				<p class="h3"><?php the_title(); ?></p>
+				<header>
+					<p class="h3"><?php the_title(); ?></p>
+				</header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<?php endwhile; ?>			
@@ -368,7 +373,7 @@ get_header(); ?>
 	            	$my_cs_query->the_post();
 	            ?>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
-				<p class="h3"><?php the_title(); ?></p>
+				<header><p class="h3"><?php the_title(); ?></p></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<?php endwhile; ?>			
@@ -384,7 +389,7 @@ get_header(); ?>
 	            	$my_cs_query->the_post();
 	            ?>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
-				<p class="h3"><?php the_title(); ?></p>
+				<header><p class="h3"><?php the_title(); ?></p></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<?php endwhile; ?>			
@@ -393,7 +398,5 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="index-request-demo" class="sub-section md-grey request-demo">
 	<?php get_template_part('index-request-demo'); ?>
-</section>
 <?php get_footer(); ?>

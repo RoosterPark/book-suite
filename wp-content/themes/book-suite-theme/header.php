@@ -46,8 +46,8 @@
 			</button>
 		<?php if( get_header_image() != '' ) : ?>
 		
-		<div id="logo">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="img-responsive" src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
+		<div id="logo" class="company-logo">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="img-logo img-responsive" src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
 		</div><!-- end of #logo -->
 		
 		<?php endif; // header image was removed ?>

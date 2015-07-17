@@ -19,8 +19,5 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-
-<section id="index-request-demo" class="sub-section md-grey request-demo">
-	<?php get_template_part('index-request-demo'); ?>
-</section>
+<?php get_template_part('index-request-demo'); ?>
 <?php get_footer(); ?>

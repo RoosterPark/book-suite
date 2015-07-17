@@ -23,7 +23,7 @@ get_header(); ?>
 	</div>
 	<?php endwhile; // end of the loop. ?>
 </section>
-<section id="compContentManagement" class="section-hero  white-alt">
+<section id="compContentManagement" class="sub-section  white-alt">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
@@ -51,7 +51,7 @@ get_header(); ?>
 	<?php endif; ?>
 	</div>
 </section>
-<section id="designChoicesGalore" class="section-hero lt-grey">
+<section id="designChoicesGalore" class="sub-section lt-grey">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
@@ -188,7 +188,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="premiumServices" class="section-hero lt-grey">
+<section id="premiumServices" class="sub-section premium lt-greyy">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
@@ -207,9 +207,9 @@ get_header(); ?>
 				<?php  wp_reset_postdata(); ?>
        		</div>
 		</div>
-	<?php if( get_field('premium_services_header') ): ?>
+	
 	<div class="row">
-		<div class="col-sm-6 col-md-6 col-lg-6">
+		<div class="col-sm-6 col-md-6 col-lg-6 text-left">
 			<p><strong>Dedicated Performance ManagerDedicated </strong></p>
 			<p><strong>Monthly performance and strategy consultation</strong></p>
 			<p><strong>Quarterly business reviews</strong></p>
@@ -219,23 +219,23 @@ get_header(); ?>
 			<p><strong>Translation Support</strong></p>
 		</div>
 		<div class="col-sm-6 col-md-6 col-lg-6">
+		<?php if( get_field('premium_services_header') ): ?>
 			<img class="img-responsive wp-post-image" src="<?php the_field('premium_services_header'); ?>" />
+			<?php endif; ?>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-lg-12 request-demo">
-			<p>
-				<a class="btn btn-primary btn-lg" role="button" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Request a Demo</a>
-			</p>
+			<a class="btn btn-primary btn-lg" role="button" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Request a Demo</a>
 		</div>
 	</div>
-	<?php endif; ?>
+	
 	</div>
 </section>
-<section id="clientComm" class="sub-section solutions lt-blue two-cols" role="banner">
+<section id="clientComm" class="sub-section solutions lt-blue" >
 <div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-6 col-md-6">
+			<div class="col-sm-6 col-md-6 link-cta text-left">
 				<?php	
 	            $args = array( 
 	                'name' => 'web-direct-post'
@@ -244,18 +244,20 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
-	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
-				<h1><?php the_title(); ?></h1>
+	            <?php //the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
+				<header>
+					<h1><?php the_title(); ?></h1>
+				</header>
 				<?php the_content(); ?>		
 				
 				<footer>
 					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webdirect/" role="button">Learn More</a>
-					<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+					<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
 				</footer>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>
-       		<div class="col-sm-6 col-md-6">
+       		<div class="col-sm-6 col-md-6 link-cta text-left">
 				<?php	
 	            $args = array( 
 	                'name' => 'web-collection-post'
@@ -264,13 +266,15 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
-	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
-				<h1><?php the_title(); ?></h1>
+	            <?php //the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
+				<header>
+					<h1><?php the_title(); ?></h1>
+				</header>
 				<?php the_content(); ?>		
 				
-				<footer>
+				<footer class="post-footer">
 					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webcollection/" role="button">Learn More</a>
-					<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+					<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
 				</footer>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
@@ -278,7 +282,5 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="index-request-demo" class="sub-section md-grey request-demo">
-	<?php get_template_part('index-request-demo'); ?>
-</section>
+<?php get_template_part('index-request-demo'); ?>
 <?php get_footer(); ?>

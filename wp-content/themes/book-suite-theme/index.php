@@ -25,7 +25,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12 cta-link">
-								<a class="btn btn-info btn-lg" role="button" href="#" title="#####">View Our Solutions</a>		
+								<a class="btn btn-info btn-lg" role="button" href="/solutions/" title="#####">View Our Solutions</a>		
 							</div>
 						</div>
 					</div>
@@ -40,12 +40,9 @@
 				<section id="booking-mentions" class="sub-section white mentions">
 					<?php get_template_part('index-mentions'); ?>
 				</section>
-				<section id="intro-commitment" class="sub-section lt-blue">
-					<?php get_template_part('index-commitment'); ?>
-				</section>
-				<section id="index-request-demo" class="sub-section md-grey request-demo">
-					<?php get_template_part('index-request-demo'); ?>	
-				</section>
+				<?php get_template_part('index-commitment'); ?>
+				<?php get_template_part('index-request-demo'); ?>	
+
 		
 			
 			<?php } else { ?>

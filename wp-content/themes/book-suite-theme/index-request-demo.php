@@ -1,3 +1,4 @@
+<section id="index-request-demo" class="sub-section dark-grey request-demo">
 <?php $my_query = new WP_Query('name=see-how-bookingsuite-can-accelerate-your-property');
 while($my_query->have_posts()){
         $my_query->the_post();
@@ -16,3 +17,4 @@ while($my_query->have_posts()){
 	</div>
 </div>
 <?php } ?>
+</section>

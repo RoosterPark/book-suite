@@ -1,4 +1,4 @@
-<section id="productDesign" class="sub-section prod-design white">
+<section id="productDesign" class="sub-section prod-features white">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -9,7 +9,7 @@
 				
 		$args = array( 
 			'post_type' => 'post',
-			'category_name' => 'features',
+			'category_name' => 'product-features',
 			'tag' => 'design', //must use tag id for this field
 			'posts_per_page' => -1, //get all posts
 		 	'order'   => 'DESC'
@@ -68,7 +68,7 @@
 			?>   
 	</div>
 </section>
-<section id="cloudTechnology" class="sub-section prod-design lt-grey">
+<section id="cloudTechnology" class="sub-section prod-features lt-grey">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -79,7 +79,7 @@
 					
 			$args = array( 
 				'post_type' => 'post',
-				'category_name' => 'features',
+				'category_name' => 'product-features',
 				'tag' => 'cloud-technology', //must use tag id for this field
 				'posts_per_page' => -1, //get all posts
 			 	'order'   => 'DESC'
@@ -136,7 +136,7 @@
 			?> 
 	</div>
 </section>
-<section id="measuringSuccess" class="sub-section prod-design white">
+<section id="measuringSuccess" class="sub-section prod-features white">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -147,7 +147,7 @@
 					
 			$args = array( 
 				'post_type' => 'post',
-				'category_name' => 'features',
+				'category_name' => 'product-features',
 				'tag' => 'measuring-success', //must use tag id for this field
 				'posts_per_page' => -1, //get all posts
 			 	'order'   => 'DESC'
@@ -204,7 +204,7 @@
 			?>  
 	</div>
 </section>
-<section id="bookingIntergrations" class="sub-section prod-design lt-grey">
+<section id="bookingIntergrations" class="sub-section prod-features lt-grey">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -216,7 +216,7 @@
 					
 			$args = array( 
 				'post_type' => 'post',
-				'category_name' => 'features',
+				'category_name' => 'product-features',
 				'tag' => 'booking-intergrations', //must use tag id for this field
 				'posts_per_page' => -1, //get all posts
 			 	'order'   => 'DESC'
@@ -273,7 +273,7 @@
 			?>   	
 	</div>
 </section>
-<section id="support" class="sub-section prod-design white">
+<section id="support" class="sub-section prod-features white">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
@@ -284,7 +284,7 @@
 					
 			$args = array( 
 				'post_type' => 'post',
-				'category_name' => 'features',
+				'category_name' => 'product-features',
 				'tag' => 'support', //must use tag id for this field
 				'posts_per_page' => -1, //get all posts
 			 	'order'   => 'DESC'
