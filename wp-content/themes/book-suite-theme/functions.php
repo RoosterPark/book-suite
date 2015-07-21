@@ -101,6 +101,127 @@ function upbootwp_setup() {
 	);
 }
 
+
+
+/*******************
+ *
+ * Locations Custom Post Type
+ *
+ ********************/
+function locations_taxonomy() {
+	register_taxonomy('locations','locations',
+			array(
+					'hierarchical'      => true,
+					'label'             => 'Categories - Locations',
+					'show_ui' 			=> true,
+					'show_admin_column' => true,
+					'query_var'         => true
+			));
+}
+add_action( 'init', 'locations_taxonomy');
+
+
+add_action( 'init', 'locations_init' );
+
+function locations_init() {
+	$labels = array(
+			'name'               => _x( 'Locations', 'post type general name'),
+			'singular_name'      => _x( 'Locations Item', 'post type singular name'),
+			'menu_name'          => _x( 'Locations', 'admin menu'),
+			'name_admin_bar'     => _x( 'Locations', 'add new on admin bar'),
+			'add_new'            => _x( 'New', 'Locations Item'),
+			'add_new_item'       => __( 'Add New Locations Item'),
+			'new_item'           => __( 'New Locations Item'),
+			'edit_item'          => __( 'Edit Locations Item'),
+			'view_item'          => __( 'View Locations Item'),
+			'all_items'          => __( 'All Locations'),
+			'search_items'       => __( 'Search Locations'),
+			'parent_item_colon'  => __( 'Parent Locations:'),
+			'not_found'          => __( 'No Locations Found.'),
+			'not_found_in_trash' => __( 'No Locations Found in Trash.')
+	);
+
+	$args = array(
+			'labels'             => $labels,
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'query_var'          => true,
+			'rewrite' => array( 'slug' => 'locations','with_front' => true),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => true,
+			'menu_position'      => 5,
+			'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+			'taxonomies' 		=> array('post_tag') // this is IMPORTANT
+	);
+	register_post_type( 'locationss', $args );
+}
+
+
+/*******************
+ *
+ * PR News Custom Post Type
+ *
+ ********************/
+function prnews_taxonomy() {
+	register_taxonomy('pr-news','pr-news',
+	array(
+			'hierarchical'      => true,
+			'label'             => 'Categories - PR News',
+			'show_ui' 			=> true,
+			'show_admin_column' => true,
+			'query_var'         => true
+	)); 
+} 
+add_action( 'init', 'prnews_taxonomy');
+
+
+add_action( 'init', 'prnews_init' );
+
+function prnews_init() {
+	$labels = array(
+			'name'               => _x( 'PR News', 'post type general name'),
+			'singular_name'      => _x( 'PR News Item', 'post type singular name'),
+			'menu_name'          => _x( 'PR News', 'admin menu'),
+			'name_admin_bar'     => _x( 'PR News', 'add new on admin bar'),
+			'add_new'            => _x( 'New', 'PR News Item'),
+			'add_new_item'       => __( 'Add New PR News Item'),
+			'new_item'           => __( 'New PR News Item'),
+			'edit_item'          => __( 'Edit PR News Item'),
+			'view_item'          => __( 'View PR News Item'),
+			'all_items'          => __( 'All PR News'),
+			'search_items'       => __( 'Search PR News'),
+			'parent_item_colon'  => __( 'Parent PR News:'),
+			'not_found'          => __( 'No PR News Found.'),
+			'not_found_in_trash' => __( 'No PR News Found in Trash.')
+	);
+
+	$args = array(
+			'labels'             => $labels,
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'query_var'          => true,
+			'rewrite' => array( 'slug' => 'pr-news','with_front' => true),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => true,
+			'menu_position'      => 5,
+			'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+			'taxonomies' 		=> array('post_tag') // this is IMPORTANT
+	);
+	register_post_type( 'pr-news', $args );
+}
+
+
+/*******************
+ * 
+ * Success Stories Custom Post Type
+ * 
+ ********************/
 add_action( 'init', 'themes_taxonomy');
 function themes_taxonomy() {
 register_taxonomy(

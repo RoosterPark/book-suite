@@ -10,8 +10,8 @@ get_header(); ?>
 <section id="pageMasthead" class="page-hero" role="banner">
 
 <?php while ( have_posts() ) : the_post(); ?>
-	<?php the_post_thumbnail('featured-image-landscape', array('class' => 'jumbotron-img img-responsive')); ?>
-	<?php //the_post_thumbnail( 'success-stories-land', array( 'class' => 'jumbotron-img img-responsive' ) ); ?>
+	<img src="/wp-content/uploads/2015/07/webcompletehero-mobile.jpg" class="jumbotron-img img-responsive visible-xs-block" />
+	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive small-screen' ) ); ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
 			

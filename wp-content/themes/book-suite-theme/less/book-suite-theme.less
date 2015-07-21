@@ -601,6 +601,28 @@ b, strong {
  *  Main Content Area
  * 
  **************************************************/
+
+.single {
+	.content-area {
+		.sub-section {
+			text-align: left;
+			h1 {
+			    margin-bottom: 1%;
+			    margin-top: 0;
+			}
+		}
+	}
+	.posted-on {
+	    color: #918d8d;
+	    font-size: 14px;
+	}
+	post-edit-link {
+		text-align: left;
+	}
+	.request-demo {
+		text-align: center !important;
+	}
+}
 .prod-features {
 	.row {
 	    margin-bottom: @global-row-margin-bottom;
@@ -637,6 +659,10 @@ b, strong {
 	}
 }
 
+.no-risk h1, .no-risk p {
+    color: #000;
+}
+
 .solutions {
 	.col-md-4 {
 	    text-align: center;
@@ -653,7 +679,6 @@ b, strong {
 	.section-title {
 	    color: @global-color-black;
 	    font-size: 18px;
-	    font-weight: 600;
 	    margin: 3% auto 5%;
 	}
 	p {
@@ -745,6 +770,7 @@ b, strong {
 	    position: absolute;
 	    right: 10px;
 	    top: 5px;
+	    width: 100px;
 	    z-index: 5;
 	}
 	.play {
@@ -1163,12 +1189,28 @@ img.aligncenter {
 	.navbar-right {
 	  margin-right: auto;
 	}
+	
 	.success {
 		.success-content .wp-post-image {
 			height: 196px;
 		}
 	}
 
+	.prod-features .content {
+	  	text-align: left;
+	  	float: left;
+	  	width: 80%;
+	}
+	.content-area {
+		.sub-section {
+			padding: 5% 1%;
+		}
+	}
+	#propertyWebsites {
+		.properties:last-child {
+			width: 100%;
+		}
+	}
 	.section-hero {
 		.center-block {
 			margin-bottom: 15%;
@@ -1224,12 +1266,13 @@ img.aligncenter {
 		.sub-section {
 			.row {
 			  	margin-bottom: 0;
-			}
+			}	
 		}
 	}
 	.prod-features {
 		.features-box {
 		  margin-bottom: 3%;
+		  overflow: auto;
 		}	
 	}
 	.navbar-desktop {
@@ -1250,6 +1293,9 @@ img.aligncenter {
 		.cta-link {
 			margin: 6% auto @global-row-margin-bottom;
 		}
+	}
+	.mentions h2 {
+		margin: 0 0 6%;
 	}
 	.success {
 		.success-content .wp-post-image {
@@ -1297,6 +1343,10 @@ img.aligncenter {
 			max-width: 85%;
 		}
 	}
+	
+	.premium .request-demo {
+	  margin-top: 5%;
+	}
 	.tab-wrapper {
 		border-bottom: 1px solid #ccc;
 	}
@@ -1311,6 +1361,11 @@ img.aligncenter {
 		}	
 	}
 
+	.content-area .btn-lg {
+	  text-align: center;
+	  padding: 9px 27px;
+	}
+	
 	.section-hero {
 		.jumbotron {
 			.opt-1 {
@@ -1321,24 +1376,37 @@ img.aligncenter {
 				}
 			}
 			.opt-2 {
-				top: 22%;
-				bottom: 22%;
+				top: 5%;
+				bottom: 5%;
 				p {
 					top: 54%;
 					padding: 0 6%;					
+				}
+				h1 {
+					margin: 6% 0;
+				}
+				.jumbo-btn-group .btn {
+				    margin: 0 2% 2%;
+					width: auto;
+					display: inline-block;
 				}
 			}
 			.opt-3 {
 				top: 5%;
 				bottom: 5%;
 				h1 {
-					margin-bottom: 3%;
+					margin: 6% 0 1%;
 				}
 				p {
-					margin-bottom: 0;	
+					margin: 0;	
 				}
 				.jumbo-btn-group {
-				  	margin-top: 3%;
+				    margin-top: 4%;
+				    .btn {
+					    margin: 0 2% 2%;
+						width: auto;
+						display: inline-block;
+					}
 				}
 			}
 			.opt-4 {
@@ -1360,18 +1428,38 @@ img.aligncenter {
 		padding-top: 3%;
 		margin-top: 0;
 	}
-	
-	.content-area .link-cta:first-child {
-		border-right: none;
-		border-bottom: 1px solid #d5effe;
-		padding-right: 15px;
-		padding-bottom: 15%;
+	.content-area {
+		.link-cta:first-child {
+			border-right: none;
+			border-bottom: 1px solid #d5effe;
+			padding-right: 15px;
+			padding-bottom: 6%;
+		}
+		.link-cta:last-child {
+			border: none;
+			padding-left: 15px;
+			padding-top: 6%;
+		}
+		.sub-section.lt-blue .excerpt {
+		  margin: 0 auto 6%;
+		}
+		
 	}
 	
-	.content-area .link-cta:last-child {
-		border: none;
-		padding-left: 15px;
-		padding-top: 15%;
+	.solutions {
+		.properties {
+			  min-height: inherit;
+			  margin-bottom: 10%;
+			> footer {
+	  			bottom: auto;
+	  			left: auto;
+	  			position: relative;
+	  			right: auto;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}			
+		}
 	}
 	.story .wp-post-image, .video .wp-post-image {
 		min-height: inherit;
@@ -1416,6 +1504,10 @@ img.aligncenter {
 		.content {
 			width: 78%;
 		}
+	}
+	.section-hero.no-risk .jumbotron .opt-2 h1 {
+	  margin-top: 0;
+	  margin-bottom: 0;
 	}
 
 	.tab-wrapper {

@@ -8,7 +8,8 @@
  */
 get_header(); ?>
 <section id="pageMasthead" class="page-hero" role="banner">
-	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive' ) ); ?>
+	<img src="/wp-content/uploads/2015/07/webdirecthero-mobile.jpg" class="jumbotron-img img-responsive visible-xs-block" />
+	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive small-screen' ) ); ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -19,11 +20,10 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="noRisk" class="sub-section white-alt">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12">
-				<?php	
+<section id="noRisk" class="section-hero no-risk" role="banner">	
+	<div id="hero" class="jumbotron">
+		<div class="jumbo-caption opt-2">
+			<?php	
 	            $args = array( 
 	                'name' => 'no-risk'
 	            );
@@ -36,17 +36,11 @@ get_header(); ?>
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
-       		</div>
 		</div>
-	
+	</div>
 	<?php if( get_field('no_risk_image') ): ?>
-	<div class="row">
-		<div class="col-lg-12">
-			<img class="img-responsive wp-post-image" src="<?php the_field('no_risk_image'); ?>" />
-		</div>
-	</div>
-	<?php endif; ?>
-	</div>
+	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('no_risk_image'); ?>" />
+	<?php endif; ?>	
 </section>
 <section id="syncListing" class="sub-section synced lt-blue">
 	<div class="container-fluid">

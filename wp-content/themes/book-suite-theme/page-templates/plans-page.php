@@ -8,7 +8,8 @@
  */
 get_header(); ?>
 <section id="pageMasthead" class="page-hero" role="banner">
-	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive' ) ); ?>
+	<img src="/wp-content/uploads/2015/07/buranoplanshero-mobile.jpg" class="jumbotron-img img-responsive visible-xs-block" />
+	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive small-screen' ) ); ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -39,7 +40,7 @@ get_header(); ?>
 		            	$my_query->the_post();
 		            ?>
 				
-		        <div class="col-xs-12 col-sm-4 col-md-4 properties">
+		        <div class="col-xs-12 col-sm-6 col-md-4 properties">
 		        	<?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<div class="h3"><?php the_title(); ?></div>
 				<?php the_content(); ?>		
@@ -127,38 +128,6 @@ get_header(); ?>
 	    	<div class="col-md-12 text-center">
 	        	<p><a class="btn btn-default btn-lg" role="button" href="/product-features/" title="Product Features">See All Product Features</a></p>
 	    	</div>
-		</div>
-	</div>
-</section>
-<section id="designChoicesGalore" class="section-hero md-grey">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12">
-			<h1 class="text-center">Predictive Analytics</h1>
-			</div>
-		</div>
-		<div class="row">
-				<?php	
-	            $args = array( 
-	                'name' => 'ratecast'
-	            );
-	            $my_ff_query = new WP_Query($args);
-	            while($my_ff_query->have_posts()) :
-	            	$my_ff_query->the_post();
-	            ?>
-	            <div class="col-lg-2">
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?></a>
-				</div>
-				<div class="col-lg-7">
-					<h3><?php the_title(); ?></h3>
-					<?php the_excerpt(); ?>		
-					<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-				</div>
-				<div class="col-lg-3">
-					<a class="btn btn-info btn-lg" title="<?php the_title(); ?>" href="/<?php the_title(); ?>" role="button">Learn More</a>
-				</div>
-				<?php endwhile; ?>			
-				<?php  wp_reset_postdata(); ?>
 		</div>
 	</div>
 </section>

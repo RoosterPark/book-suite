@@ -61,7 +61,7 @@ get_header(); ?>
 		<div class="jumbo-caption opt-2">
 			<h1>Property Websites</h1>
 			<div class="jumbo-btn-group">
-				<a class="btn btn-info btn-lg" href="/plans/" role="button">View Our Plans</a>
+				<a class="btn btn-info btn-lg" href="/plans/" role="button">View Plans</a>
 				<a class="btn btn-default btn-lg clear" href="/product-features/" role="button">See Product Features</a>
 			</div>
 		</div>
@@ -194,7 +194,7 @@ get_header(); ?>
 		<div class="jumbo-caption opt-2">
 			<h1>Predictive Analytics</h1>
 			<div class="jumbo-btn-group">
-				<a class="btn btn-info btn-lg" href="#" role="button">Leran More</a>
+				<a class="btn btn-info btn-lg" href="#" role="button">Learn More</a>
 				<a class="btn btn-default btn-lg clear" href="/product-features/" role="button">See Product Features</a>
 			</div>
 		</div>
