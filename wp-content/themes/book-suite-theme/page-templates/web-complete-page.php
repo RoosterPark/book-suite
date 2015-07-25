@@ -10,7 +10,9 @@ get_header(); ?>
 <section id="pageMasthead" class="page-hero" role="banner">
 
 <?php while ( have_posts() ) : the_post(); ?>
-	<img src="/wp-content/uploads/2015/07/webcompletehero-mobile.jpg" class="jumbotron-img img-responsive visible-xs-block" />
+	<?php if( get_field('responsive_hero_img') ): ?>
+		<img class="jumbotron-img img-responsive visible-xs-block" src="<?php the_field('responsive_hero_img'); ?>" />
+	<?php endif; ?>
 	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive small-screen' ) ); ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
@@ -188,7 +190,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="premiumServices" class="sub-section premium lt-greyy">
+<section id="premiumServices" class="sub-section premium lt-grey">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
@@ -209,14 +211,20 @@ get_header(); ?>
 		</div>
 	
 	<div class="row">
-		<div class="col-sm-6 col-md-6 col-lg-6 text-left">
-			<p><strong>Dedicated Performance ManagerDedicated </strong></p>
-			<p><strong>Monthly performance and strategy consultation</strong></p>
-			<p><strong>Quarterly business reviews</strong></p>
-			<p><strong>SEO & IT support from our digital marketing product experts</strong></p>
-			<p><strong>TripAdvisor TripConnect support</strong></p>
-			<p><strong>Content creation</strong></p>
-			<p><strong>Translation Support</strong></p>
+		<div class="col-sm-6 col-md-6 col-lg-6 text-left entry-content">
+			<?php	
+	            $args = array( 
+	                'name' => 'premium-services-key-points'
+	            );
+	            $my_ff_query = new WP_Query($args);
+	            while($my_ff_query->have_posts()) :
+	            	$my_ff_query->the_post();
+	            ?>
+				<h2><?php the_title(); ?></h2>
+				<?php the_content(); ?>		
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php endwhile; ?>			
+				<?php  wp_reset_postdata(); ?>
 		</div>
 		<div class="col-sm-6 col-md-6 col-lg-6">
 		<?php if( get_field('premium_services_header') ): ?>
@@ -235,7 +243,7 @@ get_header(); ?>
 <section id="clientComm" class="sub-section solutions lt-blue" >
 <div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-6 col-md-6 link-cta text-left">
+			<div class="col-sm-12 col-md-6 col-lg-6 link-cta text-left">
 				<?php	
 	            $args = array( 
 	                'name' => 'web-direct-post'
@@ -257,7 +265,7 @@ get_header(); ?>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>
-       		<div class="col-sm-6 col-md-6 link-cta text-left">
+       		<div class="col-sm-12 col-md-6 col-lg-6 link-cta text-left">
 				<?php	
 	            $args = array( 
 	                'name' => 'web-collection-post'

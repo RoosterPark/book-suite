@@ -10,7 +10,7 @@ while($my_query->have_posts()){
 	        <?php the_content(); ?>
 <!-- 	        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
 	        <p>
-				<a class="btn btn-primary btn-lg" role="button" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Request a Demo</a>
+				<a class="btn btn-primary btn-lg" role="button" href="/request-a-demo/" title="Request a Demo">Request a Demo</a>
 			</p>
 			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 	    </div>

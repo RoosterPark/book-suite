@@ -29,9 +29,23 @@
 					<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
 					</footer><!-- .entry-meta -->	
 				</div>
-				<?php //get_sidebar(); ?>
-					<?php //upbootwp_content_nav( 'nav-below' ); ?>
+				
 			</div>
+			<?php if(has_term( 'news', 'pr-news' ) ) { ?>
+				 <div class="row">
+					<div class="col-md-12 text-center">
+						<p><a class="btn btn-default btn-lg" title="Product Features" href="/news/" role="button">See All News</a></p>
+					</div>
+				</div>	
+			<?php } ?>
+			<?php if(has_term( 'press-releases', 'pr-news' ) ) { ?>
+				 <div class="row">
+					<div class="col-md-12 text-center">
+						<p><a class="btn btn-default btn-lg" title="Product Features" href="/press-releases/" role="button">See All PR News</a></p>
+					</div>
+				</div>	
+			<?php } ?>
+			
 		</div>
 	</article><!-- #post-## -->
 </section>

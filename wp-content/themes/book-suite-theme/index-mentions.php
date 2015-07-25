@@ -2,7 +2,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-12">
-			<h2>BookingSuite Press Mentions</h2>
+			<h2>BookingSuite In The Press</h2>
 		</div>
 	</div>
         <div class="row">

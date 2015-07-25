@@ -1,7 +1,7 @@
 <section id="intro-commitment" class="sub-section solutions lt-blue">
 	<div class="container-fluid">
 		<div class="row">
-		    <div class="col-sm-6 col-md-6 link-cta text-left">
+		    <div class="col-sm-12 col-md-6 col-lg-6 link-cta text-left">
 		    <?php $my_query = new WP_Query('name=commitment-to-partners');
 			while($my_query->have_posts()){
 			        $my_query->the_post();
@@ -16,7 +16,7 @@
 		    <?php } ?>
 		   
 		    </div>
-		    <div class="col-sm-6 col-md-6 link-cta text-left">
+		    <div class="col-sm-12 col-md-6 col-lg-6 link-cta text-left">
 		        <?php $my_query = new WP_Query('name=privacy-promise');
 			while($my_query->have_posts()){
 			        $my_query->the_post();

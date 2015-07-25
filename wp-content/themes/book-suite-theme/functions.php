@@ -63,9 +63,10 @@ function upbootwp_setup() {
 	 */
 	add_theme_support( 'post-thumbnails', array( 'post' ) );          // Posts only
 	add_theme_support( 'post-thumbnails', array( 'page' ) );
-	add_image_size( 'featured-image-landscape', 1920, 600, true );
-    //add_image_size( 'careers-featured-narrow', 2500, 700, array( 'left', 'top' ) );
 	add_theme_support( 'post-thumbnails' );
+	
+	add_image_size( 'featured-image-landscape', 1920, 600, true );
+    add_image_size( 'location-featured-land', 450, 250, array( 'left', 'top' ) );
 	add_image_size( 'homepage-thumb', 300, 200, array( 'left', 'top' )  ); // Hard crop left top
 	add_image_size( 'success-stories-land-1024', 1024, 510,  array( 'left', 'center' ));
 	add_image_size( 'success-stories-land', 776, 381,  array( 'left', 'center' ));
@@ -112,7 +113,7 @@ function locations_taxonomy() {
 	register_taxonomy('locations','locations',
 			array(
 					'hierarchical'      => true,
-					'label'             => 'Categories - Locations',
+					'label'             => 'Categories',
 					'show_ui' 			=> true,
 					'show_admin_column' => true,
 					'query_var'         => true
@@ -156,7 +157,7 @@ function locations_init() {
 			'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
 			'taxonomies' 		=> array('post_tag') // this is IMPORTANT
 	);
-	register_post_type( 'locationss', $args );
+	register_post_type( 'locations', $args );
 }
 
 
@@ -281,7 +282,7 @@ add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 
 function add_my_post_types_to_query( $query ) {
 	if ( is_home() && $query->is_main_query() )
-		$query->set( 'post_type', array( 'post', 'page', 'success_stories' ) );
+		$query->set( 'post_type', array( 'post', 'page', 'success_stories', 'locations' ) );
 	return $query;
 }
 
@@ -305,7 +306,7 @@ function add_class_to_excerpt( $excerpt ) {
 }
 
 function new_excerpt_more( $more ) {
-	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
+	return '... <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 

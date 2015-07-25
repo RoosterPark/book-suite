@@ -8,7 +8,9 @@
  */
 get_header(); ?>
 <section id="pageMasthead" class="page-hero" role="banner">
-	<img src="/wp-content/uploads/2015/07/tierrasolutionshero-480x680.jpg" class="jumbotron-img img-responsive visible-xs-block" />
+	<?php if( get_field('responsive_hero_img') ): ?>
+		<img class="jumbotron-img img-responsive visible-xs-block" src="<?php the_field('responsive_hero_img'); ?>" />
+	<?php endif; ?>
 	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive small-screen' ) ); ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
@@ -19,40 +21,15 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 			<div class="jumbo-btn-group">
 				<a class="btn btn-default btn-lg clear" href="/plans/" role="button">View Our Plans</a>
-				<a class="btn btn-primary btn-lg" href="#" role="button">Request A Demo</a>
+				<a class="btn btn-primary btn-lg" href="/request-a-demo/" role="button">Request A Demo</a>
 			</div>
 		</div>
 	</div>
 </section>
-<section id="productLinks" class="sub-section white solutions">		
+<section id="booking-solutions" class="sub-section white solutions">		
 	<div class="container-fluid">
 		<div class="row">
-		<?php $catName =  get_cat_ID("solutions");	
-		            $args = array( 
-		                'post_type' => 'post',
-		                'posts_per_page' =>6,
-		                'orderby' => 'post_date',
-		                'order' => 'date' ,
-		                'cat' => $catName,
-		                'post_status' => 'publish',
-		            );
-		          
-		            
-		            $my_query = new WP_Query($args);
-		            
-		            while($my_query->have_posts()) :
-		            	$my_query->the_post();
-		            ?>
-				
-		        <div class="col-xs-4 col-sm-4 col-md-4">
-		        	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?></a>
-				<div class="h3"><?php the_title(); ?></div>
-				<?php //the_content(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-		        </div>
-		       
-					<?php endwhile; ?>			
-		<?php  wp_reset_postdata(); ?>
+			<?php get_template_part('index-solutions'); ?>
 		</div>
 	</div>
 </section>
@@ -83,7 +60,7 @@ get_header(); ?>
 	            while($my_mob_query->have_posts()) :
 	            	$my_mob_query->the_post();
 	            ?>
-				<h1 class="text-center"><?php the_title(); ?></h1>
+				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<?php endwhile; ?>			
@@ -113,7 +90,7 @@ get_header(); ?>
             while($my_ml_query->have_posts()) :
             	$my_ml_query->the_post();
             ?>
-			<h1><?php the_title(); ?></h1>
+			<header class="page-header"><h1><?php the_title(); ?></h1></header>
 			<?php the_excerpt(); ?>		
 			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 			<?php endwhile; ?>			
@@ -124,9 +101,20 @@ get_header(); ?>
 <section id="contentManagement" class="section-hero" role="banner">
 	<div id="hero" class="jumbotron">
 		<div class="jumbo-caption opt-4 black">
-			<h1>Content Management</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo sem nunc, eu varius diam rhoncus sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-		</div>
+			<?php	
+            $args = array( 
+                'name' => 'content-management-solution'
+            );
+            $my_ml_query = new WP_Query($args);
+            while($my_ml_query->have_posts()) :
+            	$my_ml_query->the_post();
+            ?>
+			<header class="page-header"><h1><?php the_title(); ?></h1></header>
+			<?php the_excerpt(); ?>		
+			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+			<?php endwhile; ?>			
+			<?php  wp_reset_postdata(); ?>
+		</div>		</div>
 	</div>
 	<?php if( get_field('content_management_header') ): ?>
 	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('content_management_header'); ?>" />
@@ -212,7 +200,7 @@ get_header(); ?>
 	            while($my_ff_query->have_posts()) :
 	            	$my_ff_query->the_post();
 	            ?>
-				<h1 class="text-center"><?php the_title(); ?></h1>
+				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<?php endwhile; ?>			
@@ -242,7 +230,7 @@ get_header(); ?>
 	            while($my_mob_query->have_posts()) :
 	            	$my_mob_query->the_post();
 	            ?>
-				<header><h1 class="text-center"><?php the_title(); ?></h1></header>
+				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<?php endwhile; ?>			
@@ -272,7 +260,7 @@ get_header(); ?>
 	            while($my_rev_query->have_posts()) :
 	            	$my_rev_query->the_post();
 	            ?>
-				<header><h1 class="text-center"><?php the_title(); ?></h1></header>
+				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>	
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<?php endwhile; ?>			
@@ -306,7 +294,7 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
-				<header><h1 class="text-center"><?php the_title(); ?></h1></header>
+				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<?php endwhile; ?>			
@@ -334,7 +322,7 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
-				<header><h1 class="text-center"><?php the_title(); ?></h1></header>
+				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<?php endwhile; ?>			

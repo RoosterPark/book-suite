@@ -1,11 +1,11 @@
 <?php $catName =  get_cat_ID("solutions");	
             $args = array( 
                 'post_type' => 'post',
-                'posts_per_page' =>6,
-                'orderby' => 'post_date',
-                'order' => 'date' ,
+                'posts_per_page' =>-1,
                 'cat' => $catName,
-                //'category__and' => array( 5, 7 ),
+                'meta_key'          => 'solutions_rank',
+                'orderby'           => 'meta_value_num',
+                'order'             => 'ASC',
                 'post_status' => 'publish',
             );
           
@@ -18,8 +18,11 @@
 		
         <div class="col-xs-4 col-sm-4 col-md-4">
         	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?></a>
-		<div class="h3"><?php the_title(); ?></div>
-		<?php the_content(); ?>		
+			<div class="h3"><?php the_title(); ?></div>
+			<?php if(! is_page('solutions')) {
+				the_content();
+			}
+			?>	
 		<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
         </div>
        

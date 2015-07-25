@@ -8,7 +8,10 @@
  */
 get_header(); ?>
 <section id="pageMasthead" class="page-hero" role="banner">
-	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive' ) ); ?>
+	<?php if( get_field('responsive_hero_img') ): ?>
+		<img class="jumbotron-img img-responsive visible-xs-block" src="<?php the_field('responsive_hero_img'); ?>" />
+	<?php endif; ?>
+	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive small-screen' ) ); ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
 			<?php while ( have_posts() ) : the_post(); ?>

@@ -14,7 +14,7 @@
 	 	<section id="welcome" class="sub-section drk-grey">
 	 		<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-7 col-md-6 col-lg-5">
+					<div class="col-sm-12 col-md-8 col-lg-8">
 				<?
 				$wp_query = NULL;
 				$wp_query = new WP_Query(array('post_type' => 'post'));
@@ -43,7 +43,7 @@
 				?>
 				
 					</div>
-		    		<div class="col-sm-5 col-md-6 col-lg-7">
+		    		<div class="col-sm-12 col-md-4 col-lg-4">
 						<!-- #footer-widgets -->	
 						<?php
 						/* Global footer sidebar */

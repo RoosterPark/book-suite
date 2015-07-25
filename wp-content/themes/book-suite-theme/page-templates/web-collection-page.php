@@ -8,7 +8,9 @@
  */
 get_header(); ?>
 <section id="pageMasthead" class="page-hero" role="banner">
-	<img src="/wp-content/uploads/2015/07/webcollectionshero-mobile.jpg" class="jumbotron-img img-responsive visible-xs-block" />
+	<?php if( get_field('responsive_hero_img') ): ?>
+		<img class="jumbotron-img img-responsive visible-xs-block" src="<?php the_field('responsive_hero_img'); ?>" />
+	<?php endif; ?>
 	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive small-screen' ) ); ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
@@ -49,14 +51,14 @@ get_header(); ?>
 	<?php endif; ?>
 	</div>
 </section>
-<section id="modernWebAndBooking" class="sub-section prod-features lt-blue">
+<section id="modernWebAndBooking" class="sub-section solutions lt-blue alt">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1>Modern Website Design & Seamless Booking</h1>
+				<h1>Your Brand Is The Bottom Line</h1>
 			</div>	
 		</div>
-		<div class='row odd'>
+		<div class='row more-features'>
 		<?php 
 				
 		$args = array( 
@@ -75,18 +77,13 @@ get_header(); ?>
 				
 
 				?>
-				<div class="col-md-4 features-box" data-post="<?php echo $postx_counter ?>">
-					<div class="icon">
+				<div class="col-sm-4 col-md-4" data-post="<?php echo $postx_counter ?>">
+					
 						<?php if ( has_post_thumbnail() ) {  ?>
 						<?php the_post_thumbnail('post-thumbnails', array('class' => 'svg')); ?>
 						<?php  } ?>
-					</div>
-					<div class="content">
-						<header>
-							<div class="title">
-								<p class="h5"><?php echo the_title(); ?></p>	
-							</div>
-							<?php echo the_excerpt(); ?>
+						<!-- <p class="h5"><?php //echo the_title(); ?></p> -->	
+						<?php echo the_excerpt(); ?>
 							
 							<?php
 								if(get_field('product_associations')) :
@@ -103,12 +100,10 @@ get_header(); ?>
 							?>
 							
 							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-						</header>
 					</div>
-				</div>
 				<?php
 				if ($postx_counter % 3 ==0 ) {
-					echo "</div><div class='row even'>";
+					echo "</div><div class='row more-features'>";
 				}
 
 				
@@ -141,14 +136,20 @@ get_header(); ?>
 		</div>
 	
 	<div class="row">
-		<div class="col-sm-6 col-md-6 col-lg-6 text-left">
-			<p><strong>Dedicated Performance ManagerDedicated </strong></p>
-			<p><strong>Monthly performance and strategy consultation</strong></p>
-			<p><strong>Quarterly business reviews</strong></p>
-			<p><strong>SEO & IT support from our digital marketing product experts</strong></p>
-			<p><strong>TripAdvisor TripConnect support</strong></p>
-			<p><strong>Content creation</strong></p>
-			<p><strong>Translation Support</strong></p>
+		<div class="col-sm-6 col-md-6 col-lg-6 text-left entry-content">
+			<?php	
+	            $args = array( 
+	                'name' => 'premium-services-key-points'
+	            );
+	            $my_ff_query = new WP_Query($args);
+	            while($my_ff_query->have_posts()) :
+	            	$my_ff_query->the_post();
+	            ?>
+				<h2><?php the_title(); ?></h2>
+				<?php the_content(); ?>		
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php endwhile; ?>			
+				<?php  wp_reset_postdata(); ?>
 		</div>
 		<div class="col-sm-6 col-md-6 col-lg-6">
 		<?php if( get_field('premium_service_image') ): ?>
@@ -161,13 +162,13 @@ get_header(); ?>
 			<a class="btn btn-primary btn-lg" role="button" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Request a Demo</a>
 		</div>
 	</div>
-
+	
 	</div>
 </section>
 <section id="clientComm" class="sub-section solutions lt-blue" >
 <div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-6 col-md-6 link-cta text-left">
+			<div class="col-sm-12 col-md-6 col-lg-6 link-cta text-left">
 				<?php	
 	            $args = array( 
 	                'name' => 'web-direct-post'
@@ -187,7 +188,7 @@ get_header(); ?>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>
-       		<div class="col-sm-6 col-md-6 link-cta text-left">
+       		<div class="col-sm-12 col-md-6 col-lg-6 link-cta text-left">
 				<?php	
 	            $args = array( 
 	                'name' => 'web-complete-post'

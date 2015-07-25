@@ -214,6 +214,42 @@ b, strong {
  **************************************************/
 
 .tab-wrapper {
+	&.about-tabs {
+		padding: 0 8%;
+		margin-bottom: @global-row-margin-bottom;
+		.nav-tabs {
+			width: 100%;
+			max-width: @global-max-width;
+			a {
+			    padding: 10px 45px;
+			    text-align: left;
+			}
+		}	
+	}
+}
+
+.tab-content {
+	&.about-tab-panels {
+		clear: both;
+		margin: 0 auto;
+		max-width: @global-max-width;
+		overflow: auto;
+		width: 100%;
+		.panel {
+			.h5 {
+				text-align: left;
+			}
+			p {
+				padding: 0 15px;
+			}
+		}
+	}
+	.col-lg-4.hq .panel {
+	    min-height: 527px;
+	}
+}
+
+.tab-wrapper {
 	background-color: @global-color-lt-grey;
 	.nav-tabs {
 	    margin: 0 auto;
@@ -253,6 +289,62 @@ b, strong {
 		}
 	}	
 }
+
+/***************************************************
+ * 
+ *  PR List Styling
+ * 
+ **************************************************/
+.pr-list {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    .pr-list-item {
+	    padding: 10px 0;
+	     a {
+		    font-weight: normal;
+		    color: #2cace2;
+		    text-align: left;
+		    display: block;
+		}
+		.post-edit-link {
+			font-weight: normal;
+			color: #fab910;
+		}
+	}
+}
+
+.content-area {
+	.press-releases {
+		h2.text-left {
+		    margin: 0;
+		}
+		h3 {
+		    border-bottom: 1px solid #ccc;
+		    font-weight: 400;
+		    margin: 0;
+		    padding: 0 0 1.95%;
+		}
+		.post-date {
+			display: block;
+		    font-weight: mormal;
+			text-align: left;
+		}
+		.post-title {
+		    display: block;
+		    padding: 0 0 20px;
+		    text-align: left;
+		    a {
+			    font-weight: normal;
+			    text-align: left;
+			    color: #2cace2;
+			}
+		}
+	
+	}	
+}
+
 
 /***************************************************
  * 
@@ -336,7 +428,7 @@ b, strong {
 		    margin: 4% 0 0 0;
 		}
 		.btn-group.edit-post {
-	    	text-align: left;
+	    	text-align: center;
 		}
 	}
 	.jumbotron-img {
@@ -433,13 +525,16 @@ b, strong {
 		font-weight: 200;
 	}
 	.excerpt {
-	    margin: @global-pad-top auto;
+	    margin:0 auto  @global-pad-top;
 	    max-width: 1024px;
 	    text-align: center;
 	}
 
 	h1 {
 		margin-top: 0;
+	}
+	.page-header {
+		border-bottom: none;
 	}
 	img-responsive {
 		margin: 0px auto;
@@ -450,7 +545,7 @@ b, strong {
 	}
 	.center-block {
 	    margin-bottom: 25%;
-	    margin-top: 40%;
+	    margin-top: 25%;
 	    max-width: 450px;
 	  
 	    p {
@@ -513,7 +608,7 @@ b, strong {
 			bottom: 20%;
 			h1 {
 			    text-align: center;
-			    margin-bottom: 5%;
+			    //margin-bottom: 5%;
 			}
 			p {
 			    text-align: center;
@@ -543,7 +638,7 @@ b, strong {
 		    background-color: rgba(244, 244, 243, 0.75);
 			h1 {
 			    text-align: left;
-			    margin-bottom: 6%;
+			   //page-header  margin-bottom: 6%;
 			}
 			p {
 			    text-align: left;
@@ -706,6 +801,9 @@ b, strong {
 		}
 
 	}
+	&.alt .row:first-child {
+	    margin-bottom: 0;
+	}
 }
 
 .story .wp-post-image, .video .wp-post-image {
@@ -826,6 +924,56 @@ b, strong {
 }
 .content-area {
 	.sub-section {
+		&.error-404 {
+			margin-top: 130px;
+		}
+	}
+}
+.content-area {
+	.sub-section {
+		&.default-page {
+			margin-top: 130px;
+			h1, p {
+				text-align: left !important;
+			}
+		}
+	}
+}
+
+.content-area {
+	.hentry {
+		margin-bottom: 5%;
+		h1, p, .excerpt {
+			text-align: left !important;
+		}
+		
+		.entry-header {
+	    	overflow: auto;
+	    	h2 {
+				margin-bottom: 2%;
+				text-align: left;
+			}
+		}
+		.read-more {
+		    font-size: 14px;
+		    margin-left: 10px;
+		    text-decoration: underline;
+		}
+		.entry-summary {
+			.excerpt {
+			    margin: inherit;
+			    max-width: 80%;
+			}			
+		}
+		.entry-footer {
+		    font-size: 14px;
+		    margin-top: 1.25%;
+		}
+	}
+}
+
+.content-area {
+	.sub-section {
 		&.premium {
 			.row:first-child {
 				margin-bottom: @global-pad-bottom;
@@ -863,9 +1011,16 @@ b, strong {
 		.img-responsive {
 		    margin: 0 auto;
 		}
+		.page-header {
+			border: none;
+			margin-bottom:2%;
+		}
 		h1 {
 		    margin-top: 0;
-		    margin-bottom: @global-pad-bottom;
+		}
+		h2 {
+			//margin-bottom: @global-pad-bottom;
+			margin-top: 0;
 		}
 		.row {
 			 margin-bottom: @global-pad-bottom;
@@ -926,9 +1081,6 @@ footer {
 	.drk-grey {
 		background-color: @global-footer-bground;
 		color: @global-color-white;
-		.col-md-12, .col-md-4, .col-md-8  {
-		    background-color: #ccc;
-		}
 	}
 }
 
@@ -1206,11 +1358,6 @@ img.aligncenter {
 			padding: 5% 1%;
 		}
 	}
-	#propertyWebsites {
-		.properties:last-child {
-			width: 100%;
-		}
-	}
 	.section-hero {
 		.center-block {
 			margin-bottom: 15%;
@@ -1275,6 +1422,11 @@ img.aligncenter {
 		  overflow: auto;
 		}	
 	}
+	#propertyWebsites {
+		.properties:last-child {
+			width: 100%;
+		}
+	}
 	.navbar-desktop {
 		display: none;
 	}
@@ -1316,6 +1468,22 @@ img.aligncenter {
 	  margin-top: 3%;
 	  margin-bottom: 3%;
 	}
+	.content-area {
+		.link-cta:first-child {
+			border-right: none;
+			border-bottom: 1px solid #d5effe;
+			padding-right: 15px;
+			padding-bottom: 6%;
+		}
+		.link-cta:last-child {
+			border: none;
+			padding-left: 15px;
+			padding-top: 6%;
+		}
+		.sub-section.lt-blue .excerpt {
+		  margin: 0 auto 6%;
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -1349,6 +1517,19 @@ img.aligncenter {
 	}
 	.tab-wrapper {
 		border-bottom: 1px solid #ccc;
+	}
+	.tab-wrapper {
+		&.about-tabs {
+			.nav-tabs {
+				li {
+					max-width: 135px;
+				}
+				a {
+				   // padding: 11px 25px;
+				    text-align: left;					
+				}
+			}
+		}
 	}
 	.prod-features {
 		h1, .h1 {
@@ -1428,23 +1609,7 @@ img.aligncenter {
 		padding-top: 3%;
 		margin-top: 0;
 	}
-	.content-area {
-		.link-cta:first-child {
-			border-right: none;
-			border-bottom: 1px solid #d5effe;
-			padding-right: 15px;
-			padding-bottom: 6%;
-		}
-		.link-cta:last-child {
-			border: none;
-			padding-left: 15px;
-			padding-top: 6%;
-		}
-		.sub-section.lt-blue .excerpt {
-		  margin: 0 auto 6%;
-		}
-		
-	}
+	
 	
 	.solutions {
 		.properties {
@@ -1464,7 +1629,11 @@ img.aligncenter {
 	.story .wp-post-image, .video .wp-post-image {
 		min-height: inherit;
 	}
-
+	.site-footer {
+		.col-sm-12 {
+			margin-bottom: 6%;
+		}		
+	}
 }
 
 @media (max-width: 480px) {
@@ -1532,9 +1701,20 @@ img.aligncenter {
 				}
 			}			
 		}
-
 	}
 	
+	.tab-content {
+		&.about-tab-panels {
+			.tab-pane {
+				.h5 {
+					font-size: 16px;
+				}
+				.col-xs-6 {
+				    width: 100%;
+				}
+			}
+		}
+	}
 	.content-area .sub-section .row {
 	margin-bottom: 10%;
 	}

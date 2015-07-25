@@ -8,7 +8,9 @@
  */
 get_header(); ?>
 <section id="pageMasthead" class="page-hero" role="banner">
-	<img src="/wp-content/uploads/2015/07/webdirecthero-mobile.jpg" class="jumbotron-img img-responsive visible-xs-block" />
+	<?php if( get_field('responsive_hero_img') ): ?>
+		<img class="jumbotron-img img-responsive visible-xs-block" src="<?php the_field('responsive_hero_img'); ?>" />
+	<?php endif; ?>
 	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive small-screen' ) ); ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
@@ -103,7 +105,7 @@ get_header(); ?>
 <section id="clientComm" class="sub-section solutions lt-blue" >
 <div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-6 col-md-6 link-cta text-left">
+			<div class="col-sm-12 col-md-6 col-lg-6 link-cta text-left">
 				<?php	
 	            $args = array( 
 	                'name' => 'web-collection-post'
@@ -123,7 +125,7 @@ get_header(); ?>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>
-       		<div class="col-sm-6 col-md-6 link-cta text-left">
+       		<div class="col-sm-12 col-md-6 col-lg-6 link-cta text-left">
 				<?php	
 	            $args = array( 
 	                'name' => 'web-complete-post'

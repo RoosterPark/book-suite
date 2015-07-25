@@ -2,7 +2,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-12">
-			<h2>Partner Success with BookingSuite</h2>
+			<h2>BookingSuite Partner Success</h2>
 		</div>
 	</div>
 	<div class="row">	
