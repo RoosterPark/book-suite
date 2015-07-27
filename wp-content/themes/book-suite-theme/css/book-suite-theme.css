@@ -303,6 +303,9 @@ strong {
   margin: 0;
   padding: 0;
 }
+.badges {
+  margin-top: 6%;
+}
 /***************************************************
  * 
  *  Jumbotron Header
@@ -349,7 +352,7 @@ strong {
   background-color: black;
 }
 .page-hero h1 {
-  margin-bottom: 4%;
+  margin-bottom: 2%;
   margin-top: 4%;
 }
 .page-hero p {
@@ -564,6 +567,9 @@ strong {
  *  Main Content Area
  * 
  **************************************************/
+article {
+  overflow: auto;
+}
 .single .content-area .sub-section {
   text-align: left;
 }
@@ -589,7 +595,7 @@ strong {
 }
 .prod-features .icon {
   float: left;
-  margin: 0 10px 0 0;
+  margin: 0 30px 0 0;
   width: 45px;
   height: 45px;
 }
@@ -599,10 +605,12 @@ strong {
 .prod-features .content {
   text-align: left;
   float: left;
-  width: 85%;
+  width: 80%;
 }
 .prod-features .content p.excerpt {
   max-width: 100%;
+  text-align: left;
+  margin: 0 0 12.5px;
 }
 .prod-features .content .btn-group.edit-post {
   text-align: left;
@@ -671,9 +679,6 @@ strong {
   /* min-height: 321px; */
   max-width: 100%;
   height: 100%;
-}
-.success h2 {
-  margin: 0 0 5%;
 }
 .success .success-content {
   box-sizing: content-box;
@@ -763,22 +768,28 @@ strong {
   padding-bottom: 0;
 }
 .content-area .sub-section.error-404 {
-  margin-top: 130px;
+  margin-top: 100px;
 }
 .content-area .sub-section.default-page {
-  margin-top: 130px;
+  margin-top: 100px;
 }
 .content-area .sub-section.default-page h1,
 .content-area .sub-section.default-page p {
   text-align: left !important;
 }
-.content-area .hentry {
-  margin-bottom: 5%;
+.content-area .sub-section.connect {
+  padding-top: 0;
 }
-.content-area .hentry h1,
-.content-area .hentry p,
-.content-area .hentry .excerpt {
-  text-align: left !important;
+.content-area .sub-section.request-hero {
+  margin-top: 100px;
+  padding: 5% 8% 2%;
+}
+.content-area .sub-section.request-content {
+  padding-top: 0;
+}
+.search .hentry p,
+.search .hentry .excerpt {
+  text-align: left;
 }
 .content-area .hentry .entry-header {
   overflow: auto;
@@ -826,7 +837,6 @@ strong {
 }
 .content-area .sub-section {
   padding: 5% 8%;
-  text-align: center;
 }
 .content-area .sub-section .img-responsive {
   margin: 0 auto;
@@ -850,6 +860,7 @@ strong {
 .content-area .sub-section .excerpt {
   margin: 0 auto;
   max-width: 80%;
+  text-align: center;
 }
 .content-area .container-fluid {
   max-width: 1366px;
@@ -885,6 +896,13 @@ strong {
 .content-area .dark-grey h2,
 .content-area .dark-grey p {
   color: #ffffff;
+}
+.panel .panel-heading,
+.panel .panel-footer {
+  border: none;
+}
+.panel .panel-footer p:last-child {
+  margin-bottom: 0;
 }
 /*********************************************************
  * 

@@ -398,6 +398,9 @@ b, strong {
     padding: 0;
 }
 
+.badges {
+    margin-top: 6%;
+}
 
 /***************************************************
  * 
@@ -443,13 +446,14 @@ b, strong {
 .black h1, .black p {
     color: black;
 }
+
 .page-hero {
 
     position: relative;
 	margin-top:  @navbar-height;
     background-color: black;
     h1 {
-		margin-bottom: 4%;
+		margin-bottom: 2%;
 		margin-top: 4%;
 	}
     p {
@@ -696,7 +700,9 @@ b, strong {
  *  Main Content Area
  * 
  **************************************************/
-
+article {
+	overflow: auto;
+}
 .single {
 	.content-area {
 		.sub-section {
@@ -718,6 +724,7 @@ b, strong {
 		text-align: center !important;
 	}
 }
+
 .prod-features {
 	.row {
 	    margin-bottom: @global-row-margin-bottom;
@@ -727,7 +734,7 @@ b, strong {
 	}
 	.icon {
 		float: left;
-		margin: 0 10px 0 0;
+		margin: 0 30px 0 0;
 		width: 45px;
 		height: 45px;
 		.svg {
@@ -737,9 +744,11 @@ b, strong {
 	.content {
 		text-align: left;
 	    float: left;
-	    width: 85%;
+	    width: 80%;
 	    p.excerpt {
 	    	max-width: 100%;
+	    	text-align: left;
+	    	margin: 0 0 12.5px;
 	    }
 	    .btn-group.edit-post {
 		    text-align: left;
@@ -815,7 +824,7 @@ b, strong {
 
 .success {
 	h2 {
-		margin: 0 0 @global-pad-bottom;
+		//margin: 0 0 @global-pad-bottom;
 	}
 	.success-content {
 		box-sizing: content-box;
@@ -925,14 +934,14 @@ b, strong {
 .content-area {
 	.sub-section {
 		&.error-404 {
-			margin-top: 130px;
+			margin-top: 100px;
 		}
 	}
 }
 .content-area {
 	.sub-section {
 		&.default-page {
-			margin-top: 130px;
+			margin-top: 100px;
 			h1, p {
 				text-align: left !important;
 			}
@@ -941,10 +950,36 @@ b, strong {
 }
 
 .content-area {
+	.sub-section {
+		&.connect {
+    		padding-top: 0;
+		}
+	}
+}
+.content-area {
+	.sub-section {
+		&.request-hero {
+    		margin-top: 100px;
+    		padding: 5% 8% 2%;
+		}
+		&.request-content {
+    		padding-top: 0;
+		}
+	}
+}
+
+.search {
 	.hentry {
-		margin-bottom: 5%;
+		p, .excerpt {
+			text-align:left;
+		}
+	}
+}
+.content-area {
+	.hentry {
+		//margin-bottom: 5%;
 		h1, p, .excerpt {
-			text-align: left !important;
+			//text-align: left !important;
 		}
 		
 		.entry-header {
@@ -1007,7 +1042,6 @@ b, strong {
 .content-area {
 	.sub-section {
 		padding: @global-section-padding;
-		text-align: center;
 		.img-responsive {
 		    margin: 0 auto;
 		}
@@ -1031,6 +1065,7 @@ b, strong {
 		.excerpt {
 		    margin: 0 auto;
 		    max-width: 80%;
+		    text-align: center;
 		}
 	}
 	.container-fluid {
@@ -1063,6 +1098,17 @@ b, strong {
 		color: @global-color-white;
 		h1, h2, p {
 			color: @global-color-white;
+		}
+	}
+}
+
+.panel {
+	.panel-heading, .panel-footer {
+	    border: none;
+	}
+	.panel-footer {
+		p:last-child {
+			margin-bottom: 0;
 		}
 	}
 }

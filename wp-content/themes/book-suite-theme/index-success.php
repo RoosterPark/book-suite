@@ -36,6 +36,7 @@
 				 	}
 				 	?>
 					<div class="col-md-12" data-post="<?php echo $postx_counter ?>">
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<div class="success-content video">
 							<header>
 								<div class="title">
@@ -50,6 +51,7 @@
 		                    <?php  } ?>
 		                    <?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 		                </div>
+						</article>
 					</div>
 					<?php
 				endwhile;  

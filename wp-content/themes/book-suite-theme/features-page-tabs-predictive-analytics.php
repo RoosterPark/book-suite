@@ -25,20 +25,21 @@
 				} 
 				?>
 				<div class="col-md-4 features-box" data-post="<?php echo $postx_counter ?>">
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="icon">
 						<?php if ( has_post_thumbnail() ) {  ?>
 						<?php the_post_thumbnail('post-thumbnails', array('class' => 'svg')); ?>
 						<?php  } ?>
 					</div>
 					<div class="content">
-						<header>
-							<div class="title">
-								<p class="h5"><?php echo the_title(); ?></p>	
-							</div>
+						<header class="title">
+								<p class="h4"><?php echo the_title(); ?></p>	
+						</header>
 							<?php echo the_excerpt(); ?>
+							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</dp>' ); ?>
 							<?php
 								if(get_field('product_associations')) :
-									echo "<p>";
+									echo "<div class=\"badges\">";
 									$field = get_field_object('product_associations');
 									$value = get_field('product_associations');
 									//print_r($value);
@@ -46,12 +47,12 @@
 									foreach ($value as $val) :
 									    echo "<span class=\"badge\">".$val."</span>"; 
 									endforeach;
-									echo "</p>";
+									echo "</div>";
 								endif; 
 							?>
-							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-						</header>
+							
 					</div>
+					</article>
 				</div>
 				<?php
 
@@ -93,20 +94,21 @@
 				} 
 				?>
 				<div class="col-md-4 features-box" data-post="<?php echo $postx_counter ?>">
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="icon">
 						<?php if ( has_post_thumbnail() ) {  ?>
 						<?php the_post_thumbnail('post-thumbnails', array('class' => 'svg')); ?>
 						<?php  } ?>
 					</div>
 					<div class="content">
-						<header>
-							<div class="title">
-								<p class="h5"><?php echo the_title(); ?></p>	
-							</div>
+						<header class="title">
+								<p class="h4"><?php echo the_title(); ?></p>	
+						</header>
 							<?php echo the_excerpt(); ?>
+							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
 							<?php
 								if(get_field('product_associations')) :
-									echo "<p>";
+									echo "<div class=\"badges\">";
 									$field = get_field_object('product_associations');
 									$value = get_field('product_associations');
 									//print_r($value);
@@ -114,12 +116,13 @@
 									foreach ($value as $val) :
 									    echo "<span class=\"badge\">".$val."</span>"; 
 									endforeach;
-									echo "</p>";
+									echo "</div>";
 								endif; 
 							?>
-							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-						</header>
+							
+
 					</div>
+				</article>
 				</div>
 				<?php
 
@@ -161,20 +164,21 @@
 				} 
 				?>
 				<div class="col-md-4 features-box" data-post="<?php echo $postx_counter ?>">
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="icon">
 						<?php if ( has_post_thumbnail() ) {  ?>
 						<?php the_post_thumbnail('post-thumbnails', array('class' => 'svg')); ?>
 						<?php  } ?>
 					</div>
 					<div class="content">
-						<header>
-							<div class="title">
-								<p class="h5"><?php echo the_title(); ?></p>	
-							</div>
+						<header class="title">
+								<p class="h4"><?php echo the_title(); ?></p>	
+						</header>       
 							<?php echo the_excerpt(); ?>
+							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
 							<?php
 								if(get_field('product_associations')) :
-									echo "<p>";
+									echo "<div class=\"badges\">";
 									$field = get_field_object('product_associations');
 									$value = get_field('product_associations');
 									//print_r($value);
@@ -182,12 +186,12 @@
 									foreach ($value as $val) :
 									    echo "<span class=\"badge\">".$val."</span>"; 
 									endforeach;
-									echo "</p>";
+									echo "</div>";
 								endif; 
 							?>
-							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-						</header>
+							
 					</div>
+				</article>
 				</div>
 				<?php
 
@@ -230,20 +234,21 @@
 				} 
 				?>
 				<div class="col-md-4 features-box" data-post="<?php echo $postx_counter ?>">
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="icon">
 						<?php if ( has_post_thumbnail() ) {  ?>
 						<?php the_post_thumbnail('post-thumbnails', array('class' => 'svg')); ?>
 						<?php  } ?>
 					</div>
 					<div class="content">
-						<header>
-							<div class="title">
-								<p class="h5"><?php echo the_title(); ?></p>	
-							</div>
+						<header class="title">
+								<p class="h4"><?php echo the_title(); ?></p>	
+						</header>
 							<?php echo the_excerpt(); ?>
+							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
 							<?php
 								if(get_field('product_associations')) :
-									echo "<p>";
+									echo "<div class=\"badges\">";
 									$field = get_field_object('product_associations');
 									$value = get_field('product_associations');
 									//print_r($value);
@@ -251,12 +256,11 @@
 									foreach ($value as $val) :
 									    echo "<span class=\"badge\">".$val."</span>"; 
 									endforeach;
-									echo "</p>";
+									echo "</div>";
 								endif; 
 							?>
-							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-						</header>
 					</div>
+				</article>
 				</div>
 				<?php
 
@@ -298,20 +302,21 @@
 				} 
 				?>
 				<div class="col-md-4 features-box" data-post="<?php echo $postx_counter ?>">
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="icon">
 						<?php if ( has_post_thumbnail() ) {  ?>
 						<?php the_post_thumbnail('post-thumbnails', array('class' => 'svg')); ?>
 						<?php  } ?>
 					</div>
 					<div class="content">
-						<header>
-							<div class="title">
-								<p class="h5"><?php echo the_title(); ?></p>	
-							</div>
+						<header class="title">
+								<p class="h4"><?php echo the_title(); ?></p>	
+						</header>
 							<?php echo the_excerpt(); ?>
+							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
 							<?php
 								if(get_field('product_associations')) :
-									echo "<p>";
+									echo "<div class=\"badges\">";
 									$field = get_field_object('product_associations');
 									$value = get_field('product_associations');
 									//print_r($value);
@@ -319,12 +324,12 @@
 									foreach ($value as $val) :
 									    echo "<span class=\"badge\">".$val."</span>"; 
 									endforeach;
-									echo "</p>";
+									echo "</div>";
 								endif; 
 							?>
-							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-						</header>
+						
 					</div>
+				</article>
 				</div>
 				<?php
 

@@ -8,6 +8,7 @@
             ?>
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <header id="masthead" class="site-hero" role="banner">
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if( get_field('responsive_hero_img') ): ?>
 		<img class="jumbotron-img img-responsive visible-xs-block" src="<?php the_field('responsive_hero_img'); ?>" />
 	<?php endif; ?>
@@ -24,6 +25,7 @@
 				</div>
 		</div>
 	</div>
+	</article>
 </header>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>

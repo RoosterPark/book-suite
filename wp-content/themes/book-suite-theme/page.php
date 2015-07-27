@@ -23,4 +23,5 @@ get_header(); ?>
 		</div><!-- .row -->
 	</div><!-- .container -->
 </section>
+<?php get_template_part('index-request-demo'); ?>
 <?php get_footer(); ?>

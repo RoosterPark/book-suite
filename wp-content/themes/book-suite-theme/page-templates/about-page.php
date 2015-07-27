@@ -8,19 +8,21 @@
  */
 get_header(); ?>
 <section id="pageMasthead" class="page-hero" role="banner">
+	<?php while ( have_posts() ) : the_post(); ?>
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if( get_field('responsive_hero_img') ): ?>
 		<img class="jumbotron-img img-responsive visible-xs-block" src="<?php the_field('responsive_hero_img'); ?>" />
 	<?php endif; ?>
 	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive small-screen' ) ); ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
-			<?php while ( have_posts() ) : the_post(); ?>
 				<h1 class="page-title"><?php the_title(); ?></h1>	
 				<?php the_content(); ?>
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-			<?php endwhile; // end of the loop. ?>
 		</div>
 	</div>
+	</article>
+	<?php endwhile; // end of the loop. ?>
 </section>
 <section id="jobListings" class="sub-section white" role="Jobs">		
 	<div class="container-fluid">
@@ -175,7 +177,7 @@ foreach ( $member_group_terms as $member_group_term ) {
 		            $my_query = new WP_Query($args);
 		            
 		            while($my_query->have_posts()) : $my_query->the_post(); ?>
-			
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	        			<div class="pr-list-item col-md-2"><?php the_date('F Y', '<span class="post-date">', '</span>'); ?></div>
 	        			<div class="pr-list-item col-md-10">
 	        				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -184,7 +186,7 @@ foreach ( $member_group_terms as $member_group_term ) {
 							<?php endif; ?>
 	        				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<span>', '</span>' ); ?>
 	        			</div>
-	       
+	       				</article>
 					<?php endwhile; ?>			
 					<?php  wp_reset_postdata(); ?>
 					
@@ -220,13 +222,13 @@ foreach ( $member_group_terms as $member_group_term ) {
 		            $my_query = new WP_Query($args);
 		            
 		            while($my_query->have_posts()) : $my_query->the_post(); ?>
-			
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	        			<div class="pr-list-item col-md-2"><?php the_date('F Y', '<span class="post-date"> ', '</span>'); ?></div>
 	        			<div class="pr-list-item col-md-10">
 	        				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 	        				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<span>', '</span>' ); ?>
 	        			</div>
-	       
+	       				</article>
 					<?php endwhile; ?>			
 					<?php  wp_reset_postdata(); ?>
 					

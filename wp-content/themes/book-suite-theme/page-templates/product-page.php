@@ -8,23 +8,27 @@
  */
 get_header(); ?>
 <section id="pageMasthead" class="page-hero" role="banner">
+	<?php while ( have_posts() ) : the_post(); ?>
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if( get_field('responsive_hero_img') ): ?>
 		<img class="jumbotron-img img-responsive visible-xs-block" src="<?php the_field('responsive_hero_img'); ?>" />
 	<?php endif; ?>
 	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive small-screen' ) ); ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
-			<?php while ( have_posts() ) : the_post(); ?>
+			
 				<h1 class="page-title"><?php the_title(); ?></h1>	
 				<?php the_content(); ?>
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-			<?php endwhile; // end of the loop. ?>
+			
 			<div class="jumbo-btn-group">
 				<a class="btn btn-default btn-lg clear" href="/plans/" role="button">View Our Plans</a>
 				<a class="btn btn-primary btn-lg" href="/request-a-demo/" role="button">Request A Demo</a>
 			</div>
 		</div>
 	</div>
+	</article>
+	<?php endwhile; // end of the loop. ?>
 </section>
 <section id="booking-solutions" class="sub-section white solutions">		
 	<div class="container-fluid">
@@ -60,13 +64,14 @@ get_header(); ?>
 	            while($my_mob_query->have_posts()) :
 	            	$my_mob_query->the_post();
 	            ?>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        			</div>
-				
+				</article>
        		</div>	
        		<div class="col-sm-6 col-md-6 col-lg-6">
 			<?php if( get_field('mobile_friendly_header') ): ?>
@@ -90,9 +95,12 @@ get_header(); ?>
             while($my_ml_query->have_posts()) :
             	$my_ml_query->the_post();
             ?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="page-header"><h1><?php the_title(); ?></h1></header>
 			<?php the_excerpt(); ?>		
 			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+			
+			</article>
 			<?php endwhile; ?>			
 			<?php  wp_reset_postdata(); ?>
 		</div>
@@ -109,9 +117,11 @@ get_header(); ?>
             while($my_ml_query->have_posts()) :
             	$my_ml_query->the_post();
             ?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="page-header"><h1><?php the_title(); ?></h1></header>
 			<?php the_excerpt(); ?>		
 			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+			</article>
 			<?php endwhile; ?>			
 			<?php  wp_reset_postdata(); ?>
 		</div>		</div>
@@ -132,10 +142,12 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<p class="h3"><?php the_title(); ?></p>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>
@@ -148,10 +160,12 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<p class="h3"><?php the_title(); ?></p>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>	
@@ -164,10 +178,12 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<p class="h3"><?php the_title(); ?></p>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>			    
@@ -200,9 +216,11 @@ get_header(); ?>
 	            while($my_ff_query->have_posts()) :
 	            	$my_ff_query->the_post();
 	            ?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>
@@ -230,13 +248,14 @@ get_header(); ?>
 	            while($my_mob_query->have_posts()) :
 	            	$my_mob_query->the_post();
 	            ?>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        			</div>
-				
        		</div>	
        		<div class="col-sm-6 col-lg-6">
 			<?php if( get_field('data_driven_header') ): ?>
@@ -260,10 +279,11 @@ get_header(); ?>
 	            while($my_rev_query->have_posts()) :
 	            	$my_rev_query->the_post();
 	            ?>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>	
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-				<?php endwhile; ?>			
+				</article><?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
 			<div class="jumbo-btn-group">
 				<a class="btn btn-info btn-lg" href="#" role="button">Lean More</a>
@@ -294,9 +314,11 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>
@@ -322,9 +344,11 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>
@@ -340,10 +364,12 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<header><p class="h3"><?php the_title(); ?></p></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>
@@ -356,6 +382,7 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<header><p class="h3"><?php the_title(); ?></p></header>
 				<?php the_excerpt(); ?>		
@@ -372,10 +399,12 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<header><p class="h3"><?php the_title(); ?></p></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>			    

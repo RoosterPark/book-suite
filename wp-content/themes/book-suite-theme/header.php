@@ -24,7 +24,10 @@
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo esc_url( get_template_directory_uri() ); ?>/ico/apple-touch-icon-57-precomposed.png">
 
 <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/ico/favicon.png">
-
+<style>
+.request-content {
+	background:  url("/wp-content/themes/book-suite-theme/img/lt-blue-background-slice.png") repeat-x scroll 0 -130px rgba(0, 0, 0, 0);
+}</style>
 </head>
 
 <body <?php body_class(); ?>>

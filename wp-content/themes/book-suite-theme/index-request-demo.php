@@ -3,6 +3,7 @@
 while($my_query->have_posts()){
         $my_query->the_post();
 ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="container-fluid">
 	<div class="row">
 	    <div class="col-md-12">
@@ -16,5 +17,6 @@ while($my_query->have_posts()){
 	    </div>
 	</div>
 </div>
+</article>
 <?php } ?>
 </section>

@@ -52,13 +52,14 @@ get_header(); ?>
 				
 					while (have_posts()) : the_post();
 					?>
-				
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="col-lg-2">
 						<?php the_date('F Y', '<span class="post-date">', '</span>'); ?>
 					</div>
 					<div class="col-lg-10">
 						<span class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></span>
 					</div>
+					</article>
 				
 				
 					<?php endwhile;  ?>

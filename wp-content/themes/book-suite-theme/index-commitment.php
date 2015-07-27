@@ -6,6 +6,7 @@
 			while($my_query->have_posts()){
 			        $my_query->the_post();
 			?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	        <header>
 	        	<h1><?php the_title() ?></h1>
 	        </header>
@@ -13,6 +14,7 @@
 			<footer>
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 			</footer>
+			</article>
 		    <?php } ?>
 		   
 		    </div>
@@ -21,6 +23,7 @@
 			while($my_query->have_posts()){
 			        $my_query->the_post();
 			?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header>
 				<h1><?php the_title() ?></h1>
 			</header>
@@ -28,6 +31,7 @@
 			<footer>
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 			</footer>
+			</article>
 		     <?php } ?>	    </div>
 		   
 		</div>
