@@ -223,13 +223,11 @@ strong {
  * 
  **************************************************/
 .pr-list {
-  list-style: outside none none;
-  margin: 0;
-  padding: 0;
   text-align: left;
 }
 .pr-list .pr-list-item {
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .pr-list .pr-list-item a {
   font-weight: normal;
@@ -357,7 +355,7 @@ strong {
 }
 .page-hero h1 {
   margin-bottom: 2%;
-  margin-top: 4%;
+  margin-top: 10%;
 }
 .page-hero p {
   font-weight: normal;
@@ -755,6 +753,10 @@ article {
   max-width: 100%;
   width: 100%;
 }
+.content-area .sub-section.premium h2,
+.content-area .sub-section.premium .h2 {
+  margin-bottom: 6%;
+}
 .content-area .request-demo {
   text-align: center;
 }
@@ -788,7 +790,7 @@ article {
   padding-top: 0;
 }
 .content-area .sub-section.request-hero {
-  margin-top: 100px;
+  margin-top: 90px;
   padding: 5% 8%;
 }
 .content-area .sub-section.request-content {
@@ -866,6 +868,7 @@ article {
   margin: 0px auto 12.5px;
 }
 .content-area .sub-section h2 {
+  margin-bottom: 0;
   margin-top: 0;
 }
 .content-area .sub-section .row {
@@ -875,7 +878,7 @@ article {
   margin-bottom: 0;
 }
 .content-area .sub-section .excerpt {
-  margin: 0 auto 4.5%;
+  margin: 0 auto;
   max-width: 80%;
   text-align: center;
 }
@@ -950,8 +953,9 @@ article {
  * Bootstrap Form Element Styling
  * 
  ********************************************************/
-.checkbox-inline {
-  font-size: 15px;
+.checkbox label {
+  font-size: 16px;
+  margin-bottom: 3%;
 }
 .form-group label .fa.fa-asterisk {
   color: red;
@@ -1181,6 +1185,11 @@ img.aligncenter {
   }
 }
 @media (max-width: 1024px) {
+  .radio-inline + .radio-inline,
+  .checkbox-inline + .checkbox-inline {
+    margin-top: 0;
+    margin-left: 0;
+  }
   .page-hero {
     margin-top: 90px;
   }
@@ -1209,7 +1218,7 @@ img.aligncenter {
   .prod-features .content {
     text-align: left;
     float: left;
-    width: 80%;
+    width: 75%;
   }
   .content-area .sub-section {
     padding: 5% 1%;
@@ -1255,7 +1264,13 @@ img.aligncenter {
     max-width: 85%;
     margin: 0px auto;
   }
-  .content-area .sub-section .row {
+  .request-content {
+    background-position: 0 -165px !important;
+  }
+  .request-content .panel {
+    margin-top: 6%;
+  }
+  .content-area .sub-section .row:last-child {
     margin-bottom: 0;
   }
   .prod-features .features-box {
@@ -1274,23 +1289,11 @@ img.aligncenter {
   div#logo {
     margin-left: 15px;
   }
-  .solutions {
-    margin-top: 6%;
-  }
   .solutions .col-md-4 {
     margin-bottom: 5%;
   }
-  .solutions .cta-link {
-    margin: 6% auto 5%;
-  }
-  .mentions h2 {
-    margin: 0 0 6%;
-  }
   .success .success-post .wp-post-image {
     height: auto;
-  }
-  .success .col-sm-12 {
-    margin-bottom: 4%;
   }
   .mentions .col-md-2 {
     float: left;
@@ -1350,13 +1353,6 @@ img.aligncenter {
   }
   .tab-wrapper.about-tabs .nav-tabs a {
     text-align: left;
-  }
-  .prod-features h1,
-  .prod-features .h1 {
-    font-size: 20px;
-  }
-  .mentions .cta-link {
-    margin-bottom: 10%;
   }
   .content-area .btn-lg {
     text-align: center;
@@ -1463,6 +1459,18 @@ img.aligncenter {
   .h2 {
     font-size: 22px;
   }
+  h3,
+  .h3 {
+    font-size: 20px;
+  }
+  h4,
+  .h4 {
+    font-size: 18px;
+  }
+  h5,
+  .h5 {
+    font-size: 168px;
+  }
   #logo > a img {
     margin-top: 5%;
     max-width: 200px;
@@ -1486,6 +1494,9 @@ img.aligncenter {
   .prod-features .content {
     width: 78%;
   }
+  .features-box .content {
+    width: 100%;
+  }
   .section-hero.no-risk .jumbotron .opt-2 h1 {
     margin-top: 0;
     margin-bottom: 0;
@@ -1506,9 +1517,6 @@ img.aligncenter {
   .tab-wrapper .nav-tabs li.active a {
     background-color: #bbb;
     border-bottom: 5px solid #4a4a4a;
-  }
-  .tab-content.about-tab-panels .tab-pane .h5 {
-    font-size: 16px;
   }
   .tab-content.about-tab-panels .tab-pane .col-xs-6 {
     width: 100%;

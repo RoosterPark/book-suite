@@ -178,8 +178,8 @@ foreach ( $member_group_terms as $member_group_term ) {
 		            
 		            while($my_query->have_posts()) : $my_query->the_post(); ?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	        			<div class="pr-list-item col-md-2"><?php the_date('F Y', '<span class="post-date">', '</span>'); ?></div>
-	        			<div class="pr-list-item col-md-10">
+	        			<div class="pr-list-item col-sm-2 col-md-2 col-lg-2"><?php the_date('F Y', '<span class="post-date">', '</span>'); ?></div>
+	        			<div class="pr-list-item col-sm-10 col-md-10 col-lg-10">
 	        				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 	        				<?php if( get_field('pr_news_url') ): ?>
 								<a href="<?php the_field('pr_news_url'); ?>" target="_blank" title="<?php the_field('pr_news_vanity_name'); ?>" class="btn btn-link clearfix"><?php the_field('pr_news_vanity_name'); ?></a>
@@ -193,7 +193,7 @@ foreach ( $member_group_terms as $member_group_term ) {
        		</div>
        		<div class="row">
 				<div class="col-md-12 text-center">
-					<p><a class="btn btn-default btn-lg" title="Product Features" href="/news/" role="button">See All News</a></p>
+					<div><a class="btn btn-default btn-lg" title="Product Features" href="/news/" role="button">See All News</a></div>
 				</div>
 			</div>		
 			<div class="row">
@@ -223,8 +223,8 @@ foreach ( $member_group_terms as $member_group_term ) {
 		            
 		            while($my_query->have_posts()) : $my_query->the_post(); ?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	        			<div class="pr-list-item col-md-2"><?php the_date('F Y', '<span class="post-date"> ', '</span>'); ?></div>
-	        			<div class="pr-list-item col-md-10">
+							<div class="pr-list-item col-sm-2 col-md-2 col-lg-2"><?php the_date('F Y', '<span class="post-date">', '</span>'); ?></div>
+	        				<div class="pr-list-item col-sm-10 col-md-10 col-lg-10">
 	        				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 	        				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<span>', '</span>' ); ?>
 	        			</div>
@@ -235,7 +235,7 @@ foreach ( $member_group_terms as $member_group_term ) {
        			</div>		
        		<div class="row">
 				<div class="col-md-12 text-center">
-					<p><a class="btn btn-default btn-lg" title="Product Features" href="/press-releases/" role="button">See All Press Releases</a></p>
+					<div><a class="btn btn-default btn-lg" title="Product Features" href="/press-releases/" role="button">See All Press Releases</a></div>
 				</div>
 			</div>
 		</div>

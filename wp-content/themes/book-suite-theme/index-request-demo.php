@@ -9,10 +9,9 @@ while($my_query->have_posts()){
 	    <div class="col-md-12">
 	        <h3><?php the_title() ?></h3>
 	        <?php the_content(); ?>
-<!-- 	        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
-	        <p>
+	        <div>
 				<a class="btn btn-primary btn-lg" role="button" href="/request-a-demo/" title="Request a Demo">Request a Demo</a>
-			</p>
+			</div>
 			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
 	    </div>
 	</div>

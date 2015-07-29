@@ -32,7 +32,7 @@ get_header(); ?>
 <section id="connectivityPartners" class="sub-section white request-content">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-8">
+			<div class="col-md-8 col-lg-8">
 				<?php if ( has_post_thumbnail() ) {  ?>
 				
 				<div class="row">
@@ -128,7 +128,7 @@ get_header(); ?>
 					</div>				
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-md-4 col-lg-4">
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<p class="panel-title">Is your brand interested in becoming a BookingSuite Connectivity Partner?</p>
@@ -156,11 +156,11 @@ get_header(); ?>
 										<label for="exampleInputEmail1">Phone Number<i class="fa fa-asterisk"></i></label>
 										<input type="text" class="form-control" id="exampleInputEmail1" >
 									</div>
-									<div class="form-group">
-										<label class="checkbox-inline">
+									<div class="checkbox">
+										<label class="">
 											<input type="checkbox" id="inlineCheckbox1" value="PropertyWebsites"> Property Websites
 										</label>
-										<label class="checkbox-inline">
+										<label class="">
 											<input type="checkbox" id="inlineCheckbox2" value="PredictiveAnalytics"> Predictive Analytics
 										</label>
 									</div>

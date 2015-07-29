@@ -29,7 +29,10 @@ get_header(); ?>
 <section id="propertyWebsites" class="sub-section white solutions">
 	<div class="container-fluid">
 		<div class="row">
-		<?php 		$catName =  get_cat_ID("Property Websites");	
+		<?php 		$catName =  get_cat_ID("Property Websites");
+					$catTitle = get_cat_name( $catName );
+					echo "<div class=\"col-md-12\"><h2 class=\"text-center\">".$catTitle."</h2></div>";
+					
 		            $args = array( 
 		                'post_type' => 'post',
 		                'posts_per_page' =>3,
@@ -41,7 +44,10 @@ get_header(); ?>
 		          
 		            
 		            $my_query = new WP_Query($args);
-		            
+		     		?>
+		     	</div>
+		     	<div class="row">
+		     		<?php    
 		            while($my_query->have_posts()) :
 		            	$my_query->the_post();
 		            ?>
@@ -135,7 +141,7 @@ get_header(); ?>
 		</div>	
 		<div class="row">
 	    	<div class="col-md-12 text-center">
-	        	<p><a class="btn btn-default btn-lg" role="button" href="/product-features/" title="Product Features">See All Product Features</a></p>
+	        	<div><a class="btn btn-default btn-lg" role="button" href="/product-features/" title="Product Features">See All Product Features</a></div>
 	    	</div>
 		</div>
 	</div>

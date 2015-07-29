@@ -33,20 +33,20 @@ get_header(); ?>
 	<div class="container-fluid">
 
 		<div class="row panel contact-items">
-			<div class="col-md-9"><h4>I want to get started with BookingSuite</h4></div>
-			<div class="col-md-3"><a href="/request-a-demo/" class="btn btn-info btn-md center-block">REQUEST DEMO</a></div>
+			<div class="col-sm-8 col-md-8 col-lg-9"><h4>I want to get started with BookingSuite</h4></div>
+			<div class="col-sm-4 col-md-4 col-lg-3"><a href="/request-a-demo/" class="btn btn-info btn-md center-block">REQUEST DEMO</a></div>
 		</div>
 		<div class="row panel contact-items">
-			<div class="col-md-9"><h4>I want to log into BookingSuite BackOffice</h4></div>
-			<div class="col-md-3"><a href="#" class="btn btn-info btn-md center-block">LOG IN</a></div>
+			<div class="col-sm-8 col-md-8 col-lg-9"><h4>I want to log into BookingSuite BackOffice</h4></div>
+			<div class="col-sm-4 col-md-4 col-lg-3"><a href="#" class="btn btn-info btn-md center-block">LOG IN</a></div>
 		</div>
 		<div class="row panel contact-items">
-			<div class="col-md-9"><h4>I need to become a Booking.com partner</h4></div>
-			<div class="col-md-3"><a href="#" class="btn btn-info btn-md center-block">JOIN BOOKING</a></div>
+			<div class="col-sm-8 col-md-8 col-lg-9"><h4>I need to become a Booking.com partner</h4></div>
+			<div class="col-sm-4 col-md-4 col-lg-3"><a href="#" class="btn btn-info btn-md center-block">JOIN BOOKING</a></div>
 		</div>
 		<div class="row panel contact-items">
-			<div class="col-md-9"><h4>I want to access BookingSuite’s online helpdesk</h4></div>
-			<div class="col-md-3"><a href="#" class="btn btn-info btn-md center-block">VISIT HELPDESK</a></div>
+			<div class="col-sm-8 col-md-8 col-lg-9"><h4>I want to access BookingSuite’s online helpdesk</h4></div>
+			<div class="col-sm-4 col-md-4 col-lg-3"><a href="#" class="btn btn-info btn-md center-block">VISIT HELPDESK</a></div>
 		</div>					
 	</div>
 </section>
@@ -58,8 +58,8 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-3"><p>E-Mail:</p></div>
-			<div class="col-md-9"><a href="mailto:contact@suite.booking.com" class="btn btn-link center-block">contact@suite.booking.com</a></div>
+			<div class="col-sm-3 col-md-3 col-lg-3"><p>E-Mail:</p></div>
+			<div class="col-sm-9 col-md-9 col-lg-9"><a href="mailto:contact@suite.booking.com" class="btn btn-link center-block">contact@suite.booking.com</a></div>
 		</div>
 		
 		<div class="row">

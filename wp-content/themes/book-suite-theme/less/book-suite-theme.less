@@ -308,12 +308,10 @@ b, strong {
  * 
  **************************************************/
 .pr-list {
-    list-style: outside none none;
-    margin: 0;
-    padding: 0;
     text-align: left;
     .pr-list-item {
-	    padding: 10px 0;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
 	     a {
 		    font-weight: normal;
 		    color: #2cace2;
@@ -460,13 +458,12 @@ b, strong {
 }
 
 .page-hero {
-
     position: relative;
 	margin-top:  @navbar-height;
     background-color: black;
     h1 {
 		margin-bottom: 2%;
-		margin-top: 4%;
+		margin-top: 10%;
 	}
     p {
 		font-weight: normal;
@@ -837,6 +834,7 @@ article {
   	height: 100%;
 }
 
+
 .success {
 	h2 {
 		//margin: 0 0 @global-pad-bottom;
@@ -919,6 +917,16 @@ article {
 	}
 
 }
+
+.content-area {
+	.sub-section {
+		&.premium {
+			h2,.h2 {
+				margin-bottom: 6%;
+			}
+		}	
+	}
+}
 .content-area {
 	.request-demo {
 		text-align: center;
@@ -974,7 +982,7 @@ article {
 .content-area {
 	.sub-section {
 		&.request-hero {
-    		margin-top: 100px;
+    		margin-top: 90px;
     		padding: 5% 8%;
 		}
 		&.request-content {
@@ -1003,11 +1011,6 @@ article {
 }
 .content-area {
 	.hentry {
-		//margin-bottom: 5%;
-		h1, p, .excerpt {
-			//text-align: left !important;
-		}
-		
 		.entry-header {
 	    	overflow: auto;
 	    	h2 {
@@ -1068,6 +1071,9 @@ article {
 .content-area {
 	.sub-section {
 		padding: @global-section-padding;
+		.row {
+			//background-color: pink;
+		}
 		.img-responsive {
 		    margin: 0 auto;
 		}
@@ -1083,7 +1089,7 @@ article {
 		    }
 		}
 		h2 {
-			//margin-bottom: @global-pad-bottom;
+			margin-bottom: 0;
 			margin-top: 0;
 		}
 		.row {
@@ -1093,7 +1099,7 @@ article {
 			 }
 		}
 		.excerpt {
-		    margin: 0 auto 4.5%;
+		    margin: 0 auto;
 		    max-width: 80%;
 		    text-align: center;
 		}
@@ -1178,8 +1184,9 @@ article {
  * 
  ********************************************************/
 
-.checkbox-inline {
-	font-size: 15px;
+.checkbox label {
+	font-size: 16px;
+	margin-bottom: 3%;
 }
 
 .form-group {
@@ -1452,6 +1459,10 @@ img.aligncenter {
 	}
 }
 @media (max-width: 1024px) {
+	.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
+	    margin-top: 0;
+	    margin-left: 0;
+	}
 	.page-hero {
 		margin-top: 90px;
 	}
@@ -1487,7 +1498,7 @@ img.aligncenter {
 	.prod-features .content {
 	  	text-align: left;
 	  	float: left;
-	  	width: 80%;
+	  	width: 75%;
 	}
 	.content-area {
 		.sub-section {
@@ -1545,12 +1556,15 @@ img.aligncenter {
 			margin: 0px auto;
 		}	
 	}
-	.content-area {
-		.sub-section {
-			.row {
-			  	margin-bottom: 0;
-			}	
+	.request-content {
+		background-position: 0 -165px !important;
+		.panel {
+			margin-top: 6%;
 		}
+	}
+	
+	.content-area .sub-section .row:last-child {
+	    margin-bottom: 0;
 	}
 	.prod-features {
 		.features-box {
@@ -1574,23 +1588,23 @@ img.aligncenter {
 		margin-left: 15px;
 	}
 	.solutions {
-		margin-top: 6%;
+		//margin-top: 6%;
 		.col-md-4 {
 			margin-bottom: @global-row-margin-bottom;
 		}
 		.cta-link {
-			margin: 6% auto @global-row-margin-bottom;
+			//margin: 6% auto @global-row-margin-bottom;
 		}
 	}
 	.mentions h2 {
-		margin: 0 0 6%;
+		//margin: 0 0 6%;
 	}
 	.success {
 		.success-post .wp-post-image {
 			height: auto;
 		}
 		.col-sm-12 {
-			margin-bottom: 4%;
+			//margin-bottom: 4%;
 		}
 	}
 
@@ -1666,17 +1680,7 @@ img.aligncenter {
 				}
 			}
 		}
-	}
-	.prod-features {
-		h1, .h1 {
-			font-size: 20px;
-		}		
 	}	
-	.mentions {
-		.cta-link {
-			margin-bottom: 10%;
-		}	
-	}
 
 	.content-area .btn-lg {
 	  text-align: center;
@@ -1800,6 +1804,15 @@ img.aligncenter {
 	h2, .h2 {
 		font-size: 22px;
 	}
+	h3, .h3 {
+		font-size: 20px;
+	}
+	h4, .h4 {
+		font-size: 18px;
+	}
+	h5, .h5 {
+		font-size: 168px;
+	}
 	#logo > a img {
   		margin-top: 5%;
   		max-width: 200px;;
@@ -1827,6 +1840,9 @@ img.aligncenter {
 		.content {
 			width: 78%;
 		}
+	}
+	.features-box .content {
+	    width: 100%;
 	}
 	.section-hero.no-risk .jumbotron .opt-2 h1 {
 	  margin-top: 0;
@@ -1860,9 +1876,6 @@ img.aligncenter {
 	.tab-content {
 		&.about-tab-panels {
 			.tab-pane {
-				.h5 {
-					font-size: 16px;
-				}
 				.col-xs-6 {
 				    width: 100%;
 				}

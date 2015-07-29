@@ -7,14 +7,13 @@
 			        $my_query->the_post();
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	        <header>
-	        	<h1><?php the_title() ?></h1>
-	        </header>
-	        <?php the_content(); ?>
-			<footer>
-			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-			</footer>
+		        <header>
+		        	<h1><?php the_title() ?></h1>
+		        </header>
+		        <?php the_content(); ?>
+				<footer>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
+				</footer>
 			</article>
 		    <?php } ?>
 		   
@@ -25,13 +24,13 @@
 			        $my_query->the_post();
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<header>
-				<h1><?php the_title() ?></h1>
-			</header>
-			<?php the_content(); ?>
-			<footer>
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-			</footer>
+				<header>
+					<h1><?php the_title() ?></h1>
+				</header>
+				<?php the_content(); ?>
+				<footer>
+					<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				</footer>
 			</article>
 		     <?php } ?>	    </div>
 		   

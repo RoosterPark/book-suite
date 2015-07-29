@@ -34,14 +34,14 @@
 			<?php if(has_term( 'news', 'pr-news' ) ) { ?>
 				 <div class="row">
 					<div class="col-md-12 text-center">
-						<p><a class="btn btn-default btn-lg" title="Product Features" href="/news/" role="button">See All News</a></p>
+						<div><a class="btn btn-default btn-lg" title="Product Features" href="/news/" role="button">See All News</a></div>
 					</div>
 				</div>	
 			<?php } ?>
 			<?php if(has_term( 'press-releases', 'pr-news' ) ) { ?>
 				 <div class="row">
 					<div class="col-md-12 text-center">
-						<p><a class="btn btn-default btn-lg" title="Product Features" href="/press-releases/" role="button">See All PR News</a></p>
+						<div><a class="btn btn-default btn-lg" title="Product Features" href="/press-releases/" role="button">See All PR News</a></div>
 					</div>
 				</div>	
 			<?php } ?>
