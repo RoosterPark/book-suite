@@ -43,7 +43,7 @@ class Footernav_Walker extends Walker_Nav_Menu
 					$item_output .= "<li><a $attributes>"
 					. $args->link_before
 					. $title
-					. '</a></li>'
+					. '</a>'
 					. $args->link_after
 					. $args->after;
 					// Since $output is called by reference we don't need to return anything.

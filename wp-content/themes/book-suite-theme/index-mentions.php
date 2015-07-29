@@ -26,7 +26,7 @@
 	        </div>
         </div>		
 	<div class="row">
-		<div class="col-md-12 cta-link">
+		<div class="col-md-12 cta-link text-center">
 			<a class="btn btn-info btn-lg" role="button" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">VIEW MORE PARTNER STORIES</a>		
 		</div>
 	</div>

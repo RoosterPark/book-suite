@@ -37,7 +37,7 @@
 				 	?>
 					<div class="col-md-12" data-post="<?php echo $postx_counter ?>">
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						<div class="success-content video">
+						<div class="success-post video">
 							<header>
 								<div class="title">
 									<p class="h5"><a href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a></p>
@@ -92,7 +92,7 @@
 		 	}
 		 	?>
 			<div class="col-xs-6 col-sm-6 col-md-6" data-post="<?php echo $postx_counter ?>">
-				<div class="success-content story">
+				<div class="success-post story">
 					<header>
 						<div class="title">
 							<p class="h5"><a href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a></p>
@@ -115,8 +115,8 @@
 </div>
       
 	<div class="row">
-		<div class="col-md-12 cta-link">
-			<a class="btn btn-info btn-lg" role="button" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">VIEW MORE PARTNER STORIES</a>		
+		<div class="col-md-12 cta-link text-center">
+			<a class="btn btn-info btn-lg" role="button" href="/stories/" title="<?php the_title_attribute(); ?>">VIEW MORE PARTNER STORIES</a>		
 		</div>
 	</div>
 </div>

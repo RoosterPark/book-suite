@@ -33,16 +33,21 @@ get_header(); ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-8">
+				<?php if ( has_post_thumbnail() ) {  ?>
+				
 				<div class="row">
 					<div class="col-lg-12">
-						<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=550%C3%97175&w=550&h=175" class="img-responsive" />
+<!-- 						<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=880%C3%97250&w=880&h=250" class="img-responsive" /> -->
+						<?php the_post_thumbnail('post-thumbnails', array('class' => 'img-responsive')); ?>
 					</div>						
 				</div>	
+				<?php  } ?>
+				
 				<div class="row">
-					<div class="col-lg-12 prod-features">
+					<div class="col-lg-12 features-box">
 						<?php	
 				            $args = array( 
-				                'name' => 'premium-services'
+				                'name' => 'direct-channel-management'
 				            );
 				            $my_ff_query = new WP_Query($args);
 				            while($my_ff_query->have_posts()) :
@@ -67,10 +72,10 @@ get_header(); ?>
 					</div>			
 				</div>
 				<div class="row">
-					<div class="col-lg-12 prod-features">
+					<div class="col-lg-12 features-box">
 						<?php	
 				            $args = array( 
-				                'name' => 'premium-services'
+				                'name' => 'predictive-analytics'
 				            );
 				            $my_ff_query = new WP_Query($args);
 				            while($my_ff_query->have_posts()) :
@@ -95,7 +100,7 @@ get_header(); ?>
 					</div>	
 				</div>
 				<div class="row">
-					<div class="col-lg-12 prod-features">
+					<div class="col-lg-12 features-box">
 					<?php	
 			            $args = array( 
 			                'name' => 'premium-services'
@@ -132,24 +137,24 @@ get_header(); ?>
 								<p>Submit your inquiry here!</p>
 								<form>
 									<div class="form-group">
-								    	<label for="bookingHotelId">Booking.com Hotel ID</label>
-								    	<input type="text" class="form-control" id="bookingHotelId" placeholder="Name">
+								    	<label for="bookingHotelId">Booking.com Hotel ID<i class="fa fa-asterisk"></i></label>
+								    	<input type="text" class="form-control" id="bookingHotelId">
 									</div>
 									<div class="form-group">
-								    	<label for="firstName">First Name</label>
-								    	<input type="text" class="form-control" id="FirstName" placeholder="First Name">
+								    	<label for="firstName">First Name<i class="fa fa-asterisk"></i></label>
+								    	<input type="text" class="form-control" id="FirstName" >
 									</div>
 									<div class="form-group">
-								    	<label for="lastName">Last Name</label>
-								    	<input type="text" class="form-control" id="LastName" placeholder="last Name">
+								    	<label for="lastName">Last Name<i class="fa fa-asterisk"></i></label>
+								    	<input type="text" class="form-control" id="LastName" >
 									</div>
 									<div class="form-group">
-										<label for="exampleInputEmail1">Email address</label>
-										<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+										<label for="exampleInputEmail1">Email address<i class="fa fa-asterisk"></i></label>
+										<input type="email" class="form-control" id="exampleInputEmail1" >
 									</div>
 									<div class="form-group">
-										<label for="exampleInputEmail1">Phone Number</label>
-										<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Phone Number">
+										<label for="exampleInputEmail1">Phone Number<i class="fa fa-asterisk"></i></label>
+										<input type="text" class="form-control" id="exampleInputEmail1" >
 									</div>
 									<div class="form-group">
 										<label class="checkbox-inline">
@@ -161,7 +166,7 @@ get_header(); ?>
 									</div>
 							
 							
-									<button type="submit" class="btn btn-info btn-md pull-right">REQUEST DEMO</button>
+									<button type="submit" class="btn btn-info btn-md center-block">REQUEST DEMO</button>
 								</form>				   
 							</div>
 							<div class="panel-footer">

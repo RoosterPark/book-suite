@@ -9,6 +9,13 @@
 @import url('../bootstrap/less/variables.less');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,600italic');
 
+
+@global-link-color: #009FE3;
+@global-link-hover-color: #006996;
+
+@global-edit-link-color: @brand-primary;
+@global-edit-link-hover-color: darken(@brand-primary, 15%);
+ 
 @global-color-black: #3c3c3c;
 @global-color-white: #fff;
 @global-color-lt-blue: #009FE3;
@@ -59,14 +66,19 @@
 	}
 }
 
+ .post-edit-link {
+	color: @global-edit-link-color;
+    float: none;
+    text-align: center;
+    &:hover {
+    	color: @global-edit-link-hover-color;
+    }
+}
 .btn-group {
 	&.edit-post {
 	    text-align: center;
 	    width: 100%;
-	    .post-edit-link {
-		    float: none;
-		    text-align: center;
-		}
+	   
 	
 	}
 }
@@ -597,6 +609,9 @@ b, strong {
 			}
 			p {
 			    text-align: center;
+			    &.text-center {
+				   margin: 0px auto;
+				}
 			}
 			.jumbo-btn-group {
 			    text-align: center;
@@ -725,7 +740,7 @@ article {
 	}
 }
 
-.prod-features {
+.features-box {
 	.row {
 	    margin-bottom: @global-row-margin-bottom;
 	    &:last-child {
@@ -734,7 +749,7 @@ article {
 	}
 	.icon {
 		float: left;
-		margin: 0 30px 0 0;
+		margin: 0 7.555% 0 0;
 		width: 45px;
 		height: 45px;
 		.svg {
@@ -792,7 +807,7 @@ article {
 	    text-align: center;
 	}
 	.cta-link {
-	    margin: 6% auto 0;
+	    margin: 0 auto;
 	    text-align: center;
 	}
 	&.lt-blue {
@@ -826,7 +841,7 @@ article {
 	h2 {
 		//margin: 0 0 @global-pad-bottom;
 	}
-	.success-content {
+	.success-post {
 		box-sizing: content-box;
 		float: left;
 		max-width: 100%;
@@ -960,9 +975,20 @@ article {
 	.sub-section {
 		&.request-hero {
     		margin-top: 100px;
-    		padding: 5% 8% 2%;
+    		padding: 5% 8%;
 		}
 		&.request-content {
+    		padding-top: 0;
+		}
+	}
+}
+
+.content-area {
+	.sub-section {
+		&.contact-hero {
+    		margin-top: 100px;
+		}
+		&.contact-content {
     		padding-top: 0;
 		}
 	}
@@ -1051,6 +1077,10 @@ article {
 		}
 		h1 {
 		    margin-top: 0;
+		    &.text-center {
+		    	max-width: 980px;
+		    	margin: 0px auto 12.5px;
+		    }
 		}
 		h2 {
 			//margin-bottom: @global-pad-bottom;
@@ -1063,9 +1093,12 @@ article {
 			 }
 		}
 		.excerpt {
-		    margin: 0 auto;
+		    margin: 0 auto 4.5%;
 		    max-width: 80%;
 		    text-align: center;
+		}
+		> p > .post-edit-link {
+			text-align: center;
 		}
 	}
 	.container-fluid {
@@ -1076,9 +1109,7 @@ article {
 		h1, h2, h3, h4, h5, p {
 			color: @global-color-white;
 		}
-		// h1 {
-		    // margin: 0 0 @global-pad-bottom;
-		// }
+
 		&.two-cols {
 			
 		}
@@ -1102,6 +1133,25 @@ article {
 	}
 }
 
+.regional-contacts {
+	min-height: 300px;
+	&:nth-child(2n+1) {
+	    clear: both;
+	}
+	.h5 {
+		border-bottom: 1px solid #979797;
+		margin-right: 60px;
+		padding-bottom: 10px;
+		text-transform: uppercase;
+	}
+}
+
+/*********************************************************
+ * 
+ * Bootstrap Panel Component Styling
+ * 
+ ********************************************************/
+
 .panel {
 	.panel-heading, .panel-footer {
 	    border: none;
@@ -1112,6 +1162,39 @@ article {
 		}
 	}
 }
+
+.panel {
+	&.row {
+		&.contact-items {
+		margin: 0 0 2%;
+   		padding: 2%;
+	}
+	}
+}
+
+/*********************************************************
+ * 
+ * Bootstrap Form Element Styling
+ * 
+ ********************************************************/
+
+.checkbox-inline {
+	font-size: 15px;
+}
+
+.form-group {
+	label {
+		.fa.fa-asterisk {
+		    color: red;
+		    display: inline-block;
+		    font-size: 8px;
+		    margin: 5px;
+		    vertical-align: top;
+		}
+	}	
+}
+  
+
 /*********************************************************
  * 
  * Footer Nav Styling
@@ -1182,32 +1265,39 @@ footer {
 }
 
 
-/* scroll-to-top
-----------------------------------------------------
-*/
+/***************************************************
+ * 
+ * scroll-to-top
+ *
+ ***************************************************/ 
+ 
 .scroll-to-top {
-  background: #363636;
-  background: rgba(100, 100, 100, 0.4);
-  color: #FFF;
-  bottom: 4%;
-  cursor: pointer;
-  display: none;
-  position: fixed;
-  right: 20px;
-  z-index: 999;
-  font-size: 16px;
-  text-align: center;
-  line-height: 40px;
-  width: 40px;
-  border-radius: 4px;
-  -webkit-transition: background-color 0.3s linear;
-  -moz-transition: background-color 0.3s linear;
-  -o-transition: background-color 0.3s linear;
-  transition: background-color 0.3s linear;
-}
-.scroll-to-top:hover {
-  background: #DA4453;
-  opacity: .8;
+	background: @global-color-lt-blue;
+	background: rgba(0, 159, 227, 0.5);
+	color: #FFF;
+	bottom: 4%;
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	right: 20px;
+	z-index: 999;
+	font-size: 16px;
+	text-align: center;
+	width: 40px;
+	border-radius: 4px;
+	-webkit-transition: background-color 0.3s linear;
+	-moz-transition: background-color 0.3s linear;
+	-o-transition: background-color 0.3s linear;
+	transition: background-color 0.3s linear;
+  	&:hover {
+	  background: darken(@global-color-lt-blue, 15%);
+	  opacity: .8;
+	}
+	.fa-angle-up {
+    	font-size: 24px;
+    	font-weight: 600;
+    	line-height: 43px;
+	}
 }
 
 
@@ -1348,7 +1438,7 @@ img.aligncenter {
 
 @media (min-width: 1401px) {
 	.success {
-		.success-content .wp-post-image {
+		.success-post .wp-post-image {
 			height: 322px; //233px;
 		}
 	}
@@ -1356,7 +1446,7 @@ img.aligncenter {
 
 @media (max-width: 1281px) and (min-width: 1025px) {
 	.success {
-		.success-content .wp-post-image {
+		.success-post .wp-post-image {
 			height: 249px; //233px;
 		}
 	}
@@ -1389,7 +1479,7 @@ img.aligncenter {
 	}
 	
 	.success {
-		.success-content .wp-post-image {
+		.success-post .wp-post-image {
 			height: 196px;
 		}
 	}
@@ -1496,7 +1586,7 @@ img.aligncenter {
 		margin: 0 0 6%;
 	}
 	.success {
-		.success-content .wp-post-image {
+		.success-post .wp-post-image {
 			height: auto;
 		}
 		.col-sm-12 {
@@ -1593,6 +1683,7 @@ img.aligncenter {
 	  padding: 9px 27px;
 	}
 	
+
 	.section-hero {
 		.jumbotron {
 			.opt-1 {
@@ -1607,8 +1698,10 @@ img.aligncenter {
 				bottom: 5%;
 				p {
 					top: 54%;
-					padding: 0 6%;					
+					padding: 0 6%;
+									
 				}
+				
 				h1 {
 					margin: 6% 0;
 				}
@@ -1672,6 +1765,21 @@ img.aligncenter {
 			}			
 		}
 	}
+	
+	.content-area {
+		.contact-content {
+			.contact-items {
+				margin-bottom: 6%;
+				&:last-child {
+					margin-bottom: 6%;
+				}
+				h4 {
+					text-align: center;
+				}
+			}
+		}
+	}
+	
 	.story .wp-post-image, .video .wp-post-image {
 		min-height: inherit;
 	}
@@ -1823,6 +1931,9 @@ img.aligncenter {
 		border-radius: 2px;
 	}
 	
+	.regional-contacts {
+	    min-height: inherit;
+	}
 	a.btn.btn-primary.btn-lg {
 		font-size: inherit;
 	}

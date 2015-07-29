@@ -13,7 +13,7 @@ while($my_query->have_posts()){
 	        <p>
 				<a class="btn btn-primary btn-lg" role="button" href="/request-a-demo/" title="Request a Demo">Request a Demo</a>
 			</p>
-			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
 	    </div>
 	</div>
 </div>

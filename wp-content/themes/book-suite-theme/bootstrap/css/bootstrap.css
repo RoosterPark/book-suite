@@ -1086,12 +1086,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #fab910;
+  color: #009fe3;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #ba8704;
+  color: #006996;
   text-decoration: underline;
 }
 a:focus {
@@ -2497,7 +2497,7 @@ label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: normal;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -2614,7 +2614,7 @@ input[type="search"] {
   }
 }
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .radio,
 .checkbox {
@@ -3438,7 +3438,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #fab910;
+  color: #009fe3;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3459,7 +3459,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #ba8704;
+  color: #006996;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4034,7 +4034,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #ffffff;
-  border-color: #fab910;
+  border-color: #009fe3;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4682,7 +4682,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 9px 27px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #fab910;
+  color: #009fe3;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -4703,7 +4703,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 3;
-  color: #ba8704;
+  color: #006996;
   background-color: #ffffff;
   border-color: #dddddd;
 }
@@ -4901,7 +4901,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #fab910;
+  color: #009fe3;
   background-color: #ffffff;
 }
 .list-group-item > .badge {
@@ -4974,7 +4974,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #fab910;
+  border-color: #009fe3;
 }
 .thumbnail .caption {
   padding: 9px;
