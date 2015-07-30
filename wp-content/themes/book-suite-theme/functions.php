@@ -346,6 +346,10 @@ function upbootwp_scripts() {
 	wp_enqueue_script( 'cycle-carousel', get_template_directory_uri().'/js/jquery.cycle2.carousel.js',array(),'20150624',true);
 	wp_enqueue_script( 'javascript', get_template_directory_uri().'/js/function.js',array(),'20150624',true);
 	
+	if(is_page('stories')) {
+		wp_enqueue_script( 'isotope-js', get_template_directory_uri().'/js/isotope.pkgd.js',array(),'20150624',true);
+	}
+	
 }
 add_action( 'wp_enqueue_scripts', 'upbootwp_scripts' );
 

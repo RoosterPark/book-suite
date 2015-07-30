@@ -1,7 +1,7 @@
 // JavaScript Document
 jQuery(document).ready(function() {
 	//test for touch events support and if not supported, attach .no-touch class to the HTML tag.
-	 
+	
 	if (!("ontouchstart" in document.documentElement)) {
 	document.documentElement.className += " no-touch";
 	}
@@ -10,7 +10,12 @@ jQuery(document).ready(function() {
 	jQuery('.request-btn a').addClass('btn btn-primary');
 	jQuery('.login-btn a').addClass('btn btn-default clear');
 	
-	initCycle();
+	jQuery('.grid').isotope({
+    	itemSelector: '.grid-item',
+    	masonry: {
+      		columnWidth: 0
+    	}
+  	}); 
 	
 	
 	//Check to see if the window is top if not then display button

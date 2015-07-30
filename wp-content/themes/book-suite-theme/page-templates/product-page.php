@@ -19,7 +19,7 @@ get_header(); ?>
 			
 				<h1 class="page-title"><?php the_title(); ?></h1>	
 				<?php the_content(); ?>
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-left">', '</p>' ); ?>
 			
 			<div class="jumbo-btn-group">
 				<a class="btn btn-default btn-lg clear" href="/plans/" role="button">View Our Plans</a>
@@ -67,7 +67,7 @@ get_header(); ?>
 	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        			</div>
@@ -98,7 +98,7 @@ get_header(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="page-header"><h1><?php the_title(); ?></h1></header>
 			<?php the_excerpt(); ?>		
-			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 			
 			</article>
 			<?php endwhile; ?>			
@@ -120,7 +120,7 @@ get_header(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="page-header"><h1><?php the_title(); ?></h1></header>
 			<?php the_excerpt(); ?>		
-			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 			</article>
 			<?php endwhile; ?>			
 			<?php  wp_reset_postdata(); ?>
@@ -146,7 +146,7 @@ get_header(); ?>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<p class="h3"><?php the_title(); ?></p>
 				<?php the_excerpt(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
@@ -164,7 +164,7 @@ get_header(); ?>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<p class="h3"><?php the_title(); ?></p>
 				<?php the_excerpt(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
@@ -182,7 +182,7 @@ get_header(); ?>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<p class="h3"><?php the_title(); ?></p>
 				<?php the_excerpt(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
@@ -219,7 +219,7 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
@@ -251,7 +251,7 @@ get_header(); ?>
 	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
@@ -282,7 +282,7 @@ get_header(); ?>
 	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>	
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article><?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
 			<div class="jumbo-btn-group">
@@ -317,7 +317,7 @@ get_header(); ?>
 	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
@@ -347,7 +347,7 @@ get_header(); ?>
 	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
@@ -368,7 +368,7 @@ get_header(); ?>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<header><p class="h3"><?php the_title(); ?></p></header>
 				<?php the_excerpt(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
@@ -386,7 +386,7 @@ get_header(); ?>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<header><p class="h3"><?php the_title(); ?></p></header>
 				<?php the_excerpt(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>	
@@ -403,7 +403,7 @@ get_header(); ?>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<header><p class="h3"><?php the_title(); ?></p></header>
 				<?php the_excerpt(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>

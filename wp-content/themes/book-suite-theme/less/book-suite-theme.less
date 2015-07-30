@@ -98,6 +98,7 @@ b, strong {
     margin-bottom: 3%;
 }
 
+
 /***************************************************
  * 
  *  Nav Bar
@@ -120,7 +121,24 @@ b, strong {
 	}
 }
 
+/*request a Demo - hide all main nav for mobile and desktop devices */
+.page-template-request-a-demo-page {
+	.navbar-collapse.mobile, .navbar-desktop {
+		display: none !important;
+	}
+	.navbar-toggle {
+		display: none !important;
+	}
+	#logo > a img {
+	    margin: 18px 0;
+	}
+}
 
+.btn.btn-default.clear {
+    background-color: rgba(255, 255, 255, 0.01);
+    border-color: #fff;
+    color: white;
+}
 .navbar-desktop {
 	float: right;
 	margin: 0;
@@ -171,9 +189,6 @@ b, strong {
 	.container-fluid {
 	    max-width: @global-max-width;
 	}
-	.nav > li > a {
-	    text-transform: uppercase;
-	}
 }
 
 .navbar-collapse {
@@ -188,6 +203,7 @@ b, strong {
 		color: #ffffff;
 	}	
 }
+
 
 #logo > a img {
     height: auto;
@@ -300,6 +316,95 @@ b, strong {
 			
 		}
 	}	
+}
+
+
+.story-stats {
+    background-color: #0B2448;
+    .countries {
+    	background-color: #1f457a;
+    	min-height: 325px;
+    	position: relative;
+    	.inner-div {
+			position: absolute;
+			padding: 14%;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+    	.number-title {
+    		font-size: 32px;
+    	}
+    	.number-data {
+    		font-size: 88px;
+    		margin-bottom: 10%;
+    	}
+    }
+    .daily-bookings {
+    	background-color: #2D5895;
+    	.number-title {
+    		float:left;
+    		width: 35%;
+    	}
+    	.number-data {
+    		font-size: 58px;
+    		float:right;
+    		width: 25%;
+    	}
+    }
+    .web-traffic{
+    	background-color: #0B2448;
+    	.number-title {
+    		float:right;
+    		text-align: right;
+    		width: 50%;
+    	}
+    	.number-data {
+    		font-size: 58px;
+    		float:left;
+    		width: 25%;
+    	}
+    }
+    .visits {
+    	background-color: #6F93C5;
+    	min-height: 325px;
+		position: relative;
+		.inner-div {
+			position: absolute;
+			padding: 14%;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+ 		.number-title {
+    		font-size: 32px;
+    		text-align: right;
+    	}
+    	.number-data {
+    		font-size: 72px;
+    		margin-top: 10%;
+    		text-align: right;
+    	}
+    }
+    .left-numbers, .right-numbers, .daily-bookings, .web-traffic {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	.inner-div {
+	    padding: 6.85%;
+	    overflow: auto;
+	}
+	.number-title {
+	    color: #fff;
+	    font-size: 24px;
+	    font-weight: 300;
+	}
+	.number-data {
+		color: #fff;
+	    font-size: 24px;
+	    font-weight: 300;
+	    line-height: 1;
+	}
 }
 
 /***************************************************
@@ -538,7 +643,7 @@ b, strong {
 		font-weight: 200;
 	}
 	.excerpt {
-	    margin:0 auto  @global-pad-top;
+	    margin:0 auto 12.5px;
 	    max-width: 1024px;
 	    text-align: center;
 	}
@@ -602,13 +707,14 @@ b, strong {
 			bottom: 35%;
 			h1 {
 			    text-align: center;
-			    margin-bottom: 6%;
+			    margin-bottom: 2%;
 			}
 			p {
 			    text-align: center;
-			    &.text-center {
-				   margin: 0px auto;
-				}
+			    margin: 0 auto 2%;
+			    // &.text-center {
+				   // margin: 0px auto;
+				// }
 			}
 			.jumbo-btn-group {
 			    text-align: center;
@@ -628,7 +734,7 @@ b, strong {
 			}
 			p {
 			    text-align: center;
-			   	margin-bottom: 3%;
+			   	margin: 0px auto 2%;
 			}
 			.jumbo-btn-group {
 			    text-align: center;
@@ -803,6 +909,7 @@ article {
 	    max-width: 350px;
 	    text-align: center;
 	}
+	
 	.cta-link {
 	    margin: 0 auto;
 	    text-align: center;
@@ -951,7 +1058,11 @@ article {
 	.client-services {
 		&.white-alt, &.md-grey {
 			padding-bottom: 0;
+			.excerpt {
+				margin: 0 auto 12.5px;
+			}
 		}
+		
 	}
 }
 .content-area {
@@ -1099,7 +1210,7 @@ article {
 			 }
 		}
 		.excerpt {
-		    margin: 0 auto;
+		    margin: 0 auto 12.5px;
 		    max-width: 80%;
 		    text-align: center;
 		}
@@ -1459,6 +1570,16 @@ img.aligncenter {
 	}
 }
 @media (max-width: 1024px) {
+	#logo > a img {
+		margin-top: 22px;
+		max-width: 175px;
+
+	}
+	.page-template-request-a-demo-page {
+		#logo > a img {
+		    margin: 22px 0;
+		}
+	}
 	.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
 	    margin-top: 0;
 	    margin-left: 0;
@@ -1466,6 +1587,15 @@ img.aligncenter {
 	.page-hero {
 		margin-top: 90px;
 	}
+	.success-stories .grid {
+   	 	max-width: 750px;
+    	width: 100%;
+	}
+	.success-stories .grid-menu {
+	    max-width: 180px;
+	    width: 100%;
+	}
+	
 	.jumbotron {
 		.jumbo-btn-group {
 			text-align: center;
@@ -1537,6 +1667,15 @@ img.aligncenter {
 
 
 @media (max-width: 980px) {
+	
+	#logo > a img {
+		margin-top: 18px;
+	}
+	.page-template-request-a-demo-page {
+		#logo > a img {
+		    margin: 18px 0;
+		}
+	}
 	.jumbotron {
 		.jumbo-btn-group {
 			text-align: center;
@@ -1561,6 +1700,48 @@ img.aligncenter {
 		.panel {
 			margin-top: 6%;
 		}
+	}
+	
+	.story-stats {
+		.visits, .countries {
+			min-height: inherit !important;
+			.inner-div {
+			    position: relative;
+			    padding: 7%;
+			    bottom: auto;
+			    left: auto;
+			    right: auto;
+			}
+			.number-data {
+			    float: left;
+			    font-size: 72px;
+			    margin-bottom: 0;
+			    margin-top: 0;
+			    text-align: right;
+			}
+			.number-title {
+			    float: right;
+			   
+			    margin-bottom: 0;
+			}
+		}
+		.daily-bookings {
+			.number-data {
+				text-align: right;
+			}		
+		}
+		.web-traffic {
+			.number-data {
+				text-align: left;
+			}		
+		}
+		.number-title {
+				font-size: 32px;
+		}	
+		.number-data {
+			font-size: 52px;
+			text-align: right;
+		}	
 	}
 	
 	.content-area .sub-section .row:last-child {
@@ -1588,23 +1769,13 @@ img.aligncenter {
 		margin-left: 15px;
 	}
 	.solutions {
-		//margin-top: 6%;
 		.col-md-4 {
 			margin-bottom: @global-row-margin-bottom;
 		}
-		.cta-link {
-			//margin: 6% auto @global-row-margin-bottom;
-		}
-	}
-	.mentions h2 {
-		//margin: 0 0 6%;
 	}
 	.success {
 		.success-post .wp-post-image {
 			height: auto;
-		}
-		.col-sm-12 {
-			//margin-bottom: 4%;
 		}
 	}
 
@@ -1637,6 +1808,15 @@ img.aligncenter {
 }
 
 @media (max-width: 768px) {
+	#logo > a img {
+		margin-top: 25px;
+		max-width: 175px;
+	}
+	.page-template-request-a-demo-page {
+		#logo > a img {
+		    margin: 25px 0;
+		}
+	}
 	.small-screen {
 		display: none !important;
 	}
@@ -1661,7 +1841,9 @@ img.aligncenter {
 			max-width: 85%;
 		}
 	}
-	
+	.request-content {
+	    background-position: 0px -225px !important;
+	}
 	.premium .request-demo {
 	  margin-top: 5%;
 	}
@@ -1687,7 +1869,24 @@ img.aligncenter {
 	  padding: 9px 27px;
 	}
 	
-
+	.story-stats {
+		.visits, .countries {
+			.number-data {
+			    font-size: 42px;
+			}
+		}
+		.number-title {
+				font-size: 22px !important;
+		}	
+		.number-data {
+			font-size: 42px !important;
+			text-align: right;
+			margin-bottom: 0;
+		}
+		.daily-bookings .number-data {
+			width: auto;
+		}	
+	}
 	.section-hero {
 		.jumbotron {
 			.opt-1 {
@@ -1811,11 +2010,17 @@ img.aligncenter {
 		font-size: 18px;
 	}
 	h5, .h5 {
-		font-size: 168px;
+		font-size: 16px;
 	}
+
 	#logo > a img {
-  		margin-top: 5%;
-  		max-width: 200px;;
+		margin-top: 6.555%;
+		max-width: 175px;
+	}
+	.page-template-request-a-demo-page {
+		#logo > a img {
+		    margin: 6.555% 0;
+		}
 	}
 	.jumbotron {
 		.jumbo-btn-group .btn {
@@ -1835,7 +2040,9 @@ img.aligncenter {
 			margin-bottom: 8%;
 		}	
 	}
-
+	.request-content {
+	    background-position: 0px -275px !important;
+	}
 	.prod-features {
 		.content {
 			width: 78%;
@@ -1969,10 +2176,7 @@ img.aligncenter {
 	h2, .h2 {
 		font-size: 16px;
 	}
-	#logo > a img {
-		margin-top: 8.555%;
-		max-width: 175px;
-	}
+
 	.svg {
 		height: 50px;
 	}
@@ -2016,6 +2220,16 @@ img.aligncenter {
 	  		.excerpt {
 				max-width: 100%;
 			}
+		}
+	}
+	
+	#logo > a img {
+		margin-top: 6.555%;
+		max-width: 175px;
+	}
+	.page-template-request-a-demo-page {
+		#logo > a img {
+		    margin: 6.555% 0;
 		}
 	}
 }

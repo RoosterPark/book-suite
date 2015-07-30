@@ -31,7 +31,7 @@ get_header(); ?>
 		<div class="row">
 		<?php 		$catName =  get_cat_ID("Property Websites");
 					$catTitle = get_cat_name( $catName );
-					echo "<div class=\"col-md-12\"><h2 class=\"text-center\">".$catTitle."</h2></div>";
+					echo "<div class=\"col-md-12\"><h1 class=\"text-center\">".$catTitle."</h1></div>";
 					
 		            $args = array( 
 		                'post_type' => 'post',
@@ -41,8 +41,6 @@ get_header(); ?>
 		                'cat' => $catName,
 		                'post_status' => 'publish',
 		            );
-		          
-		            
 		            $my_query = new WP_Query($args);
 		     		?>
 		     	</div>
