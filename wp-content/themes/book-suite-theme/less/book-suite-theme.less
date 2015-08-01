@@ -40,6 +40,11 @@
 @footer-link-color: #fff;
 @footer-link-color-hover: #a2a2a2;
 
+
+
+@import url('stories-grid.less');
+
+
 /***************************************************
  * 
  *  WP CSS Class Name styling
@@ -813,11 +818,14 @@ b, strong {
 
 
 
+
 /***************************************************
  * 
  *  Main Content Area
  * 
  **************************************************/
+
+
 article {
 	overflow: auto;
 }
@@ -1587,14 +1595,7 @@ img.aligncenter {
 	.page-hero {
 		margin-top: 90px;
 	}
-	.success-stories .grid {
-   	 	max-width: 750px;
-    	width: 100%;
-	}
-	.success-stories .grid-menu {
-	    max-width: 180px;
-	    width: 100%;
-	}
+
 	
 	.jumbotron {
 		.jumbo-btn-group {
@@ -1779,6 +1780,14 @@ img.aligncenter {
 		}
 	}
 
+	.grid {
+		.grid-item {
+		    width: 100%;
+		    max-width: 32%;
+		    min-height: inherit;
+		}
+	}
+	
 	.mentions .col-md-2 {
 		float: left;
 		width: 33.3333%;
@@ -1983,6 +1992,17 @@ img.aligncenter {
 		}
 	}
 	
+	.grid {
+		.gutter-sizer {
+		    width: 2.5%;
+		}
+		.grid-item {
+		    width: 100%;
+		    max-width: 48.5%;
+		    min-height: inherit;
+		}
+	}
+	
 	.story .wp-post-image, .video .wp-post-image {
 		min-height: inherit;
 	}
@@ -2151,6 +2171,22 @@ img.aligncenter {
 		border-radius: 2px;
 	}
 	
+	.grid {
+		.gutter-sizer {
+		    width: 4%;
+		}
+		max-width: 360px;
+    	width: 100%;
+    	float: inherit;
+    	margin: 0px auto;
+		.grid-item {
+		    width: 100%;
+		    max-width: 100%;
+		    min-height: inherit;
+		}
+	}
+
+
 	.regional-contacts {
 	    min-height: inherit;
 	}
@@ -2182,6 +2218,14 @@ img.aligncenter {
 	}
 	section#multiLanguageSupport {
 		  margin-bottom: 10%;
+	}
+	
+	.grid {
+		.grid-item {
+		    width: 100%;
+		    max-width: 360px;
+		    min-height: inherit;
+		}
 	}
 	.jumbotron {
 		.jumbo-btn-group .btn {

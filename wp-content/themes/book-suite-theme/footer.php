@@ -67,5 +67,32 @@
 	<!-- .scroll-to-top -->
 	
 	<?php wp_footer(); ?>
+	
+
+		<script src="/wp-content/themes/book-suite-theme/js/imagesloaded.pkgd.min.js"></script>
+	<script src="/wp-content/themes/book-suite-theme/js/isotope.pkgd.js"></script>
+	<script src="/wp-content/themes/book-suite-theme/js/packery-mode.pkgd.min.js"></script>
+	<script>
+		jQuery(document).ready(function() {
+			// init Isotope
+			var $grid = $('.grid').isotope({
+				layoutMode: 'packery',
+			    itemSelector: '.grid-item',
+			    percentPosition: true,
+			    packery: {
+			      gutter: '.gutter-sizer',
+				  //rowHeight: 25
+				}
+
+			
+			});
+			$grid.isotope('shuffle');
+			// layout Isotope after each image loads
+			$grid.imagesLoaded().progress( function() {
+			  $grid.isotope('layout');
+			});
+		});
+	</script>
+
 </body>
 </html>

@@ -62,128 +62,173 @@ get_header(); ?>
 <!-- </section> -->
 <section id="successStories" class="success-stories">
 
-<style>
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-	/* ---- grid ---- */
-	
-	.grid {
-	  background: #DDD;
-	  max-width: 1000px;
-	  width: 100%;
-	  float: left;
-	}
-	
-	/* clear fix */
-	.grid:after {
-	  content: '';
-	  display: block;
-	  clear: both;
-	}
-	
-	.grid-menu {
-   		background-color: #54657e;
-    	float: left;
-    	max-width: 335px;
-    	min-height: 300px;
-    	width: 100%;
-	}
-	/* ---- .grid-item ---- */
-	
-	.grid-item {
-	  float: left;
-	  width: 250px;
-	  height: 275px;
-	  background: #0D8;
-	  postition: relative;
-
-	}
-	
-	.grid-item .inner-grid {
-		background-color: #009a5f;
-/* 		padding: 15px; */
-		margin: 15px;
-		position: absolute;
-		top: 0;
-		right: 0;
-		left: 0;
-		bottom: 0;
-	}
-	
-	.grid-item-width2 { width: 220px; }
-	.grid-item-height2 { 
-		height: 300px;
-		background-color: #00c67a;
-	}
-		
-</style>
-
-	<div class="container-fluid">
+<div class="container-fluid">
+<h1>Isotope - packery layout mode w= 1024px</h1>
 		<div class="grid">
+			<div class="gutter-sizer"></div>
 			<div class="grid-item">
+				<img class="img-responsive" src="/wp-content/uploads/2015/07/360x200-placeholder-img.png" />
 				<div class="inner-grid">
-					<img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=220%C3%97160&w=220&h=160" />
-					<h5>grid-item</h5>
+					<p class="title"><strong>Tile Tittle</strong></p>
+					<p class="location">Thessaloniki, Greece</p>
+					<p class="description">Donec a leo laoreet massa fringilla sodales. Vestibulum at enim elit. Aenean sed vulputate urna.</p>
+					<ul class="tag-list">
+						<li>Tags:</li>
+						<li><a rel="tag" href="#">Europe</a>,</li>
+						<li><a rel="tag" href="#">hotel</a>,</li>
+						<li><a rel="tag" href="#">luxury</a>,</li>
+						<li><a rel="tag" href="#">urban </a>,</li>
+					</ul>		
 				</div>
 			</div>
 			<div class="grid-item grid-item-height2">
+				<div class="featured"><span>Read the Case Study!</span></div>
+				<img class="img-responsive" src="/wp-content/uploads/2015/07/360x250-placeholder-img.png" />
 				<div class="inner-grid">
-					<img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=220%C3%97185&w=220&h=185" />
-					<h5>grid-item-height2</h5>
+					<p class="title"><strong>Tile Tittle</strong></p>
+					<p class="location">Thessaloniki, Greece</p>
+					<p class="description">Donec a leo laoreet massa fringilla sodales. Vestibulum at enim elit. Aenean sed vulputate urna.</p>
+					<ul class="tag-list">
+						<li>Tags:</li>
+						<li><a rel="tag" href="#">Europe</a>,</li>
+						<li><a rel="tag" href="#">hotel</a>,</li>
+						<li><a rel="tag" href="#">luxury</a>,</li>
+						<li><a rel="tag" href="#">urban </a>,</li>
+					</ul>		
 				</div>
 			</div>
 			<div class="grid-item">
+				<div class="featured"><span>Read the Case Study!</span></div>
+				<img class="img-responsive" src="/wp-content/uploads/2015/07/360x180-placeholder-img.png" />
 				<div class="inner-grid">
-					<img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=220%C3%97160&w=220&h=160" />
-					<h5>grid-item</h5>				
+					<p class="title"><strong>Tile Tittle</strong></p>
+					<p class="location">Thessaloniki, Greece</p>
+					<p class="description">Donec a leo laoreet massa fringilla sodales. Vestibulum at enim elit. Aenean sed vulputate urna.</p>
+					<ul class="tag-list">
+						<li>Tags:</li>
+						<li><a rel="tag" href="#">Europe</a>,</li>
+						<li><a rel="tag" href="#">hotel</a>,</li>
+						<li><a rel="tag" href="#">luxury</a>,</li>
+						<li><a rel="tag" href="#">urban </a>,</li>
+					</ul>		
+				</div>
+			</div>
+			<div class="grid-item">
+				<img class="img-responsive" src="/wp-content/uploads/2015/07/360x200-placeholder-img.png" />
+				<div class="inner-grid">
+					<p class="title"><strong>Tile Tittle</strong></p>
+					<p class="location">Thessaloniki, Greece</p>
+					<p class="description">Donec a leo laoreet massa fringilla sodales. Vestibulum at enim elit. Aenean sed vulputate urna.</p>
+					<ul class="tag-list">
+						<li>Tags:</li>
+						<li><a rel="tag" href="#">Europe</a>,</li>
+						<li><a rel="tag" href="#">hotel</a>,</li>
+						<li><a rel="tag" href="#">luxury</a>,</li>
+						<li><a rel="tag" href="#">urban </a>,</li>
+					</ul>		
 				</div>
 			</div>
 			<div class="grid-item grid-item-height2">
+				<img class="img-responsive" src="/wp-content/uploads/2015/07/360x360-placeholder-img.png" />
 				<div class="inner-grid">
-					<img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=220%C3%97185&w=220&h=185" />
-					<h5>grid-item-height2</h5>
+					<p class="title"><strong>Tile Tittle</strong></p>
+					<p class="location">Thessaloniki, Greece</p>
+					<p class="description">Donec a leo laoreet massa fringilla sodales. Vestibulum at enim elit. Aenean sed vulputate urna.</p>
+					<ul class="tag-list">
+						<li>Tags:</li>
+						<li><a rel="tag" href="#">Europe</a>,</li>
+						<li><a rel="tag" href="#">hotel</a>,</li>
+						<li><a rel="tag" href="#">luxury</a>,</li>
+						<li><a rel="tag" href="#">urban </a>,</li>
+					</ul>		
 				</div>
 			</div>
 			<div class="grid-item">
+				<div class="featured"><span>Read the Case Study!</span></div>
+				<img class="img-responsive" src="/wp-content/uploads/2015/07/360x150-placeholder-img.png" />
 				<div class="inner-grid">
-					<img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=220%C3%97160&w=220&h=160" />
-					<h5>grid-item</h5>				
+					<p class="title"><strong>Tile Tittle</strong></p>
+					<p class="location">Thessaloniki, Greece</p>
+					<p class="description">Donec a leo laoreet massa fringilla sodales. Vestibulum at enim elit. Aenean sed vulputate urna.</p>
+					<ul class="tag-list">
+						<li>Tags:</li>
+						<li><a rel="tag" href="#">Europe</a>,</li>
+						<li><a rel="tag" href="#">hotel</a>,</li>
+						<li><a rel="tag" href="#">luxury</a>,</li>
+						<li><a rel="tag" href="#">urban </a>,</li>
+					</ul>		
 				</div>
 			</div>
 			<div class="grid-item grid-item-height2">
+				<div class="featured"><span>Read the Case Study!</span></div>
+				<img class="img-responsive" src="/wp-content/uploads/2015/07/360x360-placeholder-img.png" />
 				<div class="inner-grid">
-					<img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=220%C3%97185&w=220&h=185" />
-					<h5>grid-item-height2</h5>				
+					<p class="title"><strong>Tile Tittle</strong></p>
+					<p class="location">Thessaloniki, Greece</p>
+					<p class="description">Donec a leo laoreet massa fringilla sodales. Vestibulum at enim elit. Aenean sed vulputate urna.</p>
+					<ul class="tag-list">
+						<li>Tags:</li>
+						<li><a rel="tag" href="#">Europe</a>,</li>
+						<li><a rel="tag" href="#">hotel</a>,</li>
+						<li><a rel="tag" href="#">luxury</a>,</li>
+						<li><a rel="tag" href="#">urban </a>,</li>
+					</ul>		
 				</div>
 			</div>
 			<div class="grid-item">
+				<img class="img-responsive" src="/wp-content/uploads/2015/07/360x250-placeholder-img.png" />
 				<div class="inner-grid">
-					<img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=220%C3%97160&w=220&h=160" />
-					<h5>grid-item</h5>				
+					<p class="title"><strong>Tile Tittle</strong></p>
+					<p class="location">Thessaloniki, Greece</p>
+					<p class="description">Donec a leo laoreet massa fringilla sodales. Vestibulum at enim elit. Aenean sed vulputate urna.</p>
+					<ul class="tag-list">
+						<li>Tags:</li>
+						<li><a rel="tag" href="#">Europe</a>,</li>
+						<li><a rel="tag" href="#">hotel</a>,</li>
+						<li><a rel="tag" href="#">luxury</a>,</li>
+						<li><a rel="tag" href="#">urban </a>,</li>
+					</ul>		
 				</div>
 			</div>
 			<div class="grid-item grid-item-height2">
+				<div class="featured"><span>Read the Case Study!</span></div>
+				<img class="img-responsive" src="/wp-content/uploads/2015/07/360x250-placeholder-img.png" />
 				<div class="inner-grid">
-					<img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=220%C3%97185&w=220&h=185" />
-					<h5>grid-item-height2</h5>				
+					<p class="title"><strong>Tile Tittle</strong></p>
+					<p class="location">Thessaloniki, Greece</p>
+					<p class="description">Donec a leo laoreet massa fringilla sodales. Vestibulum at enim elit. Aenean sed vulputate urna.</p>
+					<ul class="tag-list">
+						<li>Tags:</li>
+						<li><a rel="tag" href="#">Europe</a>,</li>
+						<li><a rel="tag" href="#">hotel</a>,</li>
+						<li><a rel="tag" href="#">luxury</a>,</li>
+						<li><a rel="tag" href="#">urban </a>,</li>
+					</ul>		
 				</div>
 			</div>
 			<div class="grid-item">
+				<img class="img-responsive" src="/wp-content/uploads/2015/07/360x250-placeholder-img.png" />
 				<div class="inner-grid">
-					<img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=220%C3%97160&w=220&h=160" />
-					<h5>grid-item</h5>				
+					<p class="title"><strong>Tile Tittle</strong></p>
+					<p class="location">Thessaloniki, Greece</p>
+					<p class="description">Donec a leo laoreet massa fringilla sodales. Vestibulum at enim elit. Aenean sed vulputate urna.</p>
+					<ul class="tag-list">
+						<li>Tags:</li>
+						<li><a rel="tag" href="#">Europe</a>,</li>
+						<li><a rel="tag" href="#">hotel</a>,</li>
+						<li><a rel="tag" href="#">luxury</a>,</li>
+						<li><a rel="tag" href="#">urban </a>,</li>
+					</ul>		
 				</div>
 			</div>
 		</div>
 		<div class="grid-menu">
 			<div class="inner-grid-menu">
-				<h5>Grid Filter Menu</h5>
+				<h5>Grid Filter Menu w = 312px</h5>
 			</div>
 		</div>
 	</div>
 </section>
+
 <?php get_template_part('index-request-demo'); ?>
 <?php get_footer(); ?>

@@ -1,0 +1,86 @@
+@import url('../bootstrap/less/variables.less');
+
+/***************************************************
+ * 
+ *  Stories - Isotope/packery JS styling
+ * 
+ **************************************************/
+
+.success-stories {
+	background-color: @global-med-grey-pg-bground;
+	padding-bottom: 3%;
+    padding-top: 3%;
+}
+.grid-menu {
+	background-color: #54657e;
+	float: left;
+	max-width: 280px;
+	min-height: 300px;
+	width: 100%;
+	margin-left: 2.32%;
+}
+
+/* ---- grid ---- */
+
+.grid {
+	max-width: 1024px;
+	width: 100%;
+	float: left;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+	position: relative;
+  	float: left;
+  	width: 240px;
+  	min-height: 275px;
+  	background: #fff;
+  	z-index: 1;
+  	.inner-grid {
+		//background-color: #f5f5f5;
+		margin: 15px;
+		min-height: 145px;
+	}
+  	.featured {
+	    padding: 10px 13px;
+	    background-color: @global-color-lt-blue;
+	    color: @global-color-white;
+	    font-size : @font-size-small;
+	}
+	.title {
+	    margin-bottom: 0;
+	}
+	.location {
+		font-size : @font-size-small;
+		color: lighten(@gray-base, 30%);
+	}
+	.description {
+	    font-size:  @font-size-small;
+	}
+	.tag-list {
+	    list-style: outside none none;
+	    margin: 0;
+	    padding: 0;
+	    > li {
+		    display: inline;
+		    font-size: 12px;
+		}
+	}
+}
+
+.grid-item-width2 { 
+	width: 240px; 
+}
+.grid-item-height2 { 
+	min-height: 300px;
+ }
+
+.gutter-sizer { width: 2%; }

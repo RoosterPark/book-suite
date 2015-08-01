@@ -8,6 +8,83 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,600italic');
 /***************************************************
  * 
+ *  Stories - Isotope/packery JS styling
+ * 
+ **************************************************/
+.success-stories {
+  background-color: #e5e1e1;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+.grid-menu {
+  background-color: #54657e;
+  float: left;
+  max-width: 280px;
+  min-height: 300px;
+  width: 100%;
+  margin-left: 2.32%;
+}
+/* ---- grid ---- */
+.grid {
+  max-width: 1024px;
+  width: 100%;
+  float: left;
+}
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* ---- .grid-item ---- */
+.grid-item {
+  position: relative;
+  float: left;
+  width: 240px;
+  min-height: 275px;
+  background: #fff;
+  z-index: 1;
+}
+.grid-item .inner-grid {
+  margin: 15px;
+  min-height: 145px;
+}
+.grid-item .featured {
+  padding: 10px 13px;
+  background-color: #009fe3;
+  color: #ffffff;
+  font-size: 12px;
+}
+.grid-item .title {
+  margin-bottom: 0;
+}
+.grid-item .location {
+  font-size: 12px;
+  color: #898989;
+}
+.grid-item .description {
+  font-size: 12px;
+}
+.grid-item .tag-list {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.grid-item .tag-list > li {
+  display: inline;
+  font-size: 12px;
+}
+.grid-item-width2 {
+  width: 240px;
+}
+.grid-item-height2 {
+  min-height: 300px;
+}
+.gutter-sizer {
+  width: 2%;
+}
+/***************************************************
+ * 
  *  WP CSS Class Name styling
  * 
  **************************************************/
@@ -1305,14 +1382,6 @@ img.aligncenter {
   .page-hero {
     margin-top: 90px;
   }
-  .success-stories .grid {
-    max-width: 750px;
-    width: 100%;
-  }
-  .success-stories .grid-menu {
-    max-width: 180px;
-    width: 100%;
-  }
   .jumbotron .jumbo-btn-group {
     text-align: center;
   }
@@ -1458,6 +1527,14 @@ img.aligncenter {
   }
   .success .success-post .wp-post-image {
     height: auto;
+  }
+  .grid .gutter-sizer {
+    width: 2%;
+  }
+  .grid .grid-item {
+    width: 100%;
+    max-width: 32%;
+    min-height: inherit;
   }
   .mentions .col-md-2 {
     float: left;
@@ -1628,6 +1705,14 @@ img.aligncenter {
   .content-area .contact-content .contact-items h4 {
     text-align: center;
   }
+  .grid .gutter-sizer {
+    width: 2.5%;
+  }
+  .grid .grid-item {
+    width: 100%;
+    max-width: 48.5%;
+    min-height: inherit;
+  }
   .story .wp-post-image,
   .video .wp-post-image {
     min-height: inherit;
@@ -1767,6 +1852,20 @@ img.aligncenter {
     line-height: 1.3333333;
     border-radius: 2px;
   }
+  .grid {
+    max-width: 360px;
+    width: 100%;
+    float: inherit;
+    margin: 0px auto;
+  }
+  .grid .gutter-sizer {
+    width: 4%;
+  }
+  .grid .grid-item {
+    width: 100%;
+    max-width: 100%;
+    min-height: inherit;
+  }
   .regional-contacts {
     min-height: inherit;
   }
@@ -1797,6 +1896,11 @@ img.aligncenter {
   }
   section#multiLanguageSupport {
     margin-bottom: 10%;
+  }
+  .grid .grid-item {
+    width: 100%;
+    max-width: 360px;
+    min-height: inherit;
   }
   .jumbotron .jumbo-btn-group .btn {
     margin: 0 auto 6%;

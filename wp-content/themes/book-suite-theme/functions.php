@@ -341,13 +341,15 @@ function upbootwp_scripts() {
 	wp_enqueue_style( 'customized-bootstrap', get_template_directory_uri().'/css/book-suite-theme.css', array(), '20150624');
 	wp_enqueue_script( 'jQuery-js', get_template_directory_uri().'/js/jquery.js',array(),'2.0.3',true);
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri().'/bootstrap/js/bootstrap.min.js',array(),'20150624',true);
-	wp_enqueue_script( 'cycle-js', get_template_directory_uri().'/js/jquery.cycle2.js',array(),'20150624',true);
-	wp_enqueue_script( 'cycle-tile', get_template_directory_uri().'/js/jquery.cycle2.tile.js',array(),'20150624',true);
-	wp_enqueue_script( 'cycle-carousel', get_template_directory_uri().'/js/jquery.cycle2.carousel.js',array(),'20150624',true);
+	//wp_enqueue_script( 'cycle-js', get_template_directory_uri().'/js/jquery.cycle2.js',array(),'20150624',true);
+	//wp_enqueue_script( 'cycle-tile', get_template_directory_uri().'/js/jquery.cycle2.tile.js',array(),'20150624',true);
+	//wp_enqueue_script( 'cycle-carousel', get_template_directory_uri().'/js/jquery.cycle2.carousel.js',array(),'20150624',true);
 	wp_enqueue_script( 'javascript', get_template_directory_uri().'/js/function.js',array(),'20150624',true);
 	
 	if(is_page('stories')) {
-		wp_enqueue_script( 'isotope-js', get_template_directory_uri().'/js/isotope.pkgd.js',array(),'20150624',true);
+		//wp_enqueue_script( 'isotope-js', get_template_directory_uri().'/js/isotope.pkgd.js',array(),'20150624',true);
+		//wp_enqueue_script( 'packery-js', get_template_directory_uri().'/js/packery-mode.pkgd.min.js',array(),'20150624',true);
+		
 	}
 	
 }
