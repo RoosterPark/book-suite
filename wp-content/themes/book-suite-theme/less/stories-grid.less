@@ -49,11 +49,14 @@
 		margin: 15px;
 		min-height: 145px;
 	}
-  	.featured {
+  	.featured, .case-study {
 	    padding: 10px 13px;
 	    background-color: @global-color-lt-blue;
 	    color: @global-color-white;
 	    font-size : @font-size-small;
+	    a {
+	    	color: @global-color-white;
+	    }
 	}
 	.title {
 	    margin-bottom: 0;
@@ -62,8 +65,11 @@
 		font-size : @font-size-small;
 		color: lighten(@gray-base, 30%);
 	}
-	.description {
+	.description, .excerpt, .case-study {
 	    font-size:  @font-size-small;
+	}
+	a.read-more {
+	    font-size:  @font-size-small !important;
 	}
 	.tag-list {
 	    list-style: outside none none;
