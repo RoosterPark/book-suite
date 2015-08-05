@@ -78,7 +78,17 @@
 	    > li {
 		    display: inline;
 		    font-size: 12px;
+		    a:after{
+			    content: ",";
+			    color:black;
+			}
 		}
+		> li:last-child {
+			a:after{
+		    	content: inherit;
+			}
+		}
+			 
 	}
 }
 
@@ -90,3 +100,5 @@
  }
 
 .gutter-sizer { width: 2%; }
+
+.prev-next-posts { margin-top: 6%;}

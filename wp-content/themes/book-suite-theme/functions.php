@@ -106,13 +106,72 @@ function upbootwp_setup() {
 	);
 }
 
+/*******************
+ *
+ * Add classes to prev and next post
+ *
+ ********************/
 
+add_filter('next_posts_link_attributes', 'posts_link_attributes_1');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes_2');
+
+function posts_link_attributes_1() {
+	return 'class="prev-post btn btn-info btn-lg text-center"';
+}
+function posts_link_attributes_2() {
+	return 'class="next-post btn btn-info btn-lg text-center"';
+}
+
+// Register Custom Post Type
+function custom_post_type() {
+
+	$labels = array(
+			'name'                => _x( 'Plays', 'Post Type General Name', 'text_domain' ),
+			'singular_name'       => _x( 'Play', 'Post Type Singular Name', 'text_domain' ),
+			'menu_name'           => __( 'Plays', 'text_domain' ),
+			'name_admin_bar'      => __( 'Plays', 'text_domain' ),
+			'parent_item_colon'   => __( 'Parent Item:', 'text_domain' ),
+			'all_items'           => __( 'All Items', 'text_domain' ),
+			'add_new_item'        => __( 'Add New Item', 'text_domain' ),
+			'add_new'             => __( 'Add New', 'text_domain' ),
+			'new_item'            => __( 'New Item', 'text_domain' ),
+			'edit_item'           => __( 'Edit Item', 'text_domain' ),
+			'update_item'         => __( 'Update Item', 'text_domain' ),
+			'view_item'           => __( 'View Item', 'text_domain' ),
+			'search_items'        => __( 'Search Item', 'text_domain' ),
+			'not_found'           => __( 'Not found', 'text_domain' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+	);
+	$args = array(
+			'label'               => __( 'Play', 'text_domain' ),
+			'description'         => __( 'Post Type Description', 'text_domain' ),
+			'labels'              => $labels,
+			'supports'            => array( ),
+			'taxonomies'          => array( 'category', 'post_tag' ),
+			'hierarchical'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'menu_position'       => 5,
+			'show_in_admin_bar'   => true,
+			'show_in_nav_menus'   => true,
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'page',
+	);
+	register_post_type( 'Plays', $args );
+
+}
+add_action( 'init', 'custom_post_type', 0 );
 
 /*******************
  *
  * Locations Custom Post Type
  *
  ********************/
+
 function locations_taxonomy() {
 	register_taxonomy('locations','locations',
 			array(
@@ -125,9 +184,7 @@ function locations_taxonomy() {
 }
 add_action( 'init', 'locations_taxonomy');
 
-
 add_action( 'init', 'locations_init' );
-
 function locations_init() {
 	$labels = array(
 			'name'               => _x( 'Locations', 'post type general name'),
@@ -227,80 +284,151 @@ function prnews_init() {
  * Success Stories Custom Post Type
  * 
  ********************/
-add_action( 'init', 'themes_taxonomy');
-function themes_taxonomy() {
-register_taxonomy(
-    'success_stories','success_stories',
-    array(
-        'hierarchical'      => true,
-        'label'             => 'Categories',
-        'show_ui'           => true,
-        'show_admin_column' => true,
-        'query_var'         => true
-        )
-    ); 
-} 
-add_action( 'init', 'create_posttype' );
 
-function create_posttype() {
-	$labels = array(
-			'name' => __( 'Success Stories' ),
-			'singular_name' => __( 'Success Story' ),
-	        'name'               => _x( 'Success Stories', 'post type general name'),
-	        'singular_name'      => _x( 'Success Story', 'post type singular name'),
-	        'menu_name'          => _x( 'Success Stories', 'admin menu'),
-	        'name_admin_bar'     => _x( 'Success Stories', 'add new on admin bar'),
-	        'add_new'            => _x( 'New', 'Success Story Item'),
-	        'add_new_item'       => __( 'Add New Success Story Item'),
-	        'new_item'           => __( 'New Success Stories Item'),
-	        'edit_item'          => __( 'Edit Success Stories Item'),
-	        'view_item'          => __( 'View Success Stories Item'),
-	        'all_items'          => __( 'All Success Stories'),
-	        'search_items'       => __( 'Search Success Stories'),
-	        'parent_item_colon'  => __( 'Parent Success Stories:'),
-	        'not_found'          => __( 'No Success Stories Found.'),
-	        'not_found_in_trash' => __( 'No Success Stories Found in Trash.')
-	);
-	$args = array(
-			'labels' 			 => $labels,
-			'public' 			 => true,
-	        'publicly_queryable' => true,
-	        'show_ui'            => true,
-	        'show_in_menu'       => true,
-	        'query_var'          => true,
-			'rewrite' 			 => array('slug' => 'success_stories'),
-	        'capability_type'    => 'post',
-	        'has_archive'        => true,
-	        'hierarchical'       => true,
-	        'menu_position'      => 5,
-	        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
-	        'taxonomies'        => array('post_tag') // this is IMPORTANT
-	);
-	register_post_type( 'success_stories', $args);
-}
 
+
+
+// add_action( 'init', 'create_posttype' );
+
+// function create_posttype() {
+// 	$labels = array(
+// 			'name' => __( 'Success Stories' ),
+// 			'singular_name' => __( 'Success Story' ),
+// 	        'name'               => _x( 'Success Stories', 'post type general name'),
+// 	        'singular_name'      => _x( 'Success Story', 'post type singular name'),
+// 	        'menu_name'          => _x( 'Success Stories', 'admin menu'),
+// 	        'name_admin_bar'     => _x( 'Success Stories', 'add new on admin bar'),
+// 	        'add_new'            => _x( 'New', 'Success Story Item'),
+// 	        'add_new_item'       => __( 'Add New Success Story Item'),
+// 	        'new_item'           => __( 'New Success Stories Item'),
+// 	        'edit_item'          => __( 'Edit Success Stories Item'),
+// 	        'view_item'          => __( 'View Success Stories Item'),
+// 	        'all_items'          => __( 'All Success Stories'),
+// 	        'search_items'       => __( 'Search Success Stories'),
+// 	        'parent_item_colon'  => __( 'Parent Success Stories:'),
+// 	        'not_found'          => __( 'No Success Stories Found.'),
+// 	        'not_found_in_trash' => __( 'No Success Stories Found in Trash.')
+// 	);
+// 	$args = array(
+// 			'labels' 			 => $labels,
+// 			'public' 			 => true,
+// 	        'publicly_queryable' => true,
+// 	        'show_ui'            => true,
+// 	        'show_in_menu'       => true,
+// 	        'query_var'          => true,
+// 			'rewrite' 			 => array('slug' => 'success_stories','with_front' => true),
+// 	        'capability_type'    => 'post',
+// 	        'has_archive'        => 'success_stories',
+// 	        'hierarchical'       => true,
+// 	        'menu_position'      => 5,
+// 	        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+// 	        'taxonomies'        => array('post_tag') // this is IMPORTANT
+// 	);
+// 	register_post_type( 'success_stories', $args);
+// }
+//flush_rewrite_rules();
 
 // Show posts of 'post', 'page' and 'movie' post types on home page
-add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
+//add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 
-function add_my_post_types_to_query( $query ) {
-	if ( is_home() && $query->is_main_query() )
-		$query->set( 'post_type', array( 'post', 'page', 'success_stories', 'locations' ) );
-	return $query;
+// function add_my_post_types_to_query( $query ) {
+// 	if ( is_home() && $query->is_main_query() )
+// 		$query->set( 'post_type', array( 'post', 'page', 'success_stories', 'locations' ) );
+// 	return $query;
+// }
+
+add_filter('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+	if(is_category() || is_tag()) {
+		$post_type = get_query_var('post_type');
+		if($post_type)
+			$post_type = $post_type;
+		else
+			$post_type = array('post','articles','success', 'success_category','nav_menu_item');
+		$query->set('post_type',$post_type);
+		return $query;
+	}
 }
 
-// add_filter('pre_get_posts', 'query_post_type');
-// function query_post_type($query) {
-//   if(is_category() || is_tag()) {
-//     $post_type = get_query_var('post_type');
-//     if($post_type)
-//         $post_type = $post_type;
-//     else
-//         $post_type = array('post','success_stories', 'nav_menu_item');
-//         $query->set('post_type',$post_type);
-//     return $query;
-//     }
+function my_custom_post_success() {
+	$labels = array(
+			'name'               => _x( 'Success', 'post type general name' ),
+			'singular_name'      => _x( 'Success', 'post type singular name' ),
+			'add_new'            => _x( 'Add New', 'Success' ),
+			'add_new_item'       => __( 'Add New Success' ),
+			'edit_item'          => __( 'Edit Success' ),
+			'new_item'           => __( 'New Success' ),
+			'all_items'          => __( 'All Success' ),
+			'view_item'          => __( 'View Success' ),
+			'search_items'       => __( 'Search Success' ),
+			'not_found'          => __( 'No Success found' ),
+			'not_found_in_trash' => __( 'No Success found in the Trash' ),
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Success'
+	);
+	$args = array(
+			'labels'        => $labels,
+			'description'   => 'Holds our products and product specific data',
+			'public'        => true,
+			'menu_position' => 5,
+			'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+			'has_archive'   => true,
+			'taxonomies'        => array('post_tag') // this is IMPORTANT
+	);
+	register_post_type( 'success', $args );
+}
+add_action( 'init', 'my_custom_post_success' );
+
+
+function my_taxonomies_success() {
+	$labels = array(
+			'name'              => _x( 'Success Categories', 'taxonomy general name' ),
+			'singular_name'     => _x( 'Product Success', 'taxonomy singular name' ),
+			'search_items'      => __( 'Search Success Categories' ),
+			'all_items'         => __( 'All Success Categories' ),
+			'parent_item'       => __( 'Parent Success Category' ),
+			'parent_item_colon' => __( 'Parent Success Category:' ),
+			'edit_item'         => __( 'Edit Success Category' ),
+			'update_item'       => __( 'Update Success Category' ),
+			'add_new_item'      => __( 'Add New Success Category' ),
+			'new_item_name'     => __( 'New Success Category' ),
+			'menu_name'         => __( 'Success Categories' ),
+	);
+	$args = array(
+			'labels' => $labels,
+			'hierarchical' => true,
+			'show_ui'           => true,
+			'show_admin_column' => true,
+			
+	);
+	register_taxonomy( 'success_category', 'success', $args );
+}
+add_action( 'init', 'my_taxonomies_success', 0 );
+
+// function success_taxonomy() {
+// 	$labels = array(
+// 			'name'              => _x( 'Success Categories', 'taxonomy general name' ),
+// 			'singular_name'     => _x( 'Success  Category', 'taxonomy singular name' ),
+// 			'search_items'      => __( 'Search Success  Categories' ),
+// 			'all_items'         => __( 'All Success  Categories' ),
+// 			'parent_item'       => __( 'Parent Success  Category' ),
+// 			'parent_item_colon' => __( 'Parent Success  Category:' ),
+// 			'edit_item'         => __( 'Edit Success  Category' ),
+// 			'update_item'       => __( 'Update Success  Category' ),
+// 			'add_new_item'      => __( 'Add New Success  Category' ),
+// 			'new_item_name'     => __( 'New Success  Category' ),
+// 			'menu_name'         => __( 'Success Categories' ),
+// 	);
+// 	$args = array(
+// 			'labels'             => $labels,
+// 			'hierarchical'      => true,
+// 			'show_ui'           => true,
+// 			'show_admin_column' => true,
+// 	);
+// 	register_taxonomy('success_stories','success_stories', $args );
 // }
+// add_action( 'init', 'success_taxonomy');
+
 
 // Add Class to All Excerpts in WordPress 
 add_filter( "the_excerpt", "add_class_to_excerpt" );

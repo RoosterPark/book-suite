@@ -84,6 +84,13 @@
   display: inline;
   font-size: 12px;
 }
+.grid-item .tag-list > li a:after {
+  content: ",";
+  color: black;
+}
+.grid-item .tag-list > li:last-child a:after {
+  content: inherit;
+}
 .grid-item-width2 {
   width: 240px;
 }
@@ -92,6 +99,9 @@
 }
 .gutter-sizer {
   width: 2%;
+}
+.prev-next-posts {
+  margin-top: 6%;
 }
 /***************************************************
  * 

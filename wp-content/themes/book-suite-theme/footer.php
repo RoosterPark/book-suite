@@ -36,7 +36,6 @@
 						'container_id'    => 'footerAuxNav',
 						'menu_class' => 'footer-nav-aux',
 						'depth' => '1',
-						
 						'walker' => new Footernav_Walker
 				);
 				 wp_nav_menu($footer_args);
@@ -91,6 +90,14 @@
 			$grid.imagesLoaded().progress( function() {
 			  $grid.isotope('layout');
 			});
+
+			// bind filter button click
+		   $('#filters ').on('click', 'a', function() {
+		        var filterValue = jQuery(this).attr('data-filter');
+		        $grid.isotope({
+		            filter : filterValue
+		        });
+		    });
 		});
 	</script>
 

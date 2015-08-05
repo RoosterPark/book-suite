@@ -268,7 +268,7 @@ get_header(); ?>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
 			<div class="jumbo-btn-group">
-				<a class="btn btn-info btn-lg" href="#" role="button">Lean More</a>
+				<a class="btn btn-info btn-lg" href="#" role="button">Learn More</a>
 				<a class="btn btn-primary btn-lg" href="#" role="button">See Product Features</a>
 			</div>
 		</div>

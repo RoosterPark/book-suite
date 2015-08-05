@@ -8,7 +8,7 @@
  * @package upBootWP 0.1
  */
 get_header(); ?>
-<div class="container sub_page">
+<div class="container sub_page xxx">
 	<div class="blog-header">	
 		<?php
 			if ( is_category() ) :
@@ -129,7 +129,5 @@ get_header(); ?>
 			</div><!-- #footer-widgets -->
 		<?php endif; ?>
 	</div>
-
-	
 </div>
 <?php get_footer(); ?>

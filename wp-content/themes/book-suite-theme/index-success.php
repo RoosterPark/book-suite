@@ -9,15 +9,15 @@
         <div class="col-sm-12 col-md-6">
         	<div class="row">
 		        <?php 
-		//        $out = get_taxonomies(); 
-		//        print_r($out); 
+		       //$out = get_taxonomies(); 
+		      // print_r($out); 
 		
 		       $args = array( 
-		       		'post_type' => 'success_stories',
+		       		'post_type' => 'success',
 		       		'posts_per_page' => 2,
 		       		'tax_query' => array(
 		       				array(
-		       						'taxonomy' => 'success_stories',
+		       						'taxonomy' => 'success_category',
 		       						'field'    => 'slug',
 		       						'terms'    => 'video',
 		       				),
@@ -55,9 +55,9 @@
 					</div>
 					<?php
 				endwhile;  
-		//         echo "<pre>";
-		//         print_r($loop);
-		//         echo "</pre>";
+// 		        echo "<pre>";
+// 		        print_r($loop);
+// 		        echo "</pre>";
 		        ?>
 		        <?php wp_reset_postdata(); ?>        	
         	</div>
@@ -66,15 +66,15 @@
       <div class="col-sm-12 col-md-6">
       	<div class="row">
         <?php 
-//        $out = get_taxonomies(); 
-//        print_r($out); 
+       //$out = get_taxonomies(); 
+       //print_r($out); 
 
        $args = array( 
-       		'post_type' => 'success_stories',
+       		'post_type' => 'success',
        		'posts_per_page' => 4,
        		'tax_query' => array(
        				array(
-       						'taxonomy' => 'success_stories',
+       						'taxonomy' => 'success_category',
        						'field'    => 'slug',
        						'terms'    => 'story',
        				),
@@ -109,6 +109,11 @@
 			<?php
 		endwhile; 
         ?>
+        <?php 
+//         echo "<pre>";
+//         print_r($loop);
+//         echo "</pre>";
+        ?>
         <?php wp_reset_postdata(); ?>
 		</div>
 	</div> 
@@ -116,7 +121,7 @@
       
 	<div class="row">
 		<div class="col-md-12 cta-link text-center">
-			<a class="btn btn-info btn-lg" role="button" href="/stories/" title="<?php the_title_attribute(); ?>">VIEW MORE PARTNER STORIES</a>		
+			<a class="btn btn-info btn-lg" role="button" href="/story/" title="<?php the_title_attribute(); ?>">VIEW MORE PARTNER STORIES</a>		
 		</div>
 	</div>
 </div>
