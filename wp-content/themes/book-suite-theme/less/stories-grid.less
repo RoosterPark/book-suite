@@ -12,12 +12,42 @@
     padding-top: 3%;
 }
 .grid-menu {
-	background-color: #54657e;
-	float: left;
+	//background-color: #54657e;
+	float: right;
 	max-width: 280px;
 	min-height: 300px;
 	width: 100%;
 	margin-left: 2.32%;
+	
+	.option-set {
+		list-style: none;
+		padding: 0;
+		li {
+		    text-transform: capitalize;
+		}
+		
+		.count {
+	    	display: inline-block;
+	    	font-size: 12px;
+	    	margin-left: 5px;
+		}
+		.reset {
+		    overflow: auto;
+		    margin-bottom: 15px;
+
+		}		
+	}
+	
+	.selected {
+	    color: @global-color-drk-blue;
+	    font-weight: 600;
+	    text-decoration: underline;
+	}
+	.inner-option-set {
+		list-style: none;
+    	margin: 0;
+    	padding: 10px 15px;
+	}
 }
 
 /* ---- grid ---- */

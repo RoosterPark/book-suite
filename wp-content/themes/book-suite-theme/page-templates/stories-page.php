@@ -87,7 +87,7 @@ get_header(); ?>
 	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 	$query_args = array(
 		'post_type' => 'success',
-		'posts_per_page' => 40,
+		'posts_per_page' => -1,
 		'tax_query' => array(
 			array(
 				'taxonomy' => 'success_category',
@@ -115,22 +115,20 @@ get_header(); ?>
 					 		$tileImageSize = "180";
 					 	}
 					 	?>
-				
-						<div class="grid-item isotope-item <?php //echo implode(" ",$termsCart); ?>" data-post="<?php echo $postx_counter ?>" >
-												<?php 
+						<?php 
 						
-						//$terms = get_the_terms( $post->ID , $taxonomy );
-						//$termsCart = array();
+						$terms = get_the_terms( $the_query->ID , 'success_category' );
+						$termsCart = array();
 						// Loop over each item since it's an array
-						//foreach( $terms as $term ) {
-							// Print the name method from $term which is an OBJECT
-							//print  $term->name . ' ';
-							//array_push($termsCart, $term->name);
-							// Get rid of the other data stored in the object, since it's not needed
-							//unset($term);
-						//}
+						foreach( $terms as $term ) {
+							array_push($termsCart, $term->slug);
+							unset($term);
+						}
+						$termsCartImplode =  implode(" ",$termsCart);
 						
-						?>
+						?>			
+						<div class="grid-item isotope-item <?php echo $termsCartImplode;  ?>" data-post="<?php echo $postx_counter ?>" >
+	
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<?php 
 								
@@ -172,13 +170,9 @@ get_header(); ?>
 									$taxonomy = 'success_category';
 									// get the term IDs assigned to post.
 									$post_terms = wp_get_object_terms( $post->ID, $taxonomy, array( 'fields' => 'ids' ) );
-								
-									echo "<pre>";
-									print_r($post_terms);
-									echo "</pre>";
 									// separator between links
 									$separator = ', ';
-									
+			
 									if ( !empty( $post_terms ) && !is_wp_error( $post_terms ) ) {
 										
 										$term_ids = implode( ',' , $post_terms );
@@ -192,14 +186,10 @@ get_header(); ?>
 												'use_desc_for_title' => 1
 
 												);
-										//$terms = wp_list_categories( 'title_li=&style=list&hierarchical=1&echo=1&taxonomy=' . $taxonomy . '&include=' . $term_ids );
 										$terms = wp_list_categories( $terms_args);
 										$terms = rtrim( trim( str_replace( '<br />',  $separator, $terms ) ), $separator );
 										echo  $terms;
 									}
-		
-									
-									
 									?>
 									</ul>									
 									<?php the_tags( '<ul class="tag-list"><li>Tags: </li><li rel="tag">', ', </li><li>', '</li></ul>' ); ?>
@@ -219,99 +209,32 @@ get_header(); ?>
 				<?php endif; ?>
 
 		       </div>
-		        <div class="grid-menu">
-				<div class="inner-grid-menu">
-					<h5>Isotope Category Filter</h5>
-					<ul id="filters" class="sidebar-list">
-    <?php 
-    
-    $args_dd = array(
-    		'type'                     => 'post',
-    		'child_of'                 => 0,
-    		'parent'                   => '',
-    		'orderby'                  => 'name',
-    		'order'                    => 'ASC',
-    		'hide_empty'               => 1,
-    		'hierarchical'             => 1,
-    		'exclude'                  => '',
-    		'include'                  => '',
-    		'number'                   => '',
-    		'taxonomy'                 => 'success_category',
-    		'pad_counts'               => false
-    
-    );
-       // $all_categories = get_categories( 'taxonomy=success_category&hide_empty=0&hierarchical=1' );
-        $all_categories = get_categories( $args_dd );
-
-        $terms = get_the_terms( $post->ID, 'product_cat' );
-
-        foreach ($terms as $term) {
-            $product_cat = $term->term_id;
-            break;
-        }
-
-        foreach ($all_categories as $cat) {
-            echo '<li class="';
-
-            if ( $product_cat == $cat->id ) {
-                echo "current";
-            }   
-            //echo '"><a href="'. get_term_link($cat->slug, 'success_category') .'" data-filter="'. $cat->name .'"><span>'. $cat->name .'</span></a>';
-            echo '"><a href="#filter" title="'. $cat->name .'" data-filter="'. $cat->name .'"><span>'. $cat->name .'</span></a>';
-        }
-    ?>
-</ul>
-					<?php 
-					//list terms in a given taxonomy using wp_list_categories (also useful as a widget if using a PHP Code plugin)
-					
-					$taxonomy     = 'success_category';
-					$orderby      = 'name'; 
-					$show_count   = 1;      // 1 for yes, 0 for no
-					$pad_counts   = 1;      // 1 for yes, 0 for no
-					$hierarchical = 1;      // 1 for yes, 0 for no
-					$title        = '';
-					
-					$args = array(
-					  'taxonomy'     => $taxonomy,
-					  'orderby'      => $orderby,
-					  'show_count'   => $show_count,
-					  'pad_counts'   => $pad_counts,
-					  'hierarchical' => $hierarchical,
-					  'title_li'     => $title
-					);
-					?>
-					
-					<ul>
-					<?php wp_list_categories( $args ); ?>
-					</ul>
-					
-										<h5>Grid Filter Menu w = 312px</h5>
-					<?php 
-					//list terms in a given taxonomy using wp_list_categories (also useful as a widget if using a PHP Code plugin)
-					
-					$taxonomy     = 'success_category';
-					$orderby      = 'name'; 
-					$show_count   = 1;      // 1 for yes, 0 for no
-					$pad_counts   = 1;      // 1 for yes, 0 for no
-					$hierarchical = 1;      // 1 for yes, 0 for no
-					$title        = 'Category filter';
-					
-					$args_d = array(
-					  'taxonomy'     => $taxonomy,
-					  'orderby'      => $orderby,
-					  'show_count'   => $show_count,
-					  'pad_counts'   => $pad_counts,
-					  'hierarchical' => $hierarchical,
-					  'title_li'     => $title
-					);
-					?>
-					
-					<ul>
-					<?php wp_list_categories( $args_d ); ?>
-					</ul>
-					
-				</div>
-			</div>		       	
+				<div class="grid-menu">
+					<div class="inner-grid-menu">
+						<h5>Isotope Category Filter</h5>
+						<ul id="filters" class="option-set sidebar-list">
+               				<li class="reset"><a data-filter="*" title="show all" href="#filter">Show All</a></li>
+		                <?php 
+		                //get only parents
+		                $argsz = array('taxonomy'  => 'success_category','orderby' => 'name','order' => 'ASC','parent' => 0);
+		                $Parent_categories = get_categories($argsz);
+		                
+		                foreach($Parent_categories as $category) {
+		                	echo '<li><strong><span>'.$category->name.'</span></strong>';
+		                	//get all children of this category
+		                	$argsX = array('taxonomy' => 'success_category','orderby' => 'name', 'pad_counts' => 1, 'order' => 'ASC','parent' => $category->term_id);
+		                	$Child_categories = get_categories($argsX);
+		                	echo '<ul class="inner-option-set">';
+		                	foreach ($Child_categories as $c){
+		                		echo '<li class="cat-child"><a href="#filter" data-filter=".'.$c->slug.'"><span>'.$c->name.'</span></a><span class="count">('.$c->category_count.')</span></li>';
+		                	}
+		                	echo '</ul></li>';
+		                	
+		                }
+		                ?>
+		                </ul>
+					</div>
+				</div>		       	
         	</div>
       	</div>
 		<?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
@@ -334,6 +257,7 @@ get_header(); ?>
 		<?php } ?>
 	</div>
 </section>
-
 <?php get_template_part('index-request-demo'); ?>
+
 <?php get_footer(); ?>
+
