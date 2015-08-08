@@ -59,16 +59,18 @@
 			</div>
 		</section>
 	</footer>
+	<?php wp_reset_query(); ?>
 
 	<div class="scroll-to-top">
 		<i class="fa fa-angle-up"></i>
 	</div>
 	<!-- .scroll-to-top -->
 	<?php wp_footer(); ?>
+<?php if (is_page('stories')) { ?>
 	<script src="/wp-content/themes/book-suite-theme/js/imagesloaded.pkgd.min.js"></script>
-<script src="/wp-content/themes/book-suite-theme/js/isotope.pkgd.js"></script>
-<script src="/wp-content/themes/book-suite-theme/js/packery-mode.pkgd.min.js"></script>
-<script src="/wp-content/themes/book-suite-theme/js/success-story-isotope.js"></script>
-	
+	<script src="/wp-content/themes/book-suite-theme/js/isotope.pkgd.js"></script>
+	<script src="/wp-content/themes/book-suite-theme/js/packery-mode.pkgd.min.js"></script>
+	<script src="/wp-content/themes/book-suite-theme/js/success-story-isotope.js"></script>
+<?php } ?>	
 </body>
 </html>

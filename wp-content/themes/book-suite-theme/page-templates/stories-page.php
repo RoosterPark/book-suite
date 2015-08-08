@@ -66,7 +66,7 @@ get_header(); ?>
 	
 	<div class="row">
 		<div class="col-lg-12">
-			<h2>BookingSuite Partner Success - 40 Stories Per Page</h2>
+			<h2>BookingSuite Partner Success</h2>
 		</div>
 	</div>
 	<?php 
@@ -165,7 +165,8 @@ get_header(); ?>
 									</header>
 									<?php echo the_excerpt(); ?>
 	
-									<ul class="tag-list">
+									<ul id="gridItemFilter" class="cat-item-set tag-list">
+										<li class="cat-item">Categories:</li>
 									<?php
 									$taxonomy = 'success_category';
 									// get the term IDs assigned to post.
@@ -186,9 +187,14 @@ get_header(); ?>
 												'use_desc_for_title' => 1
 
 												);
-										$terms = wp_list_categories( $terms_args);
-										$terms = rtrim( trim( str_replace( '<br />',  $separator, $terms ) ), $separator );
-										echo  $terms;
+										$cat_terms =  get_categories( $terms_args);
+										
+										foreach ($cat_terms as $ccc) { ?>
+											<li class="cat-item cat-item-<?php echo $ccc->term_id; ?>"><a data-filter=".<?php echo $ccc->slug ;?>" href="#filter"><?php echo $ccc->name; ?></a></li>
+										<?php } 
+// 										echo '<pre>';
+// 										print_r($cat_terms);
+// 										echo '</pre>';
 									}
 									?>
 									</ul>									
@@ -201,6 +207,7 @@ get_header(); ?>
 							</article>
 						</div>
 						<?php endwhile; ?>
+						<?php  wp_reset_postdata(); ?>
 					<?php else: ?>
 				  <article>
 				    <h1>Sorry...</h1>
@@ -211,7 +218,6 @@ get_header(); ?>
 		       </div>
 				<div class="grid-menu">
 					<div class="inner-grid-menu">
-						<h5>Isotope Category Filter</h5>
 						<ul id="filters" class="option-set sidebar-list">
                				<li class="reset"><a data-filter="*" title="show all" href="#filter">Show All</a></li>
 		                <?php 
@@ -220,7 +226,7 @@ get_header(); ?>
 		                $Parent_categories = get_categories($argsz);
 		                
 		                foreach($Parent_categories as $category) {
-		                	echo '<li><strong><span>'.$category->name.'</span></strong>';
+		                	echo '<li class="cat-parent"><strong><span>'.$category->name.'</span></strong>';
 		                	//get all children of this category
 		                	$argsX = array('taxonomy' => 'success_category','orderby' => 'name', 'pad_counts' => 1, 'order' => 'ASC','parent' => $category->term_id);
 		                	$Child_categories = get_categories($argsX);
@@ -237,9 +243,11 @@ get_header(); ?>
 				</div>		       	
         	</div>
       	</div>
+      	<h2>Post Count: <?php echo $postx_counter++ ?></h2>
 		<?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
 			<div class="row">	
 				<div class="col-lg-12">
+				
 					<nav class="prev-next-posts text-center">
 					<?php echo get_next_posts_link( 'Older Stories', $the_query->max_num_pages ); // display older posts link ?>
 					<?php echo get_previous_posts_link( 'Newer Stories' ); // display newer posts link ?>
@@ -256,8 +264,8 @@ get_header(); ?>
 			</div>
 		<?php } ?>
 	</div>
+	<?php wp_reset_query(); ?>
 </section>
 <?php get_template_part('index-request-demo'); ?>
-
 <?php get_footer(); ?>
 
