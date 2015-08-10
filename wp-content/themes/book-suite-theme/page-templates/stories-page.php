@@ -64,9 +64,10 @@ get_header(); ?>
 
 <div class="container-fluid">
 	
-	<div class="row">
-		<div class="col-lg-12">
-			<h2>BookingSuite Partner Success</h2>
+	<div id="storiesSection" class="row">
+		<div class="col-md-12 success-hdr">
+			<h2 class="pull-left">Partner Success</h2>
+			<a id="mobileFilterBtn" class="btn btn-default btn-sm pull-right" href="#" role="button">Filter</a>
 		</div>
 	</div>
 	<?php 
@@ -80,14 +81,14 @@ get_header(); ?>
 	//echo "</pre>";
 	?>	
 	<div class="row">	
-        <div class="col-lg-12">
+        <div class="col-lg-12 grid-container">
 	        	
 <?php
 	// set up or arguments for our custom query
 	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 	$query_args = array(
 		'post_type' => 'success',
-		'posts_per_page' => -1,
+		'posts_per_page' => 101,
 		'tax_query' => array(
 			array(
 				'taxonomy' => 'success_category',
@@ -218,11 +219,12 @@ get_header(); ?>
 		       </div>
 				<div class="grid-menu">
 					<div class="inner-grid-menu">
+						
 						<ul id="filters" class="option-set sidebar-list">
                				<li class="reset"><a data-filter="*" title="show all" href="#filter">Show All</a></li>
 		                <?php 
 		                //get only parents
-		                $argsz = array('taxonomy'  => 'success_category','orderby' => 'name','order' => 'ASC','parent' => 0);
+		                $argsz = array('taxonomy'  => 'success_category','orderby' => 'name','order' => 'ASC','parent' => 0, 'hide_empty' => 1);
 		                $Parent_categories = get_categories($argsz);
 		                
 		                foreach($Parent_categories as $category) {
@@ -243,7 +245,6 @@ get_header(); ?>
 				</div>		       	
         	</div>
       	</div>
-      	<h2>Post Count: <?php echo $postx_counter++ ?></h2>
 		<?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
 			<div class="row">	
 				<div class="col-lg-12">

@@ -940,17 +940,23 @@ article {
 	}
 }
 
-.story .wp-post-image, .video .wp-post-image {
-  	display: block;
-  	/* min-height: 321px; */
-  	max-width: 100%;
-  	height: 100%;
-}
+// .story .wp-post-image, .video .wp-post-image {
+  	// display: block;
+  	// /* min-height: 321px; */
+  	// max-width: 100%;
+  	// height: 100%;
+// }
 
 
 .success {
 	h2 {
 		//margin: 0 0 @global-pad-bottom;
+	}
+	.h5 a {
+		color: white;
+	}
+	.location {
+	    color: white;
 	}
 	.success-post {
 		box-sizing: content-box;
@@ -2179,6 +2185,25 @@ img.aligncenter {
 		    min-height: inherit;
 		}
 	}
+	.grid-container {
+		position: relative;
+	}
+	.grid-menu {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		max-width: 320px;
+		margin: 0;
+		paddin: 3%;
+		width: 100%;
+		z-index: 99;
+		background-color: #ccc;
+		.inner-grid-menu {
+		    padding: 5%;
+		}
+	}
+	
 
 
 	.regional-contacts {

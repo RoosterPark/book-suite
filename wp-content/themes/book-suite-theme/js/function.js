@@ -4,17 +4,6 @@ jQuery(document).ready(function() {
 	
 	jQuery('.request-btn a').addClass('btn btn-primary');
 	jQuery('.login-btn a').addClass('btn btn-default clear');
-
-//	jQuery('.grid').isotope({
-//		layoutMode: 'packery',
-//	    itemSelector: '.grid-item',
-//	    percentPosition: true,
-//	    packery: {
-//	      gutter: '.gutter-sizer',
-//		  //rowHeight: 15
-//		}
-//  	}); 
-	
 	
 	//Check to see if the window is top if not then display button
 	jQuery(window).scroll(function(){
@@ -30,19 +19,34 @@ jQuery(document).ready(function() {
 		jQuery('html, body').animate({scrollTop : 0},800);
 		return false;
 	});
-	$(function() {
-		$('.carousel-caption a[href*=#]:not([href=#])').click(function() {
-		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		      var target = $(this.hash);
-		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		      if (target.length) {
-		        $('html,body').animate({
-		          scrollTop: target.offset().top
-		        }, 1000);
-		        return false;
-		      }
-		    }
-		});
-	});
+	
+	//Click event to scroll to top
+	
+//	jQuery(function() {
+//		jQuery('.carousel-caption a[href*=#]:not([href=#]), .jumbo-caption a[href*=#]:not([href=#])').click(function() {
+//		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+//		      var target = jQuery(this.hash);
+//		      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+//		      if (target.length) {
+//		        jQuery('html,body').animate({
+//		          scrollTop: target.offset().top - 50
+//		        }, 1000);
+//		        return false;
+//		      }
+//		    }
+//		});
+//		jQuery('.opt-jumpmenu a[href*=#]:not([href=#])').click(function() {
+//		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+//		      var target = jQuery(this.hash);
+//		      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+//		      if (target.length) {
+//		        jQuery('html,body').animate({
+//		          scrollTop: target.offset().top - 50
+//		        }, 1000);
+//		        return false;
+//		      }
+//		    }
+//		});
+//	});
 });
 

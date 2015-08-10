@@ -41,7 +41,21 @@
 							<header>
 								<div class="title">
 									<p class="h5"><a href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a></p>
-									<?php echo the_excerpt(); ?>
+									<?php
+										if(get_field('city')) {
+											echo '<p class="location">';
+											if(get_field('city')) {
+												echo get_field('city');
+											}
+											if(get_field('state')) {
+												echo ', '.get_field('state');
+											}
+											if(get_field('country')) {
+												echo ', '.get_field('country');
+											}
+											echo '</p>';
+										}
+										?>
 								</div>
 							</header>
 							<div class="play"><img src="/wp-content/uploads/2015/07/play-btn.png" alt="Play"/></div>
@@ -96,7 +110,21 @@
 					<header>
 						<div class="title">
 							<p class="h5"><a href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a></p>
-							<?php echo the_excerpt(); ?>
+							<?php
+										if(get_field('city')) {
+											echo '<p class="location">';
+											if(get_field('city')) {
+												echo get_field('city');
+											}
+											if(get_field('state')) {
+												echo ', '.get_field('state');
+											}
+											if(get_field('country')) {
+												echo ', '.get_field('country');
+											}
+											echo '</p>';
+										}
+										?>
 						</div>
 					</header>
 					<div class="filter"></div>
@@ -121,7 +149,7 @@
       
 	<div class="row">
 		<div class="col-md-12 cta-link text-center">
-			<a class="btn btn-info btn-lg" role="button" href="/story/" title="<?php the_title_attribute(); ?>">VIEW MORE PARTNER STORIES</a>		
+			<a class="btn btn-info btn-lg" role="button" href="/stories/" title="<?php the_title_attribute(); ?>">VIEW MORE PARTNER STORIES</a>		
 		</div>
 	</div>
 </div>

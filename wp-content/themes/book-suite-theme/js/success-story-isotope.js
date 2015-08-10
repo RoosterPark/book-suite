@@ -6,15 +6,16 @@ function initIsotope() {
 		percentPosition : true,
 		packery : {
 			gutter : '.gutter-sizer',
-		//rowHeight: 25
 		}
-
 	});
-	$grid.isotope('shuffle');
+	
 	// layout Isotope after each image loads
 	$grid.imagesLoaded().progress(function() {
 		$grid.isotope('layout');
+		
 	});
+	
+	//$grid.isotope('shuffle');
 
 	// bind filter button click
 	jQuery('#filters .cat-child, #filters .reset').on('click', 'a', function() {
@@ -53,5 +54,27 @@ function initIsotope() {
 	});
 }
 jQuery(window).on('load', function() {
+	
 	initIsotope();
+	
+	var yPo = jQuery('.jumbotron').height();
+	
+	jQuery('#gridItemFilter .cat-item').on('click', 'a', function() {
+		console.log(yPo);
+		jQuery('html, body, #successStories').animate({scrollTop : yPo},800);
+	});
+	
+	jQuery('#filters .cat-child, #filters .reset').on('click', 'a', function() {
+		console.log(yPo);
+		jQuery('html, body, #successStories').animate({scrollTop : yPo},800);
+	});
+	
+	if (Modernizr.touch) 	{ 
+		jQuery('#mobileFilterBtn').on('click', function(e) {
+			e.preventDefault();
+			$( ".grid-menu" ).toggle( 300,'linear');
+		});
+	}
+	
+	
 }); 
