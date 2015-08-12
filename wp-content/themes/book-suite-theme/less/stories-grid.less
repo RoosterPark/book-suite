@@ -49,7 +49,13 @@
 		    margin-bottom: 15px;
 		}		
 	}
-	
+	.cat-parent {
+		h5 {
+		    border-bottom: 1px solid #ccc;
+		    padding-bottom: 11px;
+		}
+	}
+
 	.selected {
 	    color: @global-color-drk-blue;
 	    font-weight: 600;
@@ -58,7 +64,7 @@
 	.inner-option-set {
 		list-style: none;
     	margin: 0;
-    	padding: 10px 15px;
+    	padding: 15px 0;
 	}
 }
 
@@ -83,7 +89,7 @@
 	position: relative;
   	float: left;
   	width: 240px;
-  	min-height: 275px;
+  	//min-height: 275px;
   	background: #fff;
   	z-index: 1;
   	.inner-grid {
@@ -100,10 +106,16 @@
 	    	color: @global-color-white;
 	    }
 	}
+	.case-study {
+	    left: 0;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	}
 	.title {
 	    margin-bottom: 0;
 	}
-	.location {
+	p.location {
 		font-size : @font-size-small;
 		color: lighten(@gray-base, 30%);
 	}

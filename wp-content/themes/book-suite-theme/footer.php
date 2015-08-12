@@ -67,10 +67,22 @@
 	<!-- .scroll-to-top -->
 	<?php wp_footer(); ?>
 <?php if (is_page('stories')) { ?>
-	<script src="/wp-content/themes/book-suite-theme/js/imagesloaded.pkgd.min.js"></script>
 	<script src="/wp-content/themes/book-suite-theme/js/isotope.pkgd.js"></script>
 	<script src="/wp-content/themes/book-suite-theme/js/packery-mode.pkgd.min.js"></script>
 	<script src="/wp-content/themes/book-suite-theme/js/success-story-isotope.js"></script>
-<?php } ?>	
+<?php } ?>
+<script type="text/javascript">
+    (function($){
+//     var gridHeight =  $('.grid').height();
+//      $("img.lazy").lazyload({
+//     	  threshold : -200,
+//     	  effect : "fadeIn",
+//     	  failure_limit : 10
+//      });
+//       console.log('LazyLoad Threshold Height: ' + gridHeight);
+      
+    })(jQuery);
+</script>
+
 </body>
 </html>

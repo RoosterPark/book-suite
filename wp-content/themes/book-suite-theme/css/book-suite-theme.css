@@ -52,6 +52,10 @@
 .grid-menu .option-set .cat-parent {
   margin-bottom: 15px;
 }
+.grid-menu .cat-parent h5 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 11px;
+}
 .grid-menu .selected {
   color: #003580;
   font-weight: 600;
@@ -60,7 +64,7 @@
 .grid-menu .inner-option-set {
   list-style: none;
   margin: 0;
-  padding: 10px 15px;
+  padding: 15px 0;
 }
 /* ---- grid ---- */
 .grid {
@@ -79,7 +83,6 @@
   position: relative;
   float: left;
   width: 240px;
-  min-height: 275px;
   background: #fff;
   z-index: 1;
 }
@@ -98,10 +101,16 @@
 .grid-item .case-study a {
   color: #ffffff;
 }
+.grid-item .case-study {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .grid-item .title {
   margin-bottom: 0;
 }
-.grid-item .location {
+.grid-item p.location {
   font-size: 12px;
   color: #898989;
 }
@@ -366,94 +375,34 @@ strong {
   margin-left: 20px;
 }
 .story-stats {
-  background-color: #0B2448;
+  background-color: #2d5895;
 }
-.story-stats .countries {
-  background-color: #1f457a;
-  min-height: 325px;
-  position: relative;
-}
-.story-stats .countries .inner-div {
-  position: absolute;
-  padding: 14%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.story-stats .countries .number-title {
-  font-size: 32px;
-}
-.story-stats .countries .number-data {
-  font-size: 88px;
-  margin-bottom: 10%;
-}
-.story-stats .daily-bookings {
+.story-stats .quote {
   background-color: #2D5895;
 }
-.story-stats .daily-bookings .number-title {
-  float: left;
-  width: 35%;
+.story-stats .quote .quote-title {
+  font-size: 25px;
+  padding-bottom: 25px;
 }
-.story-stats .daily-bookings .number-data {
-  font-size: 58px;
-  float: right;
-  width: 25%;
+.story-stats .quote .quote-subtitle {
+  padding-left: 10%;
 }
-.story-stats .web-traffic {
-  background-color: #0B2448;
+.story-stats .quote .fa.fa-minus {
+  margin-right: 15px;
 }
-.story-stats .web-traffic .number-title {
-  float: right;
-  text-align: right;
-  width: 50%;
+.story-stats .quote .fa.fa-quote-left {
+  margin-right: 10px;
 }
-.story-stats .web-traffic .number-data {
-  font-size: 58px;
-  float: left;
-  width: 25%;
+.story-stats .quote .fa.fa-quote-right {
+  margin-right: 10px;
 }
-.story-stats .visits {
-  background-color: #6F93C5;
-  min-height: 325px;
-  position: relative;
-}
-.story-stats .visits .inner-div {
-  position: absolute;
-  padding: 14%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.story-stats .visits .number-title {
-  font-size: 32px;
-  text-align: right;
-}
-.story-stats .visits .number-data {
-  font-size: 72px;
-  margin-top: 10%;
-  text-align: right;
-}
-.story-stats .left-numbers,
-.story-stats .right-numbers,
-.story-stats .daily-bookings,
-.story-stats .web-traffic {
-  padding-left: 0;
-  padding-right: 0;
+.story-stats .quote .quote-title,
+.story-stats .quote .quote-subtitle {
+  color: #ffffff;
 }
 .story-stats .inner-div {
-  padding: 6.85%;
+  padding: 100px 0;
   overflow: auto;
-}
-.story-stats .number-title {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 300;
-}
-.story-stats .number-data {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1;
 }
 /***************************************************
  * 
@@ -1533,44 +1482,6 @@ img.aligncenter {
   .request-content .panel {
     margin-top: 6%;
   }
-  .story-stats .visits,
-  .story-stats .countries {
-    min-height: inherit !important;
-  }
-  .story-stats .visits .inner-div,
-  .story-stats .countries .inner-div {
-    position: relative;
-    padding: 7%;
-    bottom: auto;
-    left: auto;
-    right: auto;
-  }
-  .story-stats .visits .number-data,
-  .story-stats .countries .number-data {
-    float: left;
-    font-size: 72px;
-    margin-bottom: 0;
-    margin-top: 0;
-    text-align: right;
-  }
-  .story-stats .visits .number-title,
-  .story-stats .countries .number-title {
-    float: right;
-    margin-bottom: 0;
-  }
-  .story-stats .daily-bookings .number-data {
-    text-align: right;
-  }
-  .story-stats .web-traffic .number-data {
-    text-align: left;
-  }
-  .story-stats .number-title {
-    font-size: 32px;
-  }
-  .story-stats .number-data {
-    font-size: 52px;
-    text-align: right;
-  }
   .content-area .sub-section .row:last-child {
     margin-bottom: 0;
   }
@@ -1618,6 +1529,25 @@ img.aligncenter {
   }
   .content-area .sub-section.lt-blue .excerpt {
     margin: 0 auto 6%;
+  }
+  .grid-container {
+    position: relative;
+  }
+  .grid-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    margin: 0;
+    padding: 3%;
+    width: 100%;
+    z-index: 99;
+    background-color: #ccc;
+  }
+  .grid-menu .inner-grid-menu {
+    padding: 5%;
   }
 }
 @media (max-width: 768px) {
@@ -1668,21 +1598,6 @@ img.aligncenter {
   .content-area .btn-lg {
     text-align: center;
     padding: 9px 27px;
-  }
-  .story-stats .visits .number-data,
-  .story-stats .countries .number-data {
-    font-size: 42px;
-  }
-  .story-stats .number-title {
-    font-size: 22px !important;
-  }
-  .story-stats .number-data {
-    font-size: 42px !important;
-    text-align: right;
-    margin-bottom: 0;
-  }
-  .story-stats .daily-bookings .number-data {
-    width: auto;
   }
   .section-hero .jumbotron .opt-1 {
     top: 44%;
@@ -1763,6 +1678,13 @@ img.aligncenter {
     margin-bottom: 6%;
   }
   .content-area .contact-content .contact-items h4 {
+    text-align: center;
+  }
+  .story-stats .quote .quote-subtitle {
+    padding-left: inherit;
+  }
+  .story-stats .inner-div {
+    padding: 30px 0 30px;
     text-align: center;
   }
   .story .wp-post-image,
@@ -1917,24 +1839,6 @@ img.aligncenter {
     width: 100%;
     max-width: 100%;
     min-height: inherit;
-  }
-  .grid-container {
-    position: relative;
-  }
-  .grid-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 320px;
-    margin: 0;
-    paddin: 3%;
-    width: 100%;
-    z-index: 99;
-    background-color: #ccc;
-  }
-  .grid-menu .inner-grid-menu {
-    padding: 5%;
   }
   .regional-contacts {
     min-height: inherit;

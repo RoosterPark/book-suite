@@ -20,6 +20,12 @@ jQuery(document).ready(function() {
 		return false;
 	});
 	
+	var gridHeight =  jQuery('.grid').height();
+	jQuery("img.lazy").lazyload({
+		threshold : -200,
+		effect : "fadeIn"
+    });
+	//console.log('LazyLoad Threshold Height: ' + gridHeight);
 	//Click event to scroll to top
 	
 //	jQuery(function() {

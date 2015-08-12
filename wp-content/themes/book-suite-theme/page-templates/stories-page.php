@@ -22,44 +22,40 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<!-- <section id="successNumbers" class="story-stats"> -->
-<!-- 	<div class="container-fluid"> -->
-<!-- 		<div class="row"> -->
-<!-- 			<div class="col-md-3 col-lg-3 left-numbers"> -->
-<!-- 				<div class="countries"> -->
-<!-- 					<div class="inner-div"> -->
-<!-- 						<div class="number-data">63</div> -->
-<!-- 						<div class="number-title">Countries</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-<!-- 			</div> -->
-<!-- 			<div class="col-md-6 col-lg-6 middle-numbers"> -->
-<!-- 				<div class="row"> -->
-<!-- 					<div class="col-md-12 daily-bookings"> -->
-<!-- 						<div class="inner-div"> -->
-<!-- 							<div class="number-title">Global Daily Bookings</div> -->
-<!-- 							<div class="number-data">125k</div> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-<!-- 					<div class="col-md-12 web-traffic"> -->
-<!-- 						<div class="inner-div"> -->
-<!-- 							<div class="number-data">+30%</div> -->
-<!-- 							<div class="number-title">Avg. Website Traffic Increase</div> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-<!-- 			</div> -->
-<!-- 			<div class="col-md-3 col-lg-3 right-numbers"> -->
-<!-- 				<div class="visits"> -->
-<!-- 					<div class="inner-div"> -->
-<!-- 						<div class="number-title">Global Daily Visits</div> -->
-<!-- 						<div class="number-data">63</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-<!-- 			</div> -->
-<!-- 		</div> -->
-<!-- 	</div> -->
-<!-- </section> -->
+<section id="successNumbers" class="story-stats">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-9 quote">
+				<div class="inner-div">
+					<div class="quote-title">
+					<?php
+					if(get_field('success_quote')) {
+						echo '<i class="fa fa-quote-left"></i>' . get_field('success_quote') . '<i class="fa fa-quote-right"></i>';
+					}
+					?>
+					</div>
+					<div class="quote-subtitle">
+					<?php
+					if(get_field('success_quote_orgin')) {
+						echo '<i class="fa fa-minus"></i><span>' . get_field('success_quote_orgin') . '</span>';
+					}
+					?>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 story-link">
+				<div class="inner-div">
+					<?php
+					if(get_field('success_story_link')) {
+						echo '<a class="btn btn-info btn-lg" title="Read the Story" href="' . get_field('success_story_link') . '" role="button">Read The Story</a>';
+					}
+					?>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
 <section id="successStories" class="success-stories">
 
 <div class="container-fluid">
@@ -88,7 +84,7 @@ get_header(); ?>
 	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 	$query_args = array(
 		'post_type' => 'success',
-		'posts_per_page' => 101,
+		'posts_per_page' => -1,
 		'tax_query' => array(
 			array(
 				'taxonomy' => 'success_category',
@@ -105,15 +101,16 @@ get_header(); ?>
 ?>	
 	<div class="grid">
 		<div class="gutter-sizer"></div>
-<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); // run the loop ?>				
-					 	<?php 
+<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); // run the loop ?>		
+		
+					 	<?php 					 	
 					 	$postx_counter++; 
 					 	if (($postx_counter % 3 == 0)) {
 					 		$tileImageSize = "360";
 					 	} elseif (($postx_counter % 3 ==1)) {
 					 		$tileImageSize = "270";
 					 	}else {
-					 		$tileImageSize = "180";
+					 		$tileImageSize = "180";	
 					 	}
 					 	?>
 						<?php 
@@ -123,7 +120,7 @@ get_header(); ?>
 						// Loop over each item since it's an array
 						foreach( $terms as $term ) {
 							array_push($termsCart, $term->slug);
-							unset($term);
+							//unset($term);
 						}
 						$termsCartImplode =  implode(" ",$termsCart);
 						
@@ -134,10 +131,22 @@ get_header(); ?>
 								<?php 
 								
 								if( has_term( 'case-study', 'success_category' ) ) { ?>
-									<div class="case-study"><a href="<?php the_permalink(); ?>"<span>Read the Case Study!</span></a></div>			
+									<div class="case-study"><a href="<?php the_permalink(); ?>"<span>Read the Case Study!</span></a><i class="fa fa-book"></i>
+									<i class="fa fa-play-circle-o"></i>
+									</div>			
 								<?php } ?>
 								<?php if ( has_post_thumbnail() ) {  ?>
-			                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('stories-tile-'.$tileImageSize, array('class' => 'img-responsive')); ?></a>
+			                    	<?php 
+			                    	$image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id(), 'stories-tile-'.$tileImageSize ); 
+			                    	//$image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id(), 'stories-tile-360' ); // returns an array// returns an array
+			                    	?>
+			                    	
+			                    	<img class="lazy img-responsive" data-original="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>"/>
+			                     	<noscript>
+								 		<?php if ( has_post_thumbnail() ) {  ?>
+			                    			<?php the_post_thumbnail('stories-tile-'.$tileImageSize, array('class' => 'img-responsive')); ?>
+			                    		<?php  } ?>
+									</noscript>
 			                    <?php  } ?>
 								<div class="inner-grid">
 									<header>
@@ -164,7 +173,7 @@ get_header(); ?>
 										}
 										?>
 									</header>
-									<?php echo the_excerpt(); ?>
+									<?php //echo the_excerpt(); ?>
 	
 									<ul id="gridItemFilter" class="cat-item-set tag-list">
 										<li class="cat-item">Categories:</li>
@@ -172,8 +181,6 @@ get_header(); ?>
 									$taxonomy = 'success_category';
 									// get the term IDs assigned to post.
 									$post_terms = wp_get_object_terms( $post->ID, $taxonomy, array( 'fields' => 'ids' ) );
-									// separator between links
-									$separator = ', ';
 			
 									if ( !empty( $post_terms ) && !is_wp_error( $post_terms ) ) {
 										
@@ -189,13 +196,10 @@ get_header(); ?>
 
 												);
 										$cat_terms =  get_categories( $terms_args);
-										
+										$catPostCart = array();
 										foreach ($cat_terms as $ccc) { ?>
 											<li class="cat-item cat-item-<?php echo $ccc->term_id; ?>"><a data-filter=".<?php echo $ccc->slug ;?>" href="#filter"><?php echo $ccc->name; ?></a></li>
 										<?php } 
-// 										echo '<pre>';
-// 										print_r($cat_terms);
-// 										echo '</pre>';
 									}
 									?>
 									</ul>									
@@ -224,11 +228,11 @@ get_header(); ?>
                				<li class="reset"><a data-filter="*" title="show all" href="#filter">Show All</a></li>
 		                <?php 
 		                //get only parents
-		                $argsz = array('taxonomy'  => 'success_category','orderby' => 'name','order' => 'ASC','parent' => 0, 'hide_empty' => 1);
+		                $argsz = array('taxonomy'  => 'success_category','orderby' => 'name','order' => 'DESC','parent' => 0, 'hide_empty' => 1);
 		                $Parent_categories = get_categories($argsz);
 		                
 		                foreach($Parent_categories as $category) {
-		                	echo '<li class="cat-parent"><strong><span>'.$category->name.'</span></strong>';
+		                	echo '<li class="cat-parent"><h5><span>'.$category->name.'</span></h5>';
 		                	//get all children of this category
 		                	$argsX = array('taxonomy' => 'success_category','orderby' => 'name', 'pad_counts' => 1, 'order' => 'ASC','parent' => $category->term_id);
 		                	$Child_categories = get_categories($argsX);
@@ -267,6 +271,12 @@ get_header(); ?>
 	</div>
 	<?php wp_reset_query(); ?>
 </section>
+<?php 
+
+// echo "<pre>";
+// print_r($cats);
+// echo "</pre>";
+?>
 <?php get_template_part('index-request-demo'); ?>
 <?php get_footer(); ?>
 

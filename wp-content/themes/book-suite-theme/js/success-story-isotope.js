@@ -1,22 +1,33 @@
 function initIsotope() {
 	// init Isotope
-	var $grid = $('.grid').isotope({
+	var $imgs = jQuery('img.lazy'),
+    $grid = jQuery('.grid'),
+    $window = jQuery(window);
+	
+	$grid.isotope({
+		isInitLayout: false,
 		layoutMode : 'packery',
+		packery : {
+			gutter : '.gutter-sizer'
+		},
 		itemSelector : '.grid-item',
 		percentPosition : true,
-		packery : {
-			gutter : '.gutter-sizer',
+		isInitLayout: true
+	});
+
+	//$grid.isotope('layout');
+	
+	
+	$imgs.lazyload({
+		load: function() {
+			$grid.isotope('layout');
 		}
 	});
-	
-	// layout Isotope after each image loads
-	$grid.imagesLoaded().progress(function() {
-		$grid.isotope('layout');
-		
-	});
-	
-	//$grid.isotope('shuffle');
 
+//	jQuery('img.lazy').load(function() {
+//		$grid.isotope('layout');
+//	});
+	
 	// bind filter button click
 	jQuery('#filters .cat-child, #filters .reset').on('click', 'a', function() {
 		var filterValue = jQuery(this).attr('data-filter');
@@ -57,7 +68,7 @@ jQuery(window).on('load', function() {
 	
 	initIsotope();
 	
-	var yPo = jQuery('.jumbotron').height();
+	var yPo = jQuery('.jumbotron').height() + jQuery('#successNumbers').height();
 	
 	jQuery('#gridItemFilter .cat-item').on('click', 'a', function() {
 		console.log(yPo);

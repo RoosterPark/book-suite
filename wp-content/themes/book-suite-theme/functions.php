@@ -487,6 +487,27 @@ function upbootwp_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'upbootwp_scripts' );
 
+function enqueue_lazyload() {
+	wp_enqueue_script('jquery_lazy_load', get_template_directory_uri() . '/js/jquery.lazyload.min.js', array('jquery'), '1.9.3');
+}
+add_action('wp_footer', 'enqueue_lazyload');
+
+function filter_lazyload($content) {
+	return preg_replace_callback('/(<\s*img[^>]+)(src\s*=\s*"[^"]+")([^>]+>)/i', 'preg_lazyload', $content);
+}
+add_filter('the_content', 'filter_lazyload');
+
+function preg_lazyload($img_match) {
+	$img_replace = $img_match[1] . 'src="' . get_template_directory_uri() . '/img/grey.gif" data-original' . substr($img_match[2], 3) . $img_match[3];
+	$img_replace = preg_replace('/class\s*=\s*"/i', 'class="lazy', $img_replace);
+	$img_replace .= '<noscript>' . $img_match[0] . '</noscript>';
+	return $img_replace;
+}
+
+// function footer_lazyload() {
+// 	echo '';
+// }
+// add_action('wp_footer', 'footer_lazyload');
 /**
  * Implement the Custom Header feature.
  */
