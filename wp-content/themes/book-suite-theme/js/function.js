@@ -21,26 +21,25 @@ jQuery(document).ready(function() {
 	});
 	
 	var gridHeight =  jQuery('.grid').height();
-	jQuery("img.lazy").lazyload({
+	jQuery("img.lazy").show().lazyload({
 		threshold : -200,
-		effect : "fadeIn"
+		effect : "fadeIn",
+		effectspeed: 100,
+		failure_limit : 10
     });
-	//console.log('LazyLoad Threshold Height: ' + gridHeight);
-	//Click event to scroll to top
-	
-//	jQuery(function() {
-//		jQuery('.carousel-caption a[href*=#]:not([href=#]), .jumbo-caption a[href*=#]:not([href=#])').click(function() {
-//		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//		      var target = jQuery(this.hash);
-//		      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
-//		      if (target.length) {
-//		        jQuery('html,body').animate({
-//		          scrollTop: target.offset().top - 50
-//		        }, 1000);
-//		        return false;
-//		      }
-//		    }
-//		});
+	jQuery(function() {
+		jQuery('.jumpTo a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = jQuery(this.hash);
+		      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        jQuery('html,body').animate({
+		          scrollTop: target.offset().top - 50
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		});
 //		jQuery('.opt-jumpmenu a[href*=#]:not([href=#])').click(function() {
 //		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 //		      var target = jQuery(this.hash);
@@ -53,6 +52,6 @@ jQuery(document).ready(function() {
 //		      }
 //		    }
 //		});
-//	});
+	});
 });
 

@@ -37,7 +37,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="propertyWebsites" class="section-hero" role="banner">	
+<section id="Property-Websites" class="section-hero" role="banner">	
 	<div id="hero" class="jumbotron filter">
 		<div class="jumbo-caption opt-2">
 			<h1>Property Websites</h1>
@@ -190,7 +190,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="predictiveAnalytics" class="section-hero" role="banner">
+<section id="Predictive-Analytics" class="section-hero" role="banner">
 <?php if( get_field('predictive_analytics_header') ): ?>
 	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('predictive_analytics_header'); ?>" />
 <?php endif; ?>
@@ -292,7 +292,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="premiumServices" class="section-hero" role="banner">
+<section id="Premium-Services" class="section-hero" role="banner">
 <?php if( get_field('premium_services_header') ): ?>
 	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('premium_services_header'); ?>" />
 <?php endif; ?>

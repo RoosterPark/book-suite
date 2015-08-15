@@ -26,7 +26,7 @@ get_header(); ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="text-left">News Releases</h1>
+				<h1 class="text-left">More Booking In The News</h1>
 			</div>
        	</div>
 		<div class="row">
@@ -34,15 +34,16 @@ get_header(); ?>
 				<?php
 				$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 				query_posts( array( 
-					'post_type' => 'pr-news',
-					'posts_per_page' => 10,
+					'post_type' => 'news',
+					'posts_per_page' => 15,
 					'caller_get_posts' => 1,
 					'tax_query' => array(
-							array(
-									'taxonomy' => 'pr-news',
-									'field'    => 'slug',
-									'terms'    => 'news'
-							)
+						'relation' => 'AND',
+            			array(
+            				'taxonomy' => 'news_category',
+            					'field'    => 'slug',
+            					'terms'    => array ('interwebs', 'press-releases')
+            			)
 					),
 					'paged' => $paged	
 					)
@@ -52,12 +53,20 @@ get_header(); ?>
 				
 					while (have_posts()) : the_post();
 					?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<div class="col-sm-2 col-md-2 col-lg-2">
+					<article id="post-<?php the_ID(); ?>" <?php post_class('pr-list'); ?>>
+					<div class="col-sm-2 col-md-2 col-lg-2 pr-list-item">
 						<?php the_date('F Y', '<span class="post-date">', '</span>'); ?>
 					</div>
-					<div class="col-sm-10 col-md-10 col-lg-10">
-						<span class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></span>
+					<div class="col-sm-10 col-md-10 col-lg-10 pr-list-item">
+						<ul>
+	        				<?php if( get_field('pr_news_url') ) { ?>
+	        					<li><a href="<?php the_field('pr_news_url'); ?>" target="_blank" title="<?php the_field('pr_news_vanity_name'); ?>" class="btn btn-link clearfix"><?php the_title(); ?><i class="fa fa-external-link"></i></a></li>
+								<li><?php the_field('pr_news_vanity_name'); ?></li>
+							<?php } else { ?>
+								<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+							<?php } ?>
+	        				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<li>', '</li>' ); ?>
+	        				</ul>
 					</div>
 					</article>
 				

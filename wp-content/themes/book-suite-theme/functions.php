@@ -79,8 +79,6 @@ function upbootwp_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary - Mobile - Menu - Global', 'Bootstrap WP Primary' ),
  		'primary-desktop' => __( 'Primary - Desktop - Global', 'Desktop Navigation' ),
-// 		'footer-aux' => __( 'Footer Aux - Global', 'Footer Aux Navigation' ),	
-	
 	));
 	
 	register_nav_menu('footer_navigation', 'Footer navigation');
@@ -122,49 +120,6 @@ function posts_link_attributes_2() {
 	return 'class="next-post btn btn-info btn-lg text-center"';
 }
 
-// Register Custom Post Type
-function custom_post_type() {
-
-	$labels = array(
-			'name'                => _x( 'Plays', 'Post Type General Name', 'text_domain' ),
-			'singular_name'       => _x( 'Play', 'Post Type Singular Name', 'text_domain' ),
-			'menu_name'           => __( 'Plays', 'text_domain' ),
-			'name_admin_bar'      => __( 'Plays', 'text_domain' ),
-			'parent_item_colon'   => __( 'Parent Item:', 'text_domain' ),
-			'all_items'           => __( 'All Items', 'text_domain' ),
-			'add_new_item'        => __( 'Add New Item', 'text_domain' ),
-			'add_new'             => __( 'Add New', 'text_domain' ),
-			'new_item'            => __( 'New Item', 'text_domain' ),
-			'edit_item'           => __( 'Edit Item', 'text_domain' ),
-			'update_item'         => __( 'Update Item', 'text_domain' ),
-			'view_item'           => __( 'View Item', 'text_domain' ),
-			'search_items'        => __( 'Search Item', 'text_domain' ),
-			'not_found'           => __( 'Not found', 'text_domain' ),
-			'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
-	);
-	$args = array(
-			'label'               => __( 'Play', 'text_domain' ),
-			'description'         => __( 'Post Type Description', 'text_domain' ),
-			'labels'              => $labels,
-			'supports'            => array( ),
-			'taxonomies'          => array( 'category', 'post_tag' ),
-			'hierarchical'        => false,
-			'public'              => true,
-			'show_ui'             => true,
-			'show_in_menu'        => true,
-			'menu_position'       => 5,
-			'show_in_admin_bar'   => true,
-			'show_in_nav_menus'   => true,
-			'can_export'          => true,
-			'has_archive'         => true,
-			'exclude_from_search' => false,
-			'publicly_queryable'  => true,
-			'capability_type'     => 'page',
-	);
-	register_post_type( 'Plays', $args );
-
-}
-add_action( 'init', 'custom_post_type', 0 );
 
 /*******************
  *
@@ -221,111 +176,11 @@ function locations_init() {
 	register_post_type( 'locations', $args );
 }
 
-
-/*******************
- *
- * PR News Custom Post Type
- *
- ********************/
-function prnews_taxonomy() {
-	register_taxonomy('pr-news','pr-news',
-	array(
-			'hierarchical'      => true,
-			'label'             => 'Categories - PR News',
-			'show_ui' 			=> true,
-			'show_admin_column' => true,
-			'query_var'         => true
-	)); 
-} 
-add_action( 'init', 'prnews_taxonomy');
-
-
-add_action( 'init', 'prnews_init' );
-
-function prnews_init() {
-	$labels = array(
-			'name'               => _x( 'PR News', 'post type general name'),
-			'singular_name'      => _x( 'PR News Item', 'post type singular name'),
-			'menu_name'          => _x( 'PR News', 'admin menu'),
-			'name_admin_bar'     => _x( 'PR News', 'add new on admin bar'),
-			'add_new'            => _x( 'New', 'PR News Item'),
-			'add_new_item'       => __( 'Add New PR News Item'),
-			'new_item'           => __( 'New PR News Item'),
-			'edit_item'          => __( 'Edit PR News Item'),
-			'view_item'          => __( 'View PR News Item'),
-			'all_items'          => __( 'All PR News'),
-			'search_items'       => __( 'Search PR News'),
-			'parent_item_colon'  => __( 'Parent PR News:'),
-			'not_found'          => __( 'No PR News Found.'),
-			'not_found_in_trash' => __( 'No PR News Found in Trash.')
-	);
-
-	$args = array(
-			'labels'             => $labels,
-			'public'             => true,
-			'publicly_queryable' => true,
-			'show_ui'            => true,
-			'show_in_menu'       => true,
-			'query_var'          => true,
-			'rewrite' => array( 'slug' => 'pr-news','with_front' => true),
-			'capability_type'    => 'post',
-			'has_archive'        => true,
-			'hierarchical'       => true,
-			'menu_position'      => 5,
-			'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
-			'taxonomies' 		=> array('post_tag') // this is IMPORTANT
-	);
-	register_post_type( 'pr-news', $args );
-}
-
-
 /*******************
  * 
  * Success Stories Custom Post Type
  * 
  ********************/
-
-
-
-
-// add_action( 'init', 'create_posttype' );
-
-// function create_posttype() {
-// 	$labels = array(
-// 			'name' => __( 'Success Stories' ),
-// 			'singular_name' => __( 'Success Story' ),
-// 	        'name'               => _x( 'Success Stories', 'post type general name'),
-// 	        'singular_name'      => _x( 'Success Story', 'post type singular name'),
-// 	        'menu_name'          => _x( 'Success Stories', 'admin menu'),
-// 	        'name_admin_bar'     => _x( 'Success Stories', 'add new on admin bar'),
-// 	        'add_new'            => _x( 'New', 'Success Story Item'),
-// 	        'add_new_item'       => __( 'Add New Success Story Item'),
-// 	        'new_item'           => __( 'New Success Stories Item'),
-// 	        'edit_item'          => __( 'Edit Success Stories Item'),
-// 	        'view_item'          => __( 'View Success Stories Item'),
-// 	        'all_items'          => __( 'All Success Stories'),
-// 	        'search_items'       => __( 'Search Success Stories'),
-// 	        'parent_item_colon'  => __( 'Parent Success Stories:'),
-// 	        'not_found'          => __( 'No Success Stories Found.'),
-// 	        'not_found_in_trash' => __( 'No Success Stories Found in Trash.')
-// 	);
-// 	$args = array(
-// 			'labels' 			 => $labels,
-// 			'public' 			 => true,
-// 	        'publicly_queryable' => true,
-// 	        'show_ui'            => true,
-// 	        'show_in_menu'       => true,
-// 	        'query_var'          => true,
-// 			'rewrite' 			 => array('slug' => 'success_stories','with_front' => true),
-// 	        'capability_type'    => 'post',
-// 	        'has_archive'        => 'success_stories',
-// 	        'hierarchical'       => true,
-// 	        'menu_position'      => 5,
-// 	        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
-// 	        'taxonomies'        => array('post_tag') // this is IMPORTANT
-// 	);
-// 	register_post_type( 'success_stories', $args);
-// }
 //flush_rewrite_rules();
 
 // Show posts of 'post', 'page' and 'movie' post types on home page
@@ -405,30 +260,65 @@ function my_taxonomies_success() {
 }
 add_action( 'init', 'my_taxonomies_success', 0 );
 
-// function success_taxonomy() {
-// 	$labels = array(
-// 			'name'              => _x( 'Success Categories', 'taxonomy general name' ),
-// 			'singular_name'     => _x( 'Success  Category', 'taxonomy singular name' ),
-// 			'search_items'      => __( 'Search Success  Categories' ),
-// 			'all_items'         => __( 'All Success  Categories' ),
-// 			'parent_item'       => __( 'Parent Success  Category' ),
-// 			'parent_item_colon' => __( 'Parent Success  Category:' ),
-// 			'edit_item'         => __( 'Edit Success  Category' ),
-// 			'update_item'       => __( 'Update Success  Category' ),
-// 			'add_new_item'      => __( 'Add New Success  Category' ),
-// 			'new_item_name'     => __( 'New Success  Category' ),
-// 			'menu_name'         => __( 'Success Categories' ),
-// 	);
-// 	$args = array(
-// 			'labels'             => $labels,
-// 			'hierarchical'      => true,
-// 			'show_ui'           => true,
-// 			'show_admin_column' => true,
-// 	);
-// 	register_taxonomy('success_stories','success_stories', $args );
-// }
-// add_action( 'init', 'success_taxonomy');
 
+
+
+
+
+function my_custom_post_news() {
+	$labels = array(
+			'name'               => _x( 'News', 'post type general name' ),
+			'singular_name'      => _x( 'News', 'post type singular name' ),
+			'add_new'            => _x( 'Add New', 'News' ),
+			'add_new_item'       => __( 'Add New News' ),
+			'edit_item'          => __( 'Edit News' ),
+			'new_item'           => __( 'New News' ),
+			'all_items'          => __( 'All News' ),
+			'view_item'          => __( 'View News' ),
+			'search_items'       => __( 'Search News' ),
+			'not_found'          => __( 'No News found' ),
+			'not_found_in_trash' => __( 'No News found in the Trash' ),
+			'parent_item_colon'  => '',
+			'menu_name'          => 'News'
+	);
+	$args = array(
+			'labels'        => $labels,
+			'description'   => 'Holds our products and product specific data',
+			'public'        => true,
+			'menu_position' => 6,
+			'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+			'has_archive'   => true,
+			'taxonomies'        => array('post_tag') // this is IMPORTANT
+	);
+	register_post_type( 'news', $args );
+}
+add_action( 'init', 'my_custom_post_news' );
+
+
+function my_taxonomies_news() {
+	$labels = array(
+			'name'              => _x( 'News Categories', 'taxonomy general name' ),
+			'singular_name'     => _x( 'News', 'taxonomy singular name' ),
+			'search_items'      => __( 'Search News Categories' ),
+			'all_items'         => __( 'All News Categories' ),
+			'parent_item'       => __( 'Parent News Category' ),
+			'parent_item_colon' => __( 'Parent News Category:' ),
+			'edit_item'         => __( 'Edit News Category' ),
+			'update_item'       => __( 'Update News Category' ),
+			'add_new_item'      => __( 'Add New News Category' ),
+			'new_item_name'     => __( 'New News Category' ),
+			'menu_name'         => __( 'News Categories' ),
+	);
+	$args = array(
+			'labels' => $labels,
+			'hierarchical' => true,
+			'show_ui'           => true,
+			'show_admin_column' => true,
+				
+	);
+	register_taxonomy( 'news_category', 'news', $args );
+}
+add_action( 'init', 'my_taxonomies_news', 0 );
 
 // Add Class to All Excerpts in WordPress 
 add_filter( "the_excerpt", "add_class_to_excerpt" );

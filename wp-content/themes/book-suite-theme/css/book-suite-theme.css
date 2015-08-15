@@ -19,12 +19,11 @@
   padding-bottom: 3%;
   padding-top: 3%;
 }
-.success-stories #mobileFilterBtn {
-  margin-top: 22px;
-}
 .success-stories .success-hdr {
   margin-bottom: 3%;
-  overflow: auto;
+}
+.success-stories .success-hdr h2 {
+  margin: 0;
 }
 .grid-menu {
   float: right;
@@ -47,7 +46,7 @@
 }
 .grid-menu .option-set .reset {
   overflow: auto;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .grid-menu .option-set .cat-parent {
   margin-bottom: 15px;
@@ -106,6 +105,11 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+.grid-item .case-study .fa {
+  float: right;
+  font-size: 16px;
+  padding: 0 5px;
 }
 .grid-item .title {
   margin-bottom: 0;
@@ -374,35 +378,25 @@ strong {
 .tab-wrapper .nav-tabs li:last-child {
   margin-left: 20px;
 }
-.story-stats {
-  background-color: #2d5895;
-}
-.story-stats .quote {
-  background-color: #2D5895;
-}
-.story-stats .quote .quote-title {
+.quote-title {
   font-size: 25px;
   padding-bottom: 25px;
 }
-.story-stats .quote .quote-subtitle {
-  padding-left: 10%;
+.quote-subtitle {
+  padding: 0 0 5% 5%;
 }
-.story-stats .quote .fa.fa-minus {
+.fa.fa-minus {
   margin-right: 15px;
 }
-.story-stats .quote .fa.fa-quote-left {
+.fa.fa-quote-left {
   margin-right: 10px;
 }
-.story-stats .quote .fa.fa-quote-right {
+.fa.fa-quote-right {
   margin-right: 10px;
 }
-.story-stats .quote .quote-title,
-.story-stats .quote .quote-subtitle {
+.quote-title,
+.quote-subtitle {
   color: #ffffff;
-}
-.story-stats .inner-div {
-  padding: 100px 0;
-  overflow: auto;
 }
 /***************************************************
  * 
@@ -416,15 +410,24 @@ strong {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.pr-list .pr-list-item > ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
 .pr-list .pr-list-item a {
   font-weight: normal;
   color: #2cace2;
   text-align: left;
-  display: block;
+  display: inline-block;
+  text-transform: capitalize;
 }
 .pr-list .pr-list-item .post-edit-link {
   font-weight: normal;
   color: #fab910;
+}
+.pr-list .pr-list-item .fa-external-link {
+  margin-left: 10px;
 }
 .content-area .press-releases h2.text-left {
   margin: 0;
@@ -437,18 +440,8 @@ strong {
 }
 .content-area .press-releases .post-date {
   display: block;
-  font-weight: mormal;
+  font-weight: 600;
   text-align: left;
-}
-.content-area .press-releases .post-title {
-  display: block;
-  padding: 0 0 20px;
-  text-align: left;
-}
-.content-area .press-releases .post-title a {
-  font-weight: normal;
-  text-align: left;
-  color: #2cace2;
 }
 /***************************************************
  * 
@@ -1398,11 +1391,15 @@ img.aligncenter {
   }
   .jumbotron h1 {
     text-align: center;
+    margin-top: 5%;
   }
   .jumbotron p {
     text-align: center;
     max-width: 85%;
     margin: 0px auto;
+  }
+  .jumbotron .quote-link {
+    text-align: center;
   }
   .navbar-right {
     margin-right: auto;
@@ -1450,6 +1447,52 @@ img.aligncenter {
     width: 100%;
     max-width: 31.555%;
     min-height: inherit;
+  }
+  .grid-container {
+    position: relative;
+  }
+  .success-stories .success-hdr {
+    margin-bottom: 3%;
+  }
+  .grid-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #fff;
+  }
+  .grid-menu .inner-option-set {
+    padding: 0;
+  }
+  .grid-menu .inner-grid-menu {
+    padding: 0;
+  }
+  .grid-menu .cat-parent h5 {
+    border-bottom: 1px solid #ccc;
+    padding: 12px;
+    background-color: #009FE3;
+    color: #fff;
+    margin: 0;
+  }
+  .grid-menu .cat-child {
+    border-bottom: 1px solid #009FE3;
+  }
+  .grid-menu .cat-child a {
+    padding: 12px;
+    display: inline-block;
+  }
+  .grid-menu .option-set .cat-parent {
+    margin-bottom: 0;
+  }
+  .grid-menu .option-set .reset {
+    overflow: auto;
+    margin: 25px;
   }
 }
 @media (max-width: 980px) {
@@ -1529,25 +1572,6 @@ img.aligncenter {
   }
   .content-area .sub-section.lt-blue .excerpt {
     margin: 0 auto 6%;
-  }
-  .grid-container {
-    position: relative;
-  }
-  .grid-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    max-width: 100%;
-    margin: 0;
-    padding: 3%;
-    width: 100%;
-    z-index: 99;
-    background-color: #ccc;
-  }
-  .grid-menu .inner-grid-menu {
-    padding: 5%;
   }
 }
 @media (max-width: 768px) {

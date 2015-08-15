@@ -15,44 +15,23 @@ get_header(); ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<h1 class="page-title"><?php the_title(); ?></h1>	
-				<?php the_content(); ?>
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
-			<?php endwhile; // end of the loop. ?>
-		</div>
-	</div>
-</section>
-<section id="successNumbers" class="story-stats">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-9 quote">
-				<div class="inner-div">
-					<div class="quote-title">
+				<h1 class="page-title"><?php the_title(); ?></h1>
+					
 					<?php
 					if(get_field('success_quote')) {
-						echo '<i class="fa fa-quote-left"></i>' . get_field('success_quote') . '<i class="fa fa-quote-right"></i>';
+						echo '<div class="quote-title"><p><i class="fa fa-quote-left"></i>' . get_field('success_quote') . '<i class="fa fa-quote-right"></i></p></div>';
 					}
-					?>
-					</div>
-					<div class="quote-subtitle">
-					<?php
 					if(get_field('success_quote_orgin')) {
-						echo '<i class="fa fa-minus"></i><span>' . get_field('success_quote_orgin') . '</span>';
+						echo '<div class="quote-subtitle"><p><i class="fa fa-minus"></i><span>' . get_field('success_quote_orgin') . '</span></p></div>';
 					}
-					?>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 story-link">
-				<div class="inner-div">
-					<?php
 					if(get_field('success_story_link')) {
-						echo '<a class="btn btn-info btn-lg" title="Read the Story" href="' . get_field('success_story_link') . '" role="button">Read The Story</a>';
+						echo '<div class="quote-link"><a class="btn btn-info btn-lg" title="Read the Story" href="' . get_field('success_story_link') . '" role="button">Read The Story</a></div>';
 					}
 					?>
-				</div>
-				
-			</div>
+					
+				<?php //the_content(); ?>
+				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+			<?php endwhile; // end of the loop. ?>
 		</div>
 	</div>
 </section>
@@ -63,7 +42,7 @@ get_header(); ?>
 	<div id="storiesSection" class="row">
 		<div class="col-md-12 success-hdr">
 			<h2 class="pull-left">Partner Success</h2>
-			<a id="mobileFilterBtn" class="btn btn-default btn-sm pull-right" href="#" role="button">Filter</a>
+			<button id="mobileFilterBtn" class="btn btn-default btn-sm pull-right" role="button">Filter</button>
 		</div>
 	</div>
 	<?php 
@@ -129,11 +108,16 @@ get_header(); ?>
 	
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<?php 
-								
 								if( has_term( 'case-study', 'success_category' ) ) { ?>
-									<div class="case-study"><a href="<?php the_permalink(); ?>"<span>Read the Case Study!</span></a><i class="fa fa-book"></i>
-									<i class="fa fa-play-circle-o"></i>
-									</div>			
+									<?php if ( has_term( 'story', 'success_category' ) && has_term( 'video', 'success_category' )) { ?>
+										<div class="case-study"><a href="<?php the_permalink(); ?>"<span>Watch the Video!</span></a><i class="fa fa-book"></i><i class="fa fa-play-circle-o"></i></div>
+									<?php } elseif( has_term( 'story', 'success_category' )) { ?>
+										<div class="case-study"><a href="<?php the_permalink(); ?>"<span>Read the Case Study!</span></a><i class="fa fa-book"></i></div>
+									<?php } elseif(has_term( 'video', 'success_category' ) ) { ?>
+										<div class="case-study"><a href="<?php the_permalink(); ?>"<span>Watch the Video!</span></a><i class="fa fa-play-circle-o"></i></div>
+									<?php } else {?>
+										<div class="case-study"><a href="<?php the_permalink(); ?>"<span>Read the Case Study!</span></a><i class="fa fa-book"></i></div>	
+									<?php }?>				
 								<?php } ?>
 								<?php if ( has_post_thumbnail() ) {  ?>
 			                    	<?php 
@@ -221,11 +205,11 @@ get_header(); ?>
 				<?php endif; ?>
 
 		       </div>
-				<div class="grid-menu">
+				<div id="filterMenu" class="grid-menu">
 					<div class="inner-grid-menu">
 						
 						<ul id="filters" class="option-set sidebar-list">
-               				<li class="reset"><a data-filter="*" title="show all" href="#filter">Show All</a></li>
+               				<li class="reset"><a id="reset-btn" class="btn btn-info btn-sm" role="button" data-filter="*" title="show all" href="#filter">Show All</a></li>
 		                <?php 
 		                //get only parents
 		                $argsz = array('taxonomy'  => 'success_category','orderby' => 'name','order' => 'DESC','parent' => 0, 'hide_empty' => 1);
