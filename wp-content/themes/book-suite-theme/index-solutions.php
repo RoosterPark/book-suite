@@ -22,7 +22,7 @@
 						echo $p->post_content;
 						}
 						?>	
-						<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
+						<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="edit">', '</div>' ); ?>
 					</article>
 				</div>
 			<?php }

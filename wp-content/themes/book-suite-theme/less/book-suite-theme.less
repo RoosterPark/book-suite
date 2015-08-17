@@ -238,6 +238,53 @@ b, strong {
 
 /***************************************************
  * 
+ *  regional hq
+ * 
+ **************************************************/
+
+.regional-hq {
+	.panel {
+		min-height: 775px;
+		margin-bottom: 30px;
+		.panel-body {
+			
+		}
+	}
+	.col-lg-12 {
+		h3 {
+		    border-bottom: 1px solid #ccc;
+		    font-weight: 400;
+		    margin-top: 5%;
+		    padding-bottom: 1.95%;
+		}
+	}
+	.row .col-lg-8 {
+		.row {
+		    margin-bottom: 0;
+		}
+	}
+	
+	.hq-image {
+		margin-bottom: 25px;
+	    position: relative;
+		.h3 {
+		    bottom: 0;
+		    color: #fff;
+		    font-weight: 400;
+		    margin: 0;
+		    padding: 25px;
+		    position: absolute;
+		    width: 60%;
+		}
+	}
+	.img-responsive.wp-post-image {
+	    max-width: 100%;
+	    width: 100%;
+	}
+}
+
+/***************************************************
+ * 
  *  Tab Styling
  * 
  **************************************************/
@@ -374,6 +421,7 @@ b, strong {
 
 .content-area {
 	.press-releases {
+		background-color: @global-color-lt-grey;
 		h2.text-left {
 		    margin: 0;
 		}
@@ -819,6 +867,26 @@ article {
 
 .no-risk h1, .no-risk p {
     color: #000;
+}
+
+.sub-section.white.solutions-menu {
+    padding: 2% 8%;
+}
+.jumpTo {
+	> a {
+	    display: block;
+	    float: left;
+	}
+	.h3 {
+	    float: left;
+	    padding-left: 5%;
+	}
+	.edit {
+	    clear: both;
+	    float: left;
+	    text-align: center;
+	    width: 100%;
+	}	
 }
 
 .solutions {
@@ -1826,8 +1894,22 @@ img.aligncenter {
 				}
 			}
 		}
-	}	
-
+	}
+	
+	.regional-hq .panel {
+	    min-height: inherit;
+	}
+		
+	.job-link h2.text-left {
+	    text-align: center;
+	    padding-bottom: 5%;
+	}
+	.job-link a.btn.btn-lg {
+	    text-align: center;
+	    margin: 0px auto;
+	    display: block;
+	    max-width: 320px;
+	}
 	.content-area .btn-lg {
 	  text-align: center;
 	  padding: 9px 27px;

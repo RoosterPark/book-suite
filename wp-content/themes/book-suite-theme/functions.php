@@ -121,60 +121,6 @@ function posts_link_attributes_2() {
 }
 
 
-/*******************
- *
- * Locations Custom Post Type
- *
- ********************/
-
-function locations_taxonomy() {
-	register_taxonomy('locations','locations',
-			array(
-					'hierarchical'      => true,
-					'label'             => 'Categories',
-					'show_ui' 			=> true,
-					'show_admin_column' => true,
-					'query_var'         => true
-			));
-}
-add_action( 'init', 'locations_taxonomy');
-
-add_action( 'init', 'locations_init' );
-function locations_init() {
-	$labels = array(
-			'name'               => _x( 'Locations', 'post type general name'),
-			'singular_name'      => _x( 'Locations Item', 'post type singular name'),
-			'menu_name'          => _x( 'Locations', 'admin menu'),
-			'name_admin_bar'     => _x( 'Locations', 'add new on admin bar'),
-			'add_new'            => _x( 'New', 'Locations Item'),
-			'add_new_item'       => __( 'Add New Locations Item'),
-			'new_item'           => __( 'New Locations Item'),
-			'edit_item'          => __( 'Edit Locations Item'),
-			'view_item'          => __( 'View Locations Item'),
-			'all_items'          => __( 'All Locations'),
-			'search_items'       => __( 'Search Locations'),
-			'parent_item_colon'  => __( 'Parent Locations:'),
-			'not_found'          => __( 'No Locations Found.'),
-			'not_found_in_trash' => __( 'No Locations Found in Trash.')
-	);
-
-	$args = array(
-			'labels'             => $labels,
-			'public'             => true,
-			'publicly_queryable' => true,
-			'show_ui'            => true,
-			'show_in_menu'       => true,
-			'query_var'          => true,
-			'rewrite' => array( 'slug' => 'locations','with_front' => true),
-			'capability_type'    => 'post',
-			'has_archive'        => true,
-			'hierarchical'       => true,
-			'menu_position'      => 5,
-			'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
-			'taxonomies' 		=> array('post_tag') // this is IMPORTANT
-	);
-	register_post_type( 'locations', $args );
-}
 
 /*******************
  * 
@@ -261,8 +207,11 @@ function my_taxonomies_success() {
 add_action( 'init', 'my_taxonomies_success', 0 );
 
 
-
-
+/*******************
+ *
+ * News Custom Post Type
+ *
+ ********************/
 
 
 function my_custom_post_news() {
@@ -319,6 +268,69 @@ function my_taxonomies_news() {
 	register_taxonomy( 'news_category', 'news', $args );
 }
 add_action( 'init', 'my_taxonomies_news', 0 );
+
+
+/*******************
+ *
+ * Locations Custom Post Type
+ *
+ ********************/
+
+
+function my_custom_post_location() {
+	$labels = array(
+			'name'               => _x( 'Location', 'post type general name' ),
+			'singular_name'      => _x( 'Location', 'post type singular name' ),
+			'add_new'            => _x( 'Add New', 'Location' ),
+			'add_new_item'       => __( 'Add New Location' ),
+			'edit_item'          => __( 'Edit Location' ),
+			'new_item'           => __( 'New Location' ),
+			'all_items'          => __( 'All Location' ),
+			'view_item'          => __( 'View Location' ),
+			'search_items'       => __( 'Search Location' ),
+			'not_found'          => __( 'No Location found' ),
+			'not_found_in_trash' => __( 'No Location found in the Trash' ),
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Locations'
+	);
+	$args = array(
+			'labels'        => $labels,
+			'description'   => 'Holds our products and product specific data',
+			'public'        => true,
+			'menu_position' => 5,
+			'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+			'has_archive'   => true,
+			'taxonomies'        => array('post_tag') // this is IMPORTANT
+	);
+	register_post_type( 'location', $args );
+}
+add_action( 'init', 'my_custom_post_location' );
+
+
+function my_taxonomies_location() {
+	$labels = array(
+			'name'              => _x( 'Locations Categories', 'taxonomy general name' ),
+			'singular_name'     => _x( 'Location', 'taxonomy singular name' ),
+			'search_items'      => __( 'Search Location Categories' ),
+			'all_items'         => __( 'All Location Categories' ),
+			'parent_item'       => __( 'Parent Location Category' ),
+			'parent_item_colon' => __( 'Parent Location Category:' ),
+			'edit_item'         => __( 'Edit Location Category' ),
+			'update_item'       => __( 'Update Location Category' ),
+			'add_new_item'      => __( 'Add New Location Category' ),
+			'new_item_name'     => __( 'New SLocation Category' ),
+			'menu_name'         => __( 'Location Categories' ),
+	);
+	$args = array(
+			'labels' => $labels,
+			'hierarchical' => true,
+			'show_ui'           => true,
+			'show_admin_column' => true,
+				
+	);
+	register_taxonomy( 'location_category', 'location', $args );
+}
+add_action( 'init', 'my_taxonomies_location', 0 );
 
 // Add Class to All Excerpts in WordPress 
 add_filter( "the_excerpt", "add_class_to_excerpt" );

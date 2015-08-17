@@ -68,11 +68,17 @@ get_header(); ?>
 				<div class="row">
 				<?php $catName =  get_cat_ID("regional contact");	
             $args = array( 
-                'post_type' => 'post',
-                'posts_per_page' =>-1,
-                'cat' => $catName,
-                'order'             => 'ASC',
-                'post_status' => 'publish',
+							'post_type' 		=> 'location',
+							'posts_per_page' 	=>-1,
+							'tax_query' => array(
+								array(
+									'taxonomy'  	=> 'location_category',
+									'field'     	=> 'slug',
+									'terms'	=> 'regional-hq',
+								),
+							),
+							'order'             => 'ASC',
+							'post_status' 		=> 'publish',
             );
           
             

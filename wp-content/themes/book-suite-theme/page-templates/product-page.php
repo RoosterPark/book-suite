@@ -30,7 +30,7 @@ get_header(); ?>
 	</article>
 	<?php endwhile; // end of the loop. ?>
 </section>
-<section id="booking-solutions" class="sub-section white solutions">		
+<section id="booking-solutions" class="sub-section white solutions-menu">		
 	<div class="container-fluid">
 		<div class="row">
 			<?php get_template_part('index-solutions'); ?>

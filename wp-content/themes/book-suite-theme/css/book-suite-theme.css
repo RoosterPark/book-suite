@@ -311,6 +311,41 @@ strong {
 }
 /***************************************************
  * 
+ *  regional hq
+ * 
+ **************************************************/
+.regional-hq .panel {
+  min-height: 775px;
+  margin-bottom: 30px;
+}
+.regional-hq .col-lg-12 h3 {
+  border-bottom: 1px solid #ccc;
+  font-weight: 400;
+  margin-top: 5%;
+  padding-bottom: 1.95%;
+}
+.regional-hq .row .col-lg-8 .row {
+  margin-bottom: 0;
+}
+.regional-hq .hq-image {
+  margin-bottom: 25px;
+  position: relative;
+}
+.regional-hq .hq-image .h3 {
+  bottom: 0;
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+  padding: 25px;
+  position: absolute;
+  width: 60%;
+}
+.regional-hq .img-responsive.wp-post-image {
+  max-width: 100%;
+  width: 100%;
+}
+/***************************************************
+ * 
  *  Tab Styling
  * 
  **************************************************/
@@ -428,6 +463,9 @@ strong {
 }
 .pr-list .pr-list-item .fa-external-link {
   margin-left: 10px;
+}
+.content-area .press-releases {
+  background-color: #f9f9f9;
 }
 .content-area .press-releases h2.text-left {
   margin: 0;
@@ -811,6 +849,23 @@ article {
 .no-risk h1,
 .no-risk p {
   color: #000;
+}
+.sub-section.white.solutions-menu {
+  padding: 2% 8%;
+}
+.jumpTo > a {
+  display: block;
+  float: left;
+}
+.jumpTo .h3 {
+  float: left;
+  padding-left: 5%;
+}
+.jumpTo .edit {
+  clear: both;
+  float: left;
+  text-align: center;
+  width: 100%;
 }
 .solutions .col-md-4 {
   text-align: center;
@@ -1618,6 +1673,19 @@ img.aligncenter {
   }
   .tab-wrapper.about-tabs .nav-tabs a {
     text-align: left;
+  }
+  .regional-hq .panel {
+    min-height: inherit;
+  }
+  .job-link h2.text-left {
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  .job-link a.btn.btn-lg {
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    max-width: 320px;
   }
   .content-area .btn-lg {
     text-align: center;

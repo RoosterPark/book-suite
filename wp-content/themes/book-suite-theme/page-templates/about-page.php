@@ -24,13 +24,13 @@ get_header(); ?>
 	</article>
 	<?php endwhile; // end of the loop. ?>
 </section>
-<section id="jobListings" class="sub-section white" role="Jobs">		
+<section id="jobListings" class="sub-section white job-link" role="Jobs">		
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-8">
+			<div class="col-sm-8 col-md-8 col-lg-8">
 				<h2 class="text-left">And we're all around the world.</h2>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-sm-4 col-md-4 col-lg-4">
 				<a class="btn btn-info btn-lg" title="#####" href="#" role="button">View Job Openings</a>
 			</div>
 		</div>
@@ -45,104 +45,101 @@ get_header(); ?>
 		</div>
 	</div><!--  .container-fluid -->
 </section>
-<section id="bookingLocations" class="sub-section press-releases white" role="Locations">		
+<section id="bookingLocations" class="sub-section regional-hq white" >		
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
 				<h2 class="text-left">And We're All Around The World.</h2>
+				<h3 class="text-left">Regional Headquarters</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="row">
+				<?php 
+				$args = array( 
+					'post_type' 		=> 'location',
+					'posts_per_page' 	=>-1,
+					'tax_query' => array(
+						array(
+							'taxonomy'  	=> 'location_category',
+							'field'     	=> 'slug',
+							'terms'	=> 'regional-hq',
+						),
+					),
+					'order'             => 'ASC',
+					'post_status' 		=> 'publish',
+            	);
+          
+            
+            	$my_query = new WP_Query($args);
+				$postx_counter = -1;
+				while($my_query->have_posts()) :
+		        	$my_query->the_post();
+					$postx_counter++;
+		        ?>
+		
+						<div class="col-xs-12 col-sm-6 col-md-6" data-post="<?php echo $postx_counter ?>">
+							 <article id="post-<?php the_ID(); ?>" <?php post_class('panel panel-default'); ?>>
+								<?php if ( has_post_thumbnail() ) {  ?>
+								<div class="hq-image">
+								<?php the_post_thumbnail('stories-tile-360', array('class' => "img-responsive", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
+					
+								<div class="h3"><?php echo the_title(); ?></div>
+								</div>
+								<?php  } ?>
+								<div class="panel-body">
+
+								<?php echo the_content(); ?>	
+								<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>'); ?>
+								</div>
+							</article>
+							
+						</div>
+
+					<?php 
+					if( $postx_counter % 2) {
+						echo '</div><div class="row">';
+					}
+					
+					 endwhile; ?>	
+				<?php  wp_reset_postdata(); ?>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<p class="panel-title">We would like to hear from you.</p>
+					</div>
+					<div class="panel-body">
+						<form>
+							<div class="form-group">
+						    	<label for="firstName">Full Name:</label>
+						    	<input type="text" class="form-control" id="FirstName" >
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Email address:</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" >
+							</div>
+							<div class="form-group">
+								<label for="firstName">Questions/Comments:</label>
+								<textarea class="form-control" rows="6"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="firstName">Captcha Here:</label>
+							</div>
+					
+							<button type="submit" class="btn btn-info btn-md center-block">Submit</button>
+						</form>				   
+					</div>
+
+				</div>			
 			</div>
 		</div>
 	</div><!--  .container-fluid -->
 </section>
-<?php
-$member_group_terms = get_terms( 'locations' );
-// echo "<pre>";
-// print_r($member_group_terms);
-// echo "</pre>";
-?>
-<div class="tab-wrapper about-tabs">
-	<ul class="nav nav-tabs" role="tablist">
-	 
-	<?php
-	$postx_counter = -1;
-	foreach ( $member_group_terms as $member_group_term ) {
-		$postx_counter++;
-	    $member_group_query = new WP_Query( array(
-	        'post_type' => 'locations',
-	        'tax_query' => array(
-	            array(
-	                'taxonomy' => 'locations',
-	                'field' => 'slug',
-	                'terms' => array( $member_group_term->slug ),
-	                'operator' => 'IN'
-	            )
-	        )
-	    ) );
-	    ?>
-	    
-	    <li role="presentation" <?php  if ($postx_counter == 0) { echo $active_panel = "class=\"active\""; } ?>   data-post="<?php echo $postx_counter ?>">
-	    	<a href="<?php echo "#".$member_group_term->name; ?>" aria-controls="<?php echo $member_group_term->name; ?>" data-toggle="tab" role="tab">
-	    		<?php echo $member_group_term->description ?>
-	    	</a>
-	    </li>
-	    
-	    <?php
-	    // Reset things, for good measure
-	    $member_group_query = null;
-	    wp_reset_postdata();
-	}
-	?> 
-	</ul>
-</div>
-<div class="tab-content about-tab-panels">
 
-<?php
-$tab_panel_counter = -1;
-foreach ( $member_group_terms as $member_group_term ) {
-	$tab_panel_counter++;
-    $member_group_query = new WP_Query( array(
-        'post_type' => 'locations',
-    	'order' => 'ASC',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'locations',
-                'field' => 'slug',
-                'terms' => array( $member_group_term->slug ),
-                'operator' => 'IN'
-            )
-        )
-    ) );
-    ?>
-    <div role="tabpanel" class="tab-pane fade <?php  if ($tab_panel_counter == 0) { echo $active_panel = " in active"; } ?>" id="<?php echo $member_group_term->name; ?>"  data-post="<?php echo $tab_panel_counter ?>">
-		    <?php
-		    
-		    if ( $member_group_query->have_posts() ) : while ( $member_group_query->have_posts() ) : $member_group_query->the_post(); ?>
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 <?php if (has_tag("hq")) {echo "hq"; }?>">
-						<div class="panel panel-default">
-						<?php 
-						if(the_post_thumbnail){
-							the_post_thumbnail( 'location-featured-land', array( 'class' => 'img-responsive' ) );
-						} 
-						?>
-						<p class="h5 text-left">  <?php echo the_title(); ?></p>
-						<?php the_content();?>
-						<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
-						</div>
-				</div>
-		    <?php endwhile; endif; ?>
-	</div><!-- Tab Pane -->
-    <?php 
-// 	echo "<pre style=\"text-align: left; font-size: 10px;\">";
-// 	print_r($member_group_query);
-// 	echo "</pre>";
 
-    // Reset things, for good measure
-    $member_group_query = null;
-    wp_reset_postdata();
-}
-?> 
-	
-</div><!-- tab-content -->
 
 <section id="dbookingNews" class="sub-section press-releases" role="News">
 	<div class="container-fluid">

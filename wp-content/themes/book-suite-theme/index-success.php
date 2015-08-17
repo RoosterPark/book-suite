@@ -58,7 +58,7 @@
 										?>
 								</div>
 							</header>
-							<div class="play"><img src="/wp-content/uploads/2015/07/play-btn.png" alt="Play"/></div>
+							<div class="play"> <a href="<?php the_permalink(); ?>"><img src="/wp-content/uploads/2015/07/play-btn.png" alt="Play"/></a></div>
 							<div class="filter"></div>
 							<?php if ( has_post_thumbnail() ) {  ?>
 		                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('success-stories-land', array('class' => 'img-responsive')); ?></a>
