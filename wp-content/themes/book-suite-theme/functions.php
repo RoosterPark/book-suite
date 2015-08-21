@@ -332,6 +332,74 @@ function my_taxonomies_location() {
 }
 add_action( 'init', 'my_taxonomies_location', 0 );
 
+
+/*******************
+ *
+ * Pepole Custom Post Type
+ *
+ ********************/
+
+
+function my_custom_post_people() {
+	$labels = array(
+			'name'               => _x( 'People', 'post type general name' ),
+			'singular_name'      => _x( 'People', 'post type singular name' ),
+			'add_new'            => _x( 'Add New', 'people' ),
+			'add_new_item'       => __( 'Add New People' ),
+			'edit_item'          => __( 'Edit People' ),
+			'new_item'           => __( 'New People' ),
+			'all_items'          => __( 'All People' ),
+			'view_item'          => __( 'View People' ),
+			'search_items'       => __( 'Search People' ),
+			'not_found'          => __( 'No People found' ),
+			'not_found_in_trash' => __( 'No People found in the Trash' ),
+			'parent_item_colon'  => '',
+			'menu_name'          => 'People'
+	);
+	$args = array(
+			'labels'        => $labels,
+			'description'   => 'Holds our products and product specific data',
+			'public'        => true,
+			'menu_position' => 5,
+			'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+			'has_archive'   => true,
+			'taxonomies'        => array('post_tag') // this is IMPORTANT
+	);
+	register_post_type( 'people', $args );
+}
+add_action( 'init', 'my_custom_post_people' );
+
+
+function my_taxonomies_people() {
+	$labels = array(
+			'name'              => _x( 'People Categories', 'taxonomy general name' ),
+			'singular_name'     => _x( 'People', 'taxonomy singular name' ),
+			'search_items'      => __( 'Search People Categories' ),
+			'all_items'         => __( 'All People Categories' ),
+			'parent_item'       => __( 'Parent People Category' ),
+			'parent_item_colon' => __( 'Parent People Category:' ),
+			'edit_item'         => __( 'Edit People Category' ),
+			'update_item'       => __( 'Update People Category' ),
+			'add_new_item'      => __( 'Add New People Category' ),
+			'new_item_name'     => __( 'New People Category' ),
+			'menu_name'         => __( 'People Categories' ),
+	);
+	$args = array(
+			'labels' => $labels,
+			'hierarchical' => true,
+			'show_ui'           => true,
+			'show_admin_column' => true,
+
+	);
+	register_taxonomy( 'people_category', 'people', $args );
+}
+add_action( 'init', 'my_taxonomies_people', 0 );
+
+
+
+
+
+
 // Add Class to All Excerpts in WordPress 
 add_filter( "the_excerpt", "add_class_to_excerpt" );
 function add_class_to_excerpt( $excerpt ) {

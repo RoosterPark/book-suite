@@ -40,9 +40,13 @@ get_header(); ?>
 <div class="container-fluid">
 	
 	<div id="storiesSection" class="row">
-		<div class="col-md-12 success-hdr">
-			<h2 class="pull-left">Partner Success</h2>
-			<button id="mobileFilterBtn" class="btn btn-default btn-sm pull-right" role="button">Filter</button>
+		<div class="col-xs-8 col-sm-8 col-md-8 success-header success-hdr">
+			<h2 >Partner Success</h2>
+			
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 success-hdr text-right">
+			
+			<button id="mobileFilterBtn" class="btn btn-default btn-sm" role="button">Filter</button>
 		</div>
 	</div>
 	<?php 

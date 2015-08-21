@@ -26,6 +26,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
+<div id="scroller-anchor"></div> 
 <section id="booking-solutions" class="sub-section white solutions-menu">		
 	<div class="container-fluid">
 		<div class="row">

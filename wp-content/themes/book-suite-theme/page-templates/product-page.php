@@ -16,7 +16,6 @@ get_header(); ?>
 	<?php the_post_thumbnail( 'featured-image-landscape', array( 'class' => 'jumbotron-img img-responsive small-screen' ) ); ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="container-fluid">
-			
 				<h1 class="page-title"><?php the_title(); ?></h1>	
 				<?php the_content(); ?>
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-left">', '</p>' ); ?>
@@ -30,7 +29,8 @@ get_header(); ?>
 	</article>
 	<?php endwhile; // end of the loop. ?>
 </section>
-<section id="booking-solutions" class="sub-section white solutions-menu">		
+<div id="scroller-anchor"></div> 
+<section id="booking-solutions" class="sub-section white solutions-menu">			
 	<div class="container-fluid">
 		<div class="row">
 			<?php get_template_part('index-solutions'); ?>

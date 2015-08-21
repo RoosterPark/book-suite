@@ -26,7 +26,14 @@ get_header(); ?>
 	</article>
 	<?php endwhile; // end of the loop. ?>
 </section>
-<section id="propertyWebsites" class="sub-section white solutions">
+<section id="booking-solutions" class="sub-section white solutions-menu">		
+	<div class="container-fluid">
+		<div class="row">
+			<?php get_template_part('index-solutions'); ?>
+		</div>
+	</div>
+</section>
+<section id="Property-Websites" class="sub-section white solutions">
 	<div class="container-fluid">
 		<div class="row">
 		<?php 		$catName =  get_cat_ID("Property Websites");
@@ -141,6 +148,15 @@ get_header(); ?>
 	    	<div class="col-md-12 text-center">
 	        	<div><a class="btn btn-default btn-lg" role="button" href="/product-features/" title="Product Features">See All Product Features</a></div>
 	    	</div>
+		</div>
+	</div>
+</section>
+<section id="Predictive-Analytics" class="sub-section prod-features lt-grey">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>Predictive Analytics</h1>
+			</div>	
 		</div>
 	</div>
 </section>

@@ -7,22 +7,19 @@
 	</div>
         <div class="row">
 		    <div class="col-md-2">
-		    	<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=400%C3%97400&w=400&h=400" class="img-responsive" alt="WSJ" />
+		    	<img src="/wp-content/uploads/2015/08/4Hoteliers.png" class="img-responsive" alt="4Hoteliers" />
 	        </div>
 			<div class="col-md-2">
-				<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=400%C3%97400&w=400&h=400" class="img-responsive" alt="NY Times" />
+				<img src="/wp-content/uploads/2015/08/ehotelier.png" class="img-responsive" alt="ehotelier" />
 	        </div>
 			<div class="col-md-2">
-				<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=400%C3%97400&w=400&h=400" class="img-responsive" alt="SKIFT" />
+				<img src="/wp-content/uploads/2015/08/forbes.png" class="img-responsive" alt="Forbes" />
 	        </div>
 			<div class="col-md-2">
-				<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=400%C3%97400&w=400&h=400" class="img-responsive" alt="Nat Geo" />
+				<img src="/wp-content/uploads/2015/08/tnooz.png" class="img-responsive" alt="TNooz" />
 	        </div>
 			<div class="col-md-2">
-				<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=400%C3%97400&w=400&h=400" class="img-responsive" alt="AFAR" />
-	        </div>
-			<div class="col-md-2">
-				<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=400%C3%97400&w=400&h=400" class="img-responsive" alt="Travel and Leisure" />
+				<img src="/wp-content/uploads/2015/08/wsj.png" class="img-responsive" alt="WSJ" />
 	        </div>
         </div>		
 	<div class="row">

@@ -71,18 +71,35 @@
 	<script src="/wp-content/themes/book-suite-theme/js/packery-mode.pkgd.min.js"></script>
 	<script src="/wp-content/themes/book-suite-theme/js/success-story-isotope.js"></script>
 <?php } ?>
+<?php if (is_page('solutions')) { ?>
 <script type="text/javascript">
-    (function($){
-//     var gridHeight =  $('.grid').height();
-//      $("img.lazy").lazyload({
-//     	  threshold : -200,
-//     	  effect : "fadeIn",
-//     	  failure_limit : 10
-//      });
-//       console.log('LazyLoad Threshold Height: ' + gridHeight);
-      
-    })(jQuery);
+jQuery(document).ready(function() { 
+
+	if (!Modernizr.touch) {
+		// Cache selectors for faster performance.
+	    var $window = jQuery(window),
+	        $mainMenuBar = jQuery('#booking-solutions'),
+	        $mainMenuBarAnchor = jQuery('#scroller-anchor');
+	    var div_to = null;
+	    // Run this on scroll events.
+	    $window.scroll(function() {
+	        var window_top = $window.scrollTop();
+	         div_top = $mainMenuBarAnchor.offset().top;
+	        if (window_top > div_top) {
+	            // Make the div sticky.
+	            $mainMenuBar.addClass('stick');
+	            $mainMenuBarAnchor.height($mainMenuBar.height());
+	        }
+	        else {
+	            // Unstick the div.
+	            $mainMenuBar.removeClass('stick');
+	            $mainMenuBarAnchor.height(0);
+	        }
+	    });
+	}
+});
 </script>
+<?php } ?>
 
 </body>
 </html>

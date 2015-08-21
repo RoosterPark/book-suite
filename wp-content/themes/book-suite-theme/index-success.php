@@ -6,7 +6,7 @@
 		</div>
 	</div>
 	<div class="row">	
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-6 videos">
         	<div class="row">
 		        <?php 
 		       //$out = get_taxonomies(); 
@@ -77,7 +77,7 @@
         	</div>
 
       </div> 
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-6 stories">
       	<div class="row">
         <?php 
        //$out = get_taxonomies(); 

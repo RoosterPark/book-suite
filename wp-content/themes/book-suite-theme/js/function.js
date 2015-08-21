@@ -27,6 +27,7 @@ jQuery(document).ready(function() {
 		effectspeed: 100,
 		failure_limit : 10
     });
+	
 	jQuery(function() {
 		jQuery('.jumpTo a[href*=#]:not([href=#])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -40,18 +41,6 @@ jQuery(document).ready(function() {
 		      }
 		    }
 		});
-//		jQuery('.opt-jumpmenu a[href*=#]:not([href=#])').click(function() {
-//		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//		      var target = jQuery(this.hash);
-//		      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
-//		      if (target.length) {
-//		        jQuery('html,body').animate({
-//		          scrollTop: target.offset().top - 50
-//		        }, 1000);
-//		        return false;
-//		      }
-//		    }
-//		});
 	});
 });
 

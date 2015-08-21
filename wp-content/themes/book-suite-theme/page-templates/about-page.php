@@ -36,13 +36,41 @@ get_header(); ?>
 		</div>
 	</div><!--  .container-fluid -->
 </section>
-<section id="ourPeople" class="sub-section dark-grey request-demo" role="ourPeople">		
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12">
-				<h2 class="text-left">Our People Tiles</h2>
-			</div>
-		</div>
+<section id="ourPeople" class="sub-section dark-grey photo-tiles" role="ourPeople">		
+	<div class="tile-container">
+				<?php 
+				$args = array( 
+					'post_type' 		=> 'people',
+					'posts_per_page' 	=>-1,
+					'taxonomy'  	=> 'people_category',
+					'order'             => 'ASC',
+					'post_status' 		=> 'publish',
+            	);
+          
+            
+            	$my_query = new WP_Query($args);
+				$postx_counter = -1;
+				while($my_query->have_posts()) :
+		        	$my_query->the_post();
+					$postx_counter++;
+		        ?>
+					 <article id="post-<?php the_ID(); ?>" <?php post_class(' people-tile'); ?> data-post="<?php echo $postx_counter ?>">
+						<?php if ( has_post_thumbnail() ) {  ?>
+						<div class="hq-image">
+						<?php the_post_thumbnail('stories-tile-360', array('class' => "img-responsive", 'alt'   => get_the_title(), 'title'   => get_the_title()  )); ?>
+						</div>
+						<?php  } ?>	
+						<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="edit">', '</div>'); ?>
+						
+					</article>
+
+					<?php 
+// 					if( $postx_counter % 2) {
+// 						echo '</div><div class="row">';
+// 					}
+					
+					 endwhile; ?>	
+				<?php  wp_reset_postdata(); ?>
 	</div><!--  .container-fluid -->
 </section>
 <section id="bookingLocations" class="sub-section regional-hq white" >		
@@ -50,7 +78,7 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-lg-12">
 				<h2 class="text-left">And We're All Around The World.</h2>
-				<h3 class="text-left">Regional Headquarters</h2>
+				<h3 class="text-left">Regional Headquarters</h3>
 			</div>
 		</div>
 		<div class="row">
@@ -179,7 +207,7 @@ get_header(); ?>
 	        			<div class="pr-list-item col-sm-10 col-md-10 col-lg-10">
 	        				<ul>
 	        				<?php if( get_field('pr_news_url') ) { ?>
-	        					<li><a href="<?php the_field('pr_news_url'); ?>" target="_blank" title="<?php the_field('pr_news_vanity_name'); ?>" class="btn btn-link clearfix"><?php the_title(); ?><i class="fa fa-external-link"></i></a></li>
+	        					<li><a href="<?php the_field('pr_news_url'); ?>" target="_blank" title="<?php the_field('pr_news_vanity_name'); ?>" class=""><?php the_title(); ?><i class="fa fa-external-link"></i></a></li>
 								<li><?php the_field('pr_news_vanity_name'); ?></li>
 							<?php } else { ?>
 								<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
