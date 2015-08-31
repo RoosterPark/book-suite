@@ -17,6 +17,15 @@
 		    <?php if( is_home() ) { ?>
 				<section id="booking-solutions" class="sub-section white solutions">
 					<div class="container-fluid">
+						
+						<?php if(is_home()) { ?>
+							<div class="row">
+								<div class="col-md-12">
+									<h1 class="text-center">Solutions driven by Booking.com’s unique,<br/>industry-leading expertise</h1>
+								</div>
+							</div>
+						<?php }?>
+							
 						<div class="row">
 							<?php get_template_part('index-solutions'); ?>
 						</div>
