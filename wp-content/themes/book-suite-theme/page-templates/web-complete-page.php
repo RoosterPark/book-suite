@@ -265,6 +265,11 @@ get_header(); ?>
 <div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12 col-md-6 col-lg-6 link-cta left-cta">
+				Add New Section - Do You Have Multiple Properties?
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-6 link-cta left-cta">
 				<?php	
 	            $args = array( 
 	                'name' => 'web-direct-post'

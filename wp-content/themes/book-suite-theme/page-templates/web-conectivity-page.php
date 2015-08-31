@@ -38,7 +38,7 @@ get_header(); ?>
 						<p class="panel-title">Is your brand interested in becoming a BookingSuite Connectivity Partner?</p>
 				</div>
 				<div class="panel-body">
-					<p>Submit your inquiry here!</p>
+					<p> SEE MOCKUP 8-27 - Delete Form  </p>
 					<form>
 						<div class="form-group">
 							<textarea class="form-control" rows="8"></textarea>

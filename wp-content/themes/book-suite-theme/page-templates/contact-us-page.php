@@ -34,19 +34,19 @@ get_header(); ?>
 
 		<div class="row panel contact-items">
 			<div class="col-sm-8 col-md-8 col-lg-9"><h4>I want to get started with BookingSuite</h4></div>
-			<div class="col-sm-4 col-md-4 col-lg-3"><a href="/request-a-demo/" class="btn btn-info btn-md center-block">REQUEST DEMO</a></div>
+			<div class="col-sm-4 col-md-4 col-lg-3"><a href="http://info.suite.booking.com/request-demo/en-us" target="_blank" class="btn btn-info btn-md center-block">REQUEST DEMO</a></div>
 		</div>
 		<div class="row panel contact-items">
 			<div class="col-sm-8 col-md-8 col-lg-9"><h4>I want to log into BookingSuite BackOffice</h4></div>
-			<div class="col-sm-4 col-md-4 col-lg-3"><a href="#" class="btn btn-info btn-md center-block">LOG IN</a></div>
+			<div class="col-sm-4 col-md-4 col-lg-3"><a href="https://suiteoffice.booking.com/login/" target="_blank" class="btn btn-info btn-md center-block">LOG IN</a></div>
 		</div>
 		<div class="row panel contact-items">
 			<div class="col-sm-8 col-md-8 col-lg-9"><h4>I need to become a Booking.com partner</h4></div>
-			<div class="col-sm-4 col-md-4 col-lg-3"><a href="#" class="btn btn-info btn-md center-block">JOIN BOOKING</a></div>
+			<div class="col-sm-4 col-md-4 col-lg-3"><a href="https://join.booking.com/" target="_blank" class="btn btn-info btn-md center-block">JOIN BOOKING</a></div>
 		</div>
 		<div class="row panel contact-items">
 			<div class="col-sm-8 col-md-8 col-lg-9"><h4>I want to access BookingSuite’s online helpdesk</h4></div>
-			<div class="col-sm-4 col-md-4 col-lg-3"><a href="#" class="btn btn-info btn-md center-block">VISIT HELPDESK</a></div>
+			<div class="col-sm-4 col-md-4 col-lg-3"><a href="https://suitehelp.booking.com/hc/en-us" target="_blank" class="btn btn-info btn-md center-block">VISIT HELPDESK</a></div>
 		</div>					
 	</div>
 </section>
@@ -59,7 +59,7 @@ get_header(); ?>
 		</div>
 		<div class="row">
 			<div class="col-sm-3 col-md-3 col-lg-3"><p>E-Mail:</p></div>
-			<div class="col-sm-9 col-md-9 col-lg-9"><a href="mailto:contact@suite.booking.com" class="btn btn-link center-block">contact@suite.booking.com</a></div>
+			<div class="col-sm-9 col-md-9 col-lg-9"><a href="mailto:contact@suite.booking.com" class="btn btn-link">contact@suite.booking.com</a></div>
 		</div>
 		
 		<div class="row">
@@ -90,7 +90,6 @@ get_header(); ?>
 		
         <div class="col-xs-12 col-sm-6 col-md-6 regional-contacts">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?></a>
 			<div class="h5"><?php the_title(); ?></div>
 			<?php if(! is_page('solutions')) {
 				the_content();

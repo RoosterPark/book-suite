@@ -74,11 +74,11 @@ get_header(); ?>
 	</div>
 </section>
 
-<section id="productDesign" class="sub-section prod-features lt-grey">
+<section id="productDesign" class="sub-section prod-features">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1>Included in all website plans</h1>
+				<h1>Not Sure Which Plan is Right for Your Property?</h1>
 			</div>	
 		</div>
 		<div class='row odd'>
@@ -146,7 +146,7 @@ get_header(); ?>
 		</div>	
 		<div class="row">
 	    	<div class="col-md-12 text-center">
-	        	<div><a class="btn btn-default btn-lg" role="button" href="/product-features/" title="Product Features">See All Product Features</a></div>
+	        	<div><a class="btn btn-default btn-lg" role="button" href="/product-features/" title="Product Features">See All Plan Features</a></div>
 	    	</div>
 		</div>
 	</div>
@@ -155,7 +155,8 @@ get_header(); ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1>Predictive Analytics</h1>
+				<h1>Business Intelligence</h1>
+				<p>Add RateCast Post and link to page</p>
 			</div>	
 		</div>
 	</div>

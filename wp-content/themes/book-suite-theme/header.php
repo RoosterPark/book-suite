@@ -88,7 +88,8 @@
 	</div><!-- container -->
 </nav>
 <?php if( is_home() ) { ?> 
-	<?php get_template_part('index-featured-image'); ?>
+	<?php //get_template_part('index-featured-image'); ?>
+	<?php get_template_part('index-rotating-hero-banner'); ?>
 <?php } ?>
 <!-- Start: main .content-area -->
 <main id="main" class="content-area site-main" role="main">

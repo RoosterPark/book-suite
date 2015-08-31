@@ -114,13 +114,13 @@ get_header(); ?>
 								<?php 
 								if( has_term( 'case-study', 'success_category' ) ) { ?>
 									<?php if ( has_term( 'story', 'success_category' ) && has_term( 'video', 'success_category' )) { ?>
-										<div class="case-study"><a href="<?php the_permalink(); ?>"<span>Watch the Video!</span></a><i class="fa fa-book"></i><i class="fa fa-play-circle-o"></i></div>
+										<a href="<?php the_permalink(); ?>"><div class="case-study"><span>Watch the Video</span><i class="fa fa-book"></i><i class="fa fa-play-circle-o"></i></div></a>
 									<?php } elseif( has_term( 'story', 'success_category' )) { ?>
-										<div class="case-study"><a href="<?php the_permalink(); ?>"<span>Read the Case Study!</span></a><i class="fa fa-book"></i></div>
+										<a href="<?php the_permalink(); ?>"><div class="case-study"><span>Read the Case Study</span><i class="fa fa-book"></i></div></a>
 									<?php } elseif(has_term( 'video', 'success_category' ) ) { ?>
-										<div class="case-study"><a href="<?php the_permalink(); ?>"<span>Watch the Video!</span></a><i class="fa fa-play-circle-o"></i></div>
+										<a href="<?php the_permalink(); ?>"><div class="case-study"><span>Watch the Video</span><i class="fa fa-play-circle-o"></i></div></a>
 									<?php } else {?>
-										<div class="case-study"><a href="<?php the_permalink(); ?>"<span>Read the Case Study!</span></a><i class="fa fa-book"></i></div>	
+										<a href="<?php the_permalink(); ?>"><div class="case-study"><span>Read the Case Study</span><i class="fa fa-book"></i></div></a>	
 									<?php }?>				
 								<?php } ?>
 								<?php if ( has_post_thumbnail() ) {  ?>

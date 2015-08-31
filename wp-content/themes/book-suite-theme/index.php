@@ -13,12 +13,9 @@
  */
 ?>                
 		<?php get_header(); ?>
-
 		<?php if ( have_posts() ) : ?>
-		    
 		    <?php if( is_home() ) { ?>
 				<section id="booking-solutions" class="sub-section white solutions">
-				
 					<div class="container-fluid">
 						<div class="row">
 							<?php get_template_part('index-solutions'); ?>
@@ -29,7 +26,6 @@
 							</div>
 						</div>
 					</div>
-					
 				</section>
 				<section class="img-divider">
 					<img src="/wp-content/uploads/2015/06/Laptop1920px.png" class="img-responsive bground-img"/>
@@ -42,9 +38,6 @@
 				</section>
 				<?php get_template_part('index-commitment'); ?>
 				<?php get_template_part('index-request-demo'); ?>	
-
-		
-			
 			<?php } else { ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part('content', get_post_format()); ?>

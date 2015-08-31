@@ -316,7 +316,7 @@ strong {
  * 
  **************************************************/
 .regional-hq .panel {
-  min-height: 775px;
+  min-height: 950px;
   margin-bottom: 30px;
 }
 .regional-hq .col-lg-12 h3 {
@@ -575,6 +575,10 @@ strong {
 .site-hero h1 {
   margin-bottom: 15px;
   margin-top: 175px;
+  font-size: 44px;
+}
+.site-hero P {
+  font-size: 22px;
 }
 .site-hero .jumbo-btn-group {
   margin: 5% 0 0 7%;
@@ -632,6 +636,28 @@ strong {
 }
 .section-hero .wp-post-image {
   margin: 0px auto;
+}
+.carousel h1 {
+  color: #fff;
+}
+.carousel .btn {
+  margin-top: 2%;
+}
+.carousel-control {
+  z-index: 99;
+}
+.carousel-caption {
+  bottom: 0;
+  left: 0;
+  padding-bottom: inherit;
+  right: 0;
+  top: 0;
+}
+.carousel-caption.filter {
+  background: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 17, 19, 0.4)), color-stop(100%, rgba(16, 17, 19, 0.4)));
+  background: -webkit-linear-gradient(top, rgba(16, 17, 19, 0.4), rgba(16, 17, 19, 0.4) 100%);
+  background: linear-gradient(to bottom, rgba(16, 17, 19, 0.4), rgba(16, 17, 19, 0.4) 100%);
 }
 .jumbotron.filter {
   background: none;
@@ -883,18 +909,19 @@ strong {
   color: #000;
 }
 .sub-section.white.solutions-menu {
-  padding: 1% 8%;
+  padding: 3% 8%;
   width: 100%;
-  background-color: #fff;
+  background-color: #f9f9f9;
 }
 .sub-section.white.solutions-menu.stick {
   border-bottom: 1px solid #ececec;
+  padding: 1% 8%;
   position: fixed;
-  top: 102px;
+  top: 101px;
   z-index: 9999;
 }
 .admin-bar .sub-section.solutions-menu.stick {
-  top: 134px;
+  top: 132px;
 }
 .jumpToWrapper {
   margin: 0 auto;
@@ -1293,6 +1320,7 @@ footer .drk-grey {
   display: block;
   padding: 5px 0;
   text-align: left;
+  text-transform: uppercase;
 }
 .footer-nav-main a:hover,
 .footer-nav-aux a:hover {
@@ -1657,6 +1685,19 @@ img.aligncenter {
     margin-top: 30px;
     margin-bottom: 15px;
   }
+  .carousel h1 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 38px;
+  }
+  .carousel P {
+    font-size: 18px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .carousel .btn {
+    margin-top: 7%;
+  }
   .jumbotron .jumbo-btn-group {
     text-align: center;
     margin-top: 30px;
@@ -1942,6 +1983,11 @@ img.aligncenter {
     display: block;
     float: none;
   }
+  .carousel h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 8%;
+  }
   .jumbotron .jumbo-btn-group .btn {
     margin: 0 auto 6%;
     width: 80%;
@@ -2125,6 +2171,14 @@ img.aligncenter {
     width: 100%;
     max-width: 360px;
     min-height: inherit;
+  }
+  .carousel h1 {
+    font-size: 22px;
+    text-align: center;
+    margin: 6%;
+  }
+  .carousel p {
+    font-size: inherit;
   }
   .jumbotron .jumbo-btn-group .btn {
     margin: 0 auto 6%;

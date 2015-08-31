@@ -10,7 +10,7 @@ while($my_query->have_posts()){
 	        <h3><?php the_title() ?></h3>
 	        <?php the_content(); ?>
 	        <div>
-				<a class="btn btn-primary btn-lg" role="button" href="/request-a-demo/" title="Request a Demo">Request a Demo</a>
+				<a class="btn btn-primary btn-lg" role="button" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" title="Request a Demo">Request a Demo</a>
 			</div>
 			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
 	    </div>

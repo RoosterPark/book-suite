@@ -216,7 +216,7 @@ get_header(); ?>
 				<?php the_content(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
 				<footer>
-					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webcollection/" role="button">Learn More</a>
+					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webcomplete/" role="button">Learn More</a>
 					
 				</footer>
 				</article>

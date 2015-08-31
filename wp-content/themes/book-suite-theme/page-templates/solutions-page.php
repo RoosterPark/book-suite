@@ -175,6 +175,15 @@ get_header(); ?>
 				<?php  wp_reset_postdata(); ?>
        		</div>			    
 		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="jumbo-btn-group">
+					<a class="btn btn-info btn-lg" href="#" role="button">Learn More</a>
+					<a class="btn btn-primary btn-lg" href="#" role="button">See Product Features</a>
+				</div>
+			</div>
+		</div>
+		
 	</div>
 </section>
 <section id="predictiveAnalytics" class="section-hero" role="banner">
@@ -291,7 +300,7 @@ get_header(); ?>
 			<div class="col-lg-12">
 				<?php	
 	            $args = array( 
-	                'name' => 'client-services'
+	                'name' => 'partner-services'
 	            );
 	            $my_cs_query = new WP_Query($args);
 	            while($my_cs_query->have_posts()) :

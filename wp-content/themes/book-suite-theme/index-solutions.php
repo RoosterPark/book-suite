@@ -56,7 +56,7 @@
 									<?php echo $p->post_title; ?>
 								<?php }?>
 							</div>
-							<?php if(!is_page('solutions') && !is_page('plans')) {
+							<?php if(!is_page('solutions')) {
 								echo $p->post_content;
 							}
 							?>	

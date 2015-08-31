@@ -28,10 +28,10 @@ get_header(); ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-8 col-md-8 col-lg-8">
-				<h2 class="text-left">And we're all around the world.</h2>
+				<h2 class="text-left">We create new ways of helping the hospitality industry work.</h2>
 			</div>
 			<div class="col-sm-4 col-md-4 col-lg-4">
-				<a class="btn btn-info btn-lg" title="#####" href="#" role="button">View Job Openings</a>
+				<a class="btn btn-info btn-lg" title="View Job Openings" href="https://workingatbooking.com/" target="_blank" role="button">View Job Openings</a>
 			</div>
 		</div>
 	</div><!--  .container-fluid -->
@@ -82,7 +82,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-8">
+			<div class="col-lg-12">
 				<div class="row">
 				<?php 
 				$args = array( 
@@ -133,35 +133,6 @@ get_header(); ?>
 					 endwhile; ?>	
 				<?php  wp_reset_postdata(); ?>
 				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<p class="panel-title">We would like to hear from you.</p>
-					</div>
-					<div class="panel-body">
-						<form>
-							<div class="form-group">
-						    	<label for="firstName">Full Name:</label>
-						    	<input type="text" class="form-control" id="FirstName" >
-							</div>
-							<div class="form-group">
-								<label for="exampleInputEmail1">Email address:</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" >
-							</div>
-							<div class="form-group">
-								<label for="firstName">Questions/Comments:</label>
-								<textarea class="form-control" rows="6"></textarea>
-							</div>
-							<div class="form-group">
-								<label for="firstName">Captcha Here:</label>
-							</div>
-					
-							<button type="submit" class="btn btn-info btn-md center-block">Submit</button>
-						</form>				   
-					</div>
-
-				</div>			
 			</div>
 		</div>
 	</div><!--  .container-fluid -->
