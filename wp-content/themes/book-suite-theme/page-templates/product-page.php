@@ -22,7 +22,7 @@ get_header(); ?>
 			
 			<div class="jumbo-btn-group">
 				<a class="btn btn-default btn-lg clear" href="/plans/" role="button">View Our Plans</a>
-				<a class="btn btn-primary btn-lg" href="/request-a-demo/" role="button">Request A Demo</a>
+				<a class="btn btn-primary btn-lg" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" role="button">Request A Demo</a>
 			</div>
 		</div>
 	</div>

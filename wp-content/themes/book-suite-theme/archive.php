@@ -8,7 +8,8 @@
  * @package upBootWP 0.1
  */
 get_header(); ?>
-<div class="container sub_page xxx">
+<section id="dbookingNews" class="sub-section press-releases" role="News">
+<div class="container-fluid sub_page ">
 	<div class="blog-header">	
 		<?php
 			if ( is_category() ) :
@@ -56,7 +57,7 @@ get_header(); ?>
 				_e( 'Links', 'upbootwp' );
 		
 			else :
-				_e( '<h1 class="blog-title">Archives', 'upbootwp' . '</h1>');
+				_e( '<h1 class="blog-title">Press Releases and Mentions', 'upbootwp' . '</h1>');
 		
 			endif;
 		?>
@@ -72,15 +73,13 @@ get_header(); ?>
 	</div>
 	<div class="row">
 		<div class="col-md-12 col-lg-12 blog-main">
-			<div class="row">
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<div class="col-md-4 col-lg-4 tiles">
-				<div id="post-<?php the_ID(); ?>" class="panel panel-default <?php if(is_category('featured')): ?>featured-post<?php endif; ?>">
-					<div class="panel-body">
-						<div class="panel-heading">
-						<h2 class="panel-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						</div>
-						<div class="panel-body">
+			<ul>
+				<li>
+				<article id="post-<?php the_ID(); ?>" class="<?php if(is_category('featured')): ?>featured-post<?php endif; ?>">
+					
+						<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+
 							<?php if( function_exists( 'the_subtitle' ) ) the_subtitle( '<div class="slide-txt"><p class="lead">', '</p></div>' ); ?>
 							<?php
 							$posttags = get_the_tags();
@@ -100,34 +99,16 @@ get_header(); ?>
 								</a><?php 
 							}
 							?>
-							<p><a class="btn btn-primary btn-xs" href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>">View details XXXX</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
+							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
+				</article>
+				</li>
+			</ul>
 				<?php endwhile; else: ?>
 					<p>Sorry, this post does not exist</p>
 				<?php endif; ?>
-			</div>
+
 		</div>
-		<!--<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-			<?php //get_sidebar(); ?>
-		</div>-->
-	</div>
-	<div class="row">
-		<?php /* Global footer sidebar */ if ( ! is_404() ) : ?>
-			<div id="footer-widgets" class="widget-area four">
-				<?php if ( is_active_sidebar( 'sidebar-7' ) ) : ?>
-					<?php dynamic_sidebar( 'sidebar-7' ); ?>				
-				<?php endif; ?>
-				<?php if ( is_active_sidebar( 'sidebar-8' ) ) : ?>
-					<?php dynamic_sidebar( 'sidebar-8' ); ?>
-				<?php endif; ?>
-				<?php if ( is_active_sidebar( 'sidebar-9' ) ) : ?>
-					<?php dynamic_sidebar( 'sidebar-9' ); ?>	
-				<?php endif; ?>
-			</div><!-- #footer-widgets -->
-		<?php endif; ?>
 	</div>
 </div>
+</section>
 <?php get_footer(); ?>

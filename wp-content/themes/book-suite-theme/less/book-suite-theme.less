@@ -1,5 +1,5 @@
-/* xxx-xxx
-
+/* 
+ * 
  * Booking-suite-theme syling
  * @author Matt Peternell| http://mattpeternell.net
  * @package upBootWP 0.1
@@ -206,12 +206,16 @@ b, strong {
 	}	
 }
 
+#logo a  {
+	 margin-top: 18px;
+	 display: block;
+	 outline: none;
+}
 
 #logo > a img {
-    height: auto;
-    margin-top: 18px;
-    max-width: 275px;
-    width: 100%;
+   // height: auto;
+   // max-width: 277px;
+   // width: 100%;
 }
 
 /***************************************************
@@ -245,7 +249,7 @@ b, strong {
 
 .regional-hq {
 	.panel {
-		min-height:950px;
+		min-height:600px;
 		margin-bottom: 30px;
 		.panel-body {
 			
@@ -489,6 +493,10 @@ b, strong {
     margin-right: 4px;
 }
 
+.bgroup .btn {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 .btn {
 	text-transform: @btn-font-text-transform;
 	&.btn-default {
@@ -552,19 +560,12 @@ b, strong {
     h1 {
     	margin-bottom: 15px;
     	margin-top: 175px;
-    	font-size: 44px;
-	}
-	P {
-		font-size: 22px;
 	}
 	.jumbo-btn-group {
-	    margin: 5% 0 0 7%;
+	    //margin: 5% 0 0 7%;
 	    text-align: center;
 	}
 	.jumbotron {
-		.jumbo-btn-group {
-		    margin: 4% 0 0 0;
-		}
 		.btn-group.edit-post {
 	    	text-align: center;
 		}
@@ -625,11 +626,8 @@ b, strong {
 
 
 .carousel {
-	h1 {
-    	color: #fff;
-	}
-	.btn {
-		margin-top: 2%;
+	.jumbotron {
+	    z-index: 99;
 	}
 }
 .carousel-control {
@@ -666,9 +664,9 @@ b, strong {
     top: 0;
     background: none;
 	.jumbo-btn-group {
-		margin: 5% 0 0 0;
+		margin: 4% 0 0 0;
 		.btn {
-		    margin-right: 1.5%;
+		    margin: 0 0.75%;
 		}		
 	}
 	.jumbo-caption {
@@ -1031,7 +1029,24 @@ b, strong {
 	    margin-bottom: 0;
 	}
 }
-
+.content-area .col-md-3.recent-cposts {
+	 h2 {
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 2%;
+		margin-bottom: 10%;
+	}
+	.location-list {
+	    color: inherit;
+	    padding: 0;
+    	margin: 0;
+	}
+	.title-list {
+    	margin: 5% 0 1%;
+	}
+	.inner-grid-list {
+		margin-bottom: 10%;
+	}
+}
 .success {
 	.h5 a {
 		color: white;
@@ -1041,6 +1056,7 @@ b, strong {
 	    padding: 0;
     	margin: 0;
 	}
+	
 	.success-post {
 		box-sizing: content-box;
 		float: left;
@@ -1257,6 +1273,25 @@ b, strong {
     	 border: none;
     	 padding-left: 30px;
     }
+    &.top-cta {
+    	border-bottom: 1px solid #d5effc;
+    	margin-bottom: 6%;
+    	padding-bottom: 3%;
+    	    overflow: auto;
+    	.content {
+		    display: block;
+		    float: left;
+		    margin: 0 22% 3% 0;
+		    width: 50%;
+		}
+		footer {
+		    display: block;
+		    float: left;
+		}
+		h1 {
+			margin-bottom: 31px;
+		}
+    }
    	h1 {
    		font-size: 24px;
 		font-weight: normal;
@@ -1449,6 +1484,15 @@ footer {
     }
 }
 
+
+.interest {
+	max-width: 736px;
+	margin: 0 auto;
+	.panel-title, .panel-body {
+	    text-align: center;
+	}
+}
+
 .footer-nav-aux {
 	margin-top: 6%;
 	    a {
@@ -1478,8 +1522,88 @@ footer {
 .footer-logo {
     margin: 1% 0;
 }
+.admin-bar {
+	.archive {
+		.blog-header {
+		    margin-bottom: 50px;
+	    	margin-top: 75px;
+		}
+	}
+}
 
+.archive {
+	.blog-header {
+	    margin-bottom: 50px;
+    	margin-top: 100px;
+	}
+	ul {
+    	margin: 0;
+	    padding: 0 0 0 15px;
+	}
+}
+.bizIntel .col-md-offset-2.col-lg-2 {
+    text-align: center;
+}
 
+.bizIntel  {
+	// .svg.wp-post-image {
+	    // margin: 45px auto;
+	// }
+}
+
+.bizIntel .col-lg-4.text-center {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.compare-plans {
+	padding-left: 30px;
+    padding-right: 30px;
+    header {
+    	//background-color: #f4f4f4;
+    	overflow: auto;
+    }
+    .summary {
+	    padding: 15px;
+	    font-size: 18px;
+	}
+	h2 {
+	    //background-color: #009fe3;
+	    //color: #fff;
+	    //font-weight: 500;
+	    padding: 15px;
+	}
+	.icon.svg {
+	    margin: 30px auto;
+	}
+	.options {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	    li {
+		    background-color: #fbfbfb;
+		    border-bottom: 1px solid #ebebeb;
+		    min-height: 145px;
+		    padding: 15px;
+	    	&:last-child {
+		    	border: none;
+		    }
+	    }
+	    .check {
+		    height: 40px;
+		}
+		p {
+		    margin-bottom: 5px;
+		}
+		small, .small {
+		    color: #8a8a8a;
+		}
+		   
+	}
+	footer {
+	    margin-top: 15px;
+	}
+}
 /***************************************************
  * 
  * scroll-to-top
@@ -1522,7 +1646,11 @@ footer {
  * WordPress Content Area Styling WYSIWIG
  *
  ***************************************************/ 
-
+.entry-content img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
 .alignleft {
 	display: inline;
 	float: left;
@@ -1647,10 +1775,6 @@ img.aligncenter {
 	}	
 }
 
-
-
-
-
 @media (min-width: 1401px) {
 	.success {
 		.success-post .wp-post-image {
@@ -1742,11 +1866,12 @@ img.aligncenter {
 	  	float: left;
 	  	width: 75%;
 	}
-	.content-area {
+	.content-area, footer {
 		.sub-section {
 			padding: 30px 15px;
 		}
 	}
+	
 	.section-hero {
 		.center-block {
 			margin-bottom: 15%;
@@ -1776,6 +1901,15 @@ img.aligncenter {
 		}
 	}
 	
+	.regional-hq {
+		.panel-body {
+		    padding: 15px;
+		}
+		.hq-image .h3 {
+		    padding: 15px;
+		    width: 100%;
+		}
+	}
 	.jumpTo {
 		text-align: center;
 		> a {
@@ -1922,7 +2056,7 @@ img.aligncenter {
 	}
 	.prod-features {
 		.features-box {
-		  margin-bottom: 3%;
+		  margin-bottom: 30px;
 		  overflow: auto;
 		}	
 	}
@@ -1960,6 +2094,10 @@ img.aligncenter {
 		}
 	}
 	
+	.content-area .col-md-3.recent-cposts .inner-grid-list {
+	    margin-bottom: 10%;
+	    text-align: center;
+   }
 	.mentions .col-md-2 {
 		float: left;
 		width: 33.3333%;
@@ -1983,6 +2121,34 @@ img.aligncenter {
 		  margin: 0 auto 6%;
 		}
 	}
+	
+	.link-cta {
+		margin-bottom: 3% !important;
+		&.top-cta .content {
+		    display: block;
+		    float: inherit;
+		    margin: 2% 0;
+		    width: 100%;
+		}
+		&.top-cta {
+		    border-bottom: none;
+		    margin-bottom: 0;
+		    padding-bottom: 0;
+		}
+		&.top-cta footer {
+		    display: block;
+		    float:inherit;
+		}
+		&.left-cta {
+		    border-right: none;
+		    padding-right: 15px;
+		}
+		&.right-cta {
+		    border: none;
+		    padding-left: 15px;
+		}
+	}
+
 }
 
 @media (max-width: 768px) {
@@ -2000,7 +2166,12 @@ img.aligncenter {
 	}
 	.visible-xs-block {
 		display: block !important;
-	}	
+	}
+	
+	.compare-plans {
+	    margin-bottom: 60px;
+	}
+		
 	.jumbotron {
 		.jumbo-btn-group .btn {
 			margin: 0 auto 6%;
@@ -2041,7 +2212,7 @@ img.aligncenter {
 	}
 	 
 	.regional-hq .panel {
-	    min-height: inherit;
+	    //min-height: inherit;
 	}
 	
 	.jumpToWrapper .jumpTo {
@@ -2200,16 +2371,32 @@ img.aligncenter {
 		font-size: 16px;
 	}
 
+	.bgroup {
+		.btn {
+	    	margin-bottom: 10px;
+	    	&:last-child {
+	    		margin-bottom: 0;
+	    	}
+		}
+	}
+
 	#logo > a img {
 		margin-top: 6.555%;
 		max-width: 175px;
 	}
+	
 	.page-template-request-a-demo-page {
 		#logo > a img {
 		    margin: 6.555% 0;
 		}
 	}
-	
+
+	.regional-hq .panel {
+	   min-height: inherit;
+	}
+	.jumbo-btn-group a.btn.btn-info.btn-lg {
+	    margin-bottom: 30px;
+	}
 	.jumpToWrapper {
 	    margin: 0 auto;
 	    overflow: auto;

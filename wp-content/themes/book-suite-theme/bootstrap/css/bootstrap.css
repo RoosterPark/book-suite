@@ -4926,7 +4926,7 @@ a.badge:focus {
 }
 .jumbotron p {
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 200;
 }
 .jumbotron > hr {
@@ -4951,7 +4951,7 @@ a.badge:focus {
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 34px;
+    font-size: 44px;
   }
 }
 .thumbnail {

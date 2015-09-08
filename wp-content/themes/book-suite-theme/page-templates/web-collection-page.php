@@ -169,7 +169,7 @@ get_header(); ?>
 	</div>
 	<div class="row">
 		<div class="col-lg-12 request-demo">
-			<a class="btn btn-primary btn-lg" role="button" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Request a Demo</a>
+			<a class="btn btn-primary btn-lg" role="button" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" title="Request a Demo">Request a Demo</a>
 		</div>
 	</div>
 	

@@ -5,7 +5,7 @@
 					'cat' 				=> $catName,
 					'meta_key'      	=> 'solutions_rank',
 					'orderby'           => 'meta_value_num',
-					'order'             => 'ASC',
+					'order'             => 'DESC',
 					'post_status' 		=> 'publish',
 			);
 			$my_posts = get_posts($argsd);

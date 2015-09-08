@@ -1,5 +1,5 @@
-/* xxx-xxx
-
+/* 
+ * 
  * Booking-suite-theme syling
  * @author Matt Peternell| http://mattpeternell.net
  * @package upBootWP 0.1
@@ -286,11 +286,10 @@ strong {
 .navbar-inverse .navbar-toggle {
   color: #ffffff;
 }
-#logo > a img {
-  height: auto;
+#logo a {
   margin-top: 18px;
-  max-width: 275px;
-  width: 100%;
+  display: block;
+  outline: none;
 }
 /***************************************************
  * 
@@ -316,7 +315,7 @@ strong {
  * 
  **************************************************/
 .regional-hq .panel {
-  min-height: 950px;
+  min-height: 600px;
   margin-bottom: 30px;
 }
 .regional-hq .col-lg-12 h3 {
@@ -520,6 +519,10 @@ strong {
 .fa.fa-pencil-square-o {
   margin-right: 4px;
 }
+.bgroup .btn {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 .btn {
   text-transform: uppercase;
 }
@@ -575,17 +578,9 @@ strong {
 .site-hero h1 {
   margin-bottom: 15px;
   margin-top: 175px;
-  font-size: 44px;
-}
-.site-hero P {
-  font-size: 22px;
 }
 .site-hero .jumbo-btn-group {
-  margin: 5% 0 0 7%;
   text-align: center;
-}
-.site-hero .jumbotron .jumbo-btn-group {
-  margin: 4% 0 0 0;
 }
 .site-hero .jumbotron .btn-group.edit-post {
   text-align: center;
@@ -637,11 +632,8 @@ strong {
 .section-hero .wp-post-image {
   margin: 0px auto;
 }
-.carousel h1 {
-  color: #fff;
-}
-.carousel .btn {
-  margin-top: 2%;
+.carousel .jumbotron {
+  z-index: 99;
 }
 .carousel-control {
   z-index: 99;
@@ -674,10 +666,10 @@ strong {
   background: none;
 }
 .jumbotron .jumbo-btn-group {
-  margin: 5% 0 0 0;
+  margin: 4% 0 0 0;
 }
 .jumbotron .jumbo-btn-group .btn {
-  margin-right: 1.5%;
+  margin: 0 0.75%;
 }
 .jumbotron .jumbo-caption {
   bottom: 0;
@@ -996,6 +988,22 @@ strong {
 .solutions.alt .row:first-child {
   margin-bottom: 0;
 }
+.content-area .col-md-3.recent-cposts h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2%;
+  margin-bottom: 10%;
+}
+.content-area .col-md-3.recent-cposts .location-list {
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+.content-area .col-md-3.recent-cposts .title-list {
+  margin: 5% 0 1%;
+}
+.content-area .col-md-3.recent-cposts .inner-grid-list {
+  margin-bottom: 10%;
+}
 .success .h5 a {
   color: white;
 }
@@ -1156,6 +1164,25 @@ strong {
 .link-cta.right-cta {
   border: none;
   padding-left: 30px;
+}
+.link-cta.top-cta {
+  border-bottom: 1px solid #d5effc;
+  margin-bottom: 6%;
+  padding-bottom: 3%;
+  overflow: auto;
+}
+.link-cta.top-cta .content {
+  display: block;
+  float: left;
+  margin: 0 22% 3% 0;
+  width: 50%;
+}
+.link-cta.top-cta footer {
+  display: block;
+  float: left;
+}
+.link-cta.top-cta h1 {
+  margin-bottom: 31px;
 }
 .link-cta h1 {
   font-size: 24px;
@@ -1326,6 +1353,14 @@ footer .drk-grey {
 .footer-nav-aux a:hover {
   color: #a2a2a2;
 }
+.interest {
+  max-width: 736px;
+  margin: 0 auto;
+}
+.interest .panel-title,
+.interest .panel-body {
+  text-align: center;
+}
 .footer-nav-aux {
   margin-top: 6%;
 }
@@ -1347,6 +1382,69 @@ footer .drk-grey {
 }
 .footer-logo {
   margin: 1% 0;
+}
+.admin-bar .archive .blog-header {
+  margin-bottom: 50px;
+  margin-top: 75px;
+}
+.archive .blog-header {
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+.archive ul {
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+.bizIntel .col-md-offset-2.col-lg-2 {
+  text-align: center;
+}
+.bizIntel .col-lg-4.text-center {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.compare-plans {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.compare-plans header {
+  overflow: auto;
+}
+.compare-plans .summary {
+  padding: 15px;
+  font-size: 18px;
+}
+.compare-plans h2 {
+  padding: 15px;
+}
+.compare-plans .icon.svg {
+  margin: 30px auto;
+}
+.compare-plans .options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.compare-plans .options li {
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #ebebeb;
+  min-height: 145px;
+  padding: 15px;
+}
+.compare-plans .options li:last-child {
+  border: none;
+}
+.compare-plans .options .check {
+  height: 40px;
+}
+.compare-plans .options p {
+  margin-bottom: 5px;
+}
+.compare-plans .options small,
+.compare-plans .options .small {
+  color: #8a8a8a;
+}
+.compare-plans footer {
+  margin-top: 15px;
 }
 /***************************************************
  * 
@@ -1386,6 +1484,11 @@ footer .drk-grey {
  * WordPress Content Area Styling WYSIWIG
  *
  ***************************************************/
+.entry-content img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 .alignleft {
   display: inline;
   float: left;
@@ -1575,7 +1678,8 @@ img.aligncenter {
     float: left;
     width: 75%;
   }
-  .content-area .sub-section {
+  .content-area .sub-section,
+  footer .sub-section {
     padding: 30px 15px;
   }
   .section-hero .center-block {
@@ -1599,6 +1703,13 @@ img.aligncenter {
     padding: 1%;
     left: auto;
     right: 2%;
+  }
+  .regional-hq .panel-body {
+    padding: 15px;
+  }
+  .regional-hq .hq-image .h3 {
+    padding: 15px;
+    width: 100%;
   }
   .jumpTo {
     text-align: center;
@@ -1724,7 +1835,7 @@ img.aligncenter {
     margin-bottom: 0;
   }
   .prod-features .features-box {
-    margin-bottom: 3%;
+    margin-bottom: 30px;
     overflow: auto;
   }
   #propertyWebsites .properties:last-child {
@@ -1753,6 +1864,10 @@ img.aligncenter {
     max-width: 776px;
     margin: 0px auto;
   }
+  .content-area .col-md-3.recent-cposts .inner-grid-list {
+    margin-bottom: 10%;
+    text-align: center;
+  }
   .mentions .col-md-2 {
     float: left;
     width: 33.3333%;
@@ -1768,6 +1883,32 @@ img.aligncenter {
   .content-area .sub-section.lt-blue .excerpt {
     margin: 0 auto 6%;
   }
+  .link-cta {
+    margin-bottom: 3% !important;
+  }
+  .link-cta.top-cta .content {
+    display: block;
+    float: inherit;
+    margin: 2% 0;
+    width: 100%;
+  }
+  .link-cta.top-cta {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .link-cta.top-cta footer {
+    display: block;
+    float: inherit;
+  }
+  .link-cta.left-cta {
+    border-right: none;
+    padding-right: 15px;
+  }
+  .link-cta.right-cta {
+    border: none;
+    padding-left: 15px;
+  }
 }
 @media (max-width: 768px) {
   #logo > a img {
@@ -1782,6 +1923,9 @@ img.aligncenter {
   }
   .visible-xs-block {
     display: block !important;
+  }
+  .compare-plans {
+    margin-bottom: 60px;
   }
   .jumbotron .jumbo-btn-group .btn {
     margin: 0 auto 6%;
@@ -1814,9 +1958,6 @@ img.aligncenter {
   }
   .sub-section.white.solutions-menu {
     padding: 2% 1%;
-  }
-  .regional-hq .panel {
-    min-height: inherit;
   }
   .jumpToWrapper .jumpTo {
     max-width: 50%;
@@ -1955,12 +2096,24 @@ img.aligncenter {
   .h5 {
     font-size: 16px;
   }
+  .bgroup .btn {
+    margin-bottom: 10px;
+  }
+  .bgroup .btn:last-child {
+    margin-bottom: 0;
+  }
   #logo > a img {
     margin-top: 6.555%;
     max-width: 175px;
   }
   .page-template-request-a-demo-page #logo > a img {
     margin: 6.555% 0;
+  }
+  .regional-hq .panel {
+    min-height: inherit;
+  }
+  .jumbo-btn-group a.btn.btn-info.btn-lg {
+    margin-bottom: 30px;
   }
   .jumpToWrapper {
     margin: 0 auto;

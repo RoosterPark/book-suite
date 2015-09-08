@@ -107,7 +107,7 @@ get_header(); ?>
 					$postx_counter++;
 		        ?>
 		
-						<div class="col-xs-12 col-sm-6 col-md-6" data-post="<?php echo $postx_counter ?>">
+						<div class="col-xs-12 col-sm-6 col-md-3" data-post="<?php echo $postx_counter ?>">
 							 <article id="post-<?php the_ID(); ?>" <?php post_class('panel panel-default'); ?>>
 								<?php if ( has_post_thumbnail() ) {  ?>
 								<div class="hq-image">
@@ -126,9 +126,7 @@ get_header(); ?>
 						</div>
 
 					<?php 
-					if( $postx_counter % 2) {
-						echo '</div><div class="row">';
-					}
+					
 					
 					 endwhile; ?>	
 				<?php  wp_reset_postdata(); ?>
