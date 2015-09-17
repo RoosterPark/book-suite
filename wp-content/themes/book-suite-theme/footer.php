@@ -15,9 +15,9 @@
 	 		<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-12 col-md-8 col-lg-8">
-				<?
-				$wp_query = NULL;
-				$wp_query = new WP_Query(array('post_type' => 'post'));
+				<?php 
+				//$wp_query = NULL;
+				//$wp_query = new WP_Query(array('post_type' => 'post'));
 				?> 
 				<?php 
 				$footer_argsx = array(

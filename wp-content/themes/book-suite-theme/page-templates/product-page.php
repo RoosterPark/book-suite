@@ -198,13 +198,13 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="Predictive-Analytics" class="section-hero" role="banner">
+<section id="Property-Pricing" class="section-hero" role="banner">
 <?php if( get_field('predictive_analytics_header') ): ?>
 	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('predictive_analytics_header'); ?>" />
 <?php endif; ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="jumbo-caption opt-2">
-			<h1>Predictive Analytics</h1>
+			<h1>Property Pricing</h1>
 			<div class="jumbo-btn-group">
 				<a class="btn btn-info btn-lg" href="#" role="button">Learn More</a>
 				<a class="btn btn-default btn-lg clear" href="/product-features/" role="button">See Product Features</a>
@@ -300,13 +300,13 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="Premium-Services" class="section-hero" role="banner">
+<section id="Premium-Support" class="section-hero" role="banner">
 <?php if( get_field('premium_services_header') ): ?>
 	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('premium_services_header'); ?>" />
 <?php endif; ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="jumbo-caption opt-1">
-			<h1>Premium Services</h1>
+			<h1>Premium Support</h1>
 		</div>
 	</div>
 </section>

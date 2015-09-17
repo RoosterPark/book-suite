@@ -27,14 +27,14 @@ get_header(); ?>
 	  <!-- Nav tabs -->
 	  <ul class="nav nav-tabs" role="tablist">
 	    <li role="presentation" class="active"><a href="#PropertyWebsites" aria-controls="PropertyWebsites" role="tab" data-toggle="tab">Property Websites</a></li>
-	    <li role="presentation"><a href="#PredictiveAnalytics" aria-controls="PredictiveAnalytics" role="tab" data-toggle="tab">Predictive Analytics</a></li>
+	    <li role="presentation"><a href="#PropertyPricing" aria-controls="PropertyPricing" role="tab" data-toggle="tab">Property Pricing</a></li>
 	  </ul>
 	</div>
 	<div class="tab-content">
 	    <div role="tabpanel" class="tab-pane active" id="PropertyWebsites">
 			<?php get_template_part('features-page-tabs-property-web'); ?>
 	    </div>
-	    <div role="tabpanel" class="tab-pane" id="PredictiveAnalytics">
+	    <div role="tabpanel" class="tab-pane" id="PropertyPricing">
 	    	<?php get_template_part('features-page-tabs-predictive-analytics'); ?>    
 	    </div>
 	</div>

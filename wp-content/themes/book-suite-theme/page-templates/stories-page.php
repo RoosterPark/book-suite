@@ -226,7 +226,9 @@ get_header(); ?>
 		                	$Child_categories = get_categories($argsX);
 		                	echo '<ul class="inner-option-set">';
 		                	foreach ($Child_categories as $c){
-		                		echo '<li class="cat-child"><a href="#filter" data-filter=".'.$c->slug.'"><span>'.$c->name.'</span></a><span class="count">('.$c->category_count.')</span></li>';
+		                		if ($c->name != 'Story') { 
+		                			echo '<li class="cat-child"><a href="#filter" data-filter=".'.$c->slug.'"><span>'.$c->name.'</span></a><span class="count">('.$c->category_count.')</span></li>';
+		                		}
 		                	}
 		                	echo '</ul></li>';
 		                	

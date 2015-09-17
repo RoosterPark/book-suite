@@ -35,18 +35,18 @@ get_header(); ?>
 	  <!-- Nav tabs -->
 	  <ul class="nav nav-tabs" role="tablist">
 	    <li role="presentation" class="active"><a href="#Property-Websites" aria-controls="Property-Websites" role="tab" data-toggle="tab">Property Websites</a></li>
-	    <li role="presentation"><a href="#Business-Intelligence" aria-controls="Predictive-Analytics" role="tab" data-toggle="tab">Business Intelligence</a></li>
+	    <li role="presentation"><a href="#property-pricing" aria-controls="property-pricing" role="tab" data-toggle="tab">Property Pricing</a></li>
 	  </ul>
 	</div>
 	<div class="tab-content">
 	    <div role="tabpanel" class="tab-pane active" id="Property-Websites">
 			<?php get_template_part('plans-page-tabs-prop-web'); ?>
 	    </div>
-	    <div role="tabpanel" class="tab-pane" id="Business-Intelligence">
+	    <div role="tabpanel" class="tab-pane" id="property-pricing">
 	    	<?php get_template_part('plans-page-tabs-biz-intel'); ?>    
 	    </div>
+	    
 	</div>
-
 <?php get_template_part('index-request-demo'); ?>
 
 <?php get_footer(); ?>

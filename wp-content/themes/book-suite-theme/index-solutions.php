@@ -5,7 +5,7 @@
 					'cat' 				=> $catName,
 					'meta_key'      	=> 'solutions_rank',
 					'orderby'           => 'meta_value_num',
-					'order'             => 'DESC',
+					'order'             => 'ASC',
 					'post_status' 		=> 'publish',
 			);
 			$my_posts = get_posts($argsd);
@@ -33,7 +33,7 @@
 									echo $p->post_content;
 								}
 								?>	
-								<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="edit">', '</div>' ); ?>
+								<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="edit">', '</div>' , $p->ID); ?>
 							</div>
 							<?php } ?>
 					<?php } ?>	
@@ -60,7 +60,7 @@
 								echo $p->post_content;
 							}
 							?>	
-							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="edit">', '</div>' ); ?>
+							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="edit">', '</div>' , $p->ID); ?>
 						</article>
 					</div>	
 					<?php } ?>			
@@ -82,7 +82,7 @@
 								echo $p->post_content;
 							}
 							?>	
-							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="edit">', '</div>' ); ?>
+							<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="edit">', '</div>' , $p->ID); ?>
 						</article>
 					</div>	
 					<?php } ?>	

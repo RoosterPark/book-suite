@@ -604,7 +604,7 @@ strong {
 }
 .page-hero h1 {
   margin-bottom: 30px;
-  margin-top: 135px;
+  margin-top: 55px;
 }
 .page-hero p {
   font-weight: normal;
@@ -912,6 +912,9 @@ strong {
   top: 101px;
   z-index: 9999;
 }
+.sub-section.client-services.white-alt {
+  padding-bottom: 0;
+}
 .admin-bar .sub-section.solutions-menu.stick {
   top: 132px;
 }
@@ -943,6 +946,9 @@ strong {
   float: left;
   text-align: center;
   width: 100%;
+}
+.solutions .RateManager p.excerpt {
+  margin-top: 30px;
 }
 .solutions .col-md-4 {
   text-align: center;
@@ -1095,10 +1101,6 @@ strong {
 }
 .content-area .synced {
   text-align: center;
-}
-.content-area .client-services.white-alt,
-.content-area .client-services.md-grey {
-  padding-bottom: 0;
 }
 .content-area .client-services.white-alt .excerpt,
 .content-area .client-services.md-grey .excerpt {
@@ -1405,6 +1407,9 @@ footer .drk-grey {
 .compare-plans {
   padding-left: 30px;
   padding-right: 30px;
+}
+.compare-plans article {
+  margin-bottom: 10%;
 }
 .compare-plans header {
   overflow: auto;
@@ -2172,6 +2177,17 @@ img.aligncenter {
   .section-hero.no-risk .jumbotron .opt-2 h1 {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .bizIntel {
+    text-align: center;
+  }
+  .bizIntel .col-xs-2.col-sm-1.col-md-2.col-lg-2 {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  .bizIntel .col-xs-10.col-sm-7.col-md-6.col-lg-6 {
+    width: 100%;
+    margin-bottom: 10%;
   }
   .tab-wrapper .nav-tabs {
     max-width: 100%;

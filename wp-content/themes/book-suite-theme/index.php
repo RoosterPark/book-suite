@@ -21,7 +21,7 @@
 						<?php if(is_home()) { ?>
 							<div class="row">
 								<div class="col-md-12">
-									<h1 class="text-center">Solutions driven by Booking.com’s unique,<br/>industry-leading expertise</h1>
+									<h1 class="text-center">SOLUTIONS DRIVEN BY BOOKING.COM'S UNIQUE,<br/>INDUSTRY-LEADING EXPERTISE</h1>
 								</div>
 							</div>
 						<?php }?>
@@ -45,7 +45,7 @@
 				<section id="booking-mentions" class="sub-section white mentions">
 					<?php get_template_part('index-mentions'); ?>
 				</section>
-				<?php get_template_part('index-commitment'); ?>
+				<?php //get_template_part('index-commitment'); ?>
 				<?php get_template_part('index-request-demo'); ?>	
 			<?php } else { ?>
 				<?php while ( have_posts() ) : the_post(); ?>

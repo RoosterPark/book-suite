@@ -290,7 +290,7 @@ get_header(); ?>
 <?php endif; ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="jumbo-caption opt-1">
-			<h1>Premium Services</h1>
+			<h1>Premium Support</h1>
 		</div>
 	</div>
 </section>

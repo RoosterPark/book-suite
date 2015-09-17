@@ -92,7 +92,7 @@ get_header(); ?>
 			<div class="col-lg-12">
 	
 	            <article>
-				<header class="page-header"><h1 class="text-center">RateCast Also Includes:</h1></header>
+				<header class="page-header"><h1 class="text-center">BookingSuite RateManager Also Includes:</h1></header>
 				</article>
        		</div>
 		</div>
@@ -107,9 +107,9 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
-	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class('RateManager'); ?>>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
-				<header><p class="h3"><?php the_title(); ?></p></header>
+				<!--  <header><p class="h3"><?php //the_title(); ?></p></header> -->
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article>
@@ -125,9 +125,9 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
-	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class('RateManager'); ?>>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
-				<header><p class="h3"><?php the_title(); ?></p></header>
+				<!--  <header><p class="h3"><?php //the_title(); ?></p></header> -->
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				<?php endwhile; ?>			
@@ -142,9 +142,9 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
-	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class('RateManager'); ?>>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
-				<header><p class="h3"><?php the_title(); ?></p></header>
+				<!--  <header><p class="h3"><?php //the_title(); ?></p></header> -->
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article>
@@ -164,9 +164,9 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
-	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class('RateManager'); ?>>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
-				<header><p class="h3"><?php the_title(); ?></p></header>
+				<!--  <header><p class="h3"><?php //the_title(); ?></p></header> -->
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article>
@@ -182,9 +182,9 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
-	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class('RateManager'); ?>>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
-				<header><p class="h3"><?php the_title(); ?></p></header>
+				<!--  <header><p class="h3"><?php //the_title(); ?></p></header> -->
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				<?php endwhile; ?>			
@@ -199,9 +199,9 @@ get_header(); ?>
 	            while($my_cs_query->have_posts()) :
 	            	$my_cs_query->the_post();
 	            ?>
-	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	            <article id="post-<?php the_ID(); ?>" <?php post_class('RateManager'); ?>>
 	            <?php the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
-				<header><p class="h3"><?php the_title(); ?></p></header>
+				<!--  <header><p class="h3"><?php //the_title(); ?></p></header> -->
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
 				</article>

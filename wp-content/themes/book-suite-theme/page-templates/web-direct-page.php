@@ -26,10 +26,11 @@ get_header(); ?>
 	</article>
 <?php endwhile; // end of the loop. ?>
 </section>
-<section id="noRisk" class="section-hero no-risk" role="banner">	
-	<div id="hero" class="jumbotron">
-		<div class="jumbo-caption opt-2">
-			<?php	
+<section id="noRisk" class="sub-section client-services" role="banner">	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+				<?php	
 	            $args = array( 
 	                'name' => 'no-risk'
 	            );
@@ -38,16 +39,22 @@ get_header(); ?>
 	            	$my_ff_query->the_post();
 	            ?>
 	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<h1 class="text-center"><?php the_title(); ?></h1>
+				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
 				<?php the_excerpt(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
-				</article><?php endwhile; ?>			
+				</article>
+				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
+       		</div>
 		</div>
-	</div>
 	<?php if( get_field('no_risk_image') ): ?>
-	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('no_risk_image'); ?>" />
+		<div class="row">
+			<div class="col-lg-12">
+				<img class="img-responsive wp-post-image" src="<?php the_field('no_risk_image'); ?>" />
+			</div>
+		</div>
 	<?php endif; ?>	
+	</div>
 </section>
 <section id="syncListing" class="sub-section synced lt-blue">
 	<div class="container-fluid">
