@@ -60,7 +60,7 @@ get_header(); ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<header class="page-header"><h1>Your Brand Is The Bottom Line</h1></header>
+				<header class="page-header"><h1><?php echo $title_text = _e( 'Your Brand Is The Bottom Line', 'upbootwp' ); ?></h1></header>
 			</div>	
 		</div>
 		<div class='row more-features'>
@@ -169,7 +169,7 @@ get_header(); ?>
 	</div>
 	<div class="row">
 		<div class="col-lg-12 request-demo">
-			<a class="btn btn-primary btn-lg" role="button" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" title="Request a Demo">Request a Demo</a>
+			<a class="btn btn-primary btn-lg" role="button" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" title="<?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?></a>
 		</div>
 	</div>
 	
@@ -194,7 +194,7 @@ get_header(); ?>
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>	
 				
 				<footer>
-					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webdirect/" role="button">Learn More</a>
+					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webdirect/" role="button" title="<?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?>"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
 					
 				</footer>
 				</article>
@@ -216,7 +216,7 @@ get_header(); ?>
 				<?php the_content(); ?>		
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
 				<footer>
-					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webcomplete/" role="button">Learn More</a>
+					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webcomplete/" role="button" title="<?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?>"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
 					
 				</footer>
 				</article>

@@ -2,7 +2,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-12">
-			<h2>BookingSuite In The Press</h2>
+			<h2><?php echo $btn_text =  _e( 'BookingSuite In The Press', 'upbootwp' );?></h2>
 		</div>
 	</div>
         <div class="row">
@@ -24,7 +24,7 @@
         </div>		
 	<div class="row">
 		<div class="col-md-12 cta-link text-center">
-			<a class="btn btn-info btn-lg" role="button" href="/news/" title="<?php the_title_attribute(); ?>">View More Press Mentions</a>		
+			<a class="btn btn-info btn-lg" role="button" href="/news/" title="<?php the_title_attribute(); ?>"><?php echo $btn_text =  _e( 'View More Press Mentions', 'upbootwp' );?></a>		
 		</div>
 	</div>
 </div>

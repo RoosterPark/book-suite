@@ -118,12 +118,10 @@ get_header(); ?>
 			<div class="col-lg-12">
 				<div class="panel panel-default interest">
 					<div class="panel-heading">
-						<p class="panel-title">Is your brand interested in becoming a BookingSuite Connectivity Partner?</p>
+						<p class="panel-title"><?php echo $title_text = _e( 'Is your brand interested in becoming a BookingSuite Connectivity Partner?', 'upbootwp' ); ?></p>
 				</div>
 				<div class="panel-body">
-					<p> Send us an email at: <a href="mailto:contact@suite.booking.com">contact@suite.booking.com</a></p>
-					
-					</form>				   
+					<p><?php echo $title_text = _e( 'Send us an email at:', 'upbootwp' ); ?> <a href="mailto:contact@suite.booking.com">contact@suite.booking.com</a></p>		   
 				</div>
 			</div>
 		</div>

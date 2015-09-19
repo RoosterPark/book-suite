@@ -108,18 +108,27 @@ b, strong {
 
 .language-bar {
     background-color: @global-color-lang-bar;
-    height: @langbar-height;
     .language-menu {
 	    color: #fff;
 	    font-size: 12px;
-	    padding-bottom: 0.25%;
-	    padding-top: 0.25%;
+	    width: 100%;
 	}
     .fa.fa-language {
 	    margin-right: 10px;
 	}
 	.fa.fa-angle-down {
 	    margin-left: 10px;
+	}
+	.lang-title {
+	    float: right;
+	    line-height: 28px;
+	    margin: 5px 15px;
+	}
+	#lang_sel_click {
+	    float: right;
+	    height: auto;
+	    margin-bottom: 5px;
+	    margin-top: 5px;
 	}
 }
 
@@ -935,7 +944,7 @@ b, strong {
 	    border-bottom: 1px solid #ececec;
 	    padding: 1% 8%;
 	    position: fixed;
-	    top: 101px;
+	    top: 115px;
 	    z-index: 9999;    
 	}
 }
@@ -945,7 +954,7 @@ b, strong {
 }
 
 .admin-bar .sub-section.solutions-menu.stick {
-    top: 132px;
+    top: 146px !important;
 }
 
 

@@ -55,12 +55,16 @@
 <?php do_action( 'before' ); ?>
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-<div class="language-bar">
-	<div class="container-fluid">
-		<div class="language-menu navbar-right"><i class="fa fa-language"></i><span>Language Menu</span><i class="fa fa-angle-down"></i>
+	<div class="language-bar">
+		<div class="container-fluid">
+			<div class="language-menu">
+				<?php do_action('wpml_add_language_selector'); ?>
+				<div class="lang-title">
+					<i class="fa fa-language"></i><span>Language Menu</span>
+				</div>
+			</div>
 		</div>
-	</div>
-</div>	
+	</div>	
 	<div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

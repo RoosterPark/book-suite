@@ -21,7 +21,7 @@
 						<?php if(is_home()) { ?>
 							<div class="row">
 								<div class="col-md-12">
-									<h1 class="text-center">SOLUTIONS DRIVEN BY BOOKING.COM'S UNIQUE,<br/>INDUSTRY-LEADING EXPERTISE</h1>
+									<h1 class="text-center text-uppercase"><?php echo $hello =  _e( 'Solutions Driven by Booking.com\'s unique, Industry-leading Expertise', 'upbootwp' );?></h1>
 								</div>
 							</div>
 						<?php }?>
@@ -31,7 +31,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12 cta-link">
-								<a class="btn btn-info btn-lg" role="button" href="/solutions/" title="#####">View Our Solutions</a>		
+								<a class="btn btn-info btn-lg" role="button" href="/solutions/" title="#####"><?php echo $btn_text =  _e( 'View Our Solutions', 'upbootwp' );?></a>		
 							</div>
 						</div>
 					</div>

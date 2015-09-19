@@ -17,10 +17,11 @@
 								</header>
 		        				<div class="content">
 		        					<?php the_excerpt(); ?>
-		        					<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
+									<?php  $ebtn_text =  __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' );?>	
+									<?php edit_post_link($ebtn_text,'<p>','</p>' ); ?>
 		        				</div>
 		        				<footer>
-									<a class="btn btn-info btn-lg" title="<?php the_title(); ?>" href="/<?php the_title(); ?>" role="button">Learn More</a>
+									<a class="btn btn-info btn-lg" title="<?php the_title(); ?>" href="/<?php the_title(); ?>" role="button"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
 								</footer>
 		        			</article>
 						<?php } ?>
@@ -63,10 +64,11 @@
 							</header>
 	        				<div class="content">
 	        					<?php the_excerpt(); ?>
-	        					<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
+									<?php  $ebtn_text =  __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' );?>	
+									<?php edit_post_link($ebtn_text,'<p>','</p>' ); ?>
 	        				</div>
 	        				<footer>
-								<a class="btn btn-info btn-lg" title="<?php the_title(); ?>" href="/<?php the_title(); ?>" role="button">Learn More</a>
+								<a class="btn btn-info btn-lg" title="<?php the_title(); ?>" href="/<?php the_title(); ?>" role="button"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
 							</footer>
 	        			</article>
 					<?php } ?>
@@ -103,13 +105,12 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1>Not Sure Which Plan is Right for Your Property?</h1>
+				<h1><?php echo $btn_text = _e( 'Not Sure Which Plan is Right for Your Property?', 'upbootwp' );?></h1>
 			</div>	
 		</div>
-
 		<div class="row">
 	    	<div class="col-md-12 text-center">
-	        	<div class="bgroup"><a class="btn btn-default btn-lg" role="button" href="/product-features/" title="Product Features">See All Features</a></div>
+	        	<div class="bgroup"><a class="btn btn-default btn-lg" role="button" href="/product-features/" title="<?php echo $btn_text = _e( 'See All Features', 'upbootwp' );?>"><?php echo $btn_text = _e( 'See All Features', 'upbootwp' );?></a></div>
 	    	</div>
 		</div>
 	</div>

@@ -28,10 +28,10 @@ get_header(); ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-8 col-md-8 col-lg-8">
-				<h2 class="text-left">We create new ways of helping the hospitality industry work.</h2>
+				<h2 class="text-left"><?php echo $title_text = _e( 'We create new ways of helping the hospitality industry work.', 'upbootwp' ); ?></h2>
 			</div>
 			<div class="col-sm-4 col-md-4 col-lg-4">
-				<a class="btn btn-info btn-lg" title="View Job Openings" href="https://workingatbooking.com/" target="_blank" role="button">View Job Openings</a>
+				<a class="btn btn-info btn-lg" href="https://workingatbooking.com/" target="_blank" role="button" title="<?php echo $btn_text = _e( 'View Job Openings', 'upbootwp' ); ?>"><?php echo $btn_text = _e( 'View Job Openings', 'upbootwp' ); ?></a>
 			</div>
 		</div>
 	</div><!--  .container-fluid -->
@@ -60,7 +60,10 @@ get_header(); ?>
 						<?php the_post_thumbnail('stories-tile-360', array('class' => "img-responsive", 'alt'   => get_the_title(), 'title'   => get_the_title()  )); ?>
 						</div>
 						<?php  } ?>	
-						<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="edit">', '</div>'); ?>
+						<?php  
+						$ebtn_text =  __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' );
+						edit_post_link($ebtn_text,'<p>','</p>' );
+						?>
 						
 					</article>
 
@@ -77,8 +80,8 @@ get_header(); ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="text-left">And We're All Around The World.</h2>
-				<h3 class="text-left">Regional Headquarters</h3>
+				<h2 class="text-left"><?php echo $title_text = _e( 'And We&rsquo;re All Around The World.', 'upbootwp' ); ?></h2>
+				<h3 class="text-left"><?php echo $title_text = _e( 'Regional Headquarters', 'upbootwp' ); ?></h3>
 			</div>
 		</div>
 		<div class="row">
@@ -119,7 +122,10 @@ get_header(); ?>
 								<div class="panel-body">
 
 								<?php echo the_content(); ?>	
-								<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>'); ?>
+								<?php  
+								$ebtn_text =  __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' );
+								edit_post_link($ebtn_text,'<p>','</p>' );
+								?>
 								</div>
 							</article>
 							
@@ -142,12 +148,12 @@ get_header(); ?>
 	<div class="container-fluid">
 		<div class="row">
        		<div class="col-lg-12">
-       			<h2 class="text-left">BookingSuite in the News</h2>
+       			<h2 class="text-left"><?php echo $title_text = _e( 'BookingSuite in the News', 'upbootwp' ); ?></h2>
        		</div>
        	</div>
        	<div class="row">
 				<div class="col-lg-12">
-	       			<h3 class="text-left">Latest News</h3>
+	       			<h3 class="text-left"><?php echo $title_text = _e( 'Latest News', 'upbootwp' ); ?></h3>
 	       		</div>
        		</div>
        		<div class="row pr-list">
@@ -181,7 +187,10 @@ get_header(); ?>
 							<?php } else { ?>
 								<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 							<?php } ?>
-	        				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<li>', '</li>' ); ?>
+							<?php  
+							$ebtn_text =  __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' );
+							edit_post_link($ebtn_text,'<p>','</p>' );
+							?>
 	        				</ul>
 	        			</div>
 	       				</article>
@@ -191,7 +200,7 @@ get_header(); ?>
        		</div>
        		<div class="row">
 				<div class="col-md-12 text-center">
-					<div><a class="btn btn-default btn-lg" title="Product Features" href="/news/" role="button">See All News</a></div>
+					<div><a class="btn btn-default btn-lg" href="/news/" role="button"  title="<?php echo $btn_text = _e( 'See All News', 'upbootwp' );?>"><?php echo $btn_text = _e( 'See All News', 'upbootwp' );?></a></div>
 				</div>
 			</div>		
 			

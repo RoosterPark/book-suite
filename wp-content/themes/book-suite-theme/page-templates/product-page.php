@@ -18,11 +18,14 @@ get_header(); ?>
 		<div class="container-fluid">
 				<h1 class="page-title"><?php the_title(); ?></h1>	
 				<?php the_content(); ?>
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-left">', '</p>' ); ?>
+				<?php  
+				$ebtn_text =  __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' );
+				edit_post_link($ebtn_text,'<p>','</p>' ); 
+				?>
 			
 			<div class="jumbo-btn-group">
-				<a class="btn btn-default btn-lg clear" href="/plans/" role="button">View Our Plans</a>
-				<a class="btn btn-primary btn-lg" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" role="button">Request A Demo</a>
+				<a class="btn btn-default btn-lg clear" href="/plans/" role="button"><?php  echo $btn_text =  _e( 'View Our Plans', 'upbootwp' );?></a>
+				<a class="btn btn-primary btn-lg" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" role="button"><?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?></a>
 			</div>
 		</div>
 	</div>
@@ -40,10 +43,10 @@ get_header(); ?>
 <section id="Property-Websites" class="section-hero" role="banner">	
 	<div id="hero" class="jumbotron filter">
 		<div class="jumbo-caption opt-2">
-			<h1>Property Websites</h1>
+			<h1><?php echo $btn_text = _e( 'Property Websites', 'upbootwp' );?></h1>
 			<div class="jumbo-btn-group">
-				<a class="btn btn-info btn-lg" href="/plans/" role="button">View Plans</a>
-				<a class="btn btn-default btn-lg clear" href="/product-features/" role="button">See Product Features</a>
+				<a class="btn btn-info btn-lg" href="/plans/" role="button"><?php echo $btn_text = _e( 'View Plans', 'upbootwp' );?></a>
+				<a class="btn btn-default btn-lg clear" href="/product-features/" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
 			</div>
 		</div>
 	</div>
@@ -191,8 +194,8 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<div class="jumbo-btn-group">
-					<a class="btn btn-info btn-lg" href="/plans/" role="button">View Plans</a>
-					<a class="btn btn-default btn-lg" href="/product-features/" role="button">See Product Features</a>
+					<a class="btn btn-info btn-lg" href="/plans/" role="button"><?php echo $btn_text = _e( 'View Plans', 'upbootwp' );?></a>
+					<a class="btn btn-default btn-lg" href="/product-features/" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
 				</div>
 			</div>
 		</div>
@@ -206,8 +209,8 @@ get_header(); ?>
 		<div class="jumbo-caption opt-2">
 			<h1>Property Pricing</h1>
 			<div class="jumbo-btn-group">
-				<a class="btn btn-info btn-lg" href="#" role="button">Learn More</a>
-				<a class="btn btn-default btn-lg clear" href="/product-features/" role="button">See Product Features</a>
+				<a class="btn btn-info btn-lg" href="#" role="button"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
+				<a class="btn btn-default btn-lg clear" href="/product-features/" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
 			</div>
 		</div>
 	</div>
@@ -294,8 +297,8 @@ get_header(); ?>
 				</article><?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
 			<div class="jumbo-btn-group">
-				<a class="btn btn-info btn-lg" href="#" role="button">Learn More</a>
-				<a class="btn btn-primary btn-lg" href="/product-features/" role="button">See Product Features</a>
+				<a class="btn btn-info btn-lg" href="#" role="button"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
+				<a class="btn btn-primary btn-lg" href="/product-features/" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
 			</div>
 		</div>
 	</div>

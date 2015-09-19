@@ -1,11 +1,14 @@
-<?php	
-            $args = array(
-            		'post_type' => 'post',
-                	'category_name' => 'homepage-slider'
-            );
-            $my_mob_query = new WP_Query($args);
-            while($my_mob_query->have_posts()) :
-            	$my_mob_query->the_post();
+<?php
+$args = array(
+	'post_type' => 'post',
+	'category_name' => 'homepage-slider',
+	'suppress_filters' => false
+	//'cat' => $post_categories
+	);
+$my_mob_query = new WP_Query($args);
+
+while($my_mob_query->have_posts()) :
+	$my_mob_query->the_post();
             ?>
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <header id="masthead" class="site-hero" role="banner">
@@ -21,13 +24,14 @@
 <!-- 	      </ol> -->
 	    <div id="hero" class="jumbotron">
 		<div class="container-fluid">
-			
 				<h1 class="text-center"><?php the_title(); ?></h1>
-				<?php the_excerpt(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
+				<?php the_excerpt(); ?>	
+				<?php  $ebtn_text =  __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' );?>	
+				<?php edit_post_link($ebtn_text,'<p>','</p>' ); ?>
+				<?php //echo $btn_text =  _e( 'BookingSuite Partner Success', 'upbootwp' );?>
 
 				<div class="jumbo-btn-group">
-				<a class="btn btn-primary btn-lg" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" role="button">Request A Demo</a>
+				<a class="btn btn-primary btn-lg" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" role="button"><?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?></a>
 				</div>
 		</div>
 	</div>

@@ -141,7 +141,7 @@ get_header(); ?>
 		<div class="row">
 	    	<div class="col-md-12">
 	        	<div class="text-center">
-					<a class="btn btn-primary btn-lg" role="button" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" title="Request a Demo">Request a Demo</a>
+					<a class="btn btn-primary btn-lg" role="button" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" title="<?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?></a>
 				</div>
 	    	</div>
 	    </div>
@@ -163,9 +163,12 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header><h1><?php the_title(); ?></h1></header>
 				<?php the_content(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
+				<?php  
+				$ebtn_text =  __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' );
+				edit_post_link($ebtn_text,'<p>','</p>' );
+				?>
 				<footer>
-					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webcollection/" role="button">Learn More</a>
+					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webcollection/" role="button" title="<?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?>"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
 				</footer>
 				</article>
 				<?php endwhile; ?>			
@@ -184,9 +187,12 @@ get_header(); ?>
 	            <?php //the_post_thumbnail('homepage-thumb', array('class' => "svg", 'alt'   => trim( strip_tags( $wp_postmeta->_wp_attachment_image_alt ) ))); ?>
 				<header><h1><?php the_title(); ?></h1></header>
 				<?php the_content(); ?>		
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
+				<?php  
+				$ebtn_text =  __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' );
+				edit_post_link($ebtn_text,'<p>','</p>' );
+				?>
 				<footer>
-					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webcomplete/" role="button">Learn More</a>
+					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webcomplete/" role="button" title="<?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?>"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
 				</footer>
 				</article>
 				<?php endwhile; ?>			

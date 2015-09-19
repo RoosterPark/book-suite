@@ -2,7 +2,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1>Design</h1>
+				<h1><?php echo $cbtn_text = _e( 'Design', 'upbootwp' );?></h1>
 			</div>	
 		</div>
 		<?php 
@@ -73,7 +73,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1>Cloud Technology</h1>
+				<h1><?php echo $cbtn_text = _e( 'Cloud Technology', 'upbootwp' );?></h1>
 			</div>
 		</div>
 			<?php 
@@ -143,7 +143,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1>Measuring Success</h1>
+				<h1><?php echo $cbtn_text = _e( 'Measuring Success', 'upbootwp' );?></h1>
 			</div>
 		</div>
 			<?php 
@@ -213,7 +213,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1>Booking &amp; Intergrations</h1>
+				<h1><?php echo $cbtn_text = _e( 'Booking &amp; Intergrations', 'upbootwp' );?></h1>
 			</div>
 		</div>
 
@@ -284,7 +284,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1>Support</h1>
+				<h1><?php echo $cbtn_text = _e( 'Support', 'upbootwp' );?></h1>
 			</div>
 		</div>
 			<?php 

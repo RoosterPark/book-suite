@@ -18,19 +18,15 @@ get_header(); ?>
 		<div class="container-fluid">
 				<h1 class="page-title"><?php the_title(); ?></h1>	
 				<?php the_content(); ?>
-				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
+				<?php  
+				$ebtn_text =  __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' );
+				edit_post_link($ebtn_text,'<p>','</p>' ); 
+				?>
 		</div>
 	</div>
 	</article>
 	<?php endwhile; // end of the loop. ?>
 </section>
-<!-- <section id="booking-solutions" class="sub-section white solutions-menu">		 -->
-<!-- 	<div class="container-fluid"> -->
-<!-- 		<div class="row"> -->
-			<?php //get_template_part('index-solutions'); ?>
-<!-- 		</div> -->
-<!-- 	</div> -->
-<!-- </section> -->
 	<div id="featureLinks" class="tab-wrapper">
 	  <!-- Nav tabs -->
 	  <ul class="nav nav-tabs" role="tablist">
@@ -45,7 +41,6 @@ get_header(); ?>
 	    <div role="tabpanel" class="tab-pane" id="property-pricing">
 	    	<?php get_template_part('plans-page-tabs-biz-intel'); ?>    
 	    </div>
-	    
 	</div>
 <?php get_template_part('index-request-demo'); ?>
 

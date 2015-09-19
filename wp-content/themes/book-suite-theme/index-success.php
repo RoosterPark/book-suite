@@ -2,7 +2,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-12">
-			<h2>BookingSuite Partner Success</h2>
+			<h2><?php echo $btn_text =  _e( 'BookingSuite Partner Success', 'upbootwp' );?></h2>
 		</div>
 	</div>
 	<div class="row">	
@@ -149,7 +149,7 @@
       
 	<div class="row">
 		<div class="col-md-12 cta-link text-center">
-			<a class="btn btn-info btn-lg" role="button" href="/stories/" title="<?php the_title_attribute(); ?>">VIEW MORE PARTNER STORIES</a>		
+			<a class="btn btn-info btn-lg" role="button" href="/stories/" title="<?php the_title_attribute(); ?>"><?php echo $btn_text =  _e( 'VIEW MORE PARTNER STORIES', 'upbootwp' );?></a>		
 		</div>
 	</div>
 </div>

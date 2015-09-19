@@ -208,19 +208,28 @@ strong {
  **************************************************/
 .language-bar {
   background-color: #001b46;
-  height: 25px;
 }
 .language-bar .language-menu {
   color: #fff;
   font-size: 12px;
-  padding-bottom: 0.25%;
-  padding-top: 0.25%;
+  width: 100%;
 }
 .language-bar .fa.fa-language {
   margin-right: 10px;
 }
 .language-bar .fa.fa-angle-down {
   margin-left: 10px;
+}
+.language-bar .lang-title {
+  float: right;
+  line-height: 28px;
+  margin: 5px 15px;
+}
+.language-bar #lang_sel_click {
+  float: right;
+  height: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 /*request a Demo - hide all main nav for mobile and desktop devices */
 .page-template-request-a-demo-page .navbar-collapse.mobile,
@@ -909,14 +918,14 @@ strong {
   border-bottom: 1px solid #ececec;
   padding: 1% 8%;
   position: fixed;
-  top: 101px;
+  top: 115px;
   z-index: 9999;
 }
 .sub-section.client-services.white-alt {
   padding-bottom: 0;
 }
 .admin-bar .sub-section.solutions-menu.stick {
-  top: 132px;
+  top: 146px !important;
 }
 .jumpToWrapper {
   margin: 0 auto;

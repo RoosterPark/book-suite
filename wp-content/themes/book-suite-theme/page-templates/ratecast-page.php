@@ -92,7 +92,7 @@ get_header(); ?>
 			<div class="col-lg-12">
 	
 	            <article>
-				<header class="page-header"><h1 class="text-center">BookingSuite RateManager Also Includes:</h1></header>
+				<header class="page-header"><h1 class="text-center"><?php echo $cbtn_text = _e( 'Intuitive Data Tools to boost your Property&rsquo;s Revenue', 'upbootwp' );?></h1></header>
 				</article>
        		</div>
 		</div>

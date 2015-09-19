@@ -7,7 +7,6 @@
  * @package upBootWP 0.1
  */
 get_header(); ?>
-
 <section id="contactUsIntro" class="sub-section white contact-hero">
 	<div class="container-fluid">
 	<?php while ( have_posts() ) : the_post(); ?>
@@ -17,7 +16,10 @@ get_header(); ?>
 		</header><!-- .entry-header -->
 		<div class="entry-content">
 			<?php the_content(); ?>
-			<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
+			<?php 
+			$ebtn_text =  __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' );
+			edit_post_link($ebtn_text,'<p>','</p>' );
+			?>
 			<?php
 				wp_link_pages( array(
 					'before' => '<div class="page-links">' . __( 'Pages:', 'upbootwp' ),
@@ -29,24 +31,25 @@ get_header(); ?>
 	<?php endwhile; // end of the loop. ?>
 	</div>
 </section>
+<?php  wp_reset_postdata(); ?>
 <section id="connectWithBooking" class="sub-section white contact-content">
 	<div class="container-fluid">
 
 		<div class="row panel contact-items">
-			<div class="col-sm-8 col-md-8 col-lg-9"><h4>I want to get started with BookingSuite</h4></div>
-			<div class="col-sm-4 col-md-4 col-lg-3"><a href="http://info.suite.booking.com/request-demo/en-us" target="_blank" class="btn btn-info btn-md center-block">REQUEST DEMO</a></div>
+			<div class="col-sm-8 col-md-8 col-lg-9"><h4><?php echo $title_text = _e( 'I want to get started with BookingSuite', 'upbootwp' ); ?></h4></div>
+			<div class="col-sm-4 col-md-4 col-lg-3"><a href="http://info.suite.booking.com/request-demo/en-us" target="_blank" class="btn btn-info btn-md center-block" title="<?php echo $btn_text = _e( 'Request a Demo', 'upbootwp' ); ?>"><?php echo $btn_text = _e( 'Request a Demo', 'upbootwp' ); ?></a></div>
 		</div>
 		<div class="row panel contact-items">
-			<div class="col-sm-8 col-md-8 col-lg-9"><h4>I want to log into BookingSuite BackOffice</h4></div>
-			<div class="col-sm-4 col-md-4 col-lg-3"><a href="https://suiteoffice.booking.com/login/" target="_blank" class="btn btn-info btn-md center-block">LOG IN</a></div>
+			<div class="col-sm-8 col-md-8 col-lg-9"><h4><?php echo $title_text = _e( 'I want to log in to BookingSuite BackOffice', 'upbootwp' ); ?></h4></div>
+			<div class="col-sm-4 col-md-4 col-lg-3"><a href="https://suiteoffice.booking.com/login/" target="_blank" class="btn btn-info btn-md center-block" title="<?php echo $btn_text = _e( 'Log In', 'upbootwp' ); ?>"><?php echo $btn_text = _e( 'Log In', 'upbootwp' ); ?></a></div>
 		</div>
 		<div class="row panel contact-items">
-			<div class="col-sm-8 col-md-8 col-lg-9"><h4>I need to become a Booking.com partner</h4></div>
-			<div class="col-sm-4 col-md-4 col-lg-3"><a href="https://join.booking.com/" target="_blank" class="btn btn-info btn-md center-block">JOIN BOOKING</a></div>
+			<div class="col-sm-8 col-md-8 col-lg-9"><h4><?php echo $title_text = _e( 'I need to become a Booking.com partner', 'upbootwp' ); ?></h4></div>
+			<div class="col-sm-4 col-md-4 col-lg-3"><a href="https://join.booking.com/" target="_blank" class="btn btn-info btn-md center-block" title="<?php echo $btn_text = _e( 'Join Booking', 'upbootwp' ); ?>"><?php echo $btn_text = _e( 'Join Booking', 'upbootwp' ); ?></a></div>
 		</div>
 		<div class="row panel contact-items">
-			<div class="col-sm-8 col-md-8 col-lg-9"><h4>I want to access BookingSuite’s online helpdesk</h4></div>
-			<div class="col-sm-4 col-md-4 col-lg-3"><a href="https://suitehelp.booking.com/hc/en-us" target="_blank" class="btn btn-info btn-md center-block">VISIT HELPDESK</a></div>
+			<div class="col-sm-8 col-md-8 col-lg-9"><h4><?php echo $title_text = _e( 'I want to access BookingSuite’s online helpdesk', 'upbootwp' ); ?></h4></div>
+			<div class="col-sm-4 col-md-4 col-lg-3"><a href="https://suitehelp.booking.com/hc/en-us" target="_blank" class="btn btn-info btn-md center-block"title="<?php echo $btn_text = _e( 'Visit Help Desk', 'upbootwp' ); ?>"><?php echo $btn_text = _e( 'Visit Help Desk', 'upbootwp' ); ?></a></div>
 		</div>					
 	</div>
 </section>
@@ -54,16 +57,15 @@ get_header(); ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>Speak With a Partner Success Representative</h2>
+				<h2><?php echo $title_text = _e( 'Speak With a Partner Success Representative', 'upbootwp' ); ?></h2>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-3 col-md-3 col-lg-3"><p>E-Mail:</p></div>
 			<div class="col-sm-9 col-md-9 col-lg-9"><a href="mailto:contact@suite.booking.com" class="btn btn-link">contact@suite.booking.com</a></div>
-		</div>
-		
+		</div>		
 		<div class="row">
-			<div class="col-md-3"><p>Regional Partner Support Offices:</p></div>
+			<div class="col-md-3"><p><?php echo $title_text = _e( 'Regional Partner Support Offices:', 'upbootwp' ); ?></p></div>
 			<div class="col-md-9">
 				<div class="row">
 				<?php $catName =  get_cat_ID("regional contact");	
