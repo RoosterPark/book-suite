@@ -213,7 +213,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1><?php echo $cbtn_text = _e( 'Booking &amp; Intergrations', 'upbootwp' );?></h1>
+				<h1><?php echo $cbtn_text = _e( 'Booking & Integrations', 'upbootwp' );?></h1>
 			</div>
 		</div>
 

@@ -13,6 +13,7 @@
  */
 ?>                
 		<?php get_header(); ?>
+		
 		<?php if ( have_posts() ) : ?>
 		    <?php if( is_home() ) { ?>
 				<section id="booking-solutions" class="sub-section white solutions">
@@ -21,7 +22,7 @@
 						<?php if(is_home()) { ?>
 							<div class="row">
 								<div class="col-md-12">
-									<h1 class="text-center text-uppercase"><?php echo $hello =  _e( 'Solutions Driven by Booking.com\'s unique, Industry-leading Expertise', 'upbootwp' );?></h1>
+									<h1 class="text-center text-capitalize"><?php echo $hello =  _e( 'Solutions Driven by Booking.com\'s unique, Industry-leading Expertise', 'upbootwp' );?></h1>
 								</div>
 							</div>
 						<?php }?>
@@ -31,8 +32,10 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12 cta-link">
-								<a class="btn btn-info btn-lg" role="button" href="/solutions/" title="#####"><?php echo $btn_text =  _e( 'View Our Solutions', 'upbootwp' );?></a>		
+							
+								<a class="btn btn-info btn-lg" role="button" href="/solutions<?php echo $lang_par;?>" title="<?php echo $btn_text =  _e( 'View Our Solutions', 'upbootwp' );?>"><?php echo $btn_text =  _e( 'View Our Solutions', 'upbootwp' );?></a>		
 							</div>
+							
 						</div>
 					</div>
 				</section>

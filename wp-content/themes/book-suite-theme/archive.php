@@ -57,7 +57,7 @@ get_header(); ?>
 				_e( 'Links', 'upbootwp' );
 		
 			else :
-				_e( '<h1 class="blog-title">Press Releases and Mentions', 'upbootwp' . '</h1>');
+				_e( '<h1 class="blog-title">Press Releases and Mentions', 'upbootwp' . '</h1>xx');
 		
 			endif;
 		?>

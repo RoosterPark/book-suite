@@ -25,7 +25,10 @@ get_header(); ?>
 						echo '<div class="quote-subtitle"><p><i class="fa fa-minus"></i><span>' . get_field('success_quote_orgin') . '</span></p></div>';
 					}
 					if(get_field('success_story_link')) {
-						echo '<div class="quote-link"><a class="btn btn-info btn-lg" title="Read the Story" href="' . get_field('success_story_link') . '" role="button">Read The Story</a></div>';
+						
+						?>
+						<div class="quote-link"><a class="btn btn-info btn-lg" title="Read the Story" href="<?php get_field('success_story_link'); ?>" role="button"><?php echo $title_text = _e( 'Read The Story', 'upbootwp' ); ?></a></div>';
+					<?php 
 					}
 					?>
 					
@@ -41,12 +44,12 @@ get_header(); ?>
 	
 	<div id="storiesSection" class="row">
 		<div class="col-xs-8 col-sm-8 col-md-8 success-header success-hdr">
-			<h2 >Partner Success</h2>
+			<h2><?php echo $title_text = _e( 'Partner Success', 'upbootwp' ); ?></h2>
 			
 		</div>
 		<div class="col-xs-4 col-sm-4 col-md-4 success-hdr text-right">
 			
-			<button id="mobileFilterBtn" class="btn btn-default btn-sm" role="button">Filter</button>
+			<button id="mobileFilterBtn" class="btn btn-default btn-sm" role="button" title="<?php echo $title_text = _e( 'Filter', 'upbootwp' ); ?>"><?php echo $title_text = _e( 'Filter', 'upbootwp' ); ?></button>
 		</div>
 	</div>
 	<?php 
@@ -128,8 +131,16 @@ get_header(); ?>
 			                    	$image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id(), 'stories-tile-'.$tileImageSize ); 
 			                    	//$image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id(), 'stories-tile-360' ); // returns an array// returns an array
 			                    	?>
-			                    	
-			                    	<img class="lazy img-responsive" data-original="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>"/>
+			                    	<?php 
+										if( has_term( 'case-study', 'success_category' ) ) { ?>
+										<a href="<?php  the_permalink() ?>">		
+			                    			<img class="lazy img-responsive" data-original="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>"/>
+			                    		</a>
+			                    		<?php } else { ?>
+			                    		<a href="<?php echo get_field('partner_success_url'); ?>" target="_blank">		
+			                    			<img class="lazy img-responsive" data-original="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>"/>
+			                    		</a>
+			                    		<?php } ?>
 			                     	<noscript>
 								 		<?php if ( has_post_thumbnail() ) {  ?>
 			                    			<?php the_post_thumbnail('stories-tile-'.$tileImageSize, array('class' => 'img-responsive')); ?>
@@ -213,7 +224,7 @@ get_header(); ?>
 					<div class="inner-grid-menu">
 						
 						<ul id="filters" class="option-set sidebar-list">
-               				<li class="reset"><a id="reset-btn" class="btn btn-info btn-sm" role="button" data-filter="*" title="show all" href="#filter">Show All</a></li>
+               				<li class="reset"><a id="reset-btn" class="btn btn-info btn-sm" role="button" data-filter="*" title="<?php echo $title_text = _e( 'Show All', 'upbootwp' ); ?>" href="#filter"><?php echo $title_text = _e( 'Show All', 'upbootwp' ); ?></a></li>
 		                <?php 
 		                //get only parents
 		                $argsz = array('taxonomy'  => 'success_category','orderby' => 'name','order' => 'DESC','parent' => 0, 'hide_empty' => 1);

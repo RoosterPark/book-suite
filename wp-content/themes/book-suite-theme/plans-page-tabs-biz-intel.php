@@ -1,4 +1,10 @@
 <!-- Plans Page Biz Intel Tab Content -->
+<?php 
+global $lang_par;
+if ($_GET['lang']) {
+ 	$lang_par = "?lang=".$_GET['lang'];
+}
+?>
 <section class="sub-section prod-features white">
 	<div class="container-fluid">
 		<div class="row">
@@ -28,7 +34,7 @@
 				</div>
 				<?php endwhile; ?>	
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
-					<p><a class="btn btn-info btn-lg" role="button" href="/ratemanager" title="<?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?>"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a></p>
+					<p><a class="btn btn-info btn-lg" role="button" href="/ratemanager<?php echo $lang_par;?>" title="<?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?>"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a></p>
 				</div>	
 				</article>	
 				<?php  wp_reset_postdata(); ?>
@@ -46,7 +52,7 @@
 
 		<div class="row">
 	    	<div class="col-md-12 text-center">
-	        	<div class="bgroup"><a class="btn btn-default btn-lg" role="button" href="/product-features/" title="<?php echo $btn_text = _e( 'See All Features', 'upbootwp' );?>"><?php echo $btn_text = _e( 'See All Features', 'upbootwp' );?></a></div>
+	        	<div class="bgroup"><a class="btn btn-default btn-lg" role="button" href="/product-features/<?php echo $lang_par;?>" title="<?php echo $btn_text = _e( 'See All Features', 'upbootwp' );?>"><?php echo $btn_text = _e( 'See All Features', 'upbootwp' );?></a></div>
 	    	</div>
 		</div>
 	</div>

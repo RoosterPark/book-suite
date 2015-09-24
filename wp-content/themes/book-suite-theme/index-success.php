@@ -1,4 +1,9 @@
-
+<?php 
+global $lang_par;
+if ($_GET['lang']) {
+ 	$lang_par = "?lang=".$_GET['lang'];
+}
+?>
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-12">
@@ -149,7 +154,7 @@
       
 	<div class="row">
 		<div class="col-md-12 cta-link text-center">
-			<a class="btn btn-info btn-lg" role="button" href="/stories/" title="<?php the_title_attribute(); ?>"><?php echo $btn_text =  _e( 'VIEW MORE PARTNER STORIES', 'upbootwp' );?></a>		
+			<a class="btn btn-info btn-lg" role="button" href="/stories<?php echo $lang_par;?>" title="<?php the_title_attribute(); ?>"><?php echo $btn_text =  _e( 'VIEW MORE PARTNER STORIES', 'upbootwp' );?></a>		
 		</div>
 	</div>
 </div>

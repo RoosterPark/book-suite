@@ -168,7 +168,7 @@ get_header(); ?>
 				edit_post_link($ebtn_text,'<p>','</p>' );
 				?>
 				<footer>
-					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webcollection/" role="button" title="<?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?>"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
+					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webcollection/<?php echo $lang_par;?>" role="button" title="<?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?>"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
 				</footer>
 				</article>
 				<?php endwhile; ?>			
@@ -192,7 +192,7 @@ get_header(); ?>
 				edit_post_link($ebtn_text,'<p>','</p>' );
 				?>
 				<footer>
-					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webcomplete/" role="button" title="<?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?>"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
+					<a class="btn btn-default btn-lg clear" title="<?php the_title(); ?>" href="/webcomplete/<?php echo $lang_par;?>" role="button" title="<?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?>"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
 				</footer>
 				</article>
 				<?php endwhile; ?>			

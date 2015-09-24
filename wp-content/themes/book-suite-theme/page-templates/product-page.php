@@ -24,7 +24,7 @@ get_header(); ?>
 				?>
 			
 			<div class="jumbo-btn-group">
-				<a class="btn btn-default btn-lg clear" href="/plans/" role="button"><?php  echo $btn_text =  _e( 'View Our Plans', 'upbootwp' );?></a>
+				<a class="btn btn-default btn-lg clear" href="/plans/<?php echo $lang_par;?>" role="button"><?php  echo $btn_text =  _e( 'View Our Plans', 'upbootwp' );?></a>
 				<a class="btn btn-primary btn-lg" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" role="button"><?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?></a>
 			</div>
 		</div>
@@ -45,8 +45,8 @@ get_header(); ?>
 		<div class="jumbo-caption opt-2">
 			<h1><?php echo $btn_text = _e( 'Property Websites', 'upbootwp' );?></h1>
 			<div class="jumbo-btn-group">
-				<a class="btn btn-info btn-lg" href="/plans/" role="button"><?php echo $btn_text = _e( 'View Plans', 'upbootwp' );?></a>
-				<a class="btn btn-default btn-lg clear" href="/product-features/" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
+				<a class="btn btn-info btn-lg" href="/plans/<?php echo $lang_par;?>" role="button"><?php echo $btn_text = _e( 'View Plans', 'upbootwp' );?></a>
+				<a class="btn btn-default btn-lg clear" href="/product-features/<?php echo $lang_par;?>" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
 			</div>
 		</div>
 	</div>
@@ -194,8 +194,8 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<div class="jumbo-btn-group">
-					<a class="btn btn-info btn-lg" href="/plans/" role="button"><?php echo $btn_text = _e( 'View Plans', 'upbootwp' );?></a>
-					<a class="btn btn-default btn-lg" href="/product-features/" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
+					<a class="btn btn-info btn-lg" href="/plans/<?php echo $lang_par;?>" role="button"><?php echo $btn_text = _e( 'View Plans', 'upbootwp' );?></a>
+					<a class="btn btn-default btn-lg" href="/product-features/<?php echo $lang_par;?>" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
 				</div>
 			</div>
 		</div>
@@ -207,10 +207,10 @@ get_header(); ?>
 <?php endif; ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="jumbo-caption opt-2">
-			<h1>Property Pricing</h1>
+			<h1><?php echo $title_text = _e( 'Property Pricing', 'upbootwp' ); ?></h1>
 			<div class="jumbo-btn-group">
 				<a class="btn btn-info btn-lg" href="#" role="button"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
-				<a class="btn btn-default btn-lg clear" href="/product-features/" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
+				<a class="btn btn-default btn-lg clear" href="/product-features/<?php echo $lang_par;?>" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
 			</div>
 		</div>
 	</div>
@@ -297,8 +297,8 @@ get_header(); ?>
 				</article><?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
 			<div class="jumbo-btn-group">
-				<a class="btn btn-info btn-lg" href="#" role="button"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
-				<a class="btn btn-primary btn-lg" href="/product-features/" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
+				<a class="btn btn-info btn-lg" href="/ratemanager/<?php echo $lang_par;?>" role="button"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
+				<a class="btn btn-primary btn-lg" href="/product-features/<?php echo $lang_par;?>" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
 			</div>
 		</div>
 	</div>
@@ -309,7 +309,7 @@ get_header(); ?>
 <?php endif; ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="jumbo-caption opt-1">
-			<h1>Premium Support</h1>
+			<h1><?php echo $btn_text = _e( 'Premium Support', 'upbootwp' );?></h1>
 		</div>
 	</div>
 </section>

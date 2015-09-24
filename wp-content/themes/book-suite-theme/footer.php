@@ -10,66 +10,76 @@
 ?>
 </main>
 <!-- End: main .content-area -->
-	<footer id="colophon" class="site-footer blog-footer" role="contentinfo">
-	 	<section id="welcome" class="sub-section drk-grey">
-	 		<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-12 col-md-8 col-lg-8">
-				<?php 
-				//$wp_query = NULL;
-				//$wp_query = new WP_Query(array('post_type' => 'post'));
+<footer id="colophon" class="site-footer blog-footer" role="contentinfo">
+	<section id="welcome" class="sub-section drk-grey">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-8 col-lg-8">
+				<?php
+				// $wp_query = NULL;
+				// $wp_query = new WP_Query(array('post_type' => 'post'));
 				?> 
-				<?php 
-				$footer_argsx = array(
-					'theme_location'  => 'footer_navigation',
-					'container'       => 'nav',
-					'container_id'    => 'footerNav',
-					'menu_class' => 'footer-nav-main',
-					'depth' => '1',
-					'walker' => new Footernav_Walker
+				<?php
+				$footer_argsx = array (
+						'theme_location' => 'footer_navigation',
+						'container' => 'nav',
+						'container_id' => 'footerNav',
+						'menu_class' => 'footer-nav-main',
+						'depth' => '1',
+						'walker' => new Footernav_Walker () 
 				);
-				wp_nav_menu($footer_argsx);
+				wp_nav_menu ( $footer_argsx );
 				
-				$footer_args = array(
-						'theme_location'  => 'footer_aux_navigation',
-						'container'       => 'nav',
-						'container_id'    => 'footerAuxNav',
+				$footer_args = array (
+						'theme_location' => 'footer_aux_navigation',
+						'container' => 'nav',
+						'container_id' => 'footerAuxNav',
 						'menu_class' => 'footer-nav-aux',
 						'depth' => '1',
-						'walker' => new Footernav_Walker
+						'walker' => new Footernav_Walker () 
 				);
-				 wp_nav_menu($footer_args);
+				wp_nav_menu ( $footer_args );
 				?>
 				
 					</div>
-		    		<div class="col-sm-12 col-md-4 col-lg-4">
-						<!-- #footer-widgets -->	
-						<?php
-						/* Global footer sidebar */
-						if ( ! is_404() ) : ?>
-						<div id="footer-widgets" class="footer-widgets four">
-							<?php if ( is_active_sidebar( 'sidebar-6') ) : ?>
-								<?php dynamic_sidebar( 'sidebar-6' ); ?>
-							<?php endif; ?>
-						</div>
-						
-						<?php endif; ?>
+				<div class="col-sm-12 col-md-4 col-lg-4">
+					<div id="footer-widgets" class="footer-widgets four">
+						<aside id="text-2" class="right widget widget_text">
+							<div class="textwidget">
+								<div class="social-icons">
+									<a class="facebook" target="_blank" title="Follow us on Facebook" href="#"><i class="social_icon fa fa-facebook"></i></a>
+									<a class="twitter" target="_blank" title="Follow us on Twitter" href="#"><i class="social_icon fa fa-twitter"></i></a>
+									<a class="tumblr" target="_blank" title="Follow us on Tumblr" href="#"><i class="social_icon fa fa-tumblr"></i></a>
+								</div>
+								<div class="footer-logo">
+									<img
+										src="http://stagingsuitebookingcom.c.presscdn.com/wp-content/uploads/2015/07/BookingSuite_ReverseLogo_RGB_150x.png" />
+									<p>© 2015</p>
+								</div>
+								Rembrandt Square, <br>Herengracht 597, 1017 CE<br>Amsterdam,Netherlands <br>
+								<br><?php echo $title_text = _e( '1 (800) 734-1769', 'upbootwp' ); ?><br> <a href="suite@booking.com">suite@booking.com</a>
+							</div>
+						</aside>
 					</div>
+
 				</div>
 			</div>
-		</section>
-	</footer>
-	<?php wp_reset_query(); ?>
+		</div>
+	</section>
+</footer>
+<?php wp_reset_query(); ?>
 
-	<div class="scroll-to-top">
-		<i class="fa fa-angle-up"></i>
-	</div>
-	<!-- .scroll-to-top -->
-	<?php wp_footer(); ?>
+<div class="scroll-to-top">
+	<i class="fa fa-angle-up"></i>
+</div>
+<!-- .scroll-to-top -->
+<?php wp_footer(); ?>
 <?php if (is_page('stories')) { ?>
-	<script src="/wp-content/themes/book-suite-theme/js/isotope.pkgd.js"></script>
-	<script src="/wp-content/themes/book-suite-theme/js/packery-mode.pkgd.min.js"></script>
-	<script src="/wp-content/themes/book-suite-theme/js/success-story-isotope.js"></script>
+<script src="/wp-content/themes/book-suite-theme/js/isotope.pkgd.js"></script>
+<script
+	src="/wp-content/themes/book-suite-theme/js/packery-mode.pkgd.min.js"></script>
+<script
+	src="/wp-content/themes/book-suite-theme/js/success-story-isotope.js"></script>
 <?php } ?>
 <?php if (is_page('solutions')) { ?>
 <script type="text/javascript">

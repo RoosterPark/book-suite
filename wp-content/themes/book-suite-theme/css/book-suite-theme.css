@@ -626,6 +626,9 @@ strong {
 .page-hero .btn-group.edit-post {
   text-align: left;
 }
+.section-hero .jumbotron p.excerpt {
+  font-size: 16px;
+}
 .section-hero {
   position: relative;
 }
