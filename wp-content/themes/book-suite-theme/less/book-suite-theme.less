@@ -62,7 +62,7 @@
 	    z-index: 1030;
 	}
 	.site-hero, .page-hero {
-	    margin-top: (25px + @navbar-height);
+	    margin-top: 85px;
 	}
 	&.single .site-main {
     	margin-top: (10px + @navbar-height);
@@ -140,9 +140,6 @@ b, strong {
 	.navbar-toggle {
 		display: none !important;
 	}
-	#logo > a img {
-	    margin: 18px 0;
-	}
 }
 
 .btn.btn-default.clear {
@@ -157,6 +154,9 @@ b, strong {
 	width: auto;
 }
 
+#logo > a img {
+    padding: 15px 0;
+}
 .navbar-right {  
 	margin-right: 0;
 }
@@ -212,19 +212,14 @@ b, strong {
 .navbar-inverse {
 	.navbar-toggle {
 		color: #ffffff;
+		margin-bottom: 0;
+    	margin-top: 15px;
 	}	
 }
 
 #logo a  {
-	 margin-top: 18px;
 	 display: block;
 	 outline: none;
-}
-
-#logo > a img {
-   // height: auto;
-   // max-width: 277px;
-   // width: 100%;
 }
 
 /***************************************************
@@ -395,6 +390,10 @@ b, strong {
 .quote-title {
 	font-size: @font-size-h2;
 	padding-bottom: 25px;
+	p {
+		margin: 0;
+		
+	}
 }
 .quote-subtitle {
 	padding: 0 0 5% 5%;
@@ -596,7 +595,7 @@ b, strong {
 
 .page-hero {
     position: relative;
-	 margin-top: @navbar-height + @langbar-height;
+	margin-top:75px;
     background-color: black;
     h1 {
     	margin-bottom: 30px;
@@ -1835,16 +1834,6 @@ img.aligncenter {
 	}
 }
 @media (max-width: 1024px) {
-	#logo > a img {
-		margin-top: 22px;
-		max-width: 175px;
-
-	}
-	.page-template-request-a-demo-page {
-		#logo > a img {
-		    margin: 22px 0;
-		}
-	}
 	.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
 	    margin-top: 0;
 	    margin-left: 0;
@@ -1873,7 +1862,7 @@ img.aligncenter {
 		}
 		.quote-title, .quote-subtitle {
 			text-align: center;
-			padding: 0 0 25px 0;
+			padding: 0 0 15px 0;
 		}
 	}
 	
@@ -2021,16 +2010,26 @@ img.aligncenter {
 
 
 @media (max-width: 980px) {
-	
 	#logo > a img {
-		margin-top: 18px;
+	    max-width: 200px;
+    	padding: 15px 0;
 	}
-	.page-template-request-a-demo-page {
-		#logo > a img {
-		    margin: 18px 0;
-		}
+	.job-link .col-sm-12 {
+	    text-align: center;
 	}
-	
+	.job-link a.btn {
+	    margin-top: 5%;
+	}
+	body .regional-hq .panel {
+	    min-height: 715px;
+	}
+	.section-hero .jumbotron .opt-3.black {
+	    top: 0;
+	    bottom: 0;
+	    h1 {
+	    	margin-top: 5%;
+	    }
+	}
 	.page-hero h1 {
 	    margin-top: 30px;
 	    margin-bottom: 15px;
@@ -2066,6 +2065,7 @@ img.aligncenter {
 			font-size: 28px;
 		}
 		p {
+			font-size: 18px;
 			text-align: center;
 		}	
 	}
@@ -2178,15 +2178,6 @@ img.aligncenter {
 }
 
 @media (max-width: 768px) {
-	#logo > a img {
-		margin-top: 25px;
-		max-width: 175px;
-	}
-	.page-template-request-a-demo-page {
-		#logo > a img {
-		    margin: 25px 0;
-		}
-	}
 	.small-screen {
 		display: none !important;
 	}
@@ -2210,10 +2201,16 @@ img.aligncenter {
 		    font-size: 38px;
 		    margin-left: 5%;
 		    margin-right: 5%;
+		    margin-top: 25%;
 		}
-		p {
-			text-align: center;
-			margin: 0 5% 25px;
+		p {	
+		    text-align: center;
+		    margin: 5% 0 10%;
+		    padding: 0;
+		    max-width: 100%;
+		}
+		.quote-title p {
+		    margin: 0;
 		}
 	}
 	.request-content {
@@ -2259,7 +2256,11 @@ img.aligncenter {
 	  text-align: center;
 	  padding: 9px 27px;
 	}
-
+	.section-hero .center-block {
+	    margin-bottom: 10%;
+	    margin-top: 10%;
+	    max-width: 100%;
+	}
 	.section-hero {
 		.jumbotron {
 			.opt-1 {
@@ -2294,7 +2295,9 @@ img.aligncenter {
 					margin: 6% 0 1%;
 				}
 				p {
-					margin: 0;	
+					margin: 0;
+					padding-left: 15px;
+					padding-right: 15px;	
 				}
 				.jumbo-btn-group {
 				    margin-top: 4%;
@@ -2313,6 +2316,7 @@ img.aligncenter {
 				padding: 6%;
 				p, h1 {
 					text-align: center;
+					margin-top: 6%;
 				}
 			}
 		}
@@ -2341,7 +2345,15 @@ img.aligncenter {
 			}			
 		}
 	}
-	
+	.content-area .sub-section .excerpt {
+		max-width: 100%;
+	}
+	.section-hero .excerpt {
+	    max-width: 100%;
+	}
+	.content-area .sub-section h1.text-center {
+	    margin-top: 5%;
+	}
 	.content-area {
 		.contact-content {
 			.contact-items {
@@ -2396,6 +2408,9 @@ img.aligncenter {
 	h5, .h5 {
 		font-size: 16px;
 	}
+	p.excerpt {
+		font-size: 14px !important;
+	}
 
 	.bgroup {
 		.btn {
@@ -2405,18 +2420,7 @@ img.aligncenter {
 	    	}
 		}
 	}
-
-	#logo > a img {
-		margin-top: 6.555%;
-		max-width: 175px;
-	}
 	
-	.page-template-request-a-demo-page {
-		#logo > a img {
-		    margin: 6.555% 0;
-		}
-	}
-
 	.regional-hq .panel {
 	   min-height: inherit;
 	}
@@ -2461,13 +2465,21 @@ img.aligncenter {
 		h1 {
 			font-size: 28px;
 			text-align: center;
-			margin: 8%;
+			margin: 15% 0 5%;
 		}
 		p {
 			font-size: inherit;
 			text-align: center;
 			margin-bottom: 8%;
 		}	
+	}
+	.jumbotron .quote-title p {
+	    margin: 0;
+	    font-size: 16px;
+	}
+	.jumbotron .quote-title, .jumbotron .quote-subtitle {
+	    text-align: center;
+	    padding: 0 0 5% 0;
 	}
 	.request-content {
 	    background-position: 0px -275px !important;
@@ -2563,16 +2575,17 @@ img.aligncenter {
 			margin: 0px auto 10%;
 		}
 	}
-
+	
+	
 	.section-hero {
 		.jumbotron {
 			.opt-1, .opt-2 {
-				top: 10%;
-				bottom: 10%;
+				top: 5%;
+				bottom: 5%;
 				h1 {
 					text-align: center;
-			  		margin-bottom: 10%;
-					margin-top: 10%;
+			  		margin-bottom: 5%;
+					margin-top: 5%;
 				}
 			}
 		}
@@ -2652,14 +2665,30 @@ img.aligncenter {
 }
 
 @media (max-width: 360px) {
-	body {
+body {
 		font-size: 14px;
 	}
 	h1, .h1 {
-		font-size: 22px;
+		font-size: 24px !important;
 	}
 	h2, .h2 {
-		font-size: 16px;
+		font-size: 20px !important;
+	}
+	h3, .h3 {
+		font-size: 18px !important;
+	}
+	h4, .h4 {
+		font-size: 16px !important;
+	}
+	h5, .h5 {
+		font-size: 14px !important;
+	}
+	p, p.excerpt {
+		font-size: 12px !important;
+	}
+
+	.jumpTo .svg {
+	    height: 24px;
 	}
 
 	.svg {
@@ -2684,11 +2713,6 @@ img.aligncenter {
 		}
 	}
 	.carousel {
-		h1 {
-			font-size: 22px;
-			text-align: center;
-			margin: 6%;
-		}
 		p {
 			font-size: inherit;
 		}
@@ -2699,11 +2723,6 @@ img.aligncenter {
 			width: 80%;
 			font-size: inherit;
 			display: block;
-		}
-		h1 {
-			font-size: 22px;
-			text-align: center;
-			margin: 6%;
 		}
 	}
 	.cta-link .btn.btn-info.btn-lg {
@@ -2724,22 +2743,15 @@ img.aligncenter {
   			margin: 16% 0;
 		}		
 	}
+	.sub-section.white.solutions-menu {
+	    padding: 6% 1%;
+	}
 	.content-area {
 		.sub-section {
 	  		padding: 8% 4.5%;
 	  		.excerpt {
 				max-width: 100%;
 			}
-		}
-	}
-	
-	#logo > a img {
-		margin-top: 6.555%;
-		max-width: 175px;
-	}
-	.page-template-request-a-demo-page {
-		#logo > a img {
-		    margin: 6.555% 0;
 		}
 	}
 }

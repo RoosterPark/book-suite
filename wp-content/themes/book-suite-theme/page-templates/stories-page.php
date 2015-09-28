@@ -22,12 +22,12 @@ get_header(); ?>
 						echo '<div class="quote-title"><p><i class="fa fa-quote-left"></i>' . get_field('success_quote') . '<i class="fa fa-quote-right"></i></p></div>';
 					}
 					if(get_field('success_quote_orgin')) {
-						echo '<div class="quote-subtitle"><p><i class="fa fa-minus"></i><span>' . get_field('success_quote_orgin') . '</span></p></div>';
+						echo '<div class="quote-subtitle"><i class="fa fa-minus"></i><span>' . get_field('success_quote_orgin') . '</span></div>';
 					}
 					if(get_field('success_story_link')) {
 						
 						?>
-						<div class="quote-link"><a class="btn btn-info btn-lg" title="Read the Story" href="<?php get_field('success_story_link'); ?>" role="button"><?php echo $title_text = _e( 'Read The Story', 'upbootwp' ); ?></a></div>';
+						<div class="quote-link"><a class="btn btn-info btn-lg" title="Read the Story" href="<?php get_field('success_story_link'); ?>" role="button"><?php echo $title_text = _e( 'Read The Story', 'upbootwp' ); ?></a></div>
 					<?php 
 					}
 					?>

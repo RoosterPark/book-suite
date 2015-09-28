@@ -27,10 +27,10 @@ get_header(); ?>
 <section id="jobListings" class="sub-section white job-link" role="Jobs">		
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-8 col-md-8 col-lg-8">
+			<div class="col-sm-12 col-md-12 col-lg-8">
 				<h2 class="text-left"><?php echo $title_text = _e( 'We create new ways of helping the hospitality industry work.', 'upbootwp' ); ?></h2>
 			</div>
-			<div class="col-sm-4 col-md-4 col-lg-4">
+			<div class="col-sm-12 col-md-12 col-lg-4">
 				<a class="btn btn-info btn-lg" href="https://workingatbooking.com/" target="_blank" role="button" title="<?php echo $btn_text = _e( 'View Job Openings', 'upbootwp' ); ?>"><?php echo $btn_text = _e( 'View Job Openings', 'upbootwp' ); ?></a>
 			</div>
 		</div>
