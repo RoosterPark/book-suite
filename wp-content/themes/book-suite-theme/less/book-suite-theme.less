@@ -83,7 +83,13 @@
 	    width: 100%;
 	}
 }
+.repar .jumbo-btn-group {
+    text-align: center;
+}
 
+.repar .jumbo-btn-group a {
+    margin: 0 10px;
+}
 
 .revise {
     margin-left: 10px;
@@ -99,6 +105,9 @@ b, strong {
     margin-bottom: 3%;
 }
 
+.gry {
+    background-color: #f9f9f9;
+}
 
 /***************************************************
  * 
@@ -557,6 +566,9 @@ b, strong {
  * 
  **************************************************/
 
+.site-main {
+    margin-top: @navbar-height + @langbar-height;
+}   
 .site-hero {
     overflow: hidden;
     position: relative;
@@ -948,7 +960,7 @@ b, strong {
 	    border-bottom: 1px solid #ececec;
 	    padding: 1% 8%;
 	    position: fixed;
-	    top: 115px;
+	    top: 114px;
 	    z-index: 9999;    
 	}
 }
@@ -1567,12 +1579,6 @@ footer {
 }
 
 
-.bizIntel  {
-	// .svg.wp-post-image {
-	    // margin: 45px auto;
-	// }
-}
-
 .bizIntel .col-lg-4.text-center {
     padding-left: 5%;
     padding-right: 5%;
@@ -1585,7 +1591,6 @@ footer {
 	    margin-bottom: 10%;
 	}
     header {
-    	//background-color: #f4f4f4;
     	overflow: auto;
     }
     .summary {
@@ -1593,9 +1598,6 @@ footer {
 	    font-size: 18px;
 	}
 	h2 {
-	    //background-color: #009fe3;
-	    //color: #fff;
-	    //font-weight: 500;
 	    padding: 15px;
 	}
 	.icon.svg {
@@ -1806,6 +1808,7 @@ img.aligncenter {
 			height: 322px; //233px;
 		}
 	}
+
 }
 
 @media (max-width: 1281px) and (min-width: 1025px) {
@@ -1832,6 +1835,9 @@ img.aligncenter {
 	    border: 1px solid #ccc;
 	    bottom: 0;
 	}
+	.no-touch #mobileFilterBtn {
+	    display: block;
+	}
 }
 @media (max-width: 1024px) {
 	.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
@@ -1849,7 +1855,7 @@ img.aligncenter {
 		} 
 		h1 {
 			text-align: center;
-			margin-top: 55px;
+			margin-top: 5%;
 		}
 		p {
 			text-align: center;
@@ -2031,7 +2037,6 @@ img.aligncenter {
 	    }
 	}
 	.page-hero h1 {
-	    margin-top: 30px;
 	    margin-bottom: 15px;
 	}
 	.carousel {
@@ -2174,10 +2179,17 @@ img.aligncenter {
 		    padding-left: 15px;
 		}
 	}
+	.link-cta.left-cta.border, .link-cta.top-cta.border {
+	    border-bottom: 1px solid #d5effc;
+	    padding-bottom: 3%;
+	    margin-bottom: 4%;
+	}
 
 }
 
 @media (max-width: 768px) {
+
+
 	.small-screen {
 		display: none !important;
 	}
@@ -2232,10 +2244,6 @@ img.aligncenter {
 	}
 	.sub-section.white.solutions-menu {
 	    padding: 2% 1%;
-	}
-	 
-	.regional-hq .panel {
-	    //min-height: inherit;
 	}
 	
 	.jumpToWrapper .jumpTo {
@@ -2390,6 +2398,9 @@ img.aligncenter {
 }
 
 @media (max-width: 480px) {
+	.success .play {
+	    display: none;
+	}
 	body {
 		font-size: 16px;
 	}
@@ -2411,6 +2422,21 @@ img.aligncenter {
 	p.excerpt {
 		font-size: 14px !important;
 	}
+	.navbar-fixed-top, .navbar-fixed-bottom {
+	 	position: relative;
+	}
+	.site-hero {
+	    margin-top: 0;
+	}
+	.page-hero {
+	    margin-top: 0;
+	}
+	.site-main {
+	    margin-top: 0;
+	}
+	.navbar {
+    	margin-bottom: 0;
+    }
 
 	.bgroup {
 		.btn {
@@ -2652,8 +2678,8 @@ img.aligncenter {
 	.regional-contacts {
 	    min-height: inherit;
 	}
-	a.btn.btn-primary.btn-lg {
-		font-size: inherit;
+	a.btn.btn-primary.btn-lg, a.btn.btn-info.btn-lg, .btn.btn-default.btn-lg {
+	    font-size: inherit;
 	}
 	.footer-nav-main > li {
 		width: 50%;
@@ -2666,7 +2692,7 @@ img.aligncenter {
 
 @media (max-width: 360px) {
 body {
-		font-size: 14px;
+		font-size: 12px;
 	}
 	h1, .h1 {
 		font-size: 24px !important;

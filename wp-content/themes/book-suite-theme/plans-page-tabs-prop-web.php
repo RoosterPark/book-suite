@@ -8,7 +8,7 @@ if ($_GET['lang']) {
 <section class="sub-section white-alt">
 	<div class="container-fluid">
 		<div class="row">
-       		<div class="col-sm-offset-2 col-md-offset-2 col-sm-4 col-md-4 col-lg-4 compare-plans">
+       		<div class=" col-md-offset-2 col-sm-6 col-md-4 col-lg-4 compare-plans">
 				<section class="text-center">
 						<?php 
 						$my_query = new WP_Query('name=web-direct-post');
@@ -55,7 +55,7 @@ if ($_GET['lang']) {
 					</ul>
 				</section>
        		</div>
-       		<div class="col-sm-4 col-md-4 col-lg-4 compare-plans">
+       		<div class="col-sm-6 col-md-4 col-lg-4 compare-plans">
 				<section class="text-center">
 					<?php 
 					$my_query = new WP_Query('name=web-complete-post');

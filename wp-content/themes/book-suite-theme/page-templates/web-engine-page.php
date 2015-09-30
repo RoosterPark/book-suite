@@ -164,7 +164,7 @@ get_header(); ?>
 <section id="clientComm" class="sub-section solutions lt-blue" >
 <div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-12 col-md-6 col-lg-6 link-cta left-cta">
+			<div class="col-sm-12 col-md-6 col-lg-6 link-cta left-cta border">
 				<?php	
 	            $args = array( 
 	                'name' => 'web-direct-post'
@@ -185,7 +185,7 @@ get_header(); ?>
 				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
        		</div>
-       		<div class="col-sm-12 col-md-6 col-lg-6 link-cta right-cta">
+       		<div class="col-sm-12 col-md-6 col-lg-6 link-cta right-cta border">
 				<?php	
 	            $args = array( 
 	                'name' => 'web-complete-post'

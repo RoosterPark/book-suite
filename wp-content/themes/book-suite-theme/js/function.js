@@ -35,7 +35,7 @@ jQuery(document).ready(function() {
 		      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
 		      if (target.length) {
 		        jQuery('html,body').animate({
-		          scrollTop: target.offset().top - 50
+		          scrollTop: target.offset().top - 100
 		        }, 1000);
 		        return false;
 		      }

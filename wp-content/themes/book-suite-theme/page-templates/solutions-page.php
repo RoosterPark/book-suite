@@ -258,13 +258,11 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="increaseRevPar" class="section-hero" role="banner">
-<?php if( get_field('increase_RevPar_header') ): ?>
-	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('increase_RevPar_header'); ?>" />
-<?php endif; ?>
-	<div id="hero" class="jumbotron">
-		<div class="jumbo-caption opt-3 black">
-				<?php	
+<section id="dataDriven" class="sub-section lt-grey" role="banner">
+	<div class="container-fluid">
+		<div class="row">
+       		<div class="col-lg-12">
+ 			<?php	
 	            $args = array( 
 	                'name' => 'increase-revpar'
 	            );
@@ -280,10 +278,12 @@ get_header(); ?>
 			<div class="jumbo-btn-group">
 				<a class="btn btn-info btn-lg" href="#" role="button">Learn More</a>
 				<a class="btn btn-primary btn-lg" href="#" role="button">See Product Features</a>
-			</div>
-		</div>
-	</div>
+			</div>      			
+       		</div>
+       	</div>
+    </div>
 </section>
+
 <section id="premiumServices" class="section-hero" role="banner">
 <?php if( get_field('premium_services_header') ): ?>
 	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('premium_services_header'); ?>" />

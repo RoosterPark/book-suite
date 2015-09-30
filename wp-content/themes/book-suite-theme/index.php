@@ -20,11 +20,21 @@
 					<div class="container-fluid">
 						
 						<?php if(is_home()) { ?>
+							<?php $my_query = new WP_Query('name=booking-suite-tagline');
+							while($my_query->have_posts()){
+							        $my_query->the_post();
+							?>
 							<div class="row">
 								<div class="col-md-12">
-									<h1 class="text-center text-capitalize"><?php echo $hello =  _e( 'Solutions Driven by Booking.com\'s unique, Industry-leading Expertise', 'upbootwp' );?></h1>
+									<h1 class="text-center"><?php the_title() ?></h1>
+									<?php  
+									$ebtn_text =  __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' );
+									edit_post_link($ebtn_text,'<p class="text-center">','</p>' );
+									?>
 								</div>
 							</div>
+							<?php } ?>
+							
 						<?php }?>
 							
 						<div class="row">

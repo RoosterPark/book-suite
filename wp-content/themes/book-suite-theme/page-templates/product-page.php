@@ -276,13 +276,11 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="increaseRevPar" class="section-hero" role="banner">
-<?php if( get_field('increase_RevPar_header') ): ?>
-	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('increase_RevPar_header'); ?>" />
-<?php endif; ?>
-	<div id="hero" class="jumbotron">
-		<div class="jumbo-caption opt-3 black">
-				<?php	
+<section id="revPar" class="sub-section white repar" role="banner">
+	<div class="container-fluid">
+		<div class="row">
+       		<div class="col-lg-12">
+ 			<?php	
 	            $args = array( 
 	                'name' => 'increase-revpar'
 	            );
@@ -290,18 +288,18 @@ get_header(); ?>
 	            while($my_rev_query->have_posts()) :
 	            	$my_rev_query->the_post();
 	            ?>
-	            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
+				<h1 class="text-center"><?php the_title(); ?></h1>
 				<?php the_excerpt(); ?>	
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p class="text-center">', '</p>' ); ?>
-				</article><?php endwhile; ?>			
+				<?php endwhile; ?>			
 				<?php  wp_reset_postdata(); ?>
 			<div class="jumbo-btn-group">
-				<a class="btn btn-info btn-lg" href="/ratemanager/<?php echo $lang_par;?>" role="button"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
-				<a class="btn btn-primary btn-lg" href="/product-features/<?php echo $lang_par;?>" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
-			</div>
-		</div>
-	</div>
+				<a class="btn btn-info btn-lg" href="#" role="button">Learn More</a>
+				<a class="btn btn-primary btn-lg" href="#" role="button">See Product Features</a>
+			</div>      			
+       		</div>
+       	</div>
+    </div>
 </section>
 <section id="Premium-Support" class="section-hero" role="banner">
 <?php if( get_field('premium_services_header') ): ?>

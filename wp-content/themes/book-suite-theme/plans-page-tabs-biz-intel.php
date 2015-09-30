@@ -42,7 +42,7 @@ if ($_GET['lang']) {
 		</div>
 	</div>
 </section>
-<section id="productDesign" class="sub-section prod-features">
+<section id="productDesign" class="sub-section prod-features  gry">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
