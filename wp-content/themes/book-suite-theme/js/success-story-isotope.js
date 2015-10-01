@@ -45,13 +45,11 @@ function initIsotope() {
 				$grid.isotope('layout');
 			}
 		});
-		
 	});
 	
 	// change is-checked class on buttons
 	jQuery('.option-set').each(function(i, buttonGroup) {
-			var $buttonGroup = jQuery(buttonGroup);
-
+		var $buttonGroup = jQuery(buttonGroup);
 		$buttonGroup.on('click', 'a', function() {
 			$buttonGroup.find('.selected').removeClass('selected');
 			jQuery(this).addClass('selected');
@@ -61,7 +59,6 @@ function initIsotope() {
 	// change is-checked class on buttons
 	jQuery('.cat-item-set .cat-item').each(function(i, buttonGroup) {
 		var $buttonGroup = jQuery(buttonGroup);
-
 		$buttonGroup.on('click', 'a', function() {
 			$buttonGroup.find('.selected').removeClass('selected');
 			jQuery(this).addClass('selected');
@@ -69,22 +66,24 @@ function initIsotope() {
 	});
 	
 	if (Modernizr.touch) 	{ 
-		jQuery('#mobileFilterBtn').on('click', function(e) {
-			e.preventDefault();
-			jQuery( "#filterMenu" ).toggle( 300,'linear');
-			jQuery(".cat-child a").click(function() {
-				jQuery("#filterMenu").hide("fast");
-			});			
-		});
-		jQuery('#reset-btn').click(function() {
-			jQuery("#filterMenu").hide("fast");
-			$imgs.lazyload({
-				load: function() {
-					$grid.isotope('layout');
-				}
-			});
-		});
+		
 	}
+	jQuery('#mobileFilterBtn').on('click', function(e) {
+		e.preventDefault();
+		//jQuery( "#filterMenu" ).toggle( 300,'linear');
+		jQuery( "#filterMenu" ).toggleClass('showFilter').animate({"right":"0px"}, 300);   
+		jQuery(".cat-child a").click(function() {
+			jQuery("#filterMenu").hide("fast").removeClass('showFilter');
+		});			
+	});
+	jQuery('#reset-btn').click(function() {
+		jQuery("#filterMenu").hide("fast");
+		$imgs.lazyload({
+			load: function() {
+				$grid.isotope('layout');
+			}
+		});
+	});
 }
 jQuery(window).on('load', function() {
 	

@@ -74,13 +74,6 @@
 </div>
 <!-- .scroll-to-top -->
 <?php wp_footer(); ?>
-<?php if (is_page('stories')) { ?>
-<script src="/wp-content/themes/book-suite-theme/js/isotope.pkgd.js"></script>
-<script
-	src="/wp-content/themes/book-suite-theme/js/packery-mode.pkgd.min.js"></script>
-<script
-	src="/wp-content/themes/book-suite-theme/js/success-story-isotope.js"></script>
-<?php } ?>
 <?php if (is_page('solutions')) { ?>
 <script type="text/javascript">
 jQuery(document).ready(function() { 
@@ -110,6 +103,5 @@ jQuery(document).ready(function() {
 });
 </script>
 <?php } ?>
-
 </body>
 </html>
