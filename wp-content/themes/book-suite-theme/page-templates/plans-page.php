@@ -30,15 +30,15 @@ get_header(); ?>
 	<div id="featureLinks" class="tab-wrapper">
 	  <!-- Nav tabs -->
 	  <ul class="nav nav-tabs" role="tablist">
-	    <li role="presentation" class="active"><a href="#Property-Websites" aria-controls="Property-Websites" role="tab" data-toggle="tab">Property Websites</a></li>
-	    <li role="presentation"><a href="#property-pricing" aria-controls="property-pricing" role="tab" data-toggle="tab">Property Pricing</a></li>
+	    <li role="presentation" class="active"><a href="#Property-Websites" aria-controls="Property-Websites" role="tab" data-toggle="tab"><?php echo $cbtn_text = _e('Property Websites', 'upbootwp' );?></a></li>
+	    <li role="presentation"><a href="#revenue-management" aria-controls="property-pricing" role="tab" data-toggle="tab"><?php echo $cbtn_text = _e('Revenue Management', 'upbootwp' );?></a></li>
 	  </ul>
 	</div>
 	<div class="tab-content">
 	    <div role="tabpanel" class="tab-pane active" id="Property-Websites">
 			<?php get_template_part('plans-page-tabs-prop-web'); ?>
 	    </div>
-	    <div role="tabpanel" class="tab-pane" id="property-pricing">
+	    <div role="tabpanel" class="tab-pane" id="revenue-management">
 	    	<?php get_template_part('plans-page-tabs-biz-intel'); ?>    
 	    </div>
 	</div>

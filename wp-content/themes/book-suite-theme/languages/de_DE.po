@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: upbootwp\n"
 "POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2015-09-29 12:27-0700\n"
+"PO-Revision-Date: 2015-10-01 19:29-0700\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -146,9 +146,9 @@ msgstr "Unbegrenzt"
 msgid "Advanced"
 msgstr "Erweiterte"
 
-#: plans-page-tabs-biz-intel.php:6
-msgid "Property Pricing"
-msgstr "Property Pricing"
+#: plans-page.php:34 plans-page-tabs-biz-intel.php:6
+msgid "Revenue Management"
+msgstr "Revenue Management"
 
 #: plans-page-tabs-biz-intel.php:42
 msgid "Not Sure Which Plan is Right for Your Property?"
@@ -158,7 +158,7 @@ msgstr "Nicht sicher, welcher Plan ist die richtige für Ihre Immobilie"
 msgid "Premium Support"
 msgstr "Premium Support"
 
-#: product-page.php:46
+#: plans-page.php:33 product-page.php:46
 msgid "Property Websites"
 msgstr "Property Websites"
 

@@ -201,13 +201,13 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="Property-Pricing" class="section-hero" role="banner">
+<section id="Revenue-Management" class="section-hero" role="banner">
 <?php if( get_field('predictive_analytics_header') ): ?>
 	<img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('predictive_analytics_header'); ?>" />
 <?php endif; ?>
 	<div id="hero" class="jumbotron filter">
 		<div class="jumbo-caption opt-2">
-			<h1><?php echo $title_text = _e( 'Property Pricing', 'upbootwp' ); ?></h1>
+			<h1><?php echo $title_text = _e( 'Revenue Management', 'upbootwp' ); ?></h1>
 			<div class="jumbo-btn-group">
 				<a class="btn btn-info btn-lg" href="#" role="button"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
 				<a class="btn btn-default btn-lg clear" href="/product-features/<?php echo $lang_par;?>" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>

@@ -21,7 +21,9 @@ get_header(); ?>
 				<h1 class="page-title"><?php the_title(); ?></h1>	
 				<?php the_content(); ?>
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
-			
+				<div class="jumbo-btn-group">
+				<a class="btn btn-primary btn-lg" role="button" target="_blank" href="http://info.suite.booking.com/request-demo/en-us">Request a Demo</a>
+				</div>
 		</div>
 	</div>
 	</article>
