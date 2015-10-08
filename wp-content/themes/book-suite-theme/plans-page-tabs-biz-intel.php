@@ -7,11 +7,11 @@ if ($_GET['lang']) {
 ?>
 <section class="sub-section prod-features white">
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<h1><?php echo $cbtn_text = _e( 'Revenue Management', 'upbootwp' );?></h1>
-			</div>	
-		</div>
+<!-- 		<div class="row"> -->
+<!-- 			<div class="col-md-12 text-center">
+				<h1><?php //echo $cbtn_text = _e( 'Revenue Management', 'upbootwp' );?></h1> -->
+<!-- 			</div>	 -->
+<!-- 		</div> -->
 		<div class="row">
 			
 				<?php	
