@@ -47,16 +47,16 @@
 						<aside id="text-2" class="right widget widget_text">
 							<div class="textwidget">
 								<div class="social-icons">
-									<a class="facebook" target="_blank" title="Follow us on Facebook" href="#"><i class="social_icon fa fa-facebook"></i></a>
-									<a class="twitter" target="_blank" title="Follow us on Twitter" href="#"><i class="social_icon fa fa-twitter"></i></a>
-									<a class="tumblr" target="_blank" title="Follow us on Tumblr" href="#"><i class="social_icon fa fa-tumblr"></i></a>
+									<a class="facebook" target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/pages/BookingSuite/1002986753051566" target="_blank"><i class="social_icon fa fa-facebook"></i></a>
+									<a class="twitter" target="_blank" title="Follow us on Twitter" href="https://twitter.com/BookingSuite" target="_blank"><i class="social_icon fa fa-twitter"></i></a>
+									<a class="tumblr" target="_blank" title="Follow us on Tumblr" href="http://bookingsuite.tumblr.com" target="_blank"><i class="social_icon fa fa-tumblr"></i></a>
 								</div>
 								<div class="footer-logo">
 									<img
 										src="http://stagingsuitebookingcom.c.presscdn.com/wp-content/uploads/2015/07/BookingSuite_ReverseLogo_RGB_150x.png" />
 									<p>© 2015</p>
 								</div>
-								Rembrandt Square, <br>Herengracht 597, 1017 CE<br>Amsterdam,Netherlands <br>
+								Rembrandt Square, <br>Herengracht 597, 1017 CE<br>Amsterdam, Netherlands <br>
 								<br><?php echo $title_text = _e( '1 (800) 734-1769', 'upbootwp' ); ?><br> <a href="suite@booking.com">suite@booking.com</a>
 							</div>
 						</aside>

@@ -209,7 +209,7 @@ get_header(); ?>
 		<div class="jumbo-caption opt-2">
 			<h1><?php echo $title_text = _e( 'Revenue Management', 'upbootwp' ); ?></h1>
 			<div class="jumbo-btn-group">
-				<a class="btn btn-info btn-lg" href="#" role="button"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
+				<a class="btn btn-info btn-lg" href="/ratemanager/" role="button"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
 				<a class="btn btn-default btn-lg clear" href="/product-features/<?php echo $lang_par;?>" role="button"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
 			</div>
 		</div>

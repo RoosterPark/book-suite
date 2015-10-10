@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: upbootwp\n"
 "POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2015-10-01 19:29-0700\n"
+"PO-Revision-Date: 2015-10-10 14:03-0700\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -46,6 +46,10 @@ msgstr "Mehr Presse Erwähnungen"
 #: Booking Phone Number - Global Footer
 msgid "1 (800) 734-1769"
 msgstr "+ 31 2 02 61 02 95"
+
+#: Free Consultation - Global
+msgid "Free Consultation"
+msgstr "Kostenlose Beratung"
 
 #: Reguest A Demo Button - Global
 msgid "Request a Demo"
@@ -123,7 +127,7 @@ msgid "Basic"
 msgstr "Basic"
 
 #: plans-page-tabs-prop-web.php:43
-msgid "Mobile-friendly design"
+msgid "Mobile Friendly Design"
 msgstr "Mobilfreundliches Design"
 
 #: plans-page-tabs-prop-web.php:47
@@ -131,8 +135,8 @@ msgid "Translation Support"
 msgstr "Übersetzungsunterstützung"
 
 #: plans-page-tabs-prop-web.php:79
-msgid "Subscription"
-msgstr "Subscription"
+msgid "Monthly Subscription"
+msgstr "Monthly Subscription"
 
 #: plans-page-tabs-prop-web.php:80
 msgid "Contact us to learn more"

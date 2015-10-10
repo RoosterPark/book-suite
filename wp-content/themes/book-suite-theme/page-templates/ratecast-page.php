@@ -20,7 +20,7 @@ get_header(); ?>
 				<?php the_content(); ?>
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<div class="jumbo-btn-group">
-				<a class="btn btn-primary btn-lg" role="button" target="_blank" href="http://info.suite.booking.com/request-demo/en-us">Request a Demo</a>
+				<a class="btn btn-primary btn-lg" role="button" target="_blank" href="http://info.suite.booking.com/ratemanager-request-demo/en-us">Request a Demo</a>
 				</div>
 		</div>
 	</div>
@@ -95,7 +95,7 @@ get_header(); ?>
 			<div class="col-lg-12">
 	
 	            <article>
-				<header class="page-header"><h1 class="text-center"><?php echo $cbtn_text = _e( 'Intuitive Data Tools to boost your Property&rsquo;s Revenue', 'upbootwp' );?></h1></header>
+				<header class="page-header"><h1 class="text-center"><?php echo $cbtn_text = _e( 'Intuitive Data Tools to Boost your Property&rsquo;s Revenue', 'upbootwp' );?></h1></header>
 				</article>
        		</div>
 		</div>

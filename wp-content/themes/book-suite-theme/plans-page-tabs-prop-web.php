@@ -45,7 +45,7 @@ if ($_GET['lang']) {
 							<p><?php echo $title_text = _e( 'Basic', 'upbootwp' ); ?></p>
 						</li>
 						<li class="opt-items">
-							<h3><?php echo $title_text = _e( 'Mobile-friendly design', 'upbootwp' ); ?></h3>
+							<h3><?php echo $title_text = _e( 'Mobile Friendly Design', 'upbootwp' ); ?></h3>
 							<img class="icon svg check" src="/wp-content/uploads/2015/09/check.svg" />
 						</li>
 						<li class="opt-items">
@@ -81,8 +81,8 @@ if ($_GET['lang']) {
 					<ul class="options">
 						<li class="opt-items">
 							<h3><?php echo $title_text = _e( 'Price', 'upbootwp' ); ?></h3>
-							<p><?php echo $title_text = _e( 'Subscription', 'upbootwp' ); ?></p>
-							<small><?php echo $title_text = _e( 'Contact us to learn more', 'upbootwp' ); ?></small>
+							<p><?php echo $title_text = _e( 'Monthly Subscription', 'upbootwp' ); ?></p>
+							<small><a href="http://info.suite.booking.com/request-demo/en-us" target="_blank"><?php echo $title_text = _e( 'Contact us to learn more', 'upbootwp' ); ?></a></small>
 						</li>
 						<li class="opt-items">
 							<h3><?php echo $title_text = _e( 'Website Pages', 'upbootwp' ); ?></h3>
@@ -93,7 +93,7 @@ if ($_GET['lang']) {
 							<p><?php echo $title_text = _e( 'Advanced', 'upbootwp' ); ?></p>
 						</li>
 						<li class="opt-items">
-							<h3><?php echo $title_text = _e( 'Mobile-friendly design', 'upbootwp' ); ?></h3>
+							<h3><?php echo $title_text = _e( 'Mobile Friendly Design', 'upbootwp' ); ?></h3>
 							<img class="icon svg check" src="/wp-content/uploads/2015/09/check.svg" />
 						</li>
 						<li class="opt-items">
