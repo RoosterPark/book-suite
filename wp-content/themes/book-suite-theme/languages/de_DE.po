@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: upbootwp\n"
 "POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2015-10-10 14:03-0700\n"
+"PO-Revision-Date: 2015-10-14 20:42-0700\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -211,7 +211,7 @@ msgid "I want to get started with BookingSuite"
 msgstr "Ich will mit BookingSuite loszulegen"
 
 #: contact-us-page.php:40
-msgid "I want to log in to BookingSuite BackOffice"
+msgid "I want to log in to my BookingSuite account"
 msgstr "Ich möchte den BookingSuite Backoffice melden Sie sich an"
 
 #: contact-us-page.php:44

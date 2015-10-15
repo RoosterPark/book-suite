@@ -37,10 +37,10 @@ get_header(); ?>
 
 		<div class="row panel contact-items">
 			<div class="col-sm-8 col-md-8 col-lg-8"><h4><?php echo $title_text = _e( 'I want to get started with BookingSuite', 'upbootwp' ); ?></h4></div>
-			<div class="col-sm-4 col-md-4 col-lg-4 text-center"><a href="http://info.suite.booking.com/request-demo/en-us" target="_blank" class="btn btn-info btn-md" title="<?php echo $btn_text = _e( 'Free Consultation', 'upbootwp' ); ?>"><?php echo $btn_text = _e( 'Free Consultation', 'upbootwp' ); ?></a></div>
+			<div class="col-sm-4 col-md-4 col-lg-4 text-center"><a href="http://info.suite.booking.com/free-consultation/en-us" target="_blank" class="btn btn-info btn-md" title="<?php echo $btn_text = _e( 'Free Consultation', 'upbootwp' ); ?>"><?php echo $btn_text = _e( 'Free Consultation', 'upbootwp' ); ?></a></div>
 		</div>
 		<div class="row panel contact-items">
-			<div class="col-sm-8 col-md-8 col-lg-8"><h4><?php echo $title_text = _e( 'I want to log in to BookingSuite BackOffice', 'upbootwp' ); ?></h4></div>
+			<div class="col-sm-8 col-md-8 col-lg-8"><h4><?php echo $title_text = _e( 'I want to log in to my BookingSuite account', 'upbootwp' ); ?></h4></div>
 			<div class="col-sm-4 col-md-4 col-lg-4 text-center"><a href="/login/" class="btn btn-info btn-md " title="<?php echo $btn_text = _e( 'Log In', 'upbootwp' ); ?>"><?php echo $btn_text = _e( 'Log In', 'upbootwp' ); ?></a></div>
 		</div>
 		<div class="row panel contact-items">

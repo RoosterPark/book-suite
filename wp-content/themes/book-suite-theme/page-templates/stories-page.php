@@ -7,7 +7,9 @@
  * @package upBootWP 0.1
  */
 get_header(); ?>
+
 <section id="pageMasthead" class="page-hero" role="banner">
+
 	<?php if( get_field('responsive_hero_img') ): ?>
 		<img class="jumbotron-img img-responsive visible-xs-block" src="<?php the_field('responsive_hero_img'); ?>" />
 	<?php endif; ?>
@@ -25,9 +27,10 @@ get_header(); ?>
 						echo '<div class="quote-subtitle"><i class="fa fa-minus"></i><span>' . get_field('success_quote_orgin') . '</span></div>';
 					}
 					if(get_field('success_story_link')) {
-						
+						$field = get_field_object('success_story_link');
+						$value = get_field('success_story_link');
 						?>
-						<div class="quote-link"><a class="btn btn-info btn-lg" title="Read the Story" href="<?php get_field('success_story_link'); ?>" role="button"><?php echo $title_text = _e( 'Read The Story', 'upbootwp' ); ?></a></div>
+						<div class="quote-link"><a class="btn btn-info btn-lg" title="Read the Story" href="<?php echo $value; ?>" role="button"><?php echo $title_text = _e( 'Read The Story', 'upbootwp' ); ?></a></div>
 					<?php 
 					}
 					?>

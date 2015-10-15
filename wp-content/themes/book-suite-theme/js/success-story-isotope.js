@@ -77,7 +77,7 @@ function initIsotope() {
 		});			
 	});
 	jQuery('#reset-btn').click(function() {
-		jQuery("#filterMenu").hide("fast");
+		//jQuery("#filterMenu").hide("fast");
 		$imgs.lazyload({
 			load: function() {
 				$grid.isotope('layout');
