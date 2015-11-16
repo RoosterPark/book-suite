@@ -159,6 +159,9 @@
  *  WP CSS Class Name styling
  * 
  **************************************************/
+.help-addr:hover {
+  color: #a2a2a2;
+}
 .post-navigation {
   margin: 6% auto;
 }

@@ -31,17 +31,16 @@ get_header(); ?>
 	  <!-- Nav tabs -->
 	  <ul class="nav nav-tabs" role="tablist">
 	    <li role="presentation" class="active"><a href="#Property-Websites" aria-controls="Property-Websites" role="tab" data-toggle="tab"><?php echo $cbtn_text = _e('Property Websites', 'upbootwp' );?></a></li>
-	    <li role="presentation"><a href="#revenue-management" aria-controls="property-pricing" role="tab" data-toggle="tab"><?php echo $cbtn_text = _e('Revenue Management', 'upbootwp' );?></a></li>
+	    <li role="presentation"><a href="#RevenueManagement" aria-controls="RevenueManagement" role="tab" data-toggle="tab"><?php echo $cbtn_text = _e('Revenue Management', 'upbootwp' );?></a></li>
 	  </ul>
 	</div>
 	<div class="tab-content">
 	    <div role="tabpanel" class="tab-pane active" id="Property-Websites">
 			<?php get_template_part('plans-page-tabs-prop-web'); ?>
 	    </div>
-	    <div role="tabpanel" class="tab-pane" id="revenue-management">
+	    <div role="tabpanel" class="tab-pane" id="RevenueManagement">
 	    	<?php get_template_part('plans-page-tabs-biz-intel'); ?>    
 	    </div>
 	</div>
 <?php get_template_part('index-request-demo'); ?>
-
 <?php get_footer(); ?>

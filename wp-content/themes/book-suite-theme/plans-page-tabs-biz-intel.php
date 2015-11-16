@@ -52,7 +52,7 @@ if ($_GET['lang']) {
 
 		<div class="row">
 	    	<div class="col-md-12 text-center">
-	        	<div class="bgroup"><a class="btn btn-default btn-lg" role="button" href="/product-features/<?php echo $lang_par;?>" title="<?php echo $btn_text = _e( 'See All Features', 'upbootwp' );?>"><?php echo $btn_text = _e( 'See All Features', 'upbootwp' );?></a></div>
+	        	<div class="bgroup"><a class="btn btn-default btn-lg" role="button" href="/product-features/#RevenueManagement<?php echo $lang_par;?>" title="<?php echo $btn_text = _e( 'See All Features', 'upbootwp' );?>"><?php echo $btn_text = _e( 'See All Features', 'upbootwp' );?></a></div>
 	    	</div>
 		</div>
 	</div>

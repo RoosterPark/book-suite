@@ -210,7 +210,7 @@ get_header(); ?>
 			<h1><?php echo $title_text = _e( 'Revenue Management', 'upbootwp' ); ?></h1>
 			<div class="jumbo-btn-group">
 				<a class="btn btn-info btn-lg" href="/ratemanager/" role="button" title="<?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?>"><?php echo $btn_text = _e( 'Learn More', 'upbootwp' );?></a>
-				<a class="btn btn-default btn-lg clear" href="/product-features/<?php echo $lang_par;?>" role="button" title="<?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?>"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
+				<a class="btn btn-default btn-lg clear" href="/product-features/#RevenueManagement<?php echo $lang_par;?>" role="button" title="<?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?>"><?php echo $btn_text = _e( 'See Product Features', 'upbootwp' );?></a>
 			</div>
 		</div>
 	</div>
@@ -299,6 +299,13 @@ get_header(); ?>
 			</div>      			
        		</div>
        	</div>
+       	<?php if( get_field('increase_RevPar_header') ): ?>
+	<div class="row">
+		<div class="col-lg-12">
+			<img class="img-responsive wp-post-image" src="<?php the_field('increase_RevPar_header'); ?>" />
+		</div>
+	</div>
+	<?php endif; ?>
     </div>
 </section>
 <section id="Premium-Support" class="section-hero" role="banner">
