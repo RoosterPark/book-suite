@@ -20,7 +20,7 @@ get_header(); ?>
 				<?php the_content(); ?>
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<div class="jumbo-btn-group">
-				<a class="btn btn-primary btn-lg" role="button" target="_blank" href="http://info.suite.booking.com/ratemanager-request-demo/en-us">Request a Demo</a>
+				<a class="btn btn-primary btn-lg" role="button" target="_blank" href="http://info.suite.booking.com/ratemanager-request-demo/<?php echo $link_text = _e('en-us','upbootwp');?>"><?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?></a>
 				</div>
 		</div>
 	</div>

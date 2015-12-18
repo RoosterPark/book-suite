@@ -82,7 +82,7 @@ if ($_GET['lang']) {
 						<li class="opt-items">
 							<h3><?php echo $title_text = _e( 'Price', 'upbootwp' ); ?></h3>
 							<p><?php echo $title_text = _e( 'Monthly Subscription', 'upbootwp' ); ?></p>
-							<small><a href="http://info.suite.booking.com/request-demo/en-us" target="_blank"><?php echo $title_text = _e( 'Contact us to learn more', 'upbootwp' ); ?></a></small>
+							<small><a href="http://info.suite.booking.com/request-demo/<?php echo $link_text = _e('en-us','upbootwp');?>" target="_blank"><?php echo $title_text = _e( 'Contact us to learn more', 'upbootwp' ); ?></a></small>
 						</li>
 						<li class="opt-items">
 							<h3><?php echo $title_text = _e( 'Website Pages', 'upbootwp' ); ?></h3>

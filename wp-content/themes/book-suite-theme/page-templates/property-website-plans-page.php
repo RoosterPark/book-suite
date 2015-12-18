@@ -53,7 +53,7 @@ get_header(); ?>
 						</li>					
 					</ul>
 					<footer>
-						<a class="btn btn-primary btn-lg btn-block" role="button" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" title="Request a Demo">Request a Demo</a>
+						<a class="btn btn-primary btn-lg btn-block" role="button" href="http://info.suite.booking.com/request-demo/<?php echo $link_text = _e('en-us','upbootwp');?>" target="_blank" title="<?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?></a>
 					</footer>
 				</section>
        		</div>
@@ -83,7 +83,7 @@ get_header(); ?>
 						</li>							
 					</ul>
 					<footer>
-						<a class="btn btn-primary btn-lg btn-block" role="button" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" title="Request a Demo">Request a Demo</a>
+						<a class="btn btn-primary btn-lg btn-block" role="button" href="http://info.suite.booking.com/request-demo/<?php echo $link_text = _e('en-us','upbootwp');?>" target="_blank" title="<?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?></a>
 					</footer>
 				</section>
        		</div>
@@ -114,7 +114,7 @@ get_header(); ?>
 						</li>					
 					</ul>
 					<footer>
-						<a class="btn btn-primary btn-lg btn-block" role="button" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" title="Request a Demo">Request a Demo</a>
+						<a class="btn btn-primary btn-lg btn-block" role="button" href="http://info.suite.booking.com/request-demo/<?php echo $link_text = _e('en-us','upbootwp');?>" target="_blank" title="<?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?></a>
 					</footer>
 				</section>
        		</div>

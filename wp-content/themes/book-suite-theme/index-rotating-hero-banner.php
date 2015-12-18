@@ -31,7 +31,8 @@ while($my_mob_query->have_posts()) :
 				<?php //echo $btn_text =  _e( 'BookingSuite Partner Success', 'upbootwp' );?>
 
 				<div class="jumbo-btn-group">
-				<a class="btn btn-primary btn-lg" href="http://info.suite.booking.com/free-consultation/en-us" target="_blank" role="button" title="<?php  echo $btn_text =  _e( 'Free Consultation', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Free Consultation', 'upbootwp' );?></a>
+				
+				<a class="btn btn-primary btn-lg" href="http://info.suite.booking.com/free-consultation/<?php echo $link_text = _e('en-us','upbootwp');?>" target="_blank" role="button" title="<?php  echo $btn_text =  _e( 'Free Consultation', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Free Consultation', 'upbootwp' );?></a>
 				</div>
 		</div>
 	</div>

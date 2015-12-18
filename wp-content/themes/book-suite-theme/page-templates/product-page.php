@@ -25,7 +25,7 @@ get_header(); ?>
 			
 			<div class="jumbo-btn-group">
 				<a class="btn btn-default btn-lg clear" href="/plans/<?php echo $lang_par;?>" role="button" title="<?php  echo $btn_text =  _e( 'View Our Plans', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'View Our Plans', 'upbootwp' );?></a>
-				<a class="btn btn-primary btn-lg" href="http://info.suite.booking.com/request-demo/en-us" target="_blank" role="button" title="<?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?></a>
+				<a class="btn btn-primary btn-lg" href="http://info.suite.booking.com/request-demo/<?php echo $link_text = _e('en-us','upbootwp');?>" target="_blank" role="button" title="<?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?></a>
 			</div>
 		</div>
 	</div>
