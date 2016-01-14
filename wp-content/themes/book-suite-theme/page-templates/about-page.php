@@ -31,7 +31,7 @@ get_header(); ?>
 				<h2 class="text-left"><?php echo $title_text = _e( 'We create new ways of helping the hospitality industry work.', 'upbootwp' ); ?></h2>
 			</div>
 			<div class="col-sm-12 col-md-12 col-lg-4">
-				<a class="btn btn-info btn-lg" href="https://workingatbooking.com/" target="_blank" role="button" title="<?php echo $btn_text = _e( 'View Job Openings', 'upbootwp' ); ?>"><?php echo $btn_text = _e( 'View Job Openings', 'upbootwp' ); ?></a>
+				<a class="btn btn-info btn-lg" href="https://workingatbooking.com/vacancies/?filter-searchphrase=bookingsuite" target="_blank" role="button" title="<?php echo $btn_text = _e( 'View Job Openings', 'upbootwp' ); ?>"><?php echo $btn_text = _e( 'View Job Openings', 'upbootwp' ); ?></a>
 			</div>
 		</div>
 	</div><!--  .container-fluid -->

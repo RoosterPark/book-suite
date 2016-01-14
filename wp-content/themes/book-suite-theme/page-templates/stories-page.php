@@ -117,16 +117,18 @@ get_header(); ?>
 						<div class="grid-item isotope-item <?php echo $termsCartImplode;  ?>" data-post="<?php echo $postx_counter ?>" >
 	
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							
 								<?php 
-								if( has_term( 'case-study', 'success_category' ) ) { ?>
-									<?php if ( has_term( 'story', 'success_category' ) && has_term( 'video', 'success_category' )) { ?>
+								
+								if(get_field('case_study') == "yes" ) { ?>
+									<?php if (get_field('case_study_type') == "video and story" ) { ?>
 										<a href="<?php the_permalink(); ?>"><div class="case-study"><span>Watch the Video</span><i class="fa fa-book"></i><i class="fa fa-play-circle-o"></i></div></a>
-									<?php } elseif( has_term( 'story', 'success_category' )) { ?>
+									<?php } elseif( get_field('case_study_type') == "story" ) { ?>
 										<a href="<?php the_permalink(); ?>"><div class="case-study"><span>Read the Case Study</span><i class="fa fa-book"></i></div></a>
-									<?php } elseif(has_term( 'video', 'success_category' ) ) { ?>
+									<?php } elseif(get_field('case_study_type') == "video" ) { ?>
 										<a href="<?php the_permalink(); ?>"><div class="case-study"><span>Watch the Video</span><i class="fa fa-play-circle-o"></i></div></a>
 									<?php } else {?>
-										<a href="<?php the_permalink(); ?>"><div class="case-study"><span>Read the Case Study</span><i class="fa fa-book"></i></div></a>	
+										<a href="<?php the_permalink(); ?>"><div class="case-study"><span>Read the Case Study - else</span><i class="fa fa-book"></i></div></a>	
 									<?php }?>				
 								<?php } ?>
 								<?php if ( has_post_thumbnail() ) {  ?>
@@ -135,7 +137,7 @@ get_header(); ?>
 			                    	//$image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id(), 'stories-tile-360' ); // returns an array// returns an array
 			                    	?>
 			                    	<?php 
-										if( has_term( 'case-study', 'success_category' ) ) { ?>
+										if( get_field('case_study') == "yes" ) { ?>
 										<a href="<?php  the_permalink() ?>">		
 			                    			<img class="lazy img-responsive" data-original="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>"/>
 			                    		</a>

@@ -163,6 +163,18 @@ msgstr "Nicht sicher, welcher Plan ist die richtige für Ihre Immobilie"
 msgid "Premium Support"
 msgstr "Premium Support"
 
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Property-Websites"
+msgstr "Webseite"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Revenue-Management"
+msgstr "Revenue-Management"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Premium-Support"
+msgstr "Premium-Unterstuetzung"
+
 #: plans-page.php:33 product-page.php:46
 msgid "Property Websites"
 msgstr "Property Websites"
