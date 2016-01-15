@@ -200,7 +200,7 @@ msgid "Support"
 msgstr "Unterstützung"
 
 #: features-page-tabs-predictive-analytics.php:5
-msgid "Intuitive Data Tools to boost your Property&rsquo;s Revenue"
+msgid "Intuitive Data Tools to Boost Your Property's Revenue"
 msgstr "Intuitive Data Tools, um Ihr Eigentum Umsatz steigern"
 
 #: features-page-tabs-predictive-analytics.php:5

@@ -95,7 +95,7 @@ get_header(); ?>
 			<div class="col-lg-12">
 	
 	            <article>
-				<header class="page-header"><h1 class="text-center"><?php echo $cbtn_text = _e( 'Intuitive Data Tools to Boost your Property&rsquo;s Revenue', 'upbootwp' );?></h1></header>
+				<header class="page-header"><h1 class="text-center"><?php echo $cbtn_text = _e( 'Intuitive Data Tools to Boost Your Property\'s Revenue', 'upbootwp' );?></h1></header>
 				</article>
        		</div>
 		</div>

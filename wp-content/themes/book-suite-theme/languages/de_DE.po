@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: upbootwp\n"
 "POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2016-01-13 08:32-0800\n"
+"PO-Revision-Date: 2016-01-14 14:20-0800\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -203,7 +203,7 @@ msgid "Support"
 msgstr "Support"
 
 #: features-page-tabs-predictive-analytics.php:5
-msgid "Intuitive Data Tools to boost your Property&rsquo;s Revenue"
+msgid "Intuitive Data Tools to Boost Your Property's Revenue"
 msgstr "Intuitiv zu nutzende Datenfunktionen zur Steigerung Ihres Umsatzes"
 
 #: features-page-tabs-predictive-analytics.php:5
