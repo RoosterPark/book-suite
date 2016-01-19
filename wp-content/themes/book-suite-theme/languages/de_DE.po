@@ -180,7 +180,7 @@ msgstr "Premium-Unterstuetzung"
 
 #: plans-page.php:33 product-page.php:46
 msgid "Property Websites"
-msgstr "Webseite"
+msgstr "Unterkunfts-Webseiten"
 
 #: features-page-tabs-property-web.php:5
 msgid "Design"

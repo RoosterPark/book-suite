@@ -65,8 +65,35 @@ if ($_GET['lang']) {
 		<div class="container-fluid">
 			<div class="language-menu">
 				<?php //do_action('wpml_add_language_selector'); ?>
-				<div class="lang-title">
- 					<!--<i class="fa fa-language"></i>--><span>&nbsp;<!--Language Menu--></span>
+
+				<div id="lang_sel_click" class="lang_sel_click" onclick="wpml_language_selector_click.toggle(this);">
+				<ul>
+					<li>
+						<a class="lang_sel_sel icl-en" href="javascript:;">Select Language</a>
+						<ul>
+						<li class="icl-de">
+						<a href="http://suite.booking.com?lang=de" rel="alternate">
+							<span class="icl_lang_sel_native">Deutsch</span>
+							<span class="icl_lang_sel_translated">
+							<span class="icl_lang_sel_bracket"> (</span>
+							German
+							<span class="icl_lang_sel_bracket">)</span>
+							</span>
+						</a>
+						</li>
+						<li class="icl-de">
+						<a href="http://suite.booking.com" rel="alternate">
+							<span class="icl_lang_sel_native">English</span>
+							<span class="icl_lang_sel_translated">
+							<span class="icl_lang_sel_bracket"> (</span>
+							English
+							<span class="icl_lang_sel_bracket">)</span>
+							</span>
+						</a>
+						</li>
+						</ul>
+					</li>
+				</ul>
 				</div>
 			</div>
 		</div>
