@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2016-01-13 08:51-0800\n"
+"PO-Revision-Date: 2016-01-27 11:57+0100\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.6\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
@@ -104,7 +104,7 @@ msgstr "Leer la historia"
 
 #: ratecast-page.php:95
 msgid "BookingSuite RateManager Also Includes:"
-msgstr ""
+msgstr "BookingSuite RateManager también include:"
 
 #: plans-page-tabs-prop-web.php:31
 msgid "Price"
@@ -168,7 +168,7 @@ msgstr "Premium Support"
 
 #: solutions-page jumpto scrollto menu links div id's
 msgid "Property-Websites"
-msgstr "Webseite"
+msgstr "Website"
 
 #: solutions-page jumpto scrollto menu links div id's
 msgid "Revenue-Management"
@@ -176,7 +176,7 @@ msgstr "Revenue-Management"
 
 #: solutions-page jumpto scrollto menu links div id's
 msgid "Premium-Support"
-msgstr "Premium-Unterstuetzung"
+msgstr "Asistencia Premium"
 
 #: plans-page.php:33 product-page.php:46
 msgid "Property Websites"
@@ -212,7 +212,7 @@ msgstr "Quiero acceder al servicio de asistencia online de BookingSuite"
 
 #: stories-page.php:44
 msgid "Partner Success"
-msgstr "Partner SuccessHistorias de éxito"
+msgstr "Historias de éxito"
 
 #: stories-page.php: Filter Button:49
 msgid "Filter"
@@ -284,4 +284,4 @@ msgstr "Últimas noticias"
 
 #: archive.php
 msgid "Press Releases and Mentions"
-msgstr ""
+msgstr "Comunicados y menciones en prensa "

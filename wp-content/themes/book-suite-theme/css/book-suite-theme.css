@@ -2231,13 +2231,16 @@ img.aligncenter {
     margin-bottom: 3%;
   }
   .jumpToWrapper .jumpTo .h3 {
-    font-size: 16px;
+    font-size: 16px !important;
     text-align: center;
     float: none;
   }
   .jumpToWrapper .jumpTo > a {
     display: block;
     float: none;
+  }
+  .jumpTo .h3 a {
+    font-size: 12px !important;
   }
   .carousel h1 {
     font-size: 28px;
@@ -2420,6 +2423,10 @@ img.aligncenter {
   .footer-nav-aux > li {
     width: 50%;
   }
+  .footer-nav-main a,
+  .footer-nav-aux a {
+    font-size: 12px;
+  }
 }
 @media (max-width: 360px) {
   body {
@@ -2435,19 +2442,19 @@ img.aligncenter {
   }
   h3,
   .h3 {
-    font-size: 18px !important;
+    font-size: 18px;
   }
   h4,
   .h4 {
-    font-size: 16px !important;
+    font-size: 16px;
   }
   h5,
   .h5 {
-    font-size: 14px !important;
+    font-size: 14px;
   }
   p,
   p.excerpt {
-    font-size: 12px !important;
+    font-size: 12px;
   }
   .jumpTo .svg {
     height: 24px;

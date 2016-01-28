@@ -54,7 +54,7 @@
 								<div class="footer-logo">
 									<img
 										src="http://stagingsuitebookingcom.c.presscdn.com/wp-content/uploads/2015/07/BookingSuite_ReverseLogo_RGB_150x.png" />
-									<p>© 2015</p>
+									<p>&copy; <?php echo date("Y") ?></p>
 								</div>
 								Rembrandt Square, <br>Herengracht 597, 1017 CE<br>Amsterdam, Netherlands <br>
 								<?php $email_address = "&#115;&#117;&#105;&#116;&#101;&#104;&#101;&#108;&#112;&#64;&#98;&#111;&#111;&#107;&#105;&#110;&#103;&#46;&#99;&#111;&#109;"?>

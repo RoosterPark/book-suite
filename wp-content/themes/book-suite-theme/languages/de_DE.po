@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: upbootwp\n"
 "POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2016-01-14 14:20-0800\n"
+"PO-Revision-Date: 2016-01-25 07:40-0800\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
@@ -41,7 +41,7 @@ msgstr "BookingSuite in der Presse"
 
 #: index.php:In The Press
 msgid "View More Press Mentions"
-msgstr "Lesen Sie mehr Pressenachrichten zu BookingSuite"
+msgstr "Lesen Sie Mehr"
 
 #: Booking Phone Number - Global Footer
 msgid "1 (800) 734-1769"
@@ -69,7 +69,7 @@ msgstr "Servicepakete ansehen"
 
 #: See Product Features Button - Global
 msgid "See Product Features"
-msgstr "Produktinformationen ansehen"
+msgstr "Produktinformationen"
 
 #: See All Features Button - Global
 msgid "See All Features"
