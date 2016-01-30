@@ -72,7 +72,7 @@ if ($_GET['lang']) {
 						<a class="lang_sel_sel icl-en" href="javascript:;">Select Language</a>
 						<ul>
 						<li class="icl-de">
-						<a href="http://suite.booking.com?lang=de" rel="alternate">
+						<a href="http://suite.booking.com/?lang=de" rel="alternate">
 							<span class="icl_lang_sel_native">Deutsch</span>
 							<span class="icl_lang_sel_translated">
 							<span class="icl_lang_sel_bracket"> (</span>
@@ -90,6 +90,16 @@ if ($_GET['lang']) {
 							<span class="icl_lang_sel_bracket">)</span>
 							</span>
 						</a>
+						<li class="icl-de">
+						<a href="http://suite.booking.com/?lang=es" rel="alternate">
+							<span class="icl_lang_sel_native">Español</span>
+							<span class="icl_lang_sel_translated">
+							<span class="icl_lang_sel_bracket"> (</span>
+							Spanish
+							<span class="icl_lang_sel_bracket">)</span>
+							</span>
+						</a>
+						</li>
 						</li>
 						</ul>
 					</li>

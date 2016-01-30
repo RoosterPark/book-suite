@@ -1,3 +1,8 @@
+<?php 
+if ($_GET['lang']) {
+ 	$lang_par = "?lang=".$_GET['lang'];
+}
+?>
 <div class="col-lg-12 link-cta top-cta border">
 				<?php	
 	            $args = array( 

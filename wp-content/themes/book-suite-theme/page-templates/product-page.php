@@ -175,7 +175,7 @@ get_header(); ?>
        		<div class="col-sm-4 col-md-4">
 				<?php	
 	            $args = array( 
-	                'name' => 'analytic-reporting'
+	                'name' => 'analytics-reporting'
 	            );
 	            $my_cs_query = new WP_Query($args);
 	            while($my_cs_query->have_posts()) :

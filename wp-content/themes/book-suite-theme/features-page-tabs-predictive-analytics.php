@@ -2,7 +2,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1><?php echo $cbtn_text = _e( 'Intuitive Data Tools to boost your Property&rsquo;s Revenue', 'upbootwp' );?></h1>
+				<h1><?php echo $cbtn_text = _e( 'Intuitive Data Tools to Boost Your Property\'s Revenue', 'upbootwp' );?></h1>
 			</div>	
 		</div>
 		<?php 
