@@ -58,7 +58,7 @@
 								</div>
 								Rembrandt Square, <br>Herengracht 597, 1017 CE<br>Amsterdam, Netherlands <br>
 								<?php $email_address = "&#115;&#117;&#105;&#116;&#101;&#104;&#101;&#108;&#112;&#64;&#98;&#111;&#111;&#107;&#105;&#110;&#103;&#46;&#99;&#111;&#109;"?>
-								<br><?php echo $title_text = _e( '1 (800) 734-1769', 'upbootwp' ); ?><br> <a href="<?php echo $email_address; ?>" class="help-addr"><?php echo $email_address; ?></a>
+								<br><?php echo $title_text = _e( '1 (800) 734-1769', 'upbootwp' ); ?><br> <a href="<?php echo "mailto:".$email_address; ?>" class="help-addr"><?php echo $email_address; ?></a>
 							</div>
 						</aside>
 					</div>
