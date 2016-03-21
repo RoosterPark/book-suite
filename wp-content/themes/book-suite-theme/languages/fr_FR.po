@@ -48,9 +48,17 @@ msgstr "Mehr Presse Erwähnungen"
 msgid "1 (800) 734-1769"
 msgstr "+ 31 2 02 61 02 95"
 
+#: Language Link - Global
+msgid "en-us"
+msgstr "fr-fr"
+
 #: Free Consultation - Global
 msgid "Free Consultation"
 msgstr "Kostenlose Beratung"
+
+#: Sing Up Button - Global
+msgid "Sign up"
+msgstr "Anmelden"
 
 #: Reguest A Demo Button - Global
 msgid "Request a Demo"

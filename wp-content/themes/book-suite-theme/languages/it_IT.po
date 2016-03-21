@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2016-02-16 07:54-0800\n"
+"PO-Revision-Date: 2016-03-21 06:55-0700\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: es_ES\n"
@@ -29,7 +29,7 @@ msgstr "Vedi le nostre soluzioni"
 
 #: index.php:Partner Success
 msgid "BookingSuite Partner Success"
-msgstr "BookingSuite Partner Success"
+msgstr "Storie di successo dei partner con BookingSuite"
 
 #: index.php:
 msgid "VIEW MORE PARTNER STORIES"
@@ -54,6 +54,10 @@ msgstr "it-it"
 #: Free Consultation - Global
 msgid "Free Consultation"
 msgstr "Consulenza gratuita"
+
+#: Sing Up Button - Global
+msgid "Sign up"
+msgstr "Anmelden"
 
 #: Reguest A Demo Button - Global
 msgid "Request a Demo"
@@ -104,7 +108,7 @@ msgstr "Leggi la storia"
 
 #: ratecast-page.php:95
 msgid "BookingSuite RateManager Also Includes:"
-msgstr "BookingSuite RateManager bietet weiterhin:"
+msgstr "BookingSuite RateManager ti consente anche di:"
 
 #: plans-page-tabs-prop-web.php:31
 msgid "Price"
@@ -136,7 +140,7 @@ msgstr "Design ottimizzato per i dispositivi mobili"
 
 #: plans-page-tabs-prop-web.php:47
 msgid "Translation Support"
-msgstr "Traduzioni"
+msgstr "Piattaforma Multilingue"
 
 #: plans-page-tabs-prop-web.php:79
 msgid "Monthly Subscription"
@@ -164,7 +168,7 @@ msgstr "Non sai quale piano scegliere per la tua struttura?"
 
 #: product-page.php:312
 msgid "Premium Support"
-msgstr "Premium Support"
+msgstr "Assistenza Premium"
 
 #: solutions-page jumpto scrollto menu links div id's
 msgid "Property-Websites"
@@ -180,7 +184,7 @@ msgstr "Assistenza Premium"
 
 #: plans-page.php:33 product-page.php:46
 msgid "Property Websites"
-msgstr "Property Websites"
+msgstr "Siti web per strutture ricettive"
 
 #: features-page-tabs-property-web.php:5
 msgid "Design"
@@ -192,15 +196,15 @@ msgstr "Tecnologia Cloud"
 
 #: features-page-tabs-property-web.php:146
 msgid "Measuring Success"
-msgstr "Erfolg messen"
+msgstr "Misura il tuo successo"
 
 #: features-page-tabs-property-web.php:216
 msgid "Booking & Integrations"
-msgstr "Booking & Integrationen"
+msgstr "Prenotazioni e Integrazioni"
 
 #: features-page-tabs-property-web.php:287
 msgid "Support"
-msgstr "Unterstützung"
+msgstr "Assistenza"
 
 #: features-page-tabs-predictive-analytics.php:5
 msgid "Intuitive Data Tools to Boost Your Property's Revenue"

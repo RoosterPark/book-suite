@@ -100,6 +100,15 @@ if ($_GET['lang']) {
 							</span>
 						</a>
 						</li>
+                                                <li class="icl-it">
+						<a href="http://suite.booking.com/?lang=it" rel="alternate">
+							<span class="icl_lang_sel_native">Italiano</span>
+							<span class="icl_lang_sel_translated">
+							<span class="icl_lang_sel_bracket"> (</span>
+							Italian
+							<span class="icl_lang_sel_bracket">)</span>
+							</span>
+						</a>
 						</li>
 						</ul>
 					</li>

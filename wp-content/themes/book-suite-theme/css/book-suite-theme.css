@@ -1,6 +1,6 @@
 /* 
  * 
- * Booking-suite-theme syling
+ * Booking-suite-theme syling  xxxxxx 
  * @author Matt Peternell| http://mattpeternell.net
  * @package upBootWP 0.1
  *
@@ -411,7 +411,7 @@ strong {
   background-color: #e0e0e0;
   color: #3c3c3c;
   font-weight: 600;
-  padding: 10px 35px;
+  padding: 10px 20px;
   -webkit-transition: background 300ms ease-in;
   -moz-transition: background 300ms ease-in;
   -ms-transition: background 300ms ease-in;
@@ -2510,3 +2510,4 @@ img.aligncenter {
     max-width: 100%;
   }
 }
+/*# sourceMappingURL=book-suite-theme.css.map */

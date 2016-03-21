@@ -55,6 +55,10 @@ msgstr "es-es"
 msgid "Free Consultation"
 msgstr "Asesoramiento gratis"
 
+#: Sing Up Button - Global
+msgid "Sign up"
+msgstr "Registrarse"
+
 #: Reguest A Demo Button - Global
 msgid "Request a Demo"
 msgstr "Solicitar una demo"
