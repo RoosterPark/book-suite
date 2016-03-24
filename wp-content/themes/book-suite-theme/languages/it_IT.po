@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2016-03-21 06:55-0700\n"
+"PO-Revision-Date: 2016-03-24 09:17-0700\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: es_ES\n"
@@ -172,7 +172,7 @@ msgstr "Assistenza Premium"
 
 #: solutions-page jumpto scrollto menu links div id's
 msgid "Property-Websites"
-msgstr "Siti web per strutture ricettive"
+msgstr "Siti Web"
 
 #: solutions-page jumpto scrollto menu links div id's
 msgid "Revenue-Management"
@@ -184,7 +184,7 @@ msgstr "Assistenza Premium"
 
 #: plans-page.php:33 product-page.php:46
 msgid "Property Websites"
-msgstr "Siti web per strutture ricettive"
+msgstr "Siti Web"
 
 #: features-page-tabs-property-web.php:5
 msgid "Design"
