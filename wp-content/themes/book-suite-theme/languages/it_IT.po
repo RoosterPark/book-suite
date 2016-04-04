@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2016-03-24 09:17-0700\n"
+"PO-Revision-Date: 2016-04-04 07:45-0700\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: es_ES\n"
@@ -57,7 +57,7 @@ msgstr "Consulenza gratuita"
 
 #: Sing Up Button - Global
 msgid "Sign up"
-msgstr "Anmelden"
+msgstr "Registrati"
 
 #: Reguest A Demo Button - Global
 msgid "Request a Demo"
