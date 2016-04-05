@@ -61,7 +61,7 @@ if ($_GET['lang']) {
 <?php do_action( 'before' ); ?>
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	<div class="language-bar">
+<div class="language-bar">
 		<div class="container-fluid">
 			<div class="language-menu">
 				<?php //do_action('wpml_add_language_selector'); ?>
@@ -116,7 +116,7 @@ if ($_GET['lang']) {
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 	<div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
