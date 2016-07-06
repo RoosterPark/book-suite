@@ -258,13 +258,13 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section id="dataDriven" class="sub-section lt-grey" role="banner">
+<section id="dataRates" class="sub-section lt-grey" role="banner">
 	<div class="container-fluid">
 		<div class="row">
        		<div class="col-lg-12">
  			<?php	
 	            $args = array( 
-	                'name' => 'increase-revpar'
+	                'name' => 'data-based-rate-shopping'
 	            );
 	            $my_rev_query = new WP_Query($args);
 	            while($my_rev_query->have_posts()) :

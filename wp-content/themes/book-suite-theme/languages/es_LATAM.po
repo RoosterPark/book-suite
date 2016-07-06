@@ -1,291 +1,291 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: upbootwp\n"
+"Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2016-05-06 12:50+0200\n"
+"PO-Revision-Date: 2016-01-27 11:57+0100\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
-"Language-Team: \n"
-"Language: nl_NL\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"Language: es_LATAM\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
 
 # #################################
 # Booking Wordpress translations section
 # ################################
 #: index.php:24
 msgid "Solutions Driven by Booking.com's unique, Industry-leading Expertise"
-msgstr "Oplossingen die gericht zijn op de groei van uw accommodatie"
+msgstr "Soluciones diseñadas para ayudarte a potenciar tu negocio"
 
 #: index.php:34
 msgid "View Our Solutions"
-msgstr "Bekijk onze Software Oplossingen"
+msgstr "Ver nuestras soluciones"
 
 #: index.php:Partner Success
 msgid "BookingSuite Partner Success"
-msgstr "Succesverhalen van partners"
+msgstr "Historias de éxito con BookingSuite"
 
 #: index.php:
 msgid "VIEW MORE PARTNER STORIES"
-msgstr "Bekijk meer Partner Publicaties"
+msgstr "Ver más testimonios de colaboradores"
 
 #: index.php:In The Press
 msgid "BookingSuite In The Press"
-msgstr "BookingSuite in het nieuws"
+msgstr "BookingSuite en la prensa"
 
 #: index.php:In The Press
 msgid "View More Press Mentions"
-msgstr "Bekijk meer Pers Publicaties"
+msgstr "Ver más menciones en prensa"
 
 #: Booking Phone Number - Global Footer
 msgid "1 (800) 734-1769"
-msgstr "+31 207035444 "
+msgstr "+31 207035444"
 
 #: Language Link - Global
 msgid "en-us"
-msgstr "nl-nl"
+msgstr "es-es"
 
 #: Free Consultation - Global
 msgid "Free Consultation"
-msgstr "Gratis adviesgesprek"
+msgstr "Asesoramiento gratis"
 
 #: Sing Up Button - Global
 msgid "Sign up"
-msgstr "Aanmelden"
+msgstr "Registrarse"
 
 #: Reguest A Demo Button - Global
 msgid "Request a Demo"
-msgstr "Vraag een demo aan"
+msgstr "Solicitar una demo"
 
 #: View Our Plans Button - Global
 msgid "View Our Plans"
-msgstr "Bekijk onze Opties"
+msgstr "Ver nuestros planes"
 
 #: View Plans Button - Global
 msgid "View Plans"
-msgstr "Ver Planos"
+msgstr "Ver planes"
 
 #: See Product Features Button - Global
 msgid "See Product Features"
-msgstr "Bekijk de Software Functies"
+msgstr "Ver características del producto"
 
 #: See All Features Button - Global
 msgid "See All Features"
-msgstr "Bekijk alle Functies"
+msgstr "Ver todas las funciones"
 
 #: Learn More Button - Global
 msgid "Learn More"
-msgstr "Lees Meer"
+msgstr "Más información"
 
 #: Log IN Button - Global
 msgid "Log In"
-msgstr "Inloggen"
+msgstr "Iniciar sesión"
 
 #: Join Booking Button - Global
 msgid "Join Booking"
-msgstr "Voei uw agccommodatie toe aaa Booking"
+msgstr "Registrarse en Booking.com"
 
 #: See All News - Global
 msgid "See All News"
-msgstr "Bekijk alle Nieuws"
+msgstr "Ver todas las noticias"
 
 #: Visit Help Desk Button - Global
 msgid "Visit Help Desk"
-msgstr "Helpdesk"
+msgstr "Asistencia online"
 
 msgid "View Job Openings"
-msgstr "Bekijk Vacatures"
+msgstr "Ver ofertas de trabajo"
 
 #: Read The Story Button - Global
 msgid "Read The Story"
-msgstr "Onze Geschiedenis"
+msgstr "Leer la historia"
 
 #: ratecast-page.php:95
 msgid "BookingSuite RateManager Also Includes:"
-msgstr "BookingSuite RateManager biedt ook:"
+msgstr "BookingSuite RateManager también include:"
 
 #: plans-page-tabs-prop-web.php:31
 msgid "Price"
-msgstr "Prijs"
+msgstr "Precio:"
 
 #: plans-page-tabs-prop-web.php:32
 msgid "10% Commission"
-msgstr "10% Commissie"
+msgstr "10% de comisión"
 
 #: plans-page-tabs-prop-web.php:35
 msgid "Website Pages"
-msgstr "Websitepagina's"
+msgstr "Páginas:"
 
 #: plans-page-tabs-prop-web.php:36
 msgid "Homepage, Rooms, Photos, Location, Amenities, & Reviews"
-msgstr "Homepage, Kamers, Foto's, Locatie, Voorzieningen en Beoordelingen"
+msgstr "Inicio, Habitaciones, Fotos, Ubicación, Equipamiento y Comentarios"
 
 #: plans-page-tabs-prop-web.php:39
 msgid "Analytics"
-msgstr "Statistieken"
+msgstr "Análisis de datos:"
 
 #: plans-page-tabs-prop-web.php:40
 msgid "Basic"
-msgstr "Eenvoudig"
+msgstr "básico"
 
 #: plans-page-tabs-prop-web.php:43
 msgid "Mobile Friendly Design"
-msgstr "Responsive Design"
+msgstr "Diseño adaptado para dispositivos móviles"
 
 #: plans-page-tabs-prop-web.php:47
 msgid "Translation Support"
-msgstr "Ondersteuning bij vertalingen"
+msgstr "Traducción"
 
 #: plans-page-tabs-prop-web.php:79
 msgid "Monthly Subscription"
-msgstr "Maandabonnement"
+msgstr "suscripción"
 
 #: plans-page-tabs-prop-web.php:80
 msgid "Contact us to learn more"
-msgstr "Neem contact met ons op voor meer informatie"
+msgstr "ponte en contacto con nosotros para más información"
 
 #: plans-page-tabs-prop-web.php:84
 msgid "Unlimited"
-msgstr "Ongelimiteerd"
+msgstr "sin límite"
 
 #: plans-page-tabs-prop-web.php:88
 msgid "Advanced"
-msgstr "Geavanceerd"
+msgstr "avanzado"
 
 #: plans-page.php:34 plans-page-tabs-biz-intel.php:6
 msgid "Revenue Management"
-msgstr "Revenue Management "
+msgstr "Revenue Management"
 
 #: plans-page-tabs-biz-intel.php:42
 msgid "Not Sure Which Plan is Right for Your Property?"
-msgstr "Weet u niet welke optie het beste bij uw accommodatie past?"
+msgstr "¿No sabes cuál es la mejor opción para tu alojamiento?"
 
 #: product-page.php:312
 msgid "Premium Support"
-msgstr "Premium ondersteuning"
+msgstr "Premium Support"
 
 #: solutions-page jumpto scrollto menu links div id's
 msgid "Property-Websites"
-msgstr "Accommodatiewebsites"
+msgstr "Website"
 
 #: solutions-page jumpto scrollto menu links div id's
 msgid "Revenue-Management"
-msgstr "Revenue-Management "
+msgstr "Revenue-Management"
 
 #: solutions-page jumpto scrollto menu links div id's
 msgid "Premium-Support"
-msgstr "Premium-ondersteuning"
+msgstr "Asistencia Premium"
 
 #: plans-page.php:33 product-page.php:46
 msgid "Property Websites"
-msgstr "Accommodatiewebsites"
+msgstr "Webs para alojamientos"
 
 #: features-page-tabs-property-web.php:5
 msgid "Design"
-msgstr "Design"
+msgstr "Diseño"
 
 #: features-page-tabs-property-web.php:76
 msgid "Cloud Technology"
-msgstr "Cloud Technology"
+msgstr "Tecnología basada en la nube"
 
 #: features-page-tabs-property-web.php:146
 msgid "Measuring Success"
-msgstr "Succes meten"
+msgstr "Mide tu éxito"
 
 #: features-page-tabs-property-web.php:216
 msgid "Booking & Integrations"
-msgstr "Reserveringen & Integratie"
+msgstr "Reservas e integraciones"
 
 #: features-page-tabs-property-web.php:287
 msgid "Support"
-msgstr "Ondersteuning"
+msgstr "Asistencia"
 
 #: features-page-tabs-predictive-analytics.php:5
 msgid "Intuitive Data Tools to Boost Your Property's Revenue"
-msgstr "Intuïtieve tools voor data-analyse om uw omzet te verhogen"
+msgstr "Herramientas de datos intuitivas para aumentar los ingresos de tu alojamiento"
 
 #: features-page-tabs-predictive-analytics.php:5
 msgid "I want to access BookingSuite&rsquo;s online helpdesk"
-msgstr "Ik wil naar de online Helpdesk van BookingSuite"
+msgstr "Quiero acceder al servicio de asistencia online de BookingSuite"
 
 #: stories-page.php:44
 msgid "Partner Success"
-msgstr "Partner Success"
+msgstr "Historias de éxito"
 
 #: stories-page.php: Filter Button:49
 msgid "Filter"
-msgstr "Filter"
+msgstr "Filtro"
 
 #: stories-page.php: Show All Button:49
 msgid "Show All"
-msgstr "Toon alles"
+msgstr "Mostrar todo"
 
 #: contact-us-page.php:36
 msgid "I want to get started with BookingSuite"
-msgstr "Ik wil aan de slag met BookingSuite"
+msgstr "Quiero iniciar sesión en mi cuenta de BookingSuite"
 
 #: contact-us-page.php:40
 msgid "I want to log in to my BookingSuite account"
-msgstr "Ik wil inloggen op mijn BookingSuite-account"
+msgstr "Quiero iniciar sesión en mi cuenta de BookingSuite"
 
 #: contact-us-page.php:44
 msgid "I need to become a Booking.com partner"
-msgstr "Ik wil me inschrijven als partner van Booking.com"
+msgstr "Necesito hacerme colaborador de Booking.com"
 
 #: contact-us-page.php:48
 msgid "I want to access BookingSuite’s online helpdesk"
-msgstr "Ik wil naar de online Helpdesk van BookingSuite"
+msgstr "Quiero acceder al servicio de asistencia online de BookingSuite"
 
 #: contact-us-page.php:62
 msgid "Speak With a Partner Success Representative"
-msgstr "Praat met een vertegenwoordiger van het Partner Success-team"
+msgstr "Ponte en contacto con uno de nuestros representantes"
 
 #: contact-us-page.php:65
 msgid "Regional Partner Support Offices:"
-msgstr "Kantoren Regionale Partner Support"
+msgstr "Oficinas regionales de asistencia a colaboradores"
 
 #: web-collection-page.php:63
 msgid "Your Brand Is The Bottom Line"
-msgstr "Het draait allemaal om uw merk."
+msgstr "Tu marca es lo importante."
 
 #: web-complete-page.php:94
 msgid "More Features To Enjoy"
-msgstr "Nog meer voordelen"
+msgstr "Más ventajas"
 
 #: web-conectivity-page.php:121
 msgid "Is your brand interested in becoming a BookingSuite Connectivity Partner?"
-msgstr "Heeft uw merk interesse om connectiviteitspartner van BookingSuite te worden?"
+msgstr "¿Te interesa que tu marca sea un proveedor de XML de BookingSuite?"
 
 #: web-conectivity-page.php:121
 msgid "Send us an email at:"
-msgstr "E-mail:"
+msgstr "Envía tu solicitud aquí:"
 
 #: about-page.php:31
 msgid "We create new ways of helping the hospitality industry work."
-msgstr "We creëeren nieuwe manieren om de gastvrijheidsindustrie te helpen."
+msgstr "Creamos nuevas formas de ayudar a la industria hotelera."
 
 #: about-page.php:83
 msgid "And We&rsquo;re All Around The World."
-msgstr "En we zijn wereldwijd actief."
+msgstr "Y estamos en todo el mundo."
 
 #: about-page.php:84
 msgid "Regional Headquarters"
-msgstr "Regionale hoofdkantoren"
+msgstr "Oficinas regionales"
 
 #: about-page.php:151
 msgid "BookingSuite in the News"
-msgstr "BookingSuite in de media"
+msgstr "BookingSuite en los medios"
 
 #: about-page.php:156
 msgid "Latest News"
-msgstr "Laatste nieuws"
+msgstr "Últimas noticias"
 
 #: archive.php
 msgid "Press Releases and Mentions"
-msgstr "Persberichten en vermeldingen"
+msgstr "Comunicados y menciones en prensa "

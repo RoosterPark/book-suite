@@ -34,7 +34,7 @@ if ($_GET['lang']) {
                         }
                         if (get_field('learn_more_btn_label_left')) { ?>
                             <footer>
-                                <a class="btn btn-info btn-lg" title="WebComplete" href="<?php echo get_field('learn_more_btn_link_left'); ?><?php echo $lang_par; ?>" role="button"><?php echo get_field('learn_more_btn_label_left'); ?></a>
+                                <a class="btn btn-info btn-lg" title="WebComplete" href="<?php echo get_field('learn_more_btn_link_left'); ?>" role="button"><?php echo get_field('learn_more_btn_label_left'); ?></a>
                             </footer>
                         <?php     
                         }
@@ -46,26 +46,21 @@ if ($_GET['lang']) {
 
                     <ul class="options">
                         <li class="opt-items">
-                            <?php if (get_field('price_title_left')) { ?>
-                                <h3><?php echo get_field('price_title_left'); ?></h3>
-                                <?php
-                            }
-                            if (get_field('column_copy_left')) {
-                                ?>
-                                <p><?php echo get_field('price_copy_left'); ?></p>
-                            <?php } ?>
-                        </li>
-                        <li class="opt-items">
                             <?php if (get_field('option_1_title_left')) { ?>
                                 <h3><?php echo get_field('option_1_title_left'); ?></h3>
-                                <?php
-                            }
-                            if (get_field('option_1_copy_left')) {
-                                ?>
+                            <?php } ?>
+                                
+                            <?php if (get_field('option_1_copy_left')) { ?>
                                 <p><?php echo get_field('option_1_copy_left'); ?></p>
-                                <?php
-                            }
-                            ?>
+                            <?php } ?>
+                            
+                            <?php if (get_field('option_1_link_left')) { ?>
+                                <small><?php echo get_field('option_1_link_left'); ?></small>
+                            <?php } ?>
+                            
+                            <?php if (get_field('option_1_icon_left')) { ?>
+                                <p><img src="<?php echo get_field('option_1_icon_left'); ?>" class="icon svg check" alt="Icon"/></p>
+                            <?php } ?>
                         </li>
                         <li class="opt-items">
                             <?php if (get_field('option_2_title_left')) { ?>
@@ -78,6 +73,12 @@ if ($_GET['lang']) {
                                 <?php
                             }
                             ?>
+                            <?php
+                            if (get_field('option_2_icon_left')) {
+                                ?>
+                                <p><img src="<?php echo get_field('option_2_icon_left'); ?>" class="icon svg check" alt="Icon"/></p>
+                                <?php
+                            } ?>
                         </li>
                         <li class="opt-items">
                             <?php if (get_field('option_3_title_left')) { ?>
@@ -90,6 +91,12 @@ if ($_GET['lang']) {
                                 <?php
                             }
                             ?>
+                            <?php
+                            if (get_field('option_3_icon_left')) {
+                                ?>
+                                <p><img src="<?php echo get_field('option_3_icon_left'); ?>" class="icon svg check" alt="Icon"/></p>
+                                <?php
+                            } ?>
                         </li>
                         <li class="opt-items">
                             <?php if (get_field('option_4_title_left')) { ?>
@@ -102,18 +109,48 @@ if ($_GET['lang']) {
                                 <?php
                             }
                             ?>
+                            <?php
+                            if (get_field('option_4_icon_left')) {
+                                ?>
+                                <p><img src="<?php echo get_field('option_4_icon_left'); ?>" class="icon svg check" alt="Icon"/></p>
+                                <?php
+                            } ?>
                         </li>
                         <li class="opt-items">
                             <?php if (get_field('option_5_title_left')) { ?>
                                 <h3><?php echo get_field('option_5_title_left'); ?></h3>
                                 <?php
                             }
+                            if (get_field('option_5_copy_left')) {
+                                ?>
+                                <p><?php echo get_field('option_5_copy_left'); ?></p>
+                                <?php
+                            }
+                            ?>
+                             <?php
                             if (get_field('option_5_icon_left')) {
                                 ?>
                                 <p><img src="<?php echo get_field('option_5_icon_left'); ?>" class="icon svg check" alt="Icon"/></p>
                                 <?php
+                            } ?>
+                        </li>
+                        <li class="opt-items">
+                            <?php if (get_field('option_6_title_left')) { ?>
+                                <h3><?php echo get_field('option_6_title_left'); ?></h3>
+                                <?php
+                            }
+                            if (get_field('option_6_copy_left')) {
+                                ?>
+                                <p><?php echo get_field('option_6_copy_left'); ?></p>
+                                <?php
                             }
                             ?>
+                            <?php
+                            if (get_field('option_6_icon_left')) {
+                                ?>
+                                <p><img src="<?php echo get_field('option_6_icon_left'); ?>" class="icon svg check" alt="Icon"/></p>
+                                <?php
+                            } ?>
                         </li>			
                     </ul>
                 </section>
@@ -138,7 +175,7 @@ if ($_GET['lang']) {
                             ?>
                             <?php if (get_field('learn_more_btn_label_right')) { ?>
                             <footer>
-                                <a class="btn btn-info btn-lg" title="WebComplete" href="<?php echo get_field('learn_more_btn_link_right'); ?><?php echo $lang_par; ?>" role="button"><?php echo get_field('learn_more_btn_label_right'); ?></a>
+                                <a class="btn btn-info btn-lg" title="WebComplete" href="<?php echo get_field('learn_more_btn_link_url_right'); ?>" role="button"><?php echo get_field('learn_more_btn_label_right'); ?></a>
                             </footer>
                             <?php     
                             }
@@ -146,28 +183,21 @@ if ($_GET['lang']) {
                     </article>
                     <ul class="options">
                         <li class="opt-items">
-                            <?php if (get_field('price_title_right')) { ?>
-                                <h3><?php echo get_field('price_title_right'); ?></h3>
-                                <?php
-                            }
-                            if (get_field('column_copy_right')) {
-                                ?>
-                                <p><?php echo get_field('price_copy_right'); ?></p>
-                                <?php
-                            }
-                            ?>
-                        </li>
-                        <li class="opt-items">
                             <?php if (get_field('option_1_title_right')) { ?>
                                 <h3><?php echo get_field('option_1_title_right'); ?></h3>
-                                <?php
-                            }
-                            if (get_field('option_1_copy_right')) {
-                                ?>
+                            <?php } ?>
+                                
+                            <?php if (get_field('option_1_copy_left')) { ?>
                                 <p><?php echo get_field('option_1_copy_right'); ?></p>
-                                <?php
-                            }
-                            ?>
+                            <?php } ?>
+                            
+                            <?php if (get_field('option_1_link_left')) { ?>
+                                <small><?php echo get_field('option_1_link_right'); ?></small>
+                            <?php } ?>
+                            
+                            <?php if (get_field('option_1_icon_left')) { ?>
+                                <p><img src="<?php echo get_field('option_1_icon_right'); ?>" class="icon svg check" alt="Icon"/></p>
+                            <?php } ?>
                         </li>
                         <li class="opt-items">
                             <?php if (get_field('option_2_title_right')) { ?>
@@ -178,6 +208,13 @@ if ($_GET['lang']) {
                                 ?>
                                 <p><?php echo get_field('option_2_copy_right'); ?></p>
                                 <?php
+                            }
+                            ?>
+                                <?php
+                            if (get_field('option_2_icon_right')) {
+                                ?>
+                                <p><img src="<?php echo get_field('option_2_icon_right'); ?>" class="icon svg check" alt="Icon"/></p>
+                            <?php
                             }
                             ?>
                         </li>
@@ -192,6 +229,13 @@ if ($_GET['lang']) {
                                 <?php
                             }
                             ?>
+                                <?php
+                            if (get_field('option_3_icon_right')) {
+                                ?>
+                                <p><img src="<?php echo get_field('option_3_icon_right'); ?>" class="icon svg check" alt="Icon"/></p>
+                            <?php
+                            }
+                            ?>
                         </li>
                         <li class="opt-items">
                             <?php if (get_field('option_4_title_right')) { ?>
@@ -204,19 +248,51 @@ if ($_GET['lang']) {
                                 <?php
                             }
                             ?>
+                                <?php
+                            if (get_field('option_4_icon_right')) {
+                                ?>
+                                <p><img src="<?php echo get_field('option_4_icon_right'); ?>" class="icon svg check" alt="Icon"/></p>
+                            <?php
+                            }
+                            ?>
                         </li>
                         <li class="opt-items">
                             <?php if (get_field('option_5_title_right')) { ?>
                                 <h3><?php echo get_field('option_5_title_right'); ?></h3>
                                 <?php
                             }
-                            if (get_field('option_5_icon_right')) {
+                            if (get_field('option_5_copy_right')) {
                                 ?>
-                                <p><img src="<?php echo get_field('option_5_icon_right'); ?>" class="icon svg check" alt="Icon"/></p>
+                                <p><?php echo get_field('option_5_copy_right'); ?></p>
                                 <?php
                             }
                             ?>
-                        </li>				
+                            <?php
+                            if (get_field('option_5_icon_right')) {
+                                ?>
+                                <p><img src="<?php echo get_field('option_5_icon_right'); ?>" class="icon svg check" alt="Icon"/></p>
+                            <?php
+                            }
+                            ?>
+                        </li>
+                        <li class="opt-items">
+                            <?php if (get_field('option_6_title_right')) { ?>
+                                <h3><?php echo get_field('option_6_title_right'); ?></h3>
+                                <?php
+                            }
+                            if (get_field('option_6_copy_left')) {
+                                ?>
+                                <p><?php echo get_field('option_6_copy_right'); ?></p>
+                                <?php
+                            }
+                            ?>
+                            <?php
+                            if (get_field('option_6_icon_right')) {
+                                ?>
+                                <p><img src="<?php echo get_field('option_6_icon_right'); ?>" class="icon svg check" alt="Icon"/></p>
+                                <?php
+                            } ?>
+                        </li>	
                     </ul>
                 </section>
             </div>

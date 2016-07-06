@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: upbootwp\n"
 "POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2016-05-06 12:50+0200\n"
+"PO-Revision-Date: 2016-05-07 10:30-0700\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
-"Language: nl_NL\n"
+"Language: hr_HR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
@@ -21,27 +21,27 @@ msgstr ""
 # ################################
 #: index.php:24
 msgid "Solutions Driven by Booking.com's unique, Industry-leading Expertise"
-msgstr "Oplossingen die gericht zijn op de groei van uw accommodatie"
+msgstr "Rješenja uz koja ćete moći dodatno poboljšati svoje poslovanje"
 
 #: index.php:34
 msgid "View Our Solutions"
-msgstr "Bekijk onze Software Oplossingen"
+msgstr "Prikaži naša rješenja"
 
 #: index.php:Partner Success
 msgid "BookingSuite Partner Success"
-msgstr "Succesverhalen van partners"
+msgstr "BookingSuite iskustva partnera"
 
 #: index.php:
 msgid "VIEW MORE PARTNER STORIES"
-msgstr "Bekijk meer Partner Publicaties"
+msgstr "Prikaži više priča partnera"
 
 #: index.php:In The Press
 msgid "BookingSuite In The Press"
-msgstr "BookingSuite in het nieuws"
+msgstr "BookingSuite u medijima"
 
 #: index.php:In The Press
 msgid "View More Press Mentions"
-msgstr "Bekijk meer Pers Publicaties"
+msgstr "Prikaži više članaka iz medija"
 
 #: Booking Phone Number - Global Footer
 msgid "1 (800) 734-1769"
@@ -49,142 +49,142 @@ msgstr "+31 207035444 "
 
 #: Language Link - Global
 msgid "en-us"
-msgstr "nl-nl"
+msgstr "hr-hr"
 
 #: Free Consultation - Global
 msgid "Free Consultation"
-msgstr "Gratis adviesgesprek"
+msgstr "Besplatne konzultacije"
 
 #: Sing Up Button - Global
 msgid "Sign up"
-msgstr "Aanmelden"
+msgstr "Registriraj se"
 
 #: Reguest A Demo Button - Global
 msgid "Request a Demo"
-msgstr "Vraag een demo aan"
+msgstr "Zatraži demo prezentaciju"
 
 #: View Our Plans Button - Global
 msgid "View Our Plans"
-msgstr "Bekijk onze Opties"
+msgstr "Prikaži naše planove"
 
 #: View Plans Button - Global
 msgid "View Plans"
-msgstr "Ver Planos"
+msgstr "Prikaži planove"
 
 #: See Product Features Button - Global
 msgid "See Product Features"
-msgstr "Bekijk de Software Functies"
+msgstr "Prikaži detalje o proizvodima"
 
 #: See All Features Button - Global
 msgid "See All Features"
-msgstr "Bekijk alle Functies"
+msgstr "Prikaži sve opcije"
 
 #: Learn More Button - Global
 msgid "Learn More"
-msgstr "Lees Meer"
+msgstr "Saznaj više"
 
 #: Log IN Button - Global
 msgid "Log In"
-msgstr "Inloggen"
+msgstr "Prijavi se"
 
 #: Join Booking Button - Global
 msgid "Join Booking"
-msgstr "Voei uw agccommodatie toe aaa Booking"
+msgstr "Pridruži se Bookingu"
 
 #: See All News - Global
 msgid "See All News"
-msgstr "Bekijk alle Nieuws"
+msgstr "Prikaži sve novosti"
 
 #: Visit Help Desk Button - Global
 msgid "Visit Help Desk"
 msgstr "Helpdesk"
 
 msgid "View Job Openings"
-msgstr "Bekijk Vacatures"
+msgstr "Prikaži otvorene pozicije"
 
 #: Read The Story Button - Global
 msgid "Read The Story"
-msgstr "Onze Geschiedenis"
+msgstr "Pročitaj priču"
 
 #: ratecast-page.php:95
 msgid "BookingSuite RateManager Also Includes:"
-msgstr "BookingSuite RateManager biedt ook:"
+msgstr "BookingSuite RateManager također uključuje:"
 
 #: plans-page-tabs-prop-web.php:31
 msgid "Price"
-msgstr "Prijs"
+msgstr "Cijena"
 
 #: plans-page-tabs-prop-web.php:32
 msgid "10% Commission"
-msgstr "10% Commissie"
+msgstr "Provizija 10%"
 
 #: plans-page-tabs-prop-web.php:35
 msgid "Website Pages"
-msgstr "Websitepagina's"
+msgstr "Stranice"
 
 #: plans-page-tabs-prop-web.php:36
 msgid "Homepage, Rooms, Photos, Location, Amenities, & Reviews"
-msgstr "Homepage, Kamers, Foto's, Locatie, Voorzieningen en Beoordelingen"
+msgstr "Početna stranica, Jedinice, Fotografije, Lokacija, Sadržaji i Recenzije"
 
 #: plans-page-tabs-prop-web.php:39
 msgid "Analytics"
-msgstr "Statistieken"
+msgstr "Statistika"
 
 #: plans-page-tabs-prop-web.php:40
 msgid "Basic"
-msgstr "Eenvoudig"
+msgstr "Osnovna"
 
 #: plans-page-tabs-prop-web.php:43
 msgid "Mobile Friendly Design"
-msgstr "Responsive Design"
+msgstr "Dizajn optimiziran za mobilne uređaje"
 
 #: plans-page-tabs-prop-web.php:47
 msgid "Translation Support"
-msgstr "Ondersteuning bij vertalingen"
+msgstr "Podrška prijevoda"
 
 #: plans-page-tabs-prop-web.php:79
 msgid "Monthly Subscription"
-msgstr "Maandabonnement"
+msgstr "REV MAN TAB"
 
 #: plans-page-tabs-prop-web.php:80
 msgid "Contact us to learn more"
-msgstr "Neem contact met ons op voor meer informatie"
+msgstr "REV MAN TAB"
 
 #: plans-page-tabs-prop-web.php:84
 msgid "Unlimited"
-msgstr "Ongelimiteerd"
+msgstr "Neograničeno"
 
 #: plans-page-tabs-prop-web.php:88
 msgid "Advanced"
-msgstr "Geavanceerd"
+msgstr "Napredna"
 
 #: plans-page.php:34 plans-page-tabs-biz-intel.php:6
 msgid "Revenue Management"
-msgstr "Revenue Management "
+msgstr "Revenue Management"
 
 #: plans-page-tabs-biz-intel.php:42
 msgid "Not Sure Which Plan is Right for Your Property?"
-msgstr "Weet u niet welke optie het beste bij uw accommodatie past?"
+msgstr "Niste sigurni koja je opcija najbolja za vaš objekt?"
 
 #: product-page.php:312
 msgid "Premium Support"
-msgstr "Premium ondersteuning"
+msgstr "Premium podrška"
 
 #: solutions-page jumpto scrollto menu links div id's
 msgid "Property-Websites"
-msgstr "Accommodatiewebsites"
+msgstr "Internetske stranice za smještajne objekte"
 
 #: solutions-page jumpto scrollto menu links div id's
 msgid "Revenue-Management"
-msgstr "Revenue-Management "
+msgstr "Revenue-Management"
 
 #: solutions-page jumpto scrollto menu links div id's
 msgid "Premium-Support"
-msgstr "Premium-ondersteuning"
+msgstr "Premium-podrška"
 
 #: plans-page.php:33 product-page.php:46
 msgid "Property Websites"
-msgstr "Accommodatiewebsites"
+msgstr "Internetske stranice za smještajne objekte"
 
 #: features-page-tabs-property-web.php:5
 msgid "Design"
@@ -192,100 +192,100 @@ msgstr "Design"
 
 #: features-page-tabs-property-web.php:76
 msgid "Cloud Technology"
-msgstr "Cloud Technology"
+msgstr "Tehnologija oblaka"
 
 #: features-page-tabs-property-web.php:146
 msgid "Measuring Success"
-msgstr "Succes meten"
+msgstr "Mjerenje uspjeha"
 
 #: features-page-tabs-property-web.php:216
 msgid "Booking & Integrations"
-msgstr "Reserveringen & Integratie"
+msgstr "Rezervacije i integriranje"
 
 #: features-page-tabs-property-web.php:287
 msgid "Support"
-msgstr "Ondersteuning"
+msgstr "Podrška"
 
 #: features-page-tabs-predictive-analytics.php:5
 msgid "Intuitive Data Tools to Boost Your Property's Revenue"
-msgstr "Intuïtieve tools voor data-analyse om uw omzet te verhogen"
+msgstr "Intuitivni alati za prikupljanje podataka za povećanje vaših prihoda"
 
 #: features-page-tabs-predictive-analytics.php:5
 msgid "I want to access BookingSuite&rsquo;s online helpdesk"
-msgstr "Ik wil naar de online Helpdesk van BookingSuite"
+msgstr "Želim pristupiti korisničkoj podršci BookingSuitea"
 
 #: stories-page.php:44
 msgid "Partner Success"
-msgstr "Partner Success"
+msgstr "Uspjeh partnera"
 
 #: stories-page.php: Filter Button:49
 msgid "Filter"
-msgstr "Filter"
+msgstr "Filtar"
 
 #: stories-page.php: Show All Button:49
 msgid "Show All"
-msgstr "Toon alles"
+msgstr "Prikaži sve"
 
 #: contact-us-page.php:36
 msgid "I want to get started with BookingSuite"
-msgstr "Ik wil aan de slag met BookingSuite"
+msgstr "Želim početi koristiti BookingSuite"
 
 #: contact-us-page.php:40
 msgid "I want to log in to my BookingSuite account"
-msgstr "Ik wil inloggen op mijn BookingSuite-account"
+msgstr "Želim se prijaviti u svoj BookingSuite korisnički račun"
 
 #: contact-us-page.php:44
 msgid "I need to become a Booking.com partner"
-msgstr "Ik wil me inschrijven als partner van Booking.com"
+msgstr "Želim postati partner Booking.com-a"
 
 #: contact-us-page.php:48
 msgid "I want to access BookingSuite’s online helpdesk"
-msgstr "Ik wil naar de online Helpdesk van BookingSuite"
+msgstr "Želim pristupiti korisničkoj podršci BookingSuitea"
 
 #: contact-us-page.php:62
 msgid "Speak With a Partner Success Representative"
-msgstr "Praat met een vertegenwoordiger van het Partner Success-team"
+msgstr "Želim razgovarati sa službom za podršku partnerima"
 
 #: contact-us-page.php:65
 msgid "Regional Partner Support Offices:"
-msgstr "Kantoren Regionale Partner Support"
+msgstr "Regionalni uredi za podršku partnerima"
 
 #: web-collection-page.php:63
 msgid "Your Brand Is The Bottom Line"
-msgstr "Het draait allemaal om uw merk."
+msgstr "Vaš je brand najvažniji."
 
 #: web-complete-page.php:94
 msgid "More Features To Enjoy"
-msgstr "Nog meer voordelen"
+msgstr "Još prednosti"
 
 #: web-conectivity-page.php:121
 msgid "Is your brand interested in becoming a BookingSuite Connectivity Partner?"
-msgstr "Heeft uw merk interesse om connectiviteitspartner van BookingSuite te worden?"
+msgstr "Jeste li zainteresirani za suradnju s parnterom BookingSuitea koji pruža usluge povezivosti?"
 
 #: web-conectivity-page.php:121
 msgid "Send us an email at:"
-msgstr "E-mail:"
+msgstr "E-pošta:"
 
 #: about-page.php:31
 msgid "We create new ways of helping the hospitality industry work."
-msgstr "We creëeren nieuwe manieren om de gastvrijheidsindustrie te helpen."
+msgstr "Kreiramo nove načine podržavanja hotelijerske branše."
 
 #: about-page.php:83
 msgid "And We&rsquo;re All Around The World."
-msgstr "En we zijn wereldwijd actief."
+msgstr "Prisutni smo u cijelom svijetu."
 
 #: about-page.php:84
 msgid "Regional Headquarters"
-msgstr "Regionale hoofdkantoren"
+msgstr "Regionalno sjedište"
 
 #: about-page.php:151
 msgid "BookingSuite in the News"
-msgstr "BookingSuite in de media"
+msgstr "BookingSuite u medijima"
 
 #: about-page.php:156
 msgid "Latest News"
-msgstr "Laatste nieuws"
+msgstr "Najnovije vijesti"
 
 #: archive.php
 msgid "Press Releases and Mentions"
-msgstr "Persberichten en vermeldingen"
+msgstr "Objave u medijima"

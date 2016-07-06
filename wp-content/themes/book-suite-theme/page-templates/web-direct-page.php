@@ -21,7 +21,7 @@ get_header(); ?>
 				<?php the_content(); ?>
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<div class="jumbo-btn-group">
-				<a class="btn btn-primary btn-lg" role="button" target="_blank" href="http://info.suite.booking.com/webdirect-request-demo/<?php echo $link_text = _e('en-us','upbootwp');?>" title="<?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?></a>
+				<a class="btn btn-primary btn-lg" role="button" target="_blank" href="https://admin.booking.com/" title="<?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?></a>
 				</div>
 		</div>
 	</div>
@@ -143,7 +143,7 @@ get_header(); ?>
 		<div class="row">
 	    	<div class="col-md-12">
 	        	<div class="text-center">
-					<a class="btn btn-primary btn-lg" role="button" href="http://info.suite.booking.com/webdirect-request-demo/<?php echo $link_text = _e('en-us','upbootwp');?>" target="_blank" title="<?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?></a>
+					<a class="btn btn-primary btn-lg" role="button" href="https://admin.booking.com/" target="_blank" title="<?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?></a>
 				</div>
 	    	</div>
 	    </div>

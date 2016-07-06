@@ -1,863 +1,291 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Sparkling Theme\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-04 15:02+0200\n"
-"PO-Revision-Date: 2015-04-04 15:02+0200\n"
+"Project-Id-Version: upbootwp\n"
+"POT-Creation-Date: 2015-04-04 15:01+0200\n"
+"PO-Revision-Date: 2016-05-02 09:58-0700\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
-"Language-Team: colorlib <info@colorlib.com>\n"
-"Language: pl\n"
+"Language-Team: \n"
+"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Loco-Source-Locale: en_GB\n"
-"X-Generator: Poedit 1.7.5\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
-"X-Loco-Parser: loco_parse_po\n"
-"X-Loco-Target-Locale: pl_PL\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPath-1: ..\n"
 
-#: ../404.php:15
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Ups! Strona nie może być znaleziona."
-
-#: ../404.php:19
-msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links "
-"below or a search?"
-msgstr ""
-"Nic nie znaleziono w tej lokalizacji. Spróbuj jednego z poniższych linków "
-"albo użyj wyszukiwarki."
-
-#: ../404.php:25
-#, fuzzy
-msgid "Recent Posts"
-msgstr "Nawigacja postów"
-
-#: ../404.php:31
-msgid "Most Used Categories"
-msgstr "Najczęściej używane kategorie."
-
-#: ../404.php:52
-#, php-format
-msgid "Try looking in the monthly archives. %1$s"
-msgstr "Spróbuj wyszukać w miesięcznych archiwach. %1$s"
-
-#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
-msgid "Archives"
-msgstr "Archiwa"
-
-#: ../404.php:58
-#, fuzzy
-msgid "Tags"
-msgstr "Używany w tagach P"
-
-#: ../archive.php:27
-#, php-format
-msgid "Author: %s"
-msgstr "Autor: %s"
-
-#: ../archive.php:30
-#, php-format
-msgid "Day: %s"
-msgstr "Dzień: %s"
-
-#: ../archive.php:33
-#, php-format
-msgid "Month: %s"
-msgstr "Miesiąc: %s"
-
-#: ../archive.php:36
-#, php-format
-msgid "Year: %s"
-msgstr "Rok: %s"
-
-#: ../archive.php:39
-msgid "Asides"
-msgstr "Obok"
-
-#: ../archive.php:42
-msgid "Galleries"
-msgstr "Galerie"
-
-#: ../archive.php:45
-msgid "Images"
-msgstr "Obrazki"
-
-#: ../archive.php:48
-msgid "Videos"
-msgstr "Wideo"
-
-#: ../archive.php:51
-msgid "Quotes"
-msgstr "Cytaty"
-
-#: ../archive.php:54
-msgid "Links"
-msgstr "Linki"
-
-#: ../archive.php:57
-msgid "Statuses"
-msgstr "Statusy"
-
-#: ../archive.php:60
-msgid "Audios"
-msgstr "Dzwięki"
-
-#: ../archive.php:63
-msgid "Chats"
-msgstr "Czaty"
-
-#: ../comments.php:30
-#, php-format
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Jedna myśl na temat &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s myśli na temat &ldquo;%2$s&rdquo;"
-
-#: ../comments.php:37 ../comments.php:55
-msgid "Comment navigation"
-msgstr "Nawigacja komentarzy"
-
-#: ../comments.php:38 ../comments.php:56
-msgid "&larr; Older Comments"
-msgstr "&larr; Starsze komentarze"
-
-#: ../comments.php:39 ../comments.php:57
-msgid "Newer Comments &rarr;"
-msgstr "Nowsze komentarze &rarr;"
-
-#: ../comments.php:67
-msgid "Comments are closed."
-msgstr "Komentarze są zamknięte."
-
-#: ../content-none.php:13
-msgid "Nothing Found"
-msgstr "Nic nie znaleziono"
-
-#: ../content-none.php:19
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Gotowy aby opublikować swój pierwszy post? <a href=\"%1$s\">Zacznij tutaj</"
-"a>."
-
-#: ../content-none.php:23
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-"Przepraszamy, nic nie znaleziono co pasuje do szukanego tekstu. Proszę "
-"spróbować wyszukać coś innego."
-
-#: ../content-none.php:28
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-"Wygląda na to że nie możemy znaleźć tego czego szukasz. Może wyszukiwarka "
-"pomoże?"
-
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
-#: ../image.php:79
-msgid "Pages:"
-msgstr "Strony:"
-
-#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
-msgid "Edit"
-msgstr "Edytuj"
-
-#: ../content-single.php:19
-msgid ", "
-msgstr ","
-
-#: ../content-single.php:23
-#, php-format
-msgid " %1$s"
-msgstr " %1$s"
-
-#: ../content.php:20
-msgid "Leave a comment"
-msgstr "Zostaw komentarz"
-
-#: ../content.php:20
-msgid "1 Comment"
-msgstr "1 komentarz"
-
-#: ../content.php:20
-msgid "% Comments"
-msgstr "% komentarzy"
-
-#: ../content.php:32 ../content.php:39
-msgid "Read More"
-msgstr "Czytaj więcej"
-
-#: ../functions.php:69
-msgid "Primary Menu"
-msgstr "Główne menu"
-
-#: ../functions.php:70 ../inc/extras.php:226
-msgid "Footer Links"
-msgstr "Linki stopki"
-
-#: ../functions.php:108
-msgid "Sidebar"
-msgstr "Pasek boczny"
-
-#: ../functions.php:118
-msgid "Homepage Widget 1"
-msgstr "Widgety strony głównej 1"
-
-#: ../functions.php:119 ../functions.php:129 ../functions.php:139
-msgid "Displays on the Home Page"
-msgstr "Wyświetl na stronie głównej"
-
-#: ../functions.php:128
-msgid "Homepage Widget 2"
-msgstr "Widgety strony głównej 2"
-
-#: ../functions.php:138
-msgid "Homepage Widget 3"
-msgstr "Widgety strony głównej 3"
-
-#: ../functions.php:148
-msgid "Footer Widget 1"
-msgstr "Widgety stopki 1"
-
-#: ../functions.php:149 ../functions.php:159 ../functions.php:169
-msgid "Used for footer widget area"
-msgstr "Używane w widgetach stopki"
-
-#: ../functions.php:158
-msgid "Footer Widget 2"
-msgstr "Widgety stopki 2"
-
-#: ../functions.php:168
-msgid "Footer Widget 3"
-msgstr "Widgety stopki 3"
-
-#: ../image.php:22
-msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
-msgstr "<i class=\"fa fa-chevron-left\"></i> Poprzednie"
-
-#: ../image.php:23
-msgid "Next <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Następne <i class=\"fa fa-chevron-right\"></i>"
-
-#: ../inc/admin/includes/class-options-framework-admin.php:91
-#: ../inc/admin/includes/class-options-framework-admin.php:92
-msgid "Theme Options"
-msgstr "Opcje tematu"
-
-#: ../inc/admin/includes/class-options-framework-admin.php:204
-msgid "Click OK to reset. Any theme settings will be lost!"
-msgstr "Naciśnij OK aby zresetować. Wszystkie ustawienia zostaną utracone!"
-
-#: ../inc/admin/includes/class-options-framework-admin.php:235
-msgid "Default options restored."
-msgstr "Przywrócono domyślne opcje."
-
-#: ../inc/admin/includes/class-options-framework-admin.php:289
-msgid "Options saved."
-msgstr "Opcje zapisane."
-
-#: ../inc/admin/includes/class-options-media-uploader.php:62
-msgid "No file chosen"
-msgstr "Nie wybrano pliku"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:65
-#: ../inc/admin/includes/class-options-media-uploader.php:118
-msgid "Upload"
-msgstr "Załaduj"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:67
-#: ../inc/admin/includes/class-options-media-uploader.php:119
-msgid "Remove"
-msgstr "Usuń"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:70
-msgid "Upgrade your version of WordPress for full media support."
-msgstr ""
-"Zaktualizuj swoją instalację WordPress-a aby uzyskać pełną obsługę mediów."
-
-#: ../inc/admin/includes/class-options-media-uploader.php:94
-msgid "View File"
-msgstr "Pokaż plik"
-
-#: ../inc/admin/includes/class-options-sanitization.php:316
-msgid "No Repeat"
-msgstr "Nie powtarzaj"
-
-#: ../inc/admin/includes/class-options-sanitization.php:317
-msgid "Repeat Horizontally"
-msgstr "Powtarzaj poziomo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:318
-msgid "Repeat Vertically"
-msgstr "Powtarzaj pionowo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:319
-msgid "Repeat All"
-msgstr "Powtarzaj w obu kierunkach"
-
-#: ../inc/admin/includes/class-options-sanitization.php:331
-msgid "Top Left"
-msgstr "Góra Lewo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:332
-msgid "Top Center"
-msgstr "Góra Środek"
-
-#: ../inc/admin/includes/class-options-sanitization.php:333
-msgid "Top Right"
-msgstr "Góra Prawo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:334
-msgid "Middle Left"
-msgstr "Środek Lewo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:335
-msgid "Middle Center"
-msgstr "Środek Środek"
-
-#: ../inc/admin/includes/class-options-sanitization.php:336
-msgid "Middle Right"
-msgstr "Środek Prawo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:337
-msgid "Bottom Left"
-msgstr "Dół Lewo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:338
-msgid "Bottom Center"
-msgstr "Dół Środek"
-
-#: ../inc/admin/includes/class-options-sanitization.php:339
-msgid "Bottom Right"
-msgstr "Dół Prawo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:351
-msgid "Scroll Normally"
-msgstr "Przewijaj normalnie"
-
-#: ../inc/admin/includes/class-options-sanitization.php:352
-msgid "Fixed in Place"
-msgstr "Ustalony na miejscu"
-
-#: ../inc/admin/includes/class-options-sanitization.php:424
-msgid "Normal"
-msgstr "normalna"
-
-#: ../inc/admin/includes/class-options-sanitization.php:425
-msgid "Italic"
-msgstr "Kursywa"
-
-#: ../inc/admin/includes/class-options-sanitization.php:426
-msgid "Bold"
-msgstr "Pogrubiona"
-
-#: ../inc/admin/includes/class-options-sanitization.php:427
-msgid "Bold Italic"
-msgstr "Pogrubiona Kursywa"
-
-#: ../inc/extras.php:61
-#, php-format
-msgid "Page %s"
-msgstr "Strona %s"
-
-#: ../inc/extras.php:121
-msgid "Search..."
-msgstr "Szukaj..."
-
-#: ../inc/extras.php:142
-msgid ""
-"<p>This post is password protected. To view it please enter your password "
-"below:</p>"
-msgstr ""
-"<p>Ten post jest chroniony hasłem. Aby go zobaczyć wpisz hasło poniżej:</p>"
-
-#: ../inc/extras.php:143
-msgid "Password:"
-msgstr "Hasło:"
-
-#: ../inc/extras.php:146
-msgid "Submit"
-msgstr "Wyślij"
-
-#: ../inc/extras.php:190
-msgid "Follow us on "
-msgstr "Śledź nas na"
-
-#: ../inc/extras.php:301
-#, php-format
-msgid "Theme by %1$s Powered by %2$s"
-msgstr "Temat stworzony przez %1$s Napędzany przez %2$s"
-
-#: ../inc/extras.php:405
-msgid "Support and Documentation"
-msgstr "Wsparcie i dokumentacja"
-
-#: ../inc/extras.php:411
-msgid "Sparkling Documentation"
-msgstr "Dokumentacja"
-
-#: ../inc/extras.php:412
-msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</"
-"b> is via"
-msgstr "Najlepsza metoda aby się z nami skontaktować jest przez"
-
-#: ../inc/extras.php:412
-msgid "Colorlib support forum"
-msgstr "Colorlib forum wsparcia"
-
-#: ../inc/extras.php:413
-msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "Jeśli lubisz ten temat, będę wdzięczny za"
-
-#: ../inc/extras.php:415
-msgid "Rate this Theme"
-msgstr "Oceń ten temat"
-
-#: ../inc/extras.php:416
-msgid "Like on Facebook"
-msgstr "Polub nas na Facebook-u"
-
-#: ../inc/extras.php:417
-msgid "Follow on Twitter"
-msgstr "Śledź nas na Twitterze"
-
-#: ../inc/template-tags.php:23
-msgid "Posts navigation"
-msgstr "Nawigacja postów"
-
-#: ../inc/template-tags.php:27
-msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> Starsze posty"
-
-#: ../inc/template-tags.php:31
-msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Nowsze posty <i class=\"fa fa-chevron-right\"></i>"
-
-#: ../inc/template-tags.php:56
-msgid "Post navigation"
-msgstr "Nawigacja postu"
-
-#: ../inc/widgets/widget-categories.php:11
-#: ../inc/widgets/widget-categories.php:12
-msgid "Sparkling Categories"
-msgstr "Sparkling Kategorie"
-
-#: ../inc/widgets/widget-categories.php:17
-#: ../inc/widgets/widget-categories.php:76
-msgid "Categories"
-msgstr "Kategorie"
-
-#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
-msgid "Title "
-msgstr "Tytuł"
-
-#: ../inc/widgets/widget-categories.php:91
-msgid "Limit Categories "
-msgstr "Limit kategorii"
-
-#: ../inc/widgets/widget-categories.php:104
-msgid "Enable Posts Count"
-msgstr "Włącz licznik postów"
-
-#: ../inc/widgets/widget-popular-posts.php:11
-#: ../inc/widgets/widget-popular-posts.php:12
-msgid "Sparkling Popular Posts Widget"
-msgstr "Sparkling Popularne widgety postów"
-
-#: ../inc/widgets/widget-popular-posts.php:17
-#: ../inc/widgets/widget-popular-posts.php:94
-msgid "Popular Posts"
-msgstr "Popularne posty"
-
-#: ../inc/widgets/widget-popular-posts.php:99
-msgid "Title"
-msgstr "Tytuł"
-
-#: ../inc/widgets/widget-popular-posts.php:107
-msgid "Limit Posts Number"
-msgstr "Limit postów"
-
-#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
-msgid "Sparkling Social Widget"
-msgstr "Sparkling Widgety społecznościowe"
-
-#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
-msgid "Follow us"
-msgstr "Śledź nas"
-
-#: ../options.php:23
-msgid "Right Sidebar"
-msgstr "Prawy pasek boczny"
-
-#: ../options.php:23
-msgid "Left Sidebar"
-msgstr "Lewy pasek boczny"
-
-#: ../options.php:27
-msgid "One"
-msgstr "Jeden"
-
-#: ../options.php:28
-msgid "Two"
-msgstr "Dwa"
-
-#: ../options.php:29
-msgid "Three"
-msgstr "Trzy"
-
-#: ../options.php:30
-msgid "Four"
-msgstr "Cztery"
-
-#: ../options.php:31
-msgid "Five"
-msgstr "Pięć"
-
-#: ../options.php:36
-msgid "French Toast"
-msgstr "Francuzki toast"
-
-#: ../options.php:37
-msgid "Pancake"
-msgstr "naleśnik"
-
-#: ../options.php:38
-msgid "Omelette"
-msgstr "Omlet"
-
-#: ../options.php:39
-msgid "Crepe"
-msgstr "Krepa"
-
-#: ../options.php:40
-msgid "Waffle"
-msgstr "Wafel"
-
-#: ../options.php:110
-msgid "Main"
-msgstr "Główne"
-
-#: ../options.php:115
-msgid "Do You want to display image slider on the Home Page?"
-msgstr "Czy chcesz wyświetlać slider obrazków na stronie głównej?"
-
-#: ../options.php:116
-msgid "Check if you want to enable slider"
-msgstr "Zaznacz jeśli chcesz włączyć slider"
-
-#: ../options.php:123
-msgid "Slider Category"
-msgstr "Kategoria slidera"
-
-#: ../options.php:124
-msgid "Select a category for the featured post slider"
-msgstr "Wybierz kategorię dla wyróżnionego postu slidera"
-
-#: ../options.php:132
-msgid "Number of slide items"
-msgstr "Liczba elementów slidera"
-
-#: ../options.php:133
-msgid "Enter the number of slide items"
-msgstr "Wpisz liczbę elementów slidera"
-
-#: ../options.php:141
-msgid "Website Layout Options"
-msgstr "Opcje układu strony"
-
-#: ../options.php:142
-msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "Wybierz który pasek boczny ma być używany domyślnie (prawy czy lewy)"
-
-#: ../options.php:151
-msgid "Element color"
-msgstr "Kolor elementów"
-
-#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
-#: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
-#: ../options.php:280 ../options.php:382 ../options.php:390
-msgid "Default used if no color is selected"
-msgstr "Domyślny kolor jeśli nie wybrano"
-
-#: ../options.php:159
-msgid "Element color on hover"
-msgstr "Kolor elementu najechanego myszką"
-
-#: ../options.php:167
-msgid "Custom Favicon"
-msgstr "Własna favikona"
-
-#: ../options.php:168
-msgid ""
-"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
-msgstr ""
-"Wybierz plik o wymiarach 32 px x 32 px w formacie PNG/GIF który zostanie "
-"użyty jako favikona"
-
-#: ../options.php:175
-msgid "Action Button"
-msgstr "Przycisk akcji"
-
-#: ../options.php:180
-msgid "Call For Action Text"
-msgstr "Zawołanie dla przycisku akcji"
-
-#: ../options.php:181
-msgid "Enter the text for call for action section"
-msgstr "Wpisz tekst dla zawołania przycisku akcji"
-
-#: ../options.php:188
-msgid "Call For Action Button Title"
-msgstr "Zawołanie dla tytułu przycisku akcji"
-
-#: ../options.php:189
-msgid "Enter the title for Call For Action button"
-msgstr "Wpisz tytuł dla zawołania przycisku akcji"
-
-#: ../options.php:196
-msgid "CFA button link"
-msgstr "CFA link przycisku"
-
-#: ../options.php:197
-msgid "Enter the link for Call For Action button"
-msgstr "Wpisz link dla przycisku CFA"
-
-#: ../options.php:204
-msgid "Call For Action Text Color"
-msgstr "CFA kolor tekstu"
-
-#: ../options.php:212
-msgid "Call For Action Background Color"
-msgstr "CFA kolor tła"
-
-#: ../options.php:220
-msgid "Call For Action Button Border Color"
-msgstr "CFA kolor obramowania"
-
-#: ../options.php:228
-msgid "Call For Action Button Text Color"
-msgstr "CFA kolor tekstu"
-
-#: ../options.php:236
-msgid "Typography"
-msgstr "Typografia"
-
-#: ../options.php:241
-msgid "Main Body Text"
-msgstr "Tekst główny"
-
-#: ../options.php:242
-msgid "Used in P tags"
-msgstr "Używany w tagach P"
-
-#: ../options.php:250
-msgid "Heading Color"
-msgstr "Kolor nagłówka"
-
-#: ../options.php:251
-msgid "Color for all headings (h1-h6)"
-msgstr "Kolor dla wszystkich nagłówków (h1-h6)"
-
-#: ../options.php:258
-msgid "Link Color"
-msgstr "Kolor odnośnika"
-
-#: ../options.php:266
-msgid "Link:hover Color"
-msgstr "Kolor odnośnika najechanego myszką"
-
-#: ../options.php:274
-msgid "Header"
-msgstr "Nagłówek"
-
-#: ../options.php:279
-msgid "Top nav background color"
-msgstr "Kolor tła górnej nawigacji"
-
-#: ../options.php:287
-msgid "Top nav item color"
-msgstr "Kolor elementu górnej nawigacji"
-
-#: ../options.php:288
-msgid "Link color"
-msgstr "Kolor odnośnika"
-
-#: ../options.php:295
-msgid "Top nav item hover color"
-msgstr "Kolor elementu górnej nawigacji po najechaniu myszą"
-
-#: ../options.php:296
-msgid "Link:hover color"
-msgstr "Kolor odnośnika najechanego myszką"
-
-#: ../options.php:303
-msgid "Top nav dropdown background color"
-msgstr "Kolor tła rozwijanej górnej nawigacji"
-
-#: ../options.php:304 ../options.php:328
-msgid "Background of dropdown item hover color"
-msgstr "Kolor tła elementu rozwijanej górnej nawigacji"
-
-#: ../options.php:311
-msgid "Top nav dropdown item color"
-msgstr "Kolor elementu rozwijanej górnej nawigacji"
-
-#: ../options.php:312
-msgid "Dropdown item color"
-msgstr "Kolor elementu rozwijanego"
-
-#: ../options.php:319
-#, fuzzy
-msgid "Top nav dropdown item hover color"
-msgstr "Kolor elementu górnej nawigacji po najechaniu myszą"
-
-#: ../options.php:320
-#, fuzzy
-msgid "Dropdown item hover color"
-msgstr "Kolor tła podświetlonego elementu rozwijanego menu"
-
-#: ../options.php:327
-#, fuzzy
-msgid "Top nav dropdown item background hover color"
-msgstr "Kolor tła elementu rozwijanej górnej nawigacji"
-
-#: ../options.php:335
-msgid "Footer"
-msgstr "Stopka"
-
-#: ../options.php:340
-msgid "Footer widget area background color"
-msgstr "Kolor tła widgetów stopki"
-
-#: ../options.php:347
-msgid "Footer background color"
-msgstr "Kolor tła stopki"
-
-#: ../options.php:354
-msgid "Footer text color"
-msgstr "Kolor tekstu stopki"
-
-#: ../options.php:361
-msgid "Footer link color"
-msgstr "Kolor odnośnika stopki"
-
-#: ../options.php:368
-msgid "Footer information"
-msgstr "Informacje w stopce"
-
-#: ../options.php:369
-msgid "Copyright text in footer"
-msgstr "Tekst informacji o prawach autorskich"
-
-#: ../options.php:376
-msgid "Social"
-msgstr "Społecznościowe"
-
-#: ../options.php:381
-msgid "Social icon color"
-msgstr "Kolor ikon społecznościowych"
-
-#: ../options.php:389
-msgid "Footer social icon color"
-msgstr "Kolor ikon społecznościowych w stopce"
-
-#: ../options.php:397
-msgid "Add full URL for your social network profiles"
-msgstr "Dodaj pełny adres URL do twoich profili społecznościowych"
-
-#: ../options.php:398
-msgid "Facebook"
-msgstr "Facebook"
-
-#: ../options.php:407
-msgid "Twitter"
-msgstr "Twitter"
-
-#: ../options.php:415
-msgid "Google+"
-msgstr "Google+"
-
-#: ../options.php:423
-msgid "Youtube"
-msgstr "Youtube"
-
-#: ../options.php:431
-msgid "Vimeo"
+# #################################
+# Booking Wordpress translations section
+# ################################
+#: index.php:24
+msgid "Solutions Driven by Booking.com's unique, Industry-leading Expertise"
+msgstr "Softwarelösungen, die zum Wachstum Ihres Unternehmens beitragen"
+
+#: index.php:34
+msgid "View Our Solutions"
+msgstr "Unsere Lösungen ansehen"
+
+#: index.php:Partner Success
+msgid "BookingSuite Partner Success"
+msgstr "BookingSuite Partnererfolge"
+
+#: index.php:
+msgid "VIEW MORE PARTNER STORIES"
+msgstr "Weitere Partnerportraits ansehen"
+
+#: index.php:In The Press
+msgid "BookingSuite In The Press"
+msgstr "BookingSuite in der Presse"
+
+#: index.php:In The Press
+msgid "View More Press Mentions"
+msgstr "Lesen Sie Mehr"
+
+#: Booking Phone Number - Global Footer
+msgid "1 (800) 734-1769"
+msgstr "+31 207035444 "
+
+#: Language Link - Global
+msgid "en-us"
+msgstr "de-de"
+
+#: Free Consultation - Global
+msgid "Free Consultation"
+msgstr "Gratis-Beratung"
+
+#: Sing Up Button - Global
+msgid "Sign up"
+msgstr "Anmelden"
+
+#: Reguest A Demo Button - Global
+msgid "Request a Demo"
+msgstr "Präsentation anfordern"
+
+#: View Our Plans Button - Global
+msgid "View Our Plans"
+msgstr "Unsere Pläne ansehen"
+
+#: View Plans Button - Global
+msgid "View Plans"
+msgstr "Servicepakete ansehen"
+
+#: See Product Features Button - Global
+msgid "See Product Features"
+msgstr "Produktinformationen"
+
+#: See All Features Button - Global
+msgid "See All Features"
+msgstr "Alle Funktionen ansehen"
+
+#: Learn More Button - Global
+msgid "Learn More"
+msgstr "Mehr erfahren"
+
+#: Log IN Button - Global
+msgid "Log In"
+msgstr "Einloggen"
+
+#: Join Booking Button - Global
+msgid "Join Booking"
+msgstr "Bei Booking mitmachen"
+
+#: See All News - Global
+msgid "See All News"
+msgstr "Alle Neuigkeiten ansehen"
+
+#: Visit Help Desk Button - Global
+msgid "Visit Help Desk"
+msgstr "Helpdesk besuchen"
+
+msgid "View Job Openings"
+msgstr "Offene Stellen ansehen"
+
+#: Read The Story Button - Global
+msgid "Read The Story"
+msgstr "Die Geschichte lesen"
+
+#: ratecast-page.php:95
+msgid "BookingSuite RateManager Also Includes:"
 msgstr ""
 
-#: ../options.php:439
-msgid "LinkedIn"
-msgstr "LinkedIn"
+#: plans-page-tabs-prop-web.php:31
+msgid "Price"
+msgstr "Preis:"
 
-#: ../options.php:447
-msgid "Pinterest"
-msgstr "Pinterest"
+#: plans-page-tabs-prop-web.php:32
+msgid "10% Commission"
+msgstr "10% Kommission"
 
-#: ../options.php:455
-msgid "RSS Feed"
-msgstr "Kanał RSS"
+#: plans-page-tabs-prop-web.php:35
+msgid "Website Pages"
+msgstr "Seiten der Webseite:"
 
-#: ../options.php:463
-msgid "Tumblr"
-msgstr "Tumblr"
+#: plans-page-tabs-prop-web.php:36
+msgid "Homepage, Rooms, Photos, Location, Amenities, & Reviews"
+msgstr "Homepage, Zimmer, Fotos, Lage, Annehmlichkeiten & Gästebewertungen"
 
-#: ../options.php:471
-msgid "Flickr"
-msgstr "Flickr"
+#: plans-page-tabs-prop-web.php:39
+msgid "Analytics"
+msgstr "Analyse:"
 
-#: ../options.php:479
-msgid "Instagram"
-msgstr "Instagram"
+#: plans-page-tabs-prop-web.php:40
+msgid "Basic"
+msgstr "Standard"
 
-#: ../options.php:487
-msgid "Dribbble"
-msgstr "Dribbble"
+#: plans-page-tabs-prop-web.php:43
+msgid "Mobile Friendly Design"
+msgstr "Für Mobilgeräte optimiertes Design"
 
-#: ../options.php:495
-msgid "Skype"
-msgstr "Skype"
+#: plans-page-tabs-prop-web.php:47
+msgid "Translation Support"
+msgstr "Übersetzungen"
 
-#: ../options.php:503
-msgid "Foursquare"
-msgstr "Foursquare"
+#: plans-page-tabs-prop-web.php:79
+msgid "Monthly Subscription"
+msgstr "Abonnement"
 
-#: ../options.php:511
-msgid "SoundCloud"
+#: plans-page-tabs-prop-web.php:80
+msgid "Contact us to learn more"
+msgstr "Für weitere Informationen nehmen Sie bitte mit uns Kontakt auf"
+
+#: plans-page-tabs-prop-web.php:84
+msgid "Unlimited"
+msgstr "Unbegrenzt"
+
+#: plans-page-tabs-prop-web.php:88
+msgid "Advanced"
+msgstr "Erweitert"
+
+#: plans-page.php:34 plans-page-tabs-biz-intel.php:6
+msgid "Revenue Management"
+msgstr "Revenue Management"
+
+#: plans-page-tabs-biz-intel.php:42
+msgid "Not Sure Which Plan is Right for Your Property?"
+msgstr "Sie sind sich nicht sicher, welches Servicepaket das Beste für Ihre Unterkunft ist?"
+
+#: product-page.php:312
+msgid "Premium Support"
+msgstr "Premium Support"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Property-Websites"
+msgstr "Webseite"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Revenue-Management"
+msgstr "Revenue-Management"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Premium-Support"
+msgstr "Premium-Unterstuetzung"
+
+#: plans-page.php:33 product-page.php:46
+msgid "Property Websites"
+msgstr "Unterkunfts-Webseiten"
+
+#: features-page-tabs-property-web.php:5
+msgid "Design"
+msgstr "Design"
+
+#: features-page-tabs-property-web.php:76
+msgid "Cloud Technology"
+msgstr "Cloud-Technologie"
+
+#: features-page-tabs-property-web.php:146
+msgid "Measuring Success"
+msgstr "Erfolg messen"
+
+#: features-page-tabs-property-web.php:216
+msgid "Booking & Integrations"
+msgstr "Buchung & Integration"
+
+#: features-page-tabs-property-web.php:287
+msgid "Support"
+msgstr "Support"
+
+#: features-page-tabs-predictive-analytics.php:5
+msgid "Intuitive Data Tools to Boost Your Property's Revenue"
+msgstr "Intuitiv zu nutzende Datenfunktionen zur Steigerung Ihres Umsatzes"
+
+#: features-page-tabs-predictive-analytics.php:5
+msgid "I want to access BookingSuite&rsquo;s online helpdesk"
+msgstr "Ich möchte auf den Online-Helpdesk von BookingSuite zugreifen"
+
+#: stories-page.php:44
+msgid "Partner Success"
+msgstr "Partnererfolge"
+
+#: stories-page.php: Filter Button:49
+msgid "Filter"
+msgstr "Filter"
+
+#: stories-page.php: Show All Button:49
+msgid "Show All"
+msgstr "Alles anzeigen"
+
+#: contact-us-page.php:36
+msgid "I want to get started with BookingSuite"
+msgstr "Ich möchte beginnen BookingSuite zu verwenden"
+
+#: contact-us-page.php:40
+msgid "I want to log in to my BookingSuite account"
+msgstr "Ich möchte mich in mein BookingSuite-Konto einloggen"
+
+#: contact-us-page.php:44
+msgid "I need to become a Booking.com partner"
+msgstr "Ich möchte ein Partner von Booking.com werden"
+
+#: contact-us-page.php:48
+msgid "I want to access BookingSuite’s online helpdesk"
+msgstr "Ich möchte auf den Online-Helpdesk von BookingSuite zugreifen"
+
+#: contact-us-page.php:62
+msgid "Speak With a Partner Success Representative"
+msgstr "Konaktieren Sie einen Mitarbeiter des Partner Success Teams"
+
+#: contact-us-page.php:65
+msgid "Regional Partner Support Offices:"
+msgstr "Regionale Partner Support Büros"
+
+#: web-collection-page.php:63
+msgid "Your Brand Is The Bottom Line"
+msgstr "Ihre Marke ist Ihr höchstes Gut."
+
+#: web-complete-page.php:94
+msgid "More Features To Enjoy"
+msgstr "Weitere Funktionen"
+
+#: web-conectivity-page.php:121
+msgid "Is your brand interested in becoming a BookingSuite Connectivity Partner?"
+msgstr "Ist Ihr Unternehmen daran interessiert ein Schnittstellenpartner von BookingSuite zu werden?"
+
+#: web-conectivity-page.php:121
+msgid "Send us an email at:"
+msgstr "Email:"
+
+#: about-page.php:31
+msgid "We create new ways of helping the hospitality industry work."
+msgstr "Wir schaffen neue Wege, die der Hotelindustrie die Arbeit erleichtern."
+
+#: about-page.php:83
+msgid "And We&rsquo;re All Around The World."
+msgstr "Und Sie finden uns auf der ganzen Welt."
+
+#: about-page.php:84
+msgid "Regional Headquarters"
+msgstr "Regionale Niederlassungen"
+
+#: about-page.php:151
+msgid "BookingSuite in the News"
+msgstr "BookingSuite in den Medien"
+
+#: about-page.php:156
+msgid "Latest News"
+msgstr "Aktuelles"
+
+#: archive.php
+msgid "Press Releases and Mentions"
 msgstr ""
-
-#: ../options.php:519
-msgid "GitHub"
-msgstr ""
-
-#: ../options.php:526
-msgid "Other"
-msgstr "Inne"
-
-#: ../options.php:531
-msgid "Custom CSS"
-msgstr "Własny CSS"
-
-#: ../options.php:532
-msgid "Additional CSS"
-msgstr "Dodatkowy CSS"
-
-#: ../search.php:16
-#, php-format
-msgid "Search Results for: %s"
-msgstr "Wyniki wyszukiwania dla: %s"
-
-#: ../sidebar.php:26
-msgid "Meta"
-msgstr "Meta"
