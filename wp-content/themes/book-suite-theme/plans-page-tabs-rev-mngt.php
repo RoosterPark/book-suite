@@ -187,15 +187,15 @@ if ($_GET['lang']) {
                                 <h3><?php echo get_field('option_1_title_right'); ?></h3>
                             <?php } ?>
                                 
-                            <?php if (get_field('option_1_copy_left')) { ?>
+                            <?php if (get_field('option_1_copy_right')) { ?>
                                 <p><?php echo get_field('option_1_copy_right'); ?></p>
                             <?php } ?>
                             
-                            <?php if (get_field('option_1_link_left')) { ?>
+                            <?php if (get_field('option_1_link_right')) { ?>
                                 <small><?php echo get_field('option_1_link_right'); ?></small>
                             <?php } ?>
                             
-                            <?php if (get_field('option_1_icon_left')) { ?>
+                            <?php if (get_field('option_1_icon_right')) { ?>
                                 <p><img src="<?php echo get_field('option_1_icon_right'); ?>" class="icon svg check" alt="Icon"/></p>
                             <?php } ?>
                         </li>
@@ -280,7 +280,7 @@ if ($_GET['lang']) {
                                 <h3><?php echo get_field('option_6_title_right'); ?></h3>
                                 <?php
                             }
-                            if (get_field('option_6_copy_left')) {
+                            if (get_field('option_6_copy_right')) {
                                 ?>
                                 <p><?php echo get_field('option_6_copy_right'); ?></p>
                                 <?php
@@ -309,7 +309,7 @@ if ($_GET['lang']) {
 
         <div class="row">
             <div class="col-md-12 text-center">
-                <div class="bgroup"><a class="btn btn-default btn-lg" role="button" href="/product-features/#RevenueManagement<?php echo $lang_par; ?>" title="<?php echo $btn_text = _e('See All Features', 'upbootwp'); ?>"><?php echo $btn_text = _e('See All Features', 'upbootwp'); ?></a></div>
+                <div class="bgroup"><a class="btn btn-default btn-lg" role="button" href="/product-features/<?php echo $lang_par; ?>#RevenueManagement" title="<?php echo $btn_text = _e('See All Features', 'upbootwp'); ?>"><?php echo $btn_text = _e('See All Features', 'upbootwp'); ?></a></div>
             </div>
         </div>
     </div>

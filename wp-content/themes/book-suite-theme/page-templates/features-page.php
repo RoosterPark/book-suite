@@ -38,7 +38,7 @@ get_header(); ?>
 	    	<?php get_template_part('features-page-tabs-predictive-analytics'); ?>    
 	    </div>
 	</div>
-
+        
 
 	<?php get_template_part('index-request-demo'); ?>
 

@@ -49,7 +49,7 @@ if ($_GET['lang']) {
                         }
                         if (get_field('pw_learn_more_btn_label_left')) { ?>
                             <footer>
-                                <a class="btn btn-info btn-lg" title="WebComplete" href="<?php echo get_field('pw_left_learn_more_btn_url'); ?><?php echo $lang_par; ?>" role="button"><?php echo get_field('pw_learn_more_btn_label_left'); ?></a>
+                                <a class="btn btn-info btn-lg" title="WebComplete" href="<?php echo get_field('pw_left_learn_more_btn_url'); ?>" role="button"><?php echo get_field('pw_learn_more_btn_label_left'); ?></a>
                             </footer>
                         <?php     
                         }
@@ -69,7 +69,7 @@ if ($_GET['lang']) {
                                 <small><?php echo get_field('option_1_link_pw_left'); ?></small>
                             <?php } ?>
                             
-                            <?php if (get_field('option_1_icon_left')) { ?>
+                            <?php if (get_field('option_1_icon_pw_left')) { ?>
                                 <p><img src="<?php echo get_field('option_1_icon_pw_left'); ?>" class="icon svg check" alt="Icon"/></p>
                             <?php } ?>
                         </li>
@@ -80,14 +80,14 @@ if ($_GET['lang']) {
                             }
                             if (get_field('option_2_copy_pw_left')) {
                                 ?>
-                                <p><?php echo get_field('option_2_copy_pw_right'); ?></p>
+                                <p><?php echo get_field('option_2_copy_pw_left'); ?></p>
                                 <?php
                             }
                             ?>
                                 <?php
-                            if (get_field('option_2_icon_right')) {
+                            if (get_field('option_2_icon_pw_left')) {
                                 ?>
-                                <p><img src="<?php echo get_field('option_2_icon_pw_right'); ?>" class="icon svg check" alt="Icon"/></p>
+                                <p><img src="<?php echo get_field('option_2_icon_pw_left'); ?>" class="icon svg check" alt="Icon"/></p>
                             <?php
                             }
                             ?>
@@ -97,7 +97,7 @@ if ($_GET['lang']) {
                                 <h3><?php echo get_field('option_3_title_pw_left'); ?></h3>
                                 <?php
                             }
-                            if (get_field('option_3_copy_left')) {
+                            if (get_field('option_3_copy_pw_left')) {
                                 ?>
                                 <p><?php echo get_field('option_3_copy_pw_left'); ?></p>
                                 <?php
@@ -150,8 +150,8 @@ if ($_GET['lang']) {
                             ?>
                         </li>
                     </ul>
-                    
-<!--                    <ul class="options">
+<!--                    <br><br><br>
+                    <ul class="options">
                         <li class="opt-items">
                             <h3><?php echo $title_text = _e('Price', 'upbootwp'); ?></h3>
                             <p><?php echo $title_text = _e('10% Commission', 'upbootwp'); ?></p>
@@ -215,7 +215,7 @@ if ($_GET['lang']) {
                         }
                         if (get_field('pw_learn_more_btn_label_right')) { ?>
                             <footer>
-                                <a class="btn btn-info btn-lg" title="WebComplete" href="<?php echo get_field('pw_right_learn_more_btn_url'); ?><?php echo $lang_par; ?>" role="button"><?php echo get_field('pw_learn_more_btn_label_right'); ?></a>
+                                <a class="btn btn-info btn-lg" title="WebComplete" href="<?php echo get_field('pw_right_learn_more_btn_url'); ?>" role="button"><?php echo get_field('pw_learn_more_btn_label_right'); ?></a>
                             </footer>
                         <?php     
                         }
@@ -227,15 +227,15 @@ if ($_GET['lang']) {
                                 <h3><?php echo get_field('option_1_title_pw_right'); ?></h3>
                             <?php } ?>
                                 
-                            <?php if (get_field('option_1_copy_left')) { ?>
+                            <?php if (get_field('option_1_copy_pw_right')) { ?>
                                 <p><?php echo get_field('option_1_copy_pw_right'); ?></p>
                             <?php } ?>
                             
-                            <?php if (get_field('option_1_link_left')) { ?>
+                            <?php if (get_field('option_1_link_pw_right')) { ?>
                                 <small><?php echo get_field('option_1_link_pw_right'); ?></small>
                             <?php } ?>
                             
-                            <?php if (get_field('option_1_icon_left')) { ?>
+                            <?php if (get_field('option_1_icon_pw_right')) { ?>
                                 <p><img src="<?php echo get_field('option_1_icon_pw_right'); ?>" class="icon svg check" alt="Icon"/></p>
                             <?php } ?>
                         </li>
@@ -244,14 +244,14 @@ if ($_GET['lang']) {
                                 <h3><?php echo get_field('option_2_title_pw_right'); ?></h3>
                                 <?php
                             }
-                            if (get_field('option_2_copy_right')) {
+                            if (get_field('option_2_copy_pw_right')) {
                                 ?>
                                 <p><?php echo get_field('option_2_copy_pw_right'); ?></p>
                                 <?php
                             }
                             ?>
                                 <?php
-                            if (get_field('option_2_icon_right')) {
+                            if (get_field('option_2_icon_pw_right')) {
                                 ?>
                                 <p><img src="<?php echo get_field('option_2_icon_pw_right'); ?>" class="icon svg check" alt="Icon"/></p>
                             <?php
@@ -259,11 +259,11 @@ if ($_GET['lang']) {
                             ?>
                         </li>
                         <li class="opt-items">
-                            <?php if (get_field('option_3_title_right')) { ?>
+                            <?php if (get_field('option_3_title_pw_right')) { ?>
                                 <h3><?php echo get_field('option_3_title_pw_right'); ?></h3>
                                 <?php
                             }
-                            if (get_field('option_3_copy_right')) {
+                            if (get_field('option_3_copy_pw_right')) {
                                 ?>
                                 <p><?php echo get_field('option_3_copy_pw_right'); ?></p>
                                 <?php
@@ -282,9 +282,9 @@ if ($_GET['lang']) {
                                 <h3><?php echo get_field('option_4_title_pw_right'); ?></h3>
                                 <?php
                             }
-                            if (get_field('option_4_copy_right')) {
+                            if (get_field('option_4_copy_pw_right')) {
                                 ?>
-                                <p><?php echo get_field('option_4_copy_right'); ?></p>
+                                <p><?php echo get_field('option_4_copy_pw_right'); ?></p>
                                 <?php
                             }
                             ?>
@@ -316,7 +316,11 @@ if ($_GET['lang']) {
                             ?>
                         </li>
                     </ul>
-<!--                    <ul class="options">
+                    
+<!--                    <br><br><br>
+                    
+                    
+                    <ul class="options">
                         <li class="opt-items">
                             <h3><?php echo $title_text = _e('Price', 'upbootwp'); ?></h3>
                             <p><?php echo $title_text = _e('Monthly Subscription', 'upbootwp'); ?></p>

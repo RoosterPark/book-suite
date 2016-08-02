@@ -81,7 +81,7 @@
                                                 </span>
                                             </a>
                                         </li>
-                                        <li class="icl-de">
+                                        <li class="icl-en">
                                             <a href="http://suite.booking.com" rel="alternate">
                                                 <span class="icl_lang_sel_native">English</span>
                                                 <span class="icl_lang_sel_translated">
@@ -90,12 +90,22 @@
                                                     <span class="icl_lang_sel_bracket">)</span>
                                                 </span>
                                             </a>
-                                        <li class="icl-de">
+                                        <li class="icl-es">
                                             <a href="http://suite.booking.com/?lang=es" rel="alternate">
                                                 <span class="icl_lang_sel_native">Español</span>
                                                 <span class="icl_lang_sel_translated">
                                                     <span class="icl_lang_sel_bracket"> (</span>
                                                     Spanish
+                                                    <span class="icl_lang_sel_bracket">)</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="icl-hr">
+                                            <a href="http://suite.booking.com?lang=hr" rel="alternate">
+                                                <span class="icl_lang_sel_native">Hrvatski</span>
+                                                <span class="icl_lang_sel_translated">
+                                                    <span class="icl_lang_sel_bracket"> (</span>
+                                                    Croatian
                                                     <span class="icl_lang_sel_bracket">)</span>
                                                 </span>
                                             </a>
@@ -110,7 +120,7 @@
                                                 </span>
                                             </a>
                                         </li>
-                                        <li class="icl-pt">
+                                        <li class="icl-pt-pt">
                                             <a href="http://suite.booking.com/?lang=pt-pt" rel="alternate">
                                                 <span class="icl_lang_sel_native">Português</span>
                                                 <span class="icl_lang_sel_translated">
