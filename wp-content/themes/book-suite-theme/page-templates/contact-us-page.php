@@ -59,11 +59,7 @@ get_header(); ?>
 			<div class="col-md-12">
 				<h2><?php echo $title_text = _e( 'Speak With a Partner Success Representative', 'upbootwp' ); ?></h2>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-3 col-md-3 col-lg-3"><p>E-Mail:</p></div>
-			<div class="col-sm-9 col-md-9 col-lg-9"><a href="&#115;&#117;&#105;&#116;&#101;&#104;&#101;&#108;&#112;&#64;&#98;&#111;&#111;&#107;&#105;&#110;&#103;&#46;&#99;&#111;&#109;&#32;" class="btn btn-link">&#115;&#117;&#105;&#116;&#101;&#104;&#101;&#108;&#112;&#64;&#98;&#111;&#111;&#107;&#105;&#110;&#103;&#46;&#99;&#111;&#109;&#32;</a></div>
-		</div>		
+		</div>	
 		<div class="row">
 			<div class="col-md-3"><p><?php echo $title_text = _e( 'Regional Partner Support Offices:', 'upbootwp' ); ?></p></div>
 			<div class="col-md-9">
