@@ -1,0 +1,291 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: upbootwp\n"
+"POT-Creation-Date: 2015-04-04 15:01+0200\n"
+"PO-Revision-Date: 2016-05-06 13:04+0200\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# #################################
+# Booking Wordpress translations section
+# ################################
+#: index.php:24
+msgid "Solutions Driven by Booking.com's unique, Industry-leading Expertise"
+msgstr "定制解决方案，助您的事业更上一层楼"
+
+#: index.php:34
+msgid "View Our Solutions"
+msgstr "查看解决方案"
+
+#: index.php:Partner Success
+msgid "BookingSuite Partner Success"
+msgstr "BookingSuite合作伙伴成功实例"
+
+#: index.php:
+msgid "VIEW MORE PARTNER STORIES"
+msgstr "\b更多合作伙伴的精彩故事在这里"
+
+#: index.php:In The Press
+msgid "BookingSuite In The Press"
+msgstr "BookingSuite媒体报道"
+
+#: index.php:In The Press
+msgid "View More Press Mentions"
+msgstr "查看更多媒体报道"
+
+#: Booking Phone Number - Global Footer
+msgid "1 (800) 734-1769"
+msgstr ""
+
+#: Language Link - Global
+msgid "en-us"
+msgstr "zh-ch"
+
+#: Free Consultation - Global
+msgid "Free Consultation"
+msgstr "免费咨询"
+
+#: Sing Up Button - Global
+msgid "Sign up"
+msgstr "免费咨询"
+
+#: Reguest A Demo Button - Global
+msgid "Request a Demo"
+msgstr "申请试用版"
+
+#: View Our Plans Button - Global
+msgid "View Our Plans"
+msgstr "查看产品计划"
+
+#: View Plans Button - Global
+msgid "View Plans"
+msgstr "查看产品计划"
+
+#: See Product Features Button - Global
+msgid "See Product Features"
+msgstr "查看产品功能"
+
+#: See All Features Button - Global
+msgid "See All Features"
+msgstr "查看所有功能"
+
+#: Learn More Button - Global
+msgid "Learn More"
+msgstr "了解更多"
+
+#: Log IN Button - Global
+msgid "Log In"
+msgstr "登录"
+
+#: Join Booking Button - Global
+msgid "Join Booking"
+msgstr "加入Booking"
+
+#: See All News - Global
+msgid "See All News"
+msgstr "查看所有新闻"
+
+#: Visit Help Desk Button - Global
+msgid "Visit Help Desk"
+msgstr "帮助中心"
+
+msgid "View Job Openings"
+msgstr "查看招聘职位"
+
+#: Read The Story Button - Global
+msgid "Read The Story"
+msgstr "了解详情"
+
+#: ratecast-page.php:95
+msgid "BookingSuite RateManager Also Includes:"
+msgstr "BookingSuite收益管理系统还包括："
+
+#: plans-page-tabs-prop-web.php:31
+msgid "Price"
+msgstr "价格"
+
+#: plans-page-tabs-prop-web.php:32
+msgid "10% Commission"
+msgstr "10%佣金"
+
+#: plans-page-tabs-prop-web.php:35
+msgid "Website Pages"
+msgstr "网页"
+
+#: plans-page-tabs-prop-web.php:36
+msgid "Homepage, Rooms, Photos, Location, Amenities, & Reviews"
+msgstr "主页、客房、照片、位置、设施及点评"
+
+#: plans-page-tabs-prop-web.php:39
+msgid "Analytics"
+msgstr "数据分析"
+
+#: plans-page-tabs-prop-web.php:40
+msgid "Basic"
+msgstr "标准数据报告"
+
+#: plans-page-tabs-prop-web.php:43
+msgid "Mobile Friendly Design"
+msgstr "支持移动设备"
+
+#: plans-page-tabs-prop-web.php:47
+msgid "Translation Support"
+msgstr "支持语言翻译"
+
+#: plans-page-tabs-prop-web.php:79
+msgid "Monthly Subscription"
+msgstr "月付费制"
+
+#: plans-page-tabs-prop-web.php:80
+msgid "Contact us to learn more"
+msgstr "联系我们了解详情"
+
+#: plans-page-tabs-prop-web.php:84
+msgid "Unlimited"
+msgstr "无限制"
+
+#: plans-page-tabs-prop-web.php:88
+msgid "Advanced"
+msgstr "高级数据报告"
+
+#: plans-page.php:34 plans-page-tabs-biz-intel.php:6
+msgid "Revenue Management"
+msgstr "收益管理"
+
+#: plans-page-tabs-biz-intel.php:42
+msgid "Not Sure Which Plan is Right for Your Property?"
+msgstr "不确定该选择哪款解决方案？"
+
+#: product-page.php:312
+msgid "Premium Support"
+msgstr "高级支持"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Property-Websites"
+msgstr "property-websites"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Revenue-Management"
+msgstr "Revenue-Management"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Premium-Support"
+msgstr "Premium-Support"
+
+#: plans-page.php:33 product-page.php:46
+msgid "Property Websites"
+msgstr "住宿网站"
+
+#: features-page-tabs-property-web.php:5
+msgid "Design"
+msgstr "设计"
+
+#: features-page-tabs-property-web.php:76
+msgid "Cloud Technology"
+msgstr "云技术"
+
+#: features-page-tabs-property-web.php:146
+msgid "Measuring Success"
+msgstr "绩效衡量"
+
+#: features-page-tabs-property-web.php:216
+msgid "Booking & Integrations"
+msgstr "预订系统整合"
+
+#: features-page-tabs-property-web.php:287
+msgid "Support"
+msgstr "强大的支持"
+
+#: features-page-tabs-predictive-analytics.php:5
+msgid "Intuitive Data Tools to Boost Your Property's Revenue"
+msgstr "直观的数据工具带来住宿收益激增"
+
+#: features-page-tabs-predictive-analytics.php:5
+msgid "I want to access BookingSuite&rsquo;s online helpdesk"
+msgstr "我想联系BookingSuite的在线客服"
+
+#: stories-page.php:44
+msgid "Partner Success"
+msgstr "合作伙伴成功实例"
+
+#: stories-page.php: Filter Button:49
+msgid "Filter"
+msgstr "筛选"
+
+#: stories-page.php: Show All Button:49
+msgid "Show All"
+msgstr "显示全部"
+
+#: contact-us-page.php:36
+msgid "I want to get started with BookingSuite"
+msgstr "我想注册使用BookingSuite"
+
+#: contact-us-page.php:40
+msgid "I want to log in to my BookingSuite account"
+msgstr "我想登录我的BookingSuite帐号"
+
+#: contact-us-page.php:44
+msgid "I need to become a Booking.com partner"
+msgstr "我想成为Booking.com的合作住宿"
+
+#: contact-us-page.php:48
+msgid "I want to access BookingSuite’s online helpdesk"
+msgstr "我想联系BookingSuite的在线客服"
+
+#: contact-us-page.php:62
+msgid "Speak With a Partner Success Representative"
+msgstr "联系合作伙伴成功代表"
+
+#: contact-us-page.php:65
+msgid "Regional Partner Support Offices:"
+msgstr "地区合作支持办公室"
+
+#: web-collection-page.php:63
+msgid "Your Brand Is The Bottom Line"
+msgstr "您的品牌，我们认真对待"
+
+#: web-complete-page.php:94
+msgid "More Features To Enjoy"
+msgstr "更多功能"
+
+#: web-conectivity-page.php:121
+msgid "Is your brand interested in becoming a BookingSuite Connectivity Partner?"
+msgstr "想成为BookingSuite直联合作伙伴？"
+
+#: web-conectivity-page.php:121
+msgid "Send us an email at:"
+msgstr "电子邮箱"
+
+#: about-page.php:31
+msgid "We create new ways of helping the hospitality industry work."
+msgstr "全新方式助力酒店行业。"
+
+#: about-page.php:83
+msgid "And We&rsquo;re All Around The World."
+msgstr "业务遍布全球"
+
+#: about-page.php:84
+msgid "Regional Headquarters"
+msgstr "地区总部"
+
+#: about-page.php:151
+msgid "BookingSuite in the News"
+msgstr "BookingSuite新闻报道"
+
+#: about-page.php:156
+msgid "Latest News"
+msgstr "最近报道"
+
+#: archive.php
+msgid "Press Releases and Mentions"
+msgstr "相关新闻稿和报道"

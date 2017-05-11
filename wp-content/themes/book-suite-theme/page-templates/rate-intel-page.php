@@ -21,7 +21,7 @@ get_header();
                     <?php the_content(); ?>
                     <?php edit_post_link(__('<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp'), '<div class="btn-group edit-post">', '</div>'); ?>
                     <div class="jumbo-btn-group">
-                        <a class="btn btn-primary btn-lg" role="button" target="_blank" href="https://admin.booking.com/"><?php echo $btn_text = _e('Sign up', 'upbootwp'); ?></a>
+                        <a class="btn btn-primary btn-lg" role="button" target="_blank" href="https://admin.booking.com/" onclick="trackOutboundLink('https://admin.booking.com/'); return false;"><?php echo $btn_text = _e('Sign up', 'upbootwp'); ?></a>
                     </div>
                 </div>
             </div>

@@ -5,6 +5,225 @@
  * @package upBootWP 0.1
  */
 
+ 
+// Register Script
+function func_custom_admin_script() {
+
+	wp_register_script( 'bspp_admin_decorator', 'http://suite.booking.com/wp-content/themes/book-suite-theme/js/bspp-admin.002.js', false, '1', true );
+   // wp_register_script( 'bspp_admin_decorator', 'http://dev.beinspired/booking/book-suite-theme/bspp-admin.js', false, '1', true );
+	wp_enqueue_script( 'bspp_admin_decorator' );
+
+}
+add_action( 'admin_enqueue_scripts', 'func_custom_admin_script' ); 
+ 
+ 
+// Add Shortcode
+function func_incentives() {
+   return implode('', array(
+      '<div id="incentivewrapper"><div class="incentives"><div class="incentive"><span class="incentive">',
+      get_field('incentive-topleft'),
+      '</span><br /><span class="incentivetext">',
+      get_field('incentive-text-topleft'),
+      '</span></div><div class="incentive"><span class="incentive">',
+      get_field('incentive-topright'),
+      '</span><br /><span class="incentivetext">',
+      get_field('incentive-text-topright'),
+      '</span></div><div class="incentive"><span class="incentive">',
+      get_field('incentive-bottomleft'),
+      '</span><br /><span class="incentivetext">',
+      get_field('incentive-text-bottomleft'),
+      '</span></div><div class="incentive"><span class="incentive">',
+      get_field('incentive-bottomright'),
+      '</span><br /><span class="incentivetext">',
+      get_field('incentive-text-bottomright'),
+      '</span></div></div></div>'
+   ));
+}
+add_shortcode('incentives', 'func_incentives');
+
+ 
+ 
+ 
+
+
+add_action( 'init', 'BookingSuitesPreferredPartners' );
+
+add_filter( 'post_updated_messages', 'BookingSuitesPreferredPartners_messages' );
+
+add_action( 'admin_head', 'BookingSuitesPreferredPartners_help' );
+
+
+
+function BookingSuitesPreferredPartners() {
+
+	$labels = array(
+
+		'name'               => 'BSPPs',
+
+		'singular_name'      => 'BSPP',
+
+		'menu_name'          => 'BSPPs',
+
+		'name_admin_bar'     => 'BSPP',
+
+		'add_new'            => 'Add New',
+
+		'add_new_item'       => 'Add New BSPP',
+
+		'new_item'           => 'New BSPP',
+
+		'edit_item'          => 'Edit BSPP',
+
+		'view_item'          => 'View BSPP',
+
+		'all_items'          => 'All BSPPs',
+
+		'search_items'       => 'Search BSPPs',
+
+		'parent_item_colon'  => 'Parent BSPPs:',
+
+		'not_found'          => 'No BSPPs found.',
+
+		'not_found_in_trash' => 'No BSPPs found in Trash.'
+
+	);
+
+
+
+	$args = array( 
+
+		'labels'		=> $labels,
+
+		'public'		=> true,
+
+		'rewrite'		=> array( 'slug' => 'BSPP' ),
+
+		'has_archive'   => true,
+
+		'menu_position' => 20,
+
+		'menu_icon'     => 'dashicons-admin-site',
+
+   		'show_in_rest'       => true,
+
+		'supports'      => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields', 'comments' )
+
+	);
+
+	register_post_type( 'my_BSPP', $args );
+
+}
+
+
+
+function BookingSuitesPreferredPartners_messages( $messages ) {
+
+	$post = get_post();
+
+
+
+	$messages['BSPP'] = array(
+
+		0  => '',
+
+		1  => 'BSPP updated.',
+
+		2  => 'Custom field updated.',
+
+		3  => 'Custom field deleted.',
+
+		4  => 'BSPP updated.',
+
+		5  => isset( $_GET['revision'] ) ? sprintf( 'BSPP restored to revision from %s',wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
+
+		6  => 'BSPP published.',
+
+		7  => 'BSPP saved.',
+
+		8  => 'BSPP submitted.',
+
+		9  => sprintf(
+
+			'BSPP scheduled for: <strong>%1$s</strong>.',
+
+			date_i18n( 'M j, Y @ G:i', strtotime( $post->post_date ) )
+
+		),
+
+		10 => 'BSPP draft updated.'
+
+	);
+
+
+
+	return $messages;
+
+}
+
+
+
+function BookingSuitesPreferredPartners_help() {
+
+
+
+	$screen = get_current_screen();
+
+
+
+	if ( 'BSPP' != $screen->post_type ) {
+
+		return;
+
+	}
+
+
+
+	$basics = array(
+
+		'id'      => 'BSPP_basics',
+
+		'title'   => 'BSPP Basics',
+
+		'content' => 'Content for help tab here'
+
+	);
+
+
+
+	$formatting = array(
+
+		'id'      => 'BSPP_formatting',
+
+		'title'   => 'BSPP Formatting',
+
+		'content' => 'Content for help tab here'
+
+	);
+
+
+
+	$screen->add_help_tab( $basics );
+
+	$screen->add_help_tab( $formatting );
+
+
+
+
+}
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 if (!isset($content_width)) $content_width = 770;
 
 /**

@@ -1,0 +1,287 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: upbootwp\n"
+"POT-Creation-Date: 2015-04-04 15:01+0200\n"
+"PO-Revision-Date: 2016-11-11 11:58-0800\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: \n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# #################################
+# Booking Wordpress translations section
+# ################################
+#: index.php:24
+msgid "Solutions Driven by Booking.com's unique, Industry-leading Expertise"
+msgstr "Soluções desenvolvidas para o crescimento dos seus negócios"
+
+#: index.php:34
+msgid "View Our Solutions"
+msgstr "Veja nossas soluções"
+
+#: index.php:Partner Success
+msgid "BookingSuite Partner Success"
+msgstr "Cases de sucesso de parceiros BookingSuite"
+
+#: index.php:
+msgid "VIEW MORE PARTNER STORIES"
+msgstr "Veja outras histórias de sucesso"
+
+#: index.php:In The Press
+msgid "BookingSuite In The Press"
+msgstr "BookingSuite na mídia"
+
+#: index.php:In The Press
+msgid "View More Press Mentions"
+msgstr "Veja mais sobre a BookingSuite na Imprensa"
+
+#: Booking Phone Number - Global Footer
+msgid "1 (800) 734-1769"
+msgstr "1-800-262-504"
+
+#: Language Link - Global
+msgid "en-us"
+msgstr "pt-pt"
+
+#: Free Consultation / Sign up using Booking.com - Global
+msgid "Sign up using Booking.com"
+msgstr "Avaliação gratuita"
+
+#: Sing Up Button - Global
+msgid "Sign up"
+msgstr "Inscreva-se"
+
+#: View Our Plans Button - Global
+msgid "View Our Plans"
+msgstr "Veja nossos planos"
+
+#: View Plans Button - Global
+msgid "View Plans"
+msgstr "Ver Planos"
+
+#: See Product Features Button - Global
+msgid "See Product Features"
+msgstr "Veja características dos produtos"
+
+#: See All Features Button - Global
+msgid "See All Features"
+msgstr "Ver características de cada plano"
+
+#: Learn More Button - Global
+msgid "Learn More"
+msgstr "Saiba mais"
+
+#: Log IN Button - Global
+msgid "Log In"
+msgstr "Iniciar sessão"
+
+#: Join Booking Button - Global
+msgid "Join Booking"
+msgstr "Faça parte da Booking.com"
+
+#: See All News - Global
+msgid "See All News"
+msgstr "Ver todas as notícias"
+
+#: Visit Help Desk Button - Global
+msgid "Visit Help Desk"
+msgstr "Helpdesk"
+
+msgid "View Job Openings"
+msgstr "Ver vagas disponíveis"
+
+#: Read The Story Button - Global
+msgid "Read The Story"
+msgstr "Conheça a história"
+
+#: ratecast-page.php:95
+msgid "BookingSuite RateManager Also Includes:"
+msgstr "BookingSuite RateManager também inclui:"
+
+#: plans-page-tabs-prop-web.php:31
+msgid "Price"
+msgstr "Preço"
+
+#: plans-page-tabs-prop-web.php:32
+msgid "10% Commission"
+msgstr "10% de comissão"
+
+#: plans-page-tabs-prop-web.php:35
+msgid "Website Pages"
+msgstr "Páginas de website"
+
+#: plans-page-tabs-prop-web.php:36
+msgid "Homepage, Rooms, Photos, Location, Amenities, & Reviews"
+msgstr "Página inicial, Quartos, Fotografias, Localização, Comodidades e Comentários de Clientes"
+
+#: plans-page-tabs-prop-web.php:39
+msgid "Analytics"
+msgstr "Estatísticas"
+
+#: plans-page-tabs-prop-web.php:40
+msgid "Basic"
+msgstr "Básicas"
+
+#: plans-page-tabs-prop-web.php:43
+msgid "Mobile Friendly Design"
+msgstr "Design intuitivo e otimizado"
+
+#: plans-page-tabs-prop-web.php:47
+msgid "Translation Support"
+msgstr "Assistência nos serviços de tradução"
+
+#: plans-page-tabs-prop-web.php:79
+msgid "Monthly Subscription"
+msgstr "Subscrição mensal"
+
+#: plans-page-tabs-prop-web.php:80
+msgid "Contact us to learn more"
+msgstr "Para mais informações, por favor contacte-nos"
+
+#: plans-page-tabs-prop-web.php:84
+msgid "Unlimited"
+msgstr " Ilimitadas"
+
+#: plans-page-tabs-prop-web.php:88
+msgid "Advanced"
+msgstr "Avançadas"
+
+#: plans-page.php:34 plans-page-tabs-biz-intel.php:6
+msgid "Revenue Management"
+msgstr "Gestão Financeira"
+
+#: plans-page-tabs-biz-intel.php:42
+msgid "Not Sure Which Plan is Right for Your Property?"
+msgstr "Não tem certeza de qual é o plano certo para a sua propriedade?"
+
+#: product-page.php:312
+msgid "Premium Support"
+msgstr "Assistência Premium"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Property-Websites"
+msgstr "Websites-de-Propriedades"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Revenue-Management"
+msgstr "Gestão-Financeira"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Premium-Support"
+msgstr "Assistência-Premium"
+
+#: plans-page.php:33 product-page.php:46
+msgid "Property Websites"
+msgstr "Websites de Propriedades"
+
+#: features-page-tabs-property-web.php:5
+msgid "Design"
+msgstr "Design"
+
+#: features-page-tabs-property-web.php:76
+msgid "Cloud Technology"
+msgstr "Tecnologia cloud"
+
+#: features-page-tabs-property-web.php:146
+msgid "Measuring Success"
+msgstr "Medindo o sucesso"
+
+#: features-page-tabs-property-web.php:216
+msgid "Booking & Integrations"
+msgstr "Reservas e integrações"
+
+#: features-page-tabs-property-web.php:287
+msgid "Support"
+msgstr "Apoio"
+
+#: features-page-tabs-predictive-analytics.php:5
+msgid "Intuitive Data Tools to Boost Your Property's Revenue"
+msgstr "Ferramentas intuitivas com dados que permitirão aumentar o faturamento da sua propriedade"
+
+#: features-page-tabs-predictive-analytics.php:5
+msgid "I want to access BookingSuite&rsquo;s online helpdesk"
+msgstr "Quero entrar em contato com o Helpdesk online da BookingSuite"
+
+#: stories-page.php:44
+msgid "Partner Success"
+msgstr "Histórias de Sucesso de Parceiros BookingSuite"
+
+#: stories-page.php: Filter Button:49
+msgid "Filter"
+msgstr "Filtrar"
+
+#: stories-page.php: Show All Button:49
+msgid "Show All"
+msgstr "Ver tudo"
+
+#: contact-us-page.php:36
+msgid "I want to get started with BookingSuite"
+msgstr "Quero começar a usar BookingSuite"
+
+#: contact-us-page.php:40
+msgid "I want to log in to my BookingSuite account"
+msgstr "Quero iniciar sessão na minha conta BookingSuite"
+
+#: contact-us-page.php:44
+msgid "I need to become a Booking.com partner"
+msgstr "Quero me tornar um parceiro Booking.com"
+
+#: contact-us-page.php:48
+msgid "I want to access BookingSuite’s online helpdesk"
+msgstr "Quero falar com o Helpdesk online da BookingSuite"
+
+#: contact-us-page.php:62
+msgid "Speak With a Partner Success Representative"
+msgstr "Fale com a nossa equipe de Suporte"
+
+#: contact-us-page.php:65
+msgid "Regional Partner Support Offices:"
+msgstr "Escritórios Regionais de Suporte a Parceiros"
+
+#: web-collection-page.php:63
+msgid "Your Brand Is The Bottom Line"
+msgstr "A sua marca é o mais importante"
+
+#: web-complete-page.php:94
+msgid "More Features To Enjoy"
+msgstr "Mais vantagens"
+
+#: web-conectivity-page.php:121
+msgid "Is your brand interested in becoming a BookingSuite Connectivity Partner?"
+msgstr "Está interessado em tornar-se um dos parceiros de conectividade BookingSuite?"
+
+#: web-conectivity-page.php:121
+msgid "Send us an email at:"
+msgstr "E-mail:"
+
+#: about-page.php:31
+msgid "We create new ways of helping the hospitality industry work."
+msgstr "Criamos novas formas que contribuem para o desenvolvimento da indústria hoteleira"
+
+#: about-page.php:83
+msgid "And We&rsquo;re All Around The World."
+msgstr "E estamos presentes no mundo inteiro."
+
+#: about-page.php:84
+msgid "Regional Headquarters"
+msgstr "Escritórios regionais"
+
+#: about-page.php:151
+msgid "BookingSuite in the News"
+msgstr "Notícias de BookingSuite"
+
+#: about-page.php:156
+msgid "Latest News"
+msgstr "Últimas Notícias"
+
+#: archive.php
+msgid "Press Releases and Mentions"
+msgstr "Press Releases e BookingSuite na Imprensa"

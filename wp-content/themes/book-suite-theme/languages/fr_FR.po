@@ -2,20 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2015-04-04 15:01+0200\n"
+"PO-Revision-Date: 2016-11-11 11:49-0800\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
-
 
 # #################################
 # Booking Wordpress translations section
@@ -52,17 +51,13 @@ msgstr "+ 31 2 02 61 02 95"
 msgid "en-us"
 msgstr "fr-fr"
 
-#: Free Consultation - Global
-msgid "Free Consultation"
+#: Free Consultation / Sign up using Booking.com - Global
+msgid "Sign up using Booking.com"
 msgstr "Kostenlose Beratung"
 
 #: Sing Up Button - Global
 msgid "Sign up"
 msgstr "Anmelden"
-
-#: Reguest A Demo Button - Global
-msgid "Request a Demo"
-msgstr "Demoversion anfordern"
 
 #: View Our Plans Button - Global
 msgid "View Our Plans"

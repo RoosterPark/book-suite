@@ -7,7 +7,7 @@
   display: none;
 }
 .success-stories {
-  background-color: #e5e1e1;
+  background-color: #E5E1E1;
   padding-bottom: 3%;
   padding-top: 3%;
 }
@@ -84,13 +84,13 @@
 .grid-item .featured,
 .grid-item .case-study {
   padding: 10px 13px;
-  background-color: #009fe3;
-  color: #ffffff;
+  background-color: #009FE3;
+  color: #fff;
   font-size: 12px;
 }
 .grid-item .featured a,
 .grid-item .case-study a {
-  color: #ffffff;
+  color: #fff;
 }
 .grid-item .case-study {
   left: 0;

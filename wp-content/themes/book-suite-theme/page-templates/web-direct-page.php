@@ -21,7 +21,7 @@ get_header(); ?>
 				<?php the_content(); ?>
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<div class="btn-group edit-post">', '</div>' ); ?>
 				<div class="jumbo-btn-group">
-				<a class="btn btn-primary btn-lg" role="button" target="_blank" href="https://admin.booking.com/" title="<?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?></a>
+				<a class="btn btn-primary btn-lg" role="button" target="_blank" href="https://admin.booking.com/" onclick="trackOutboundLink('https://admin.booking.com/'); return false;" title="<?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?></a>
 				</div>
 		</div>
 	</div>
@@ -149,15 +149,15 @@ get_header(); ?>
 	    </div>
 	</div>
 </section>
-<section id="clientComm" class="sub-section solutions lt-blue" >
+<!--<section id="clientComm" class="sub-section solutions lt-blue" >
 <div class="container-fluid">
 		<div class="row">
 			<?php //when more products are available use this file
 				//get_template_part('product-page-cta');
-				get_template_part('product-page-cta-complete-alt');
+				//get_template_part('product-page-cta-complete-alt');
 			?>
 		</div>
 	</div>
-</section>
+</section>-->
 <?php get_template_part('index-request-demo'); ?>
 <?php get_footer(); ?>

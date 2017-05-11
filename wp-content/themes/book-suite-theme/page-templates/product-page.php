@@ -25,8 +25,7 @@ get_header();
                     ?>
 
                     <div class="jumbo-btn-group">
-                        <a class="btn btn-default btn-lg clear" href="/plans/<?php echo $lang_par; ?>" role="button" title="<?php echo $btn_text = _e('View Our Plans', 'upbootwp'); ?>"><?php echo $btn_text = _e('View Our Plans', 'upbootwp'); ?></a>
-                        <a class="btn btn-primary btn-lg" href="http://info.suite.booking.com/request-demo/<?php echo $link_text = _e('en-us', 'upbootwp'); ?>" target="_blank" role="button" title="<?php echo $btn_text = _e('Request a Demo', 'upbootwp'); ?>"><?php echo $btn_text = _e('Request a Demo', 'upbootwp'); ?></a>
+                        <a class="btn btn-primary btn-lg" href="https://admin.booking.com/" onclick="trackOutboundLink('https://admin.booking.com/'); return false;" target="_blank" role="button" title="<?php echo $btn_text = _e('Sign up using Booking.com', 'upbootwp'); ?>"><?php echo $btn_text = _e('Sign up using Booking.com', 'upbootwp'); ?></a>
                     </div>
                 </div>
             </div>
@@ -34,10 +33,39 @@ get_header();
     <?php endwhile; // end of the loop.  ?>
 </section>
 <div id="scroller-anchor"></div> 
-<section id="booking-solutions" class="sub-section white solutions-menu">			
+<!--<section id="booking-solutions" class="sub-section white solutions-menu">			
     <div class="container-fluid">
         <div class="row">
-            <?php get_template_part('index-solutions'); ?>
+<?php //get_template_part('index-solutions'); ?>
+        </div>
+    </div>
+</section>-->
+<section id="booking-solutions" class="sub-section white solutions-menu stick">			
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <article id="post-86" class="jumpTo">
+                    <a href="#Property-Websites"><img src="http://suite.booking.com/wp-content/uploads/2015/07/155_smartphone.svg" class="svg wp-post-image" alt=""></a>
+                    <div class="h3">
+                        <a href="#Property-Websites">WebDirect</a>
+                    </div>
+            </div>	
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <article id="post-87" class="jumpTo">
+                    <a href="#RateManager"><img src="http://suite.booking.com/wp-content/uploads/2015/07/189_graph.svg" class="svg wp-post-image" alt=""></a>
+                    <div class="h3">
+                        <a href="#RateManager">RateManager</a>
+                    </div>
+            </div>	
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <article id="post-88" class="jumpTo">
+                    <a href="#RateIntelligence"><img src="http://suite.booking.com/wp-content/uploads/2015/06/tags1.svg" class="svg wp-post-image" alt=""></a>
+                    <div class="h3">
+                        <a href="#RateIntelligence">RateIntelligence</a>
+                    </div>
+            </div>	
+
+
         </div>
     </div>
 </section>
@@ -46,7 +74,6 @@ get_header();
         <div class="jumbo-caption opt-2">
             <h1><?php echo $btn_text = _e('Property Websites', 'upbootwp'); ?></h1>
             <div class="jumbo-btn-group">
-                <a class="btn btn-info btn-lg" href="/plans/<?php echo $lang_par; ?>" role="button" title="<?php echo $btn_text = _e('View Plans', 'upbootwp'); ?>"><?php echo $btn_text = _e('View Plans', 'upbootwp'); ?></a>
                 <a class="btn btn-default btn-lg clear" href="/product-features/<?php echo $lang_par; ?>" role="button" title="<?php echo $btn_text = _e('See Product Features', 'upbootwp'); ?>"><?php echo $btn_text = _e('See Product Features', 'upbootwp'); ?></a>
             </div>
         </div>
@@ -195,20 +222,19 @@ get_header();
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="jumbo-btn-group">
-                    <a class="btn btn-info btn-lg" href="/plans/<?php echo $lang_par; ?>" role="button" title="<?php echo $btn_text = _e('View Plans', 'upbootwp'); ?>"><?php echo $btn_text = _e('View Plans', 'upbootwp'); ?></a>
                     <a class="btn btn-default btn-lg" href="/product-features/<?php echo $lang_par; ?>" role="button" title="<?php echo $btn_text = _e('See Product Features', 'upbootwp'); ?>"><?php echo $btn_text = _e('See Product Features', 'upbootwp'); ?></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section id="<?php echo $btn_text = _e('Revenue-Management', 'upbootwp'); ?>" class="section-hero" role="banner">
+<section id="<?php echo $btn_text = _e('RateManager', 'upbootwp'); ?>" class="section-hero" role="banner">
     <?php if (get_field('predictive_analytics_header')): ?>
         <img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('predictive_analytics_header'); ?>" />
     <?php endif; ?>
     <div id="hero" class="jumbotron filter">
         <div class="jumbo-caption opt-2">
-            <h1><?php echo $title_text = _e('Revenue Management', 'upbootwp'); ?></h1>
+            <h1><?php echo $title_text = _e('RateManager', 'upbootwp'); ?></h1>
             <div class="jumbo-btn-group">
                 <a class="btn btn-info btn-lg" href="/ratemanager<?php echo $lang_par; ?>" role="button" title="<?php echo $btn_text = _e('Learn More', 'upbootwp'); ?>"><?php echo $btn_text = _e('Learn More', 'upbootwp'); ?></a>
                 <a class="btn btn-default btn-lg clear" href="/product-features/<?php echo $lang_par; ?>#RevenueManagement" role="button" title="<?php echo $btn_text = _e('See Product Features', 'upbootwp'); ?>"><?php echo $btn_text = _e('See Product Features', 'upbootwp'); ?></a>
@@ -277,37 +303,6 @@ get_header();
         </div>
     </div>
 </section>
-<section id="dataBased" class="section-hero white" role="banner">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6 col-lg-6">
-                <div class="center-block">
-                    <?php
-                    $argsx = array(
-                        'name' => 'data-based-rate-shopping'
-                    );
-                    $my_mobx_query = new WP_Query($argsx);
-                    while ($my_mobx_query->have_posts()) :
-                        $my_mobx_query->the_post();
-                        ?>
-                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                            <header class="page-header"><h1 class="text-center"><?php the_title(); ?></h1></header>
-                            <?php //the_content(); ?>
-                            <?php the_excerpt(); ?>		
-                            <?php edit_post_link(__('<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp'), '<p class="text-center">', '</p>'); ?>
-                        </article>
-                    <?php endwhile; ?>			
-                    <?php wp_reset_postdata(); ?>
-                </div>
-            </div>	
-            <div class="col-sm-6 col-lg-6">
-                <?php if (get_field('data_based_header')): ?>
-                    <img class="img-responsive wp-post-image mobile-img" src="<?php the_field('data_based_header'); ?>" />
-                <?php endif; ?>
-            </div>			    
-        </div>
-    </div>
-</section>
 <section id="revPar" class="sub-section white repar" role="banner">
     <div class="container-fluid">
         <div class="row">
@@ -340,13 +335,13 @@ get_header();
         <?php endif; ?>
     </div>
 </section>
-<section id="<?php echo $btn_text = _e('Premium-Support', 'upbootwp'); ?>" class="section-hero" role="banner">
+<section id="<?php echo $btn_text = _e('RateIntelligence', 'upbootwp'); ?>" class="section-hero" role="banner">
     <?php if (get_field('premium_services_header')): ?>
         <img class="jumbotron-img img-responsive wp-post-image" src="<?php the_field('premium_services_header'); ?>" />
     <?php endif; ?>
     <div id="hero" class="jumbotron filter">
         <div class="jumbo-caption opt-1">
-            <h1><?php echo $btn_text = _e('Premium Support', 'upbootwp'); ?></h1>
+            <h1><?php echo $btn_text = _e('RateIntelligence', 'upbootwp'); ?></h1>
         </div>
     </div>
 </section>

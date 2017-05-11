@@ -22,7 +22,7 @@ get_header(); ?>
 				<?php the_content(); ?>
 				<?php edit_post_link( __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' ), '<p>', '</p>' ); ?>
 				<div class="jumbo-btn-group">
-				<a class="btn btn-primary btn-lg" role="button" target="_blank" href="http://info.suite.booking.com/request-demo/<?php echo $link_text = _e('en-us','upbootwp');?>" title="<?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Request a Demo', 'upbootwp' );?></a>
+				<a class="btn btn-primary btn-lg" role="button" target="_blank" href="http://info.suite.booking.com/request-demo/<?php echo $link_text = _e('en-us','upbootwp');?>" onclick="trackOutboundLink('https://admin.booking.com/'); return false;" title="<?php  echo $btn_text =  _e( 'Sign up using Booking.com', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Sign up using Booking.com', 'upbootwp' );?></a>
 				</div>
 		</div>
 	</div>

@@ -1,0 +1,287 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: upbootwp\n"
+"POT-Creation-Date: 2015-04-04 15:01+0200\n"
+"PO-Revision-Date: 2016-11-11 11:52-0800\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: \n"
+"Language: hr_HR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# #################################
+# Booking Wordpress translations section
+# ################################
+#: index.php:24
+msgid "Solutions Driven by Booking.com's unique, Industry-leading Expertise"
+msgstr "Rješenja uz koja ćete moći dodatno poboljšati svoje poslovanje"
+
+#: index.php:34
+msgid "View Our Solutions"
+msgstr "Prikaži naša rješenja"
+
+#: index.php:Partner Success
+msgid "BookingSuite Partner Success"
+msgstr "BookingSuite iskustva partnera"
+
+#: index.php:
+msgid "VIEW MORE PARTNER STORIES"
+msgstr "Prikaži više priča partnera"
+
+#: index.php:In The Press
+msgid "BookingSuite In The Press"
+msgstr "BookingSuite u medijima"
+
+#: index.php:In The Press
+msgid "View More Press Mentions"
+msgstr "Prikaži više članaka iz medija"
+
+#: Booking Phone Number - Global Footer
+msgid "1 (800) 734-1769"
+msgstr "+31 207035444 "
+
+#: Language Link - Global
+msgid "en-us"
+msgstr "hr-hr"
+
+#: Free Consultation / Sign up using Booking.com - Global
+msgid "Sign up using Booking.com"
+msgstr "Besplatne konzultacije"
+
+#: Sing Up Button - Global
+msgid "Sign up"
+msgstr "Registriraj se"
+
+#: View Our Plans Button - Global
+msgid "View Our Plans"
+msgstr "Prikaži naše planove"
+
+#: View Plans Button - Global
+msgid "View Plans"
+msgstr "Prikaži planove"
+
+#: See Product Features Button - Global
+msgid "See Product Features"
+msgstr "Prikaži detalje o proizvodima"
+
+#: See All Features Button - Global
+msgid "See All Features"
+msgstr "Prikaži sve opcije"
+
+#: Learn More Button - Global
+msgid "Learn More"
+msgstr "Saznaj više"
+
+#: Log IN Button - Global
+msgid "Log In"
+msgstr "Prijavi se"
+
+#: Join Booking Button - Global
+msgid "Join Booking"
+msgstr "Pridruži se Bookingu"
+
+#: See All News - Global
+msgid "See All News"
+msgstr "Prikaži sve novosti"
+
+#: Visit Help Desk Button - Global
+msgid "Visit Help Desk"
+msgstr "Helpdesk"
+
+msgid "View Job Openings"
+msgstr "Prikaži otvorene pozicije"
+
+#: Read The Story Button - Global
+msgid "Read The Story"
+msgstr "Pročitaj priču"
+
+#: ratecast-page.php:95
+msgid "BookingSuite RateManager Also Includes:"
+msgstr "BookingSuite RateManager također uključuje:"
+
+#: plans-page-tabs-prop-web.php:31
+msgid "Price"
+msgstr "Cijena"
+
+#: plans-page-tabs-prop-web.php:32
+msgid "10% Commission"
+msgstr "Provizija 10%"
+
+#: plans-page-tabs-prop-web.php:35
+msgid "Website Pages"
+msgstr "Stranice"
+
+#: plans-page-tabs-prop-web.php:36
+msgid "Homepage, Rooms, Photos, Location, Amenities, & Reviews"
+msgstr "Početna stranica, Jedinice, Fotografije, Lokacija, Sadržaji i Recenzije"
+
+#: plans-page-tabs-prop-web.php:39
+msgid "Analytics"
+msgstr "Statistika"
+
+#: plans-page-tabs-prop-web.php:40
+msgid "Basic"
+msgstr "Osnovna"
+
+#: plans-page-tabs-prop-web.php:43
+msgid "Mobile Friendly Design"
+msgstr "Dizajn optimiziran za mobilne uređaje"
+
+#: plans-page-tabs-prop-web.php:47
+msgid "Translation Support"
+msgstr "Podrška prijevoda"
+
+#: plans-page-tabs-prop-web.php:79
+msgid "Monthly Subscription"
+msgstr "Mjesečna pretplata"
+
+#: plans-page-tabs-prop-web.php:80
+msgid "Contact us to learn more"
+msgstr "Kontaktirajte nas i saznajte više"
+
+#: plans-page-tabs-prop-web.php:84
+msgid "Unlimited"
+msgstr "Neograničeno"
+
+#: plans-page-tabs-prop-web.php:88
+msgid "Advanced"
+msgstr "Napredna"
+
+#: plans-page.php:34 plans-page-tabs-biz-intel.php:6
+msgid "Revenue Management"
+msgstr "Revenue Management"
+
+#: plans-page-tabs-biz-intel.php:42
+msgid "Not Sure Which Plan is Right for Your Property?"
+msgstr "Niste sigurni koja je opcija najbolja za vaš objekt?"
+
+#: product-page.php:312
+msgid "Premium Support"
+msgstr "Premium podrška"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Property-Websites"
+msgstr "Internetske-stranice"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Revenue-Management"
+msgstr "Revenue-Management"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Premium-Support"
+msgstr "Premium-podrška"
+
+#: plans-page.php:33 product-page.php:46
+msgid "Property Websites"
+msgstr "Internetske Stranice"
+
+#: features-page-tabs-property-web.php:5
+msgid "Design"
+msgstr "Design"
+
+#: features-page-tabs-property-web.php:76
+msgid "Cloud Technology"
+msgstr "Tehnologija oblaka"
+
+#: features-page-tabs-property-web.php:146
+msgid "Measuring Success"
+msgstr "Mjerenje uspjeha"
+
+#: features-page-tabs-property-web.php:216
+msgid "Booking & Integrations"
+msgstr "Rezervacije i integriranje"
+
+#: features-page-tabs-property-web.php:287
+msgid "Support"
+msgstr "Podrška"
+
+#: features-page-tabs-predictive-analytics.php:5
+msgid "Intuitive Data Tools to Boost Your Property's Revenue"
+msgstr "Intuitivni alati za prikupljanje podataka za povećanje vaših prihoda"
+
+#: features-page-tabs-predictive-analytics.php:5
+msgid "I want to access BookingSuite&rsquo;s online helpdesk"
+msgstr "Želim pristupiti korisničkoj podršci BookingSuitea"
+
+#: stories-page.php:44
+msgid "Partner Success"
+msgstr "Uspjeh partnera"
+
+#: stories-page.php: Filter Button:49
+msgid "Filter"
+msgstr "Filtar"
+
+#: stories-page.php: Show All Button:49
+msgid "Show All"
+msgstr "Prikaži sve"
+
+#: contact-us-page.php:36
+msgid "I want to get started with BookingSuite"
+msgstr "Želim početi koristiti BookingSuite"
+
+#: contact-us-page.php:40
+msgid "I want to log in to my BookingSuite account"
+msgstr "Želim se prijaviti u svoj BookingSuite korisnički račun"
+
+#: contact-us-page.php:44
+msgid "I need to become a Booking.com partner"
+msgstr "Želim postati partner Booking.com-a"
+
+#: contact-us-page.php:48
+msgid "I want to access BookingSuite’s online helpdesk"
+msgstr "Želim pristupiti korisničkoj podršci BookingSuitea"
+
+#: contact-us-page.php:62
+msgid "Speak With a Partner Success Representative"
+msgstr "Želim razgovarati sa službom za podršku partnerima"
+
+#: contact-us-page.php:65
+msgid "Regional Partner Support Offices:"
+msgstr "Regionalni uredi za podršku partnerima"
+
+#: web-collection-page.php:63
+msgid "Your Brand Is The Bottom Line"
+msgstr "Vaš je brand najvažniji."
+
+#: web-complete-page.php:94
+msgid "More Features To Enjoy"
+msgstr "Još prednosti"
+
+#: web-conectivity-page.php:121
+msgid "Is your brand interested in becoming a BookingSuite Connectivity Partner?"
+msgstr "Jeste li zainteresirani za suradnju s parnterom BookingSuitea koji pruža usluge povezivosti?"
+
+#: web-conectivity-page.php:121
+msgid "Send us an email at:"
+msgstr "E-pošta:"
+
+#: about-page.php:31
+msgid "We create new ways of helping the hospitality industry work."
+msgstr "Kreiramo nove načine podržavanja hotelijerske branše."
+
+#: about-page.php:83
+msgid "And We&rsquo;re All Around The World."
+msgstr "Prisutni smo u cijelom svijetu."
+
+#: about-page.php:84
+msgid "Regional Headquarters"
+msgstr "Regionalno sjedište"
+
+#: about-page.php:151
+msgid "BookingSuite in the News"
+msgstr "BookingSuite u medijima"
+
+#: about-page.php:156
+msgid "Latest News"
+msgstr "Najnovije vijesti"
+
+#: archive.php
+msgid "Press Releases and Mentions"
+msgstr "Objave u medijima"

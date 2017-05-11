@@ -1,0 +1,291 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: upbootwp\n"
+"POT-Creation-Date: 2015-04-04 15:01+0200\n"
+"PO-Revision-Date: 2016-05-07 10:24-0700\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: \n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# #################################
+# Booking Wordpress translations section
+# ################################
+#: index.php:24
+msgid "Solutions Driven by Booking.com's unique, Industry-leading Expertise"
+msgstr "İşinizi Büyütmenize Yardımcı Olmak için Tasarlanan Çözümler"
+
+#: index.php:34
+msgid "View Our Solutions"
+msgstr "Çözümlerimizi Görüntüleyin"
+
+#: index.php:Partner Success
+msgid "BookingSuite Partner Success"
+msgstr "BookingSuite Ortak Başarısı"
+
+#: index.php:
+msgid "VIEW MORE PARTNER STORIES"
+msgstr "Daha Fazla Ortak Hikayesi Görüntüleyin"
+
+#: index.php:In The Press
+msgid "BookingSuite In The Press"
+msgstr "Basında BookingSuite"
+
+#: index.php:In The Press
+msgid "View More Press Mentions"
+msgstr "Daha Fazla Basın Haberi Görüntüleyin"
+
+#: Booking Phone Number - Global Footer
+msgid "1 (800) 734-1769"
+msgstr "+31 207035444 "
+
+#: Language Link - Global
+msgid "en-us"
+msgstr "pl-pl"
+
+#: Free Consultation - Global
+msgid "Free Consultation"
+msgstr "Ücretsiz Danışma"
+
+#: Sing Up Button - Global
+msgid "Sign up"
+msgstr "Kaydolun"
+
+#: Reguest A Demo Button - Global
+msgid "Request a Demo"
+msgstr "Demo Talep Et"
+
+#: View Our Plans Button - Global
+msgid "View Our Plans"
+msgstr "Planlarımızı Görüntüleyin"
+
+#: View Plans Button - Global
+msgid "View Plans"
+msgstr "Planları Görüntüleyin"
+
+#: See Product Features Button - Global
+msgid "See Product Features"
+msgstr "Ürün Özelliklerini Görün"
+
+#: See All Features Button - Global
+msgid "See All Features"
+msgstr "Tüm Özellikleri Görün"
+
+#: Learn More Button - Global
+msgid "Learn More"
+msgstr "Daha Fazla Bilgi"
+
+#: Log IN Button - Global
+msgid "Log In"
+msgstr "Oturum Açın"
+
+#: Join Booking Button - Global
+msgid "Join Booking"
+msgstr "Booking'e Katılın"
+
+#: See All News - Global
+msgid "See All News"
+msgstr "Tüm Haberleri Görün"
+
+#: Visit Help Desk Button - Global
+msgid "Visit Help Desk"
+msgstr "Yardım Masasını Ziyaret Edin"
+
+msgid "View Job Openings"
+msgstr "İş İlanlarını Görüntüleyin"
+
+#: Read The Story Button - Global
+msgid "Read The Story"
+msgstr "Hikayeyi Okuyun"
+
+#: ratecast-page.php:95
+msgid "BookingSuite RateManager Also Includes:"
+msgstr "BookingSuite RateManager Ayrıca Şunları Kapsar:"
+
+#: plans-page-tabs-prop-web.php:31
+msgid "Price"
+msgstr "Ücret"
+
+#: plans-page-tabs-prop-web.php:32
+msgid "10% Commission"
+msgstr "%10 Komisyon"
+
+#: plans-page-tabs-prop-web.php:35
+msgid "Website Pages"
+msgstr "Site Sayfaları"
+
+#: plans-page-tabs-prop-web.php:36
+msgid "Homepage, Rooms, Photos, Location, Amenities, & Reviews"
+msgstr "Anasayfa, Odalar, Fotoğraflar, Konum, Olanaklar ve Değerlendirmeler"
+
+#: plans-page-tabs-prop-web.php:39
+msgid "Analytics"
+msgstr "Analiz"
+
+#: plans-page-tabs-prop-web.php:40
+msgid "Basic"
+msgstr "Temel"
+
+#: plans-page-tabs-prop-web.php:43
+msgid "Mobile Friendly Design"
+msgstr "Mobil Cihazlarla Uyumlu Tasarım"
+
+#: plans-page-tabs-prop-web.php:47
+msgid "Translation Support"
+msgstr "Tercüme Desteği"
+
+#: plans-page-tabs-prop-web.php:79
+msgid "Monthly Subscription"
+msgstr "REV MAN TAB"
+
+#: plans-page-tabs-prop-web.php:80
+msgid "Contact us to learn more"
+msgstr "REV MAN TAB"
+
+#: plans-page-tabs-prop-web.php:84
+msgid "Unlimited"
+msgstr "Sınırsız"
+
+#: plans-page-tabs-prop-web.php:88
+msgid "Advanced"
+msgstr "İleri Seviye"
+
+#: plans-page.php:34 plans-page-tabs-biz-intel.php:6
+msgid "Revenue Management"
+msgstr "Gelir Yönetimi"
+
+#: plans-page-tabs-biz-intel.php:42
+msgid "Not Sure Which Plan is Right for Your Property?"
+msgstr "Tesisiniz için Hangi Planın Doğru Olduğuna Emin Değil Misiniz?"
+
+#: product-page.php:312
+msgid "Premium Support"
+msgstr "Premium Destek"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Property-Websites"
+msgstr "Tesis Web Siteleri"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Revenue-Management"
+msgstr "Gelir-Yönetimi"
+
+#: solutions-page jumpto scrollto menu links div id's
+msgid "Premium-Support"
+msgstr "Premium-Destek"
+
+#: plans-page.php:33 product-page.php:46
+msgid "Property Websites"
+msgstr "Tesis Web Siteleri"
+
+#: features-page-tabs-property-web.php:5
+msgid "Design"
+msgstr "Tasarım"
+
+#: features-page-tabs-property-web.php:76
+msgid "Cloud Technology"
+msgstr "Bulut Teknolojisi"
+
+#: features-page-tabs-property-web.php:146
+msgid "Measuring Success"
+msgstr "Başarıyı Ölçme"
+
+#: features-page-tabs-property-web.php:216
+msgid "Booking & Integrations"
+msgstr "Rezervasyon ve Entegrasyon"
+
+#: features-page-tabs-property-web.php:287
+msgid "Support"
+msgstr "Destek"
+
+#: features-page-tabs-predictive-analytics.php:5
+msgid "Intuitive Data Tools to Boost Your Property's Revenue"
+msgstr "Tesisinizin Gelirini Arttırmak için Anlaması ve Kullanımı Kolay Veriler"
+
+#: features-page-tabs-predictive-analytics.php:5
+msgid "I want to access BookingSuite&rsquo;s online helpdesk"
+msgstr "BookingSuite online Danışma'ya ulaşmak istiyorum"
+
+#: stories-page.php:44
+msgid "Partner Success"
+msgstr "Ortak Başarısı"
+
+#: stories-page.php: Filter Button:49
+msgid "Filter"
+msgstr "Fitrele"
+
+#: stories-page.php: Show All Button:49
+msgid "Show All"
+msgstr "Tümünü Göster"
+
+#: contact-us-page.php:36
+msgid "I want to get started with BookingSuite"
+msgstr "BookingSuite ile çalışmaya başlamak istiyorum"
+
+#: contact-us-page.php:40
+msgid "I want to log in to my BookingSuite account"
+msgstr "Bookingsuite hesabıma giriş yapmak istiyorum"
+
+#: contact-us-page.php:44
+msgid "I need to become a Booking.com partner"
+msgstr "Booking.com ortağı olmak istiyorum"
+
+#: contact-us-page.php:48
+msgid "I want to access BookingSuite’s online helpdesk"
+msgstr "BookingSuite online Danışma'ya ulaşmak istiyorum"
+
+#: contact-us-page.php:62
+msgid "Speak With a Partner Success Representative"
+msgstr "Ortak Başarısı Temsilcilerinden Biriyle Görüş"
+
+#: contact-us-page.php:65
+msgid "Regional Partner Support Offices:"
+msgstr "Bölgesel Ortak Destek Ofisleri"
+
+#: web-collection-page.php:63
+msgid "Your Brand Is The Bottom Line"
+msgstr "Önemli olan markanızdır."
+
+#: web-complete-page.php:94
+msgid "More Features To Enjoy"
+msgstr "Hoşunuza Gidecek Daha Fazla Özellik"
+
+#: web-conectivity-page.php:121
+msgid "Is your brand interested in becoming a BookingSuite Connectivity Partner?"
+msgstr "Markanız BookingSuite Bağlantı Ortağı olmakla ilgileniyor mu?"
+
+#: web-conectivity-page.php:121
+msgid "Send us an email at:"
+msgstr "E-posta:"
+
+#: about-page.php:31
+msgid "We create new ways of helping the hospitality industry work."
+msgstr "Konaklama sektörünün gerektiği biçimde çalışmasına yardımcı olabilmek için yeni yollar geliştiriyoruz."
+
+#: about-page.php:83
+msgid "And We&rsquo;re All Around The World."
+msgstr "Dünyanın Her Yerindeyiz."
+
+#: about-page.php:84
+msgid "Regional Headquarters"
+msgstr "Bölgesel Genel Merkezler"
+
+#: about-page.php:151
+msgid "BookingSuite in the News"
+msgstr "Haberlerle BookingSuite"
+
+#: about-page.php:156
+msgid "Latest News"
+msgstr "Son Haberler"
+
+#: archive.php
+msgid "Press Releases and Mentions"
+msgstr "Objave u medijima"

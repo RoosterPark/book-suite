@@ -50,7 +50,7 @@
         <meta name="msapplication-TileImage" content="<?php echo esc_url(get_template_directory_uri()); ?>/ico/mstile-144x144.png">
         <meta name="msapplication-config" content="<?php echo esc_url(get_template_directory_uri()); ?>/ico/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-
+        <meta name="google-site-verification" content="pBhMOAABbAtGEIxN-yAjwviObnUjUSTtaWEx2pjaP8c" />
         <style>
             .request-content {
                 background:  url("/wp-content/themes/book-suite-theme/img/lt-blue-background-slice.png") repeat-x scroll 0 -70px rgba(0, 0, 0, 0);

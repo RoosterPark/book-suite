@@ -10,7 +10,8 @@ while($my_query->have_posts()){
 	        <h3><?php the_title() ?></h3>
 	        <?php the_content(); ?>
 	        <div>
-				<a class="btn btn-primary btn-lg" role="button" href="http://info.suite.booking.com/free-consultation/<?php echo $link_text = _e('en-us','upbootwp');?>" target="_blank" title="<?php  echo $btn_text =  _e( 'Free Consultation', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Free Consultation', 'upbootwp' );?></a>
+<!--				<a class="btn btn-primary btn-lg" role="button" href="https://admin.booking.com/<?php echo $link_text = _e('en-us','upbootwp');?>" target="_blank" title="<?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?></a>-->
+                                <a class="btn btn-primary btn-lg" role="button" href="https://admin.booking.com/" onclick="trackOutboundLink('https://admin.booking.com/ '); return false;" target="_blank" title="<?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?>"><?php  echo $btn_text =  _e( 'Sign up', 'upbootwp' );?></a>
 			</div>
 			<?php  
 			$ebtn_text =  __( '<i class="fa fa-pencil-square-o"></i> Edit', 'upbootwp' );
