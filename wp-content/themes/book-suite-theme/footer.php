@@ -150,41 +150,73 @@
     <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/989142432/?value=0&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
-<!-- Google Code for Signup Conversion Page -->
+
+<!-- Google Code for HS_Non Booking Partner_signup Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
 <script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 867526632;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "mAESCKHmiW4Q6M_VnQM";
-var google_remarketing_only = false;
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 862776813;
+    w.google_conversion_label = "qcwYCOvfrG4Q7duzmwM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
 /* ]]> */
 </script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
 </script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/867526632/?label=mAESCKHmiW4Q6M_VnQM&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-<!-- Google Code for Login Conversion Page -->
+
+<!-- Google Code for HS_Booking Partner_signup Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
 <script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 867526632;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "JF6mCJrTkm4Q6M_VnQM";
-var google_remarketing_only = false;
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 862776813;
+    w.google_conversion_label = "WL1eCISYrXAQ7duzmwM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
 /* ]]> */
 </script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
 </script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/867526632/?label=JF6mCJrTkm4Q6M_VnQM&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
+
+
 </body>
 </html>
